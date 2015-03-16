@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.bulkeditor.BulkEditorWindow"
+        messagesPack="com.haulmont.sampler.gui.components.bulkeditor">
+    <dsContext>
+        <collectionDatasource id="personDs"
+                              class="com.haulmont.sampler.entity.Person"
+                              view="_local">
+            <query>
+                <![CDATA[select e from sampler$Person e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout spacing="true">
+        <table id="personTable" height="200px"
+               multiselect="true"
+               width="400px">
+            <buttonsPanel>
+                <bulkEditor for="personTable"/>
+            </buttonsPanel>
+            <columns>
+                <column id="name"/>
+                <column id="lastName"/>
+                <column id="age"/>
+            </columns>
+            <rows datasource="personDs"/>
+        </table>
+    </layout>
+</window>

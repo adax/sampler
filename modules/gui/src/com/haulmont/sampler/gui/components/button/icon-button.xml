@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        caption="Button with Icon"
+        class="com.haulmont.sampler.gui.components.button.IconButton"
+        messagesPack="com.haulmont.sampler.gui.components.button">
+    <dsContext/>
+    <layout spacing="true">
+        <button caption="Save"
+                icon="icons/save.png"/>
+        <button description="Save"
+                icon="icons/save.png"/>
+    </layout>
+</window>

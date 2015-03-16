@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        caption="Button with programmatic action"
+        class="com.haulmont.sampler.gui.components.button.ProgrammaticActionButton"
+        messagesPack="com.haulmont.sampler.gui.components.button">
+    <dsContext/>
+    <layout>
+        <button id="button"
+                caption="Click Me!"/>
+    </layout>
+</window>

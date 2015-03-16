@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<sample-menu-config xmlns="com/haulmont/sampler/gui/samples-menu.xsd">
+
+    <menu id="components">
+        <menu id="button">
+            <item id="simple-button" docUrlSuffix="gui_Button"/>
+            <item id="localized-button" docUrlSuffix="gui_Button"/>
+            <item id="icon-button" docUrlSuffix="gui_Button"/>
+            <item id="invocation-button" docUrlSuffix="gui_Button"/>
+            <item id="action-button" docUrlSuffix="gui_Button"/>
+            <item id="programmatic-action-button" docUrlSuffix="gui_Button"/>
+            <item id="link-button" docUrlSuffix="gui_Link"/>
+        </menu>
+        <item id="bulk-editor" docUrlSuffix="gui_BulkEditor"/>
+        <menu id="textField"/>
+    </menu>
+
+</sample-menu-config>

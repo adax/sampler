@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        caption="Link Button"
+        class="com.haulmont.sampler.gui.components.button.LinkButton"
+        messagesPack="com.haulmont.sampler.gui.components.button">
+    <dsContext/>
+    <layout>
+        <linkButton caption="Button"
+                    description="Click Me!"/>
+    </layout>
+</window>
