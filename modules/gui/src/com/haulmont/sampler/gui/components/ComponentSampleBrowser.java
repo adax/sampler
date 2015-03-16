@@ -73,7 +73,7 @@ public class ComponentSampleBrowser extends AbstractWindow {
         String messagesPack = (String) params.get("messagesPack");
         if (StringUtils.isNotEmpty(messagesPack)) {
             List<String> messagesKeys = (List<String>) params.get("messagesKeys");
-            addTab("messages.properties", createMessagesContainer(messagesPack, messagesKeys));
+            createMessagesContainer(messagesPack, messagesKeys);
         }
     }
 
@@ -103,22 +103,23 @@ public class ComponentSampleBrowser extends AbstractWindow {
         return editor;
     }
 
-    private Component createMessagesContainer(String messagesPack, List<String> messagesKeys) {
-        SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(SourceCodeEditor.Mode.Text);
-        StringBuilder sb = new StringBuilder("messages.properties\n\n");
-
+    private void createMessagesContainer(String messagesPack, List<String> messagesKeys) {
         Locale defaultLocale = messageTools.getDefaultLocale();
         for (Locale locale : globalConfig.getAvailableLocales().values()) {
-            if (!defaultLocale.equals(locale))
-                sb.append(String.format("\n\nmessages_%s.properties\n\n", locale.toString()));
+            SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(SourceCodeEditor.Mode.Properties);
+            StringBuilder sb = new StringBuilder();
+            String tabTitle;
+            if (defaultLocale.equals(locale)) {
+                tabTitle = "messages.properties";
+            } else {
+                tabTitle = String.format("messages_%s.properties", locale.toString());
+            }
             for (String key : messagesKeys) {
                 sb.append(key).append(" = ").append(messages.getMessage(messagesPack, key, locale)).append("\n");
             }
+            sourceCodeEditor.setValue(sb.toString());
+            addTab(tabTitle, sourceCodeEditor);
         }
-
-        sourceCodeEditor.setValue(sb.toString());
-
-        return sourceCodeEditor;
     }
 
     private void addTab(String name, Component component) {
