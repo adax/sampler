@@ -12,6 +12,7 @@ create table SAMPLER_PERSON (
     NAME varchar(50) not null,
     LAST_NAME varchar(100) not null,
     AGE integer,
+    STUDENT boolean,
     --
     primary key (ID)
 )^

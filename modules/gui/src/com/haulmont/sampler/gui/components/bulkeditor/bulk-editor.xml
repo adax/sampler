@@ -19,6 +19,7 @@
                 <column id="name"/>
                 <column id="lastName"/>
                 <column id="age"/>
+                <column id="student"/>
             </columns>
             <rows datasource="personDs"/>
             <buttonsPanel>

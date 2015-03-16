@@ -21,6 +21,18 @@ public class Person extends StandardEntity {
 
     private static final long serialVersionUID = -3420505556417816206L;
 
+    @Column(name = "STUDENT")
+    protected Boolean student;
+
+    public void setStudent(Boolean student) {
+        this.student = student;
+    }
+
+    public Boolean getStudent() {
+        return student;
+    }
+
+
     public void setName(String name) {
         this.name = name;
     }

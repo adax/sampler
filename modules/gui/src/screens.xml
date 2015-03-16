@@ -18,4 +18,6 @@
             template="com/haulmont/sampler/gui/components/bulkeditor/bulk-editor.xml"/>
     <screen id="localized-button"
             template="com/haulmont/sampler/gui/components/button/localized-button.xml"/>
+    <screen id="simple-checkbox"
+            template="com/haulmont/sampler/gui/components/checkbox/simple-checkbox.xml"/>
 </screen-config>
