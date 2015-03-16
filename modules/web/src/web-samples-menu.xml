@@ -6,8 +6,6 @@
         <menu id="button">
             <item id="simple-button" docUrlSuffix="gui_Button"/>
             <item id="localized-button" docUrlSuffix="gui_Button"/>
-            <item id="icon-button" docUrlSuffix="gui_Button"/>
-            <item id="invocation-button" docUrlSuffix="gui_Button"/>
             <item id="action-button" docUrlSuffix="gui_Button"/>
             <item id="programmatic-action-button" docUrlSuffix="gui_Button"/>
             <item id="link-button" docUrlSuffix="gui_Link"/>

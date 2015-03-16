@@ -6,12 +6,8 @@
             template="/com/haulmont/sampler/gui/components/button/simple-button.xml"/>
     <screen id="link-button"
             template="com/haulmont/sampler/gui/components/button/link-button.xml"/>
-    <screen id="icon-button"
-            template="com/haulmont/sampler/gui/components/button/icon-button.xml"/>
     <screen id="action-button"
             template="com/haulmont/sampler/gui/components/button/action-button.xml"/>
-    <screen id="invocation-button"
-            template="com/haulmont/sampler/gui/components/button/invocation-button.xml"/>
     <screen id="programmatic-action-button"
             template="com/haulmont/sampler/gui/components/button/programmatic-action-button.xml"/>
     <screen id="bulk-editor"

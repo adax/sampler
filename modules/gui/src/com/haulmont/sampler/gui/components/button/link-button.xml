@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         class="com.haulmont.sampler.gui.components.button.LinkButton">
-    <dsContext/>
-    <layout>
-        <linkButton caption="Button"
+    <layout spacing="true">
+        <linkButton caption="Say Hello!"
+                    invoke="sayHello"
                     description="Click Me!"/>
+        <linkButton caption="Save"
+                    icon="icons/save.png"/>
+        <linkButton description="Save"
+                    icon="icons/save.png"/>
     </layout>
 </window>

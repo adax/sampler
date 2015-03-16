@@ -2,7 +2,6 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         class="com.haulmont.sampler.gui.components.button.LocalizedButton"
         messagesPack="com.haulmont.sampler.gui.components.button">
-    <dsContext/>
     <layout>
         <button caption="msg://caption.localizedButton"
                 description="msg://description.localizedButton"/>
