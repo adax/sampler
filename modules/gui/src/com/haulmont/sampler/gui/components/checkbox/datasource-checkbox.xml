@@ -10,8 +10,7 @@
         <checkBox caption="CheckBox with datasource"
                   datasource="customersDs"
                   property="active"/>
-        <hbox id="value"
-              spacing="true">
+        <hbox spacing="true">
             <label value="Value From Datasource"/>
             <label datasource="customersDs"
                    property="active"/>

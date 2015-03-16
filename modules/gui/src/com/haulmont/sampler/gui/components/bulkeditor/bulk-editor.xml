@@ -10,7 +10,7 @@
             </query>
         </collectionDatasource>
     </dsContext>
-    <layout spacing="true">
+    <layout>
         <table id="customersTable"
                height="200px"
                multiselect="true"
