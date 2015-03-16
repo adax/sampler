@@ -13,6 +13,10 @@
             <item id="link-button" docUrlSuffix="gui_Link"/>
         </menu>
         <item id="bulk-editor" docUrlSuffix="gui_BulkEditor"/>
+        <menu id="checkBox">
+            <item id="simple-checkbox" docUrlSuffix="gui_CheckBox"/>
+            <item id="datasource-checkbox" docUrlSuffix="gui_CheckBox"/>
+        </menu>
         <menu id="textField"/>
     </menu>
 

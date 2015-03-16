@@ -20,4 +20,6 @@
             template="com/haulmont/sampler/gui/components/button/localized-button.xml"/>
     <screen id="simple-checkbox"
             template="com/haulmont/sampler/gui/components/checkbox/simple-checkbox.xml"/>
+    <screen id="datasource-checkbox"
+            template="com/haulmont/sampler/gui/components/checkbox/datasource-checkbox.xml"/>
 </screen-config>
