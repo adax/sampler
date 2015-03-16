@@ -14,8 +14,6 @@ public class ProgrammaticActionButton extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-        super.init(params);
-
         button.setAction(new AbstractAction("programmaticallyCreatedAction") {
             @Override
             public void actionPerform(Component component) {

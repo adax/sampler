@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        caption="Button with invocation"
-        class="com.haulmont.sampler.gui.components.button.InvocationButton"
-        messagesPack="com.haulmont.sampler.gui.components.button">
+        class="com.haulmont.sampler.gui.components.button.InvocationButton">
     <dsContext/>
     <layout>
         <button caption="Say Hello!"

@@ -20,7 +20,10 @@ import javax.annotation.Nullable;
 import javax.inject.Inject;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author gorelov
@@ -72,7 +75,7 @@ public class SamplesHelper {
 
     private List<String> getOtherClassesPath(Element root) {
         List<String> classes = new ArrayList<>();
-        for (Element element : (List<Element>)root.elements()) {
+        for (Element element : (List<Element>) root.elements()) {
             String clazz = element.attributeValue("class");
             if (StringUtils.isNotEmpty(clazz)) {
                 classes.add(pathFromPackage(clazz));
@@ -84,8 +87,8 @@ public class SamplesHelper {
 
     private List<String> getMessagesKeys(Element root) {
         List<String> keys = new ArrayList<>();
-        for (Element element : (List<Element>)root.elements()) {
-            for (Attribute attribute : (List<Attribute>)element.attributes()) {
+        for (Element element : (List<Element>) root.elements()) {
+            for (Attribute attribute : (List<Attribute>) element.attributes()) {
                 String value = attribute.getValue();
                 if (value.startsWith("msg://"))
                     keys.add(value.substring(6));

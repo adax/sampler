@@ -5,7 +5,7 @@ import com.haulmont.cuba.gui.components.Component;
 
 public class InvocationButton extends AbstractFrame {
 
-    public void sayHello(Component source) {
+    public void sayHello() {
         showNotification("Hello, CUBA!", NotificationType.HUMANIZED);
     }
 }
