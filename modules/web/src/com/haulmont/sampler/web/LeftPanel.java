@@ -36,6 +36,7 @@ public class LeftPanel extends FoldersPane {
     @Override
     public void init(Component parent) {
         super.init(parent);
+        samplesMenuConfig.reset();
         createMenuPanel();
     }
 
@@ -103,5 +104,10 @@ public class LeftPanel extends FoldersPane {
 
         Map<String, Object> params = samplesHelper.getParams(item);
         App.getInstance().getWindowManager().openWindow(sampleWindow, WindowManager.OpenType.NEW_TAB, params);
+    }
+
+    @Override
+    protected Component createSearchFoldersPane() {
+        return null;
     }
 }
