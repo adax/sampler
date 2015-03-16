@@ -1,4 +1,3 @@
--- begin SAMPLER_CUSTOMER
 create table SAMPLER_CUSTOMER (
     ID varchar(36) not null,
     CREATE_TS timestamp,
@@ -15,5 +14,4 @@ create table SAMPLER_CUSTOMER (
     ACTIVE boolean,
     --
     primary key (ID)
-)^
--- end SAMPLER_CUSTOMER
+);

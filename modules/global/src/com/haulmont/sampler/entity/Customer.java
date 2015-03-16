@@ -7,9 +7,9 @@ import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.chile.core.annotations.NamePattern;
 
 @NamePattern("%s %s|name,lastName")
-@Table(name = "SAMPLER_PERSON")
-@Entity(name = "sampler$Person")
-public class Person extends StandardEntity {
+@Table(name = "SAMPLER_CUSTOMER")
+@Entity(name = "sampler$Customer")
+public class Customer extends StandardEntity {
     @Column(name = "NAME", length = 50, nullable = false)
     protected String name;
 
@@ -21,15 +21,16 @@ public class Person extends StandardEntity {
 
     private static final long serialVersionUID = -3420505556417816206L;
 
-    @Column(name = "STUDENT")
-    protected Boolean student;
 
-    public void setStudent(Boolean student) {
-        this.student = student;
+    @Column(name = "ACTIVE")
+    protected Boolean active;
+
+    public void setActive(Boolean active) {
+        this.active = active;
     }
 
-    public Boolean getStudent() {
-        return student;
+    public Boolean getActive() {
+        return active;
     }
 
 
