@@ -18,4 +18,14 @@
             template="com/haulmont/sampler/gui/components/checkbox/simple-checkbox.xml"/>
     <screen id="datasource-checkbox"
             template="com/haulmont/sampler/gui/components/checkbox/datasource-checkbox.xml"/>
+    <screen id="simple-textfield"
+            template="com/haulmont/sampler/gui/components/textfield/simple-textfield.xml"/>
+    <screen id="datasource-textfield"
+            template="com/haulmont/sampler/gui/components/textfield/datasource-textfield.xml"/>
+    <screen id="datatype-textfield"
+            template="com/haulmont/sampler/gui/components/textfield/datatype-textfield.xml"/>
+    <screen id="validator-textfield"
+            template="com/haulmont/sampler/gui/components/textfield/validator-textfield.xml"/>
+    <screen id="trim-textfield"
+            template="com/haulmont/sampler/gui/components/textfield/trim-textfield.xml"/>
 </screen-config>

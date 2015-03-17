@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.textfield.DatatypeTextfield">
+    <layout>
+        <hbox spacing="true">
+            <textField caption="String"
+                       datatype="string"/>
+            <textField caption="Integer"
+                       datatype="int"/>
+            <textField caption="Double"
+                       datatype="double"/>
+        </hbox>
+    </layout>
+</window>

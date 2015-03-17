@@ -15,7 +15,13 @@
             <item id="simple-checkbox" docUrlSuffix="gui_CheckBox"/>
             <item id="datasource-checkbox" docUrlSuffix="gui_CheckBox"/>
         </menu>
-        <menu id="textField"/>
+        <menu id="textField">
+            <item id="simple-textfield" docUrlSuffix="gui_TextField"/>
+            <item id="datasource-textfield" docUrlSuffix="gui_TextField"/>
+            <item id="datatype-textfield" docUrlSuffix="gui_TextField"/>
+            <item id="validator-textfield" docUrlSuffix="gui_TextField"/>
+            <item id="trim-textfield" docUrlSuffix="gui_TextField"/>
+        </menu>
     </menu>
 
 </sample-menu-config>

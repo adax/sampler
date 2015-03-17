@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.textfield.ValidatorTextfield">
+    <dsContext/>
+    <layout>
+        <hbox spacing="true">
+        <textField id="integerField"
+                   datatype="int">
+            <validator class="com.haulmont.sampler.gui.components.textfield.PositiveIntegerValidator"/>
+        </textField>
+            <button caption="Validate"
+                    invoke="validate"/>
+        </hbox>
+    </layout>
+</window>
