@@ -6,10 +6,12 @@ import com.haulmont.cuba.gui.config.WindowConfig;
 import com.haulmont.cuba.gui.config.WindowInfo;
 import com.haulmont.cuba.web.AppWindow;
 import com.haulmont.cuba.web.app.folders.FoldersPane;
+import com.haulmont.cuba.web.toolkit.ui.CubaTree;
 import com.haulmont.sampler.gui.SamplesHelper;
 import com.haulmont.sampler.gui.config.MenuItem;
 import com.haulmont.sampler.gui.config.SamplesMenuConfig;
-import com.vaadin.data.Property;
+import com.vaadin.event.ItemClickEvent;
+import com.vaadin.shared.MouseEventDetails;
 import com.vaadin.ui.*;
 
 import java.util.List;
@@ -41,47 +43,31 @@ public class LeftPanel extends FoldersPane {
     }
 
     private void createMenuPanel() {
-        Label label = new Label(messages.getMessage(getClass(), "LeftPanel.caption"));
-        label.setStyleName("cuba-folders-pane-caption");
         menuLayout = new VerticalLayout();
         menuLayout.setMargin(true);
-        menuLayout.setSpacing(true);
+        menuLayout.setHeight("100%");
+        menuLayout.setWidth("100%");
+
+        Label label = new Label(messages.getMessage(getClass(), "LeftPanel.caption"));
+        label.setStyleName("cuba-folders-pane-caption");
         menuLayout.addComponent(label);
-        addComponent(menuLayout, 0);
+
+        addComponent(menuLayout);
 
         createMenuTree();
     }
 
     private void createMenuTree() {
-        tree = new Tree();
+        tree = new CubaTree();
+        tree.setHeight("100%");
+        tree.setWidth("100%");
+        tree.setSelectable(false);
+        tree.addItemClickListener(new MenuItemClickListener());
 
         fillTree(samplesMenuConfig.getRootItems(), null, true);
 
-        tree.addValueChangeListener(new Property.ValueChangeListener() {
-            @Override
-            public void valueChange(Property.ValueChangeEvent event) {
-                Object value = tree.getValue();
-                if (value != null && value instanceof MenuItem) {
-                    MenuItem item = (MenuItem) value;
-                    if (item.isMenu()) {
-                        switchExpandCollapseState(item);
-                    } else {
-                        openWindow(item);
-                    }
-                    tree.unselect(item);
-                }
-            }
-        });
-
         menuLayout.addComponent(tree);
-    }
-
-    private void switchExpandCollapseState(MenuItem item) {
-        if (tree.isExpanded(item)) {
-            tree.collapseItem(item);
-        } else {
-            tree.expandItem(item);
-        }
+        menuLayout.setExpandRatio(tree, 1);
     }
 
     private void fillTree(List<MenuItem> items, MenuItem parent, boolean expand) {
@@ -97,17 +83,41 @@ public class LeftPanel extends FoldersPane {
         }
     }
 
-    private void openWindow(MenuItem item) {
-        if (sampleWindow == null) {
-            sampleWindow = windowConfig.getWindowInfo("component-sample-browser");
-        }
-
-        Map<String, Object> params = samplesHelper.getParams(item);
-        App.getInstance().getWindowManager().openWindow(sampleWindow, WindowManager.OpenType.NEW_TAB, params);
-    }
-
     @Override
     protected Component createSearchFoldersPane() {
         return null;
+    }
+
+    private class MenuItemClickListener implements ItemClickEvent.ItemClickListener {
+
+        @Override
+        public void itemClick(ItemClickEvent event) {
+            MenuItem item = (MenuItem) event.getItemId();
+            if (item.isMenu()) {
+                Component tree = event.getComponent();
+                if (tree instanceof Tree)
+                    switchExpandState((Tree) tree, item);
+            } else {
+                if (event.getButton() == MouseEventDetails.MouseButton.LEFT)
+                    openWindow(item);
+            }
+        }
+
+        private void openWindow(MenuItem item) {
+            if (sampleWindow == null) {
+                sampleWindow = windowConfig.getWindowInfo("component-sample-browser");
+            }
+
+            Map<String, Object> params = samplesHelper.getParams(item);
+            App.getInstance().getWindowManager().openWindow(sampleWindow, WindowManager.OpenType.NEW_TAB, params);
+        }
+
+        private void switchExpandState(Tree tree, MenuItem item) {
+            if (tree.isExpanded(item)) {
+                tree.collapseItem(item);
+            } else {
+                tree.expandItem(item);
+            }
+        }
     }
 }
