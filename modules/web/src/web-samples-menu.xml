@@ -22,6 +22,10 @@
             <item id="validator-textfield" docUrlSuffix="gui_TextField"/>
             <item id="trim-textfield" docUrlSuffix="gui_TextField"/>
         </menu>
+        <menu id="embedded">
+            <item id="image-embedded" docUrlSuffix="gui_Embedded"/>
+            <item id="web-embedded" docUrlSuffix="gui_Embedded"/>
+        </menu>
     </menu>
 
 </sample-menu-config>

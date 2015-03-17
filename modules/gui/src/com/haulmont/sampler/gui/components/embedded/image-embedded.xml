@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.embedded.ImageEmbedded">
+    <layout>
+        <hbox spacing="true">
+            <groupBox id="groupBoxImage"
+                      caption="Embedded image"
+                      expand="embeddedImage"
+                      height="250px"
+                      spacing="true"
+                      width="300px">
+                <embedded id="embeddedImage"
+                          align="MIDDLE_CENTER"
+                          width="100%"/>
+                <hbox align="BOTTOM_CENTER"
+                      spacing="true">
+                    <upload id="uploadField"/>
+                    <button id="downloadImageBtn"
+                            caption="Download"
+                            invoke="onDownloadImageBtnClick"/>
+                    <button id="clearImageBtn"
+                            caption="Clear"
+                            invoke="onClearImageBtnClick"/>
+                </hbox>
+            </groupBox>
+            <groupBox caption="Embedded image file"
+                      height="250px"
+                      width="250px">
+                <embedded id="embeddedImageFile"
+                          align="MIDDLE_CENTER"/>
+            </groupBox>
+        </hbox>
+    </layout>
+</window>
