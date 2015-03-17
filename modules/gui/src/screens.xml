@@ -32,4 +32,12 @@
             template="com/haulmont/sampler/gui/components/embedded/image-embedded.xml"/>
     <screen id="web-embedded"
             template="com/haulmont/sampler/gui/components/embedded/web-embedded.xml"/>
+    <screen id="simple-datefield"
+            template="com/haulmont/sampler/gui/components/datefield/simple-datefield.xml"/>
+    <screen id="datasource-datefield"
+            template="com/haulmont/sampler/gui/components/datefield/datasource-datefield.xml"/>
+    <screen id="format-datefield"
+            template="com/haulmont/sampler/gui/components/datefield/format-datefield.xml"/>
+    <screen id="resolution-datefield"
+            template="com/haulmont/sampler/gui/components/datefield/resolution-datefield.xml"/>
 </screen-config>

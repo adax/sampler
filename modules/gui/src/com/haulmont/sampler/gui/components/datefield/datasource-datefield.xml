@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.datefield.DatasourceDatefield">
+    <dsContext>
+        <datasource id="ordersDs"
+                    class="com.haulmont.sampler.entity.Order"
+                    view="_minimal"/>
+    </dsContext>
+    <layout spacing="true">
+        <dateField datasource="ordersDs"
+                   property="date"/>
+        <hbox spacing="true">
+            <label value="Value From Datasource:"/>
+            <label datasource="ordersDs"
+                   property="date"/>
+        </hbox>
+    </layout>
+</window>

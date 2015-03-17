@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.datefield.ResolutionDatefield"
+        messagesPack="com.haulmont.sampler.gui.components.datefield">
+    <dsContext/>
+    <layout spacing="true">
+        <hbox spacing="true">
+            <dateField resolution="YEAR" caption="resolution=YEAR"/>
+            <dateField resolution="MONTH" caption="resolution=MONTH"/>
+            <dateField resolution="DAY" caption="resolution=DAY"/>
+        </hbox>
+        <hbox spacing="true">
+            <dateField resolution="HOUR" caption="resolution=HOUR"/>
+            <dateField resolution="MIN" caption="resolution=MIN"/>
+            <dateField resolution="SEC" caption="resolution=SEC"/>
+        </hbox>
+    </layout>
+</window>

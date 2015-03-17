@@ -22,6 +22,12 @@
             <item id="validator-textfield" docUrlSuffix="gui_TextField"/>
             <item id="trim-textfield" docUrlSuffix="gui_TextField"/>
         </menu>
+        <menu id="dateField">
+            <item id="simple-datefield" docUrlSuffix="gui_DateField"/>
+            <item id="datasource-datefield" docUrlSuffix="gui_DateField"/>
+            <item id="format-datefield" docUrlSuffix="gui_DateField"/>
+            <item id="resolution-datefield" docUrlSuffix="gui_DateField"/>
+        </menu>
         <menu id="embedded">
             <item id="image-embedded" docUrlSuffix="gui_Embedded"/>
             <item id="web-embedded" docUrlSuffix="gui_Embedded"/>
