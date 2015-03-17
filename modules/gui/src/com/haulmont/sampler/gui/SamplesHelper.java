@@ -20,10 +20,7 @@ import javax.annotation.Nullable;
 import javax.inject.Inject;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author gorelov
@@ -53,7 +50,7 @@ public class SamplesHelper {
         if (root != null) {
             params.put("controllerSrc", getScreenClassPath(root));
             params.put("otherClassesSrc", getOtherClassesPath(root));
-            List<String> keys = getMessagesKeys(root);
+            Collection<String> keys = getMessagesKeys(root);
             if (CollectionUtils.isNotEmpty(keys)) {
                 params.put("messagesPack", getMessagePack(root));
                 params.put("messagesKeys", keys);
@@ -85,8 +82,8 @@ public class SamplesHelper {
         return classes;
     }
 
-    private List<String> getMessagesKeys(Element root) {
-        List<String> keys = new ArrayList<>();
+    private Collection<String> getMessagesKeys(Element root) {
+        Set<String> keys = new HashSet<>();
         for (Element element : (List<Element>) root.elements()) {
             for (Attribute attribute : (List<Attribute>) element.attributes()) {
                 String value = attribute.getValue();

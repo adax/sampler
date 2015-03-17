@@ -11,6 +11,7 @@ import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 
 import javax.inject.Inject;
+import java.util.Collection;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -72,7 +73,7 @@ public class ComponentSampleBrowser extends AbstractWindow {
 
         String messagesPack = (String) params.get("messagesPack");
         if (StringUtils.isNotEmpty(messagesPack)) {
-            List<String> messagesKeys = (List<String>) params.get("messagesKeys");
+            Collection<String> messagesKeys = (Collection<String>) params.get("messagesKeys");
             createMessagesContainer(messagesPack, messagesKeys);
         }
     }
@@ -103,7 +104,7 @@ public class ComponentSampleBrowser extends AbstractWindow {
         return editor;
     }
 
-    private void createMessagesContainer(String messagesPack, List<String> messagesKeys) {
+    private void createMessagesContainer(String messagesPack, Collection<String> messagesKeys) {
         Locale defaultLocale = messageTools.getDefaultLocale();
         for (Locale locale : globalConfig.getAvailableLocales().values()) {
             SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(SourceCodeEditor.Mode.Properties);
