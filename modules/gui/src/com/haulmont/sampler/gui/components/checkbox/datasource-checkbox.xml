@@ -11,7 +11,7 @@
                   datasource="customersDs"
                   property="active"/>
         <hbox spacing="true">
-            <label value="Value From Datasource"/>
+            <label value="Value From Datasource:"/>
             <label datasource="customersDs"
                    property="active"/>
         </hbox>
