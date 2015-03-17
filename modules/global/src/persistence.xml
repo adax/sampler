@@ -4,5 +4,6 @@
     <persistence-unit name="sampler"
                       transaction-type="RESOURCE_LOCAL">
         <class>com.haulmont.sampler.entity.Customer</class>
+        <class>com.haulmont.sampler.entity.Order</class>
     </persistence-unit>
 </persistence>
