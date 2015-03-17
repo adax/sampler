@@ -14,7 +14,7 @@ public class DatasourceCheckbox extends AbstractFrame {
     @Override
     public void init(Map<String, Object> params) {
         Customer customer = new Customer();
-        customersDs.setItem(customer);
         customer.setActive(true);
+        customersDs.setItem(customer);
     }
 }
