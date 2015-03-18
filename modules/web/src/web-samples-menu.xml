@@ -32,6 +32,9 @@
             <item id="image-embedded" docUrlSuffix="gui_Embedded"/>
             <item id="web-embedded" docUrlSuffix="gui_Embedded"/>
         </menu>
+        <menu id="fieldGroup">
+            <item id="simple-fieldgroup" docUrlSuffix="gui_FieldGroup"/>
+        </menu>
     </menu>
 
 </sample-menu-config>

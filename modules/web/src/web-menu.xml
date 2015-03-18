@@ -2,5 +2,7 @@
 <menu-config xmlns="http://schemas.haulmont.com/cuba/5.4/menu.xsd">
     <menu id="application"
           insertBefore="administration">
+        <item id="sampler$Customer.lookup"/>
+        <item id="sampler$Order.lookup"/>
     </menu>
 </menu-config>

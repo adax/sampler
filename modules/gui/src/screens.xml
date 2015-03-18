@@ -40,4 +40,14 @@
             template="com/haulmont/sampler/gui/components/datefield/format-datefield.xml"/>
     <screen id="resolution-datefield"
             template="com/haulmont/sampler/gui/components/datefield/resolution-datefield.xml"/>
+    <screen id="simple-fieldgroup"
+            template="com/haulmont/sampler/gui/components/fieldgroup/simple-fieldgroup.xml"/>
+    <screen id="sampler$Customer.lookup"
+            template="com/haulmont/sampler/gui/entities/customer/customer-browse.xml"/>
+    <screen id="sampler$Customer.edit"
+            template="com/haulmont/sampler/gui/entities/customer/customer-edit.xml"/>
+    <screen id="sampler$Order.lookup"
+            template="com/haulmont/sampler/gui/entities/order/order-browse.xml"/>
+    <screen id="sampler$Order.edit"
+            template="com/haulmont/sampler/gui/entities/order/order-edit.xml"/>
 </screen-config>
