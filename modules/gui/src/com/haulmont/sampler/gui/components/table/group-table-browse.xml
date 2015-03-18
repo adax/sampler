@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        class="com.haulmont.sampler.gui.components.table.GroupTableBrowse"
-        messagesPack="com.haulmont.sampler.gui.components.table">
+        class="com.haulmont.sampler.gui.components.table.GroupTableBrowse">
     <dsContext>
         <groupDatasource id="customersDs"
                          class="com.haulmont.sampler.entity.Customer"
@@ -12,8 +11,7 @@
         </groupDatasource>
     </dsContext>
     <layout>
-        <groupTable aggregatable="true"
-                    height="200px"
+        <groupTable height="200px"
                     width="400px">
             <columns>
                 <group>
