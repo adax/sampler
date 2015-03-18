@@ -54,4 +54,6 @@
             template="com/haulmont/sampler/gui/components/fieldgroup/simple-fieldgroup.xml"/>
     <screen id="group-table-browse"
             template="com/haulmont/sampler/gui/components/table/group-table-browse.xml"/>
+    <screen id="simple-table"
+            template="com/haulmont/sampler/gui/components/table/simple-table.xml"/>
 </screen-config>
