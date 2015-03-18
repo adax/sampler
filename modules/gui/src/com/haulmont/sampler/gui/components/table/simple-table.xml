@@ -1,0 +1,35 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.table.SimpleTable">
+    <dsContext>
+        <collectionDatasource id="ordersDs"
+                              class="com.haulmont.sampler.entity.Order"
+                              view="order-with-customer">
+            <query>
+                <![CDATA[select e from sampler$Order e order by e.date]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout spacing="true">
+        <button icon="images/collapse.png" />
+        <hbox spacing="true">
+            <checkBox id="multiselect"
+                      caption="multiselect"/>
+            <checkBox id="sortable"
+                      caption="sortable"/>
+            <checkBox id="columnControlVisible"
+                      caption="columnControlVisible"/>
+            <checkBox id="reorderingAllowed"
+                      caption="reorderingAllowed"/>
+        </hbox>
+        <table id="ordersTable"
+               height="200px"
+               width="400px">
+            <columns>
+                <column id="date"/>
+                <column id="customer"/>
+                <column id="amount"/>
+            </columns>
+            <rows datasource="ordersDs"/>
+        </table>
+    </layout>
+</window>
