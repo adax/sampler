@@ -35,6 +35,9 @@
         <menu id="fieldGroup">
             <item id="simple-fieldgroup" docUrlSuffix="gui_FieldGroup"/>
         </menu>
+        <menu id="table">
+            <item id="group-table-browse" docUrlSuffix="gui_GroupTable"/>
+        </menu>
     </menu>
 
 </sample-menu-config>

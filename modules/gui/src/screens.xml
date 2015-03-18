@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <screen-config xmlns="http://schemas.haulmont.com/cuba/5.4/screens.xsd">
+    <!-- Entities -->
+    <screen id="sampler$Customer.lookup"
+            template="com/haulmont/sampler/gui/entities/customer/customer-browse.xml"/>
+    <screen id="sampler$Customer.edit"
+            template="com/haulmont/sampler/gui/entities/customer/customer-edit.xml"/>
+    <screen id="sampler$Order.lookup"
+            template="com/haulmont/sampler/gui/entities/order/order-browse.xml"/>
+    <screen id="sampler$Order.edit"
+            template="com/haulmont/sampler/gui/entities/order/order-edit.xml"/>
+    <!-- Components -->
     <screen id="component-sample-browser"
             template="com/haulmont/sampler/gui/components/component-sample-browser.xml"/>
     <screen id="simple-button"
@@ -42,12 +52,6 @@
             template="com/haulmont/sampler/gui/components/datefield/resolution-datefield.xml"/>
     <screen id="simple-fieldgroup"
             template="com/haulmont/sampler/gui/components/fieldgroup/simple-fieldgroup.xml"/>
-    <screen id="sampler$Customer.lookup"
-            template="com/haulmont/sampler/gui/entities/customer/customer-browse.xml"/>
-    <screen id="sampler$Customer.edit"
-            template="com/haulmont/sampler/gui/entities/customer/customer-edit.xml"/>
-    <screen id="sampler$Order.lookup"
-            template="com/haulmont/sampler/gui/entities/order/order-browse.xml"/>
-    <screen id="sampler$Order.edit"
-            template="com/haulmont/sampler/gui/entities/order/order-edit.xml"/>
+    <screen id="group-table-browse"
+            template="com/haulmont/sampler/gui/components/table/group-table-browse.xml"/>
 </screen-config>
