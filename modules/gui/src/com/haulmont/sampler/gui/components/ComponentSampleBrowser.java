@@ -51,10 +51,10 @@ public class ComponentSampleBrowser extends AbstractWindow {
         setCaption(caption);
 
         if (StringUtils.isNotEmpty(samplesMenuConfig.getDocTemplate())) {
-            String url = (String) params.get("docUrlSuffix");
-            if (StringUtils.isNotEmpty(url)) {
-                addTab("Documentation",
-                        createDescription(caption, String.format(samplesMenuConfig.getDocTemplate(), url)));
+            String docUrlSuffix = (String) params.get("docUrlSuffix");
+            if (StringUtils.isNotEmpty(docUrlSuffix)) {
+                addTab(messages.getMessage(getClass(), "sampleBrowser.description"),
+                        createDescription(caption, docUrlSuffix));
             }
         }
 
@@ -86,10 +86,28 @@ public class ComponentSampleBrowser extends AbstractWindow {
         return vBox;
     }
 
-    private Component createDescription(String text, String url) {
+    private Component createDescription(String text, String docUrlSuffix) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(text);
+        sb.append("<br/><br/>");
+        sb.append(messages.getMessage(getClass(), "sampleBrowser.documentation"));
+        sb.append(": ");
+
+        Locale defaultLocale = messageTools.getDefaultLocale();
+        Map<String, Locale> availableLocales = globalConfig.getAvailableLocales();
+        for (String localeName : availableLocales.keySet()) {
+            Locale locale = availableLocales.get(localeName);
+            if (!defaultLocale.equals(locale)) {
+                sb.append(" | ");
+            }
+
+            String url = String.format(samplesMenuConfig.getDocTemplate(locale), docUrlSuffix);
+            sb.append(String.format("<a href=\"%s\" target=\"_blank\">%s</a>", url, localeName));
+        }
+
         Label doc = componentsFactory.createComponent(Label.NAME);
         doc.setHtmlEnabled(true);
-        doc.setValue(String.format("%s<br/><br/><a href=\"%s\" target=\"_blank\">%s</a>", text, url, url));
+        doc.setValue(sb.toString());
 
         return doc;
     }

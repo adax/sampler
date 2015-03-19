@@ -15,13 +15,11 @@ import org.dom4j.Element;
 import org.springframework.core.io.Resource;
 
 import javax.annotation.ManagedBean;
+import javax.annotation.Nullable;
 import javax.inject.Inject;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.MissingResourceException;
+import java.util.*;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -47,7 +45,6 @@ public class SamplesMenuConfig {
 
     private volatile boolean initialized;
     private ReadWriteLock lock = new ReentrantReadWriteLock();
-    private String docTemplate;
 
     public String getMenuItemCaption(String id) {
         try {
@@ -58,13 +55,17 @@ public class SamplesMenuConfig {
     }
 
     public String getDocTemplate() {
-        if (docTemplate == null) {
-            String url = messages.getMainMessage("sample-config.docUrl");
-            if (StringUtils.isNotBlank(url)) {
-                docTemplate = url + "%s.html";
-            }
-        }
-        return docTemplate;
+        return getDocTemplate(null);
+    }
+
+    public String getDocTemplate(@Nullable Locale locale) {
+        String url;
+        if (locale == null)
+            url = messages.getMainMessage("sample-config.docUrl");
+        else
+            url = messages.getMainMessage("sample-config.docUrl", locale);
+
+        return url + "%s.html";
     }
 
     private void checkInitialized() {
