@@ -11,9 +11,12 @@ import com.haulmont.sampler.gui.SamplesHelper;
 import com.haulmont.sampler.gui.config.MenuItem;
 import com.haulmont.sampler.gui.config.SamplesMenuConfig;
 import com.vaadin.event.ItemClickEvent;
+import com.vaadin.server.ThemeResource;
 import com.vaadin.shared.MouseEventDetails;
 import com.vaadin.ui.*;
+import com.vaadin.ui.themes.Reindeer;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -48,9 +51,40 @@ public class LeftPanel extends FoldersPane {
         menuLayout.setHeight("100%");
         menuLayout.setWidth("100%");
 
+        HorizontalLayout header = new HorizontalLayout();
+        header.setSpacing(true);
+        header.setWidth("100%");
+
         Label label = new Label(messages.getMessage(getClass(), "LeftPanel.caption"));
         label.setStyleName("cuba-folders-pane-caption");
-        menuLayout.addComponent(label);
+        header.addComponent(label);
+        header.setExpandRatio(label, 1);
+
+        Button collapseAll = new Button(new ThemeResource("images/collapse.png"));
+        collapseAll.addStyleName(Reindeer.BUTTON_LINK);
+        collapseAll.addClickListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                for (MenuItem item : (Collection<MenuItem>) tree.rootItemIds())
+                    tree.collapseItemsRecursively(item);
+            }
+        });
+        header.addComponent(collapseAll);
+        header.setComponentAlignment(collapseAll, Alignment.MIDDLE_RIGHT);
+
+        Button expandAll = new Button(new ThemeResource("images/expand.png"));
+        expandAll.addStyleName(Reindeer.BUTTON_LINK);
+        expandAll.addClickListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                for (MenuItem item : (Collection<MenuItem>) tree.rootItemIds())
+                    tree.expandItemsRecursively(item);
+            }
+        });
+        header.addComponent(expandAll);
+        header.setComponentAlignment(expandAll, Alignment.MIDDLE_RIGHT);
+
+        menuLayout.addComponent(header);
 
         addComponent(menuLayout);
 
