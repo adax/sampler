@@ -8,7 +8,7 @@ import com.haulmont.cuba.gui.components.Component;
 import javax.inject.Inject;
 import java.util.Map;
 
-public class ProgrammaticActionButton extends AbstractFrame {
+public class ProgrammaticActionButtonFrame extends AbstractFrame {
     @Inject
     private Button button;
 

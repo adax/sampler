@@ -18,7 +18,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.Map;
 
-public class ImageEmbedded extends AbstractFrame {
+public class ImageEmbeddedFrame extends AbstractFrame {
 
     @Inject
     private GroupBoxLayout groupBoxImage;

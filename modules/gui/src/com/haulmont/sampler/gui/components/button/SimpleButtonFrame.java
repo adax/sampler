@@ -3,7 +3,7 @@ package com.haulmont.sampler.gui.components.button;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.Component;
 
-public class SimpleButton extends AbstractFrame {
+public class SimpleButtonFrame extends AbstractFrame {
 
     public void sayHello() {
         showNotification("Hello, world!", NotificationType.HUMANIZED);

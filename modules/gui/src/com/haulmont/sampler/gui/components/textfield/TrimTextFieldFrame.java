@@ -6,7 +6,7 @@ import com.haulmont.cuba.gui.data.ValueListener;
 import javax.inject.Inject;
 import java.util.Map;
 
-public class TrimTextfield extends AbstractFrame {
+public class TrimTextFieldFrame extends AbstractFrame {
     @Inject
     private CheckBox trim;
     @Inject

@@ -8,7 +8,7 @@ import com.haulmont.cuba.gui.data.ValueListener;
 import javax.inject.Inject;
 import java.util.Map;
 
-public class SimpleTable extends AbstractFrame {
+public class SimpleTableFrame extends AbstractFrame {
     @Inject
     private CheckBox multiselect;
     @Inject

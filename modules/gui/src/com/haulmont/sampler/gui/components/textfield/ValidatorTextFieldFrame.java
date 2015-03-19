@@ -6,7 +6,7 @@ import com.haulmont.cuba.gui.components.ValidationException;
 
 import javax.inject.Inject;
 
-public class ValidatorTextfield extends AbstractFrame {
+public class ValidatorTextFieldFrame extends AbstractFrame {
     @Inject
     private TextField integerField;
 

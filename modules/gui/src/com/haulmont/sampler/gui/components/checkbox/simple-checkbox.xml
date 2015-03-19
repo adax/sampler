@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        class="com.haulmont.sampler.gui.components.checkbox.SimpleCheckbox">
+        class="com.haulmont.sampler.gui.components.checkbox.SimpleCheckboxFrame">
     <layout>
         <checkBox id="checkBox"
                   caption="Access Field"/>

@@ -2,5 +2,5 @@ package com.haulmont.sampler.gui.components.datefield;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 
-public class ResolutionDatefield extends AbstractFrame {
+public class SimpleDateFieldFrame extends AbstractFrame {
 }

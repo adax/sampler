@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
-public class WebEmbedded extends AbstractFrame {
+public class WebEmbeddedFrame extends AbstractFrame {
     @Inject
     private Embedded embedded;
 

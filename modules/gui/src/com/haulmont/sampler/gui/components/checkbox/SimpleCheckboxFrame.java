@@ -7,7 +7,7 @@ import com.haulmont.cuba.gui.data.ValueListener;
 import javax.inject.Inject;
 import java.util.Map;
 
-public class SimpleCheckbox extends AbstractFrame {
+public class SimpleCheckboxFrame extends AbstractFrame {
     @Inject
     private CheckBox checkBox;
 
