@@ -74,7 +74,7 @@ public class ImageEmbeddedFrame extends AbstractFrame {
         updateImageButtons(false);
 
         if (AppConfig.getClientType() == ClientType.WEB) {
-            embeddedImageFile.setSource("app-icon-menu.png");
+            embeddedImageFile.setSource("cuba-logo.png");
         }
     }
 
