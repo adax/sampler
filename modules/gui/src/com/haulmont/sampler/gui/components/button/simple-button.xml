@@ -1,15 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         class="com.haulmont.sampler.gui.components.button.SimpleButton">
+    <dsContext/>
     <layout>
         <hbox spacing="true">
             <button caption="Say Hello!"
-                    invoke="sayHello"
-                    description="Click Me!"/>
-            <button caption="Save"
-                    icon="icons/save.png"/>
-            <button description="Save"
-                    icon="icons/save.png"/>
+                    description="Click Me!"
+                    invoke="sayHello"/>
+            <button id="saveButton1"
+                    caption="Save"
+                    icon="icons/save.png"
+                    invoke="save"/>
+            <button id="saveButton2"
+                    description="Save"
+                    icon="icons/save.png"
+                    invoke="save"/>
         </hbox>
     </layout>
 </window>
