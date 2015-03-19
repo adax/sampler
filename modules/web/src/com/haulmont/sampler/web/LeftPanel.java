@@ -42,6 +42,7 @@ public class LeftPanel extends FoldersPane {
     public void init(Component parent) {
         super.init(parent);
         samplesMenuConfig.reset();
+        sampleWindow = windowConfig.getWindowInfo("component-sample-browser");
         createMenuPanel();
     }
 
@@ -138,10 +139,6 @@ public class LeftPanel extends FoldersPane {
         }
 
         private void openWindow(MenuItem item) {
-            if (sampleWindow == null) {
-                sampleWindow = windowConfig.getWindowInfo("component-sample-browser");
-            }
-
             Map<String, Object> params = samplesHelper.getParams(item);
             App.getInstance().getWindowManager().openWindow(sampleWindow, WindowManager.OpenType.NEW_TAB, params);
         }
