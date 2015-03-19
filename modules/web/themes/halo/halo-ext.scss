@@ -3,4 +3,8 @@
 /* Define your theme modifications inside next mixin */
 @mixin halo-ext {
   @include halo;
+
+  .ace_content {
+    font-size: 14px;
+  }
 }
