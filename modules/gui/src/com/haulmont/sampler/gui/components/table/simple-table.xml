@@ -10,7 +10,6 @@
         </collectionDatasource>
     </dsContext>
     <layout spacing="true">
-        <button icon="images/collapse.png" />
         <hbox spacing="true">
             <checkBox id="multiselect"
                       caption="multiselect"/>
