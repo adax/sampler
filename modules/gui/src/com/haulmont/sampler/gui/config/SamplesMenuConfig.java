@@ -4,6 +4,8 @@ import com.haulmont.bali.util.Dom4j;
 import com.haulmont.cuba.core.global.Messages;
 import com.haulmont.cuba.core.global.Resources;
 import com.haulmont.cuba.core.sys.AppContext;
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections.Predicate;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.text.StrTokenizer;
@@ -167,6 +169,21 @@ public class SamplesMenuConfig {
         if (menuItem != null) {
             menuItem.setCaption(getMenuItemCaption(menuItem.getId()));
             items.add(menuItem);
+        }
+    }
+
+    public MenuItem findItemById(String id) {
+        return (MenuItem) CollectionUtils.find(getRootItems(), new MenuItemPredicate(id));
+    }
+
+    private class MenuItemPredicate implements Predicate {
+        private String id;
+        public MenuItemPredicate(String id) {
+            this.id = id;
+        }
+        @Override
+        public boolean evaluate(Object object) {
+            return id.equals(((MenuItem) object).getId());
         }
     }
 }

@@ -13,8 +13,6 @@ import java.util.List;
  * @version $Id$
  */
 public class MenuItem {
-//    private ScreensHelper screensHelper = AppBeans.get(ScreensHelper.NAME);
-
     private MenuItem parent;
     private List<MenuItem> children = new ArrayList<>();
 
