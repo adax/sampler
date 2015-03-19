@@ -91,7 +91,16 @@ configure(coreModule) {
 
     }
 
-    task deploy(dependsOn: assemble, type: CubaDeployment) {
+    task cleanConf(description: 'Cleans up conf directory') << {
+        def dir = new File(tomcatDir, '/conf/app-core')
+        if (dir.isDirectory()) {
+            ant.delete(includeemptydirs: true) {
+                fileset(dir: dir, includes: '**/*', excludes: 'local.app.properties')
+            }
+        }
+    }
+
+    task deploy(dependsOn: [assemble, cleanConf], type: CubaDeployment) {
         appName = 'app-core'
         appJars('cuba-global', 'cuba-core', 
                 'app-global', 'app-core')
