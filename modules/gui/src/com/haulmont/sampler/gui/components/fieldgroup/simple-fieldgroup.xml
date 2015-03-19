@@ -3,7 +3,8 @@
     <dsContext>
         <datasource id="orderDs"
                     class="com.haulmont.sampler.entity.Order"
-                    view="order-with-customer"/>
+                    view="order-with-customer"
+                    allowCommit="false"/>
     </dsContext>
     <layout>
         <fieldGroup datasource="orderDs">

@@ -3,7 +3,8 @@
     <dsContext>
         <datasource id="ordersDs"
                     class="com.haulmont.sampler.entity.Order"
-                    view="_minimal"/>
+                    view="_minimal"
+                    allowCommit="false"/>
     </dsContext>
     <layout spacing="true">
         <dateField datasource="ordersDs"

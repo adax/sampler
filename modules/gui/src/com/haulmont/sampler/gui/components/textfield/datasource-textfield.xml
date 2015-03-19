@@ -3,7 +3,8 @@
     <dsContext>
         <datasource id="customersDs"
                     class="com.haulmont.sampler.entity.Customer"
-                    view="_local"/>
+                    view="_local"
+                    allowCommit="false"/>
     </dsContext>
     <layout spacing="true">
         <textField caption="Name"
