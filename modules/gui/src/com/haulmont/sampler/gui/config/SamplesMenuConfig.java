@@ -173,7 +173,21 @@ public class SamplesMenuConfig {
     }
 
     public MenuItem findItemById(String id) {
-        return (MenuItem) CollectionUtils.find(getRootItems(), new MenuItemPredicate(id));
+        return (MenuItem) CollectionUtils.find(getItemsAsList(), new MenuItemPredicate(id));
+    }
+
+    private List<MenuItem> getItemsAsList() {
+        return getItemsAsList(getRootItems());
+    }
+
+    private List<MenuItem> getItemsAsList(List<MenuItem> allItems) {
+        List<MenuItem> items = new ArrayList<>();
+        for (MenuItem item : allItems) {
+            items.add(item);
+            if (item.isMenu())
+                items.addAll(getItemsAsList(item.getChildren()));
+        }
+        return items;
     }
 
     private class MenuItemPredicate implements Predicate {
