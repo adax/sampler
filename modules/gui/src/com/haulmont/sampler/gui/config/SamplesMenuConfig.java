@@ -173,6 +173,7 @@ public class SamplesMenuConfig {
         }
     }
 
+    @Nullable
     public MenuItem findItemById(String id) {
         return (MenuItem) CollectionUtils.find(getItemsAsList(), new MenuItemPredicate(id));
     }
