@@ -30,7 +30,6 @@ public class LeftPanel extends FoldersPane {
     private Tree tree;
     private WindowInfo sampleWindow;
 
-    private WindowConfig windowConfig = AppBeans.get(WindowConfig.NAME);
     private SamplesHelper samplesHelper = AppBeans.get(SamplesHelper.NAME);
     private SamplesMenuConfig samplesMenuConfig = AppBeans.get(SamplesMenuConfig.NAME);
 
@@ -42,6 +41,7 @@ public class LeftPanel extends FoldersPane {
     public void init(Component parent) {
         super.init(parent);
         samplesMenuConfig.reset();
+        WindowConfig windowConfig = AppBeans.get(WindowConfig.NAME);
         sampleWindow = windowConfig.getWindowInfo("component-sample-browser");
         createMenuPanel();
     }
