@@ -59,6 +59,7 @@
             <item id="aggregatable-table" docUrlSuffix="gui_Table"/>
             <item id="presentations-table" docUrlSuffix="gui_Table"/>
             <item id="group-table-browse" docUrlSuffix="gui_GroupTable"/>
+            <item id="tree-table" docUrlSuffix="gui_TreeTable"/>
         </menu>
     </menu>
 

@@ -78,4 +78,6 @@
             template="com/haulmont/sampler/gui/components/table/enterpress-table.xml"/>
     <screen id="generate-table"
             template="com/haulmont/sampler/gui/components/table/generate-table.xml"/>
+    <screen id="tree-table"
+            template="com/haulmont/sampler/gui/components/table/tree-table.xml"/>
 </screen-config>

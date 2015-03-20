@@ -8,4 +8,16 @@
         <property name="amount"/>
         <property name="description"/>
     </view>
+    <view class="com.haulmont.sampler.entity.Task"
+          name="task-with-parent">
+        <property name="name"/>
+        <property name="dueDate"/>
+        <property name="assignee">
+            <property name="name"/>
+            <property name="lastName"/>
+        </property>
+        <property name="parentTask">
+            <property name="name"/>
+        </property>
+    </view>
 </views>
