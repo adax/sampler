@@ -22,8 +22,8 @@ public class Customer extends StandardEntity {
     private static final long serialVersionUID = -3420505556417816206L;
 
 
-    @Column(name = "ACTIVE")
-    protected Boolean active;
+    @Column(name = "ACTIVE", nullable = false)
+    protected Boolean active = false;
 
     public void setActive(Boolean active) {
         this.active = active;

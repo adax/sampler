@@ -1,0 +1,27 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.table.AggregatableTableFrame">
+    <dsContext>
+        <collectionDatasource id="ordersDs"
+                              class="com.haulmont.sampler.entity.Order"
+                              view="order-with-customer">
+            <query>
+                <![CDATA[select e from sampler$Order e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout>
+        <table aggregatable="true"
+               height="200px"
+               width="100%">
+            <columns>
+                <column id="date"/>
+                <column id="customer"/>
+                <column id="amount">
+                    <aggregation type="SUM"/>
+                </column>
+                <column id="description"/>
+            </columns>
+            <rows datasource="ordersDs"/>
+        </table>
+    </layout>
+</window>

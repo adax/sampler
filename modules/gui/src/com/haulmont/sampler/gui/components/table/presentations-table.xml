@@ -1,27 +1,18 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        class="com.haulmont.sampler.gui.components.table.SimpleTableFrame">
+        class="com.haulmont.sampler.gui.components.table.PresentationsTableFrame">
     <dsContext>
         <collectionDatasource id="ordersDs"
                               class="com.haulmont.sampler.entity.Order"
                               view="order-with-customer">
             <query>
-                <![CDATA[select e from sampler$Order e order by e.date]]>
+                <![CDATA[select e from sampler$Order e]]>
             </query>
         </collectionDatasource>
     </dsContext>
-    <layout spacing="true">
-        <hbox spacing="true">
-            <checkBox id="multiselect"
-                      caption="multiselect"/>
-            <checkBox id="sortable"
-                      caption="sortable"/>
-            <checkBox id="columnControlVisible"
-                      caption="columnControlVisible"/>
-            <checkBox id="reorderingAllowed"
-                      caption="reorderingAllowed"/>
-        </hbox>
-        <table id="ordersTable"
+    <layout>
+        <table id="orderTable"
                height="200px"
+               presentations="true"
                width="100%">
             <columns>
                 <column id="date"/>

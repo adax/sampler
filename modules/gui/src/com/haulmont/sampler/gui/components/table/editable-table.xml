@@ -1,0 +1,26 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.table.EditableTableFrame">
+    <dsContext>
+        <collectionDatasource id="customersDs"
+                              class="com.haulmont.sampler.entity.Customer"
+                              view="_local"
+                              allowCommit="false">
+            <query>
+                <![CDATA[select e from sampler$Customer e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout>
+        <table editable="true"
+               height="200px"
+               width="100%">
+            <columns>
+                <column id="name" editable="true"/>
+                <column id="lastName"/>
+                <column id="age" editable="true"/>
+                <column id="active" editable="true"/>
+            </columns>
+            <rows datasource="customersDs"/>
+        </table>
+    </layout>
+</window>

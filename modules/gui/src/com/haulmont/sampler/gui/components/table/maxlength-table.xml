@@ -1,0 +1,24 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.table.MaxLengthTableFrame">
+    <dsContext>
+        <collectionDatasource id="ordersDs"
+                              class="com.haulmont.sampler.entity.Order"
+                              view="order-with-customer">
+            <query>
+                <![CDATA[select e from sampler$Order e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout>
+        <table height="200px"
+               width="100%">
+            <columns>
+                <column id="date"/>
+                <column id="customer"/>
+                <column id="amount"/>
+                <column id="description" maxTextLength="5"/>
+            </columns>
+            <rows datasource="ordersDs"/>
+        </table>
+    </layout>
+</window>

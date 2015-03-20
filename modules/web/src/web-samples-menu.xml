@@ -47,6 +47,17 @@
 
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"/>
+            <item id="maxlength-table" docUrlSuffix="gui_Table"/>
+            <item id="action-table" docUrlSuffix="gui_Table"/>
+            <item id="editable-table" docUrlSuffix="gui_Table"/>
+            <item id="formatter-table" docUrlSuffix="gui_Table"/>
+            <item id="icon-table" docUrlSuffix="gui_Table"/>
+            <item id="style-table" docUrlSuffix="gui_Table"/>
+            <item id="itemclick-table" docUrlSuffix="gui_Table"/>
+            <item id="enterpress-table" docUrlSuffix="gui_Table"/>
+            <item id="generate-table" docUrlSuffix="gui_Table"/>
+            <item id="aggregatable-table" docUrlSuffix="gui_Table"/>
+            <item id="presentations-table" docUrlSuffix="gui_Table"/>
             <item id="group-table-browse" docUrlSuffix="gui_GroupTable"/>
         </menu>
     </menu>

@@ -1,0 +1,26 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.table.FormatterTableFrame">
+    <dsContext>
+        <collectionDatasource id="customersDs"
+                              class="com.haulmont.sampler.entity.Customer"
+                              view="_minimal">
+            <query>
+                <![CDATA[select e from sampler$Customer e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout>
+        <table height="200px"
+               width="480px">
+            <columns>
+                <column id="name">
+                    <formatter class="com.haulmont.sampler.gui.components.table.FormatterTableFrame$UppercaseFormatter"/>
+                </column>
+                <column id="lastName">
+                    <formatter class="com.haulmont.sampler.gui.components.table.LowercaseFormatter"/>
+                </column>
+            </columns>
+            <rows datasource="customersDs"/>
+        </table>
+    </layout>
+</window>

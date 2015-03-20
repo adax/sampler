@@ -6,12 +6,12 @@ import com.haulmont.cuba.gui.config.WindowConfig;
 import com.haulmont.cuba.gui.config.WindowInfo;
 import com.haulmont.cuba.web.AppWindow;
 import com.haulmont.cuba.web.app.folders.FoldersPane;
+import com.haulmont.cuba.web.gui.components.WebComponentsHelper;
 import com.haulmont.cuba.web.toolkit.ui.CubaTree;
 import com.haulmont.sampler.gui.SamplesHelper;
 import com.haulmont.sampler.gui.config.MenuItem;
 import com.haulmont.sampler.gui.config.SamplesMenuConfig;
 import com.vaadin.event.ItemClickEvent;
-import com.vaadin.server.ThemeResource;
 import com.vaadin.shared.MouseEventDetails;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.Reindeer;
@@ -61,7 +61,7 @@ public class LeftPanel extends FoldersPane {
         header.addComponent(label);
         header.setExpandRatio(label, 1);
 
-        Button collapseAll = new Button(new ThemeResource("images/collapse.png"));
+        Button collapseAll = new Button(WebComponentsHelper.getIcon("icons/compress.png"));
         collapseAll.addStyleName(Reindeer.BUTTON_LINK);
         collapseAll.addClickListener(new Button.ClickListener() {
             @Override
@@ -73,7 +73,7 @@ public class LeftPanel extends FoldersPane {
         header.addComponent(collapseAll);
         header.setComponentAlignment(collapseAll, Alignment.MIDDLE_RIGHT);
 
-        Button expandAll = new Button(new ThemeResource("images/expand.png"));
+        Button expandAll = new Button(WebComponentsHelper.getIcon("icons/expand.png"));
         expandAll.addStyleName(Reindeer.BUTTON_LINK);
         expandAll.addClickListener(new Button.ClickListener() {
             @Override

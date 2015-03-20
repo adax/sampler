@@ -56,4 +56,26 @@
             template="com/haulmont/sampler/gui/components/table/group-table-browse.xml"/>
     <screen id="simple-table"
             template="com/haulmont/sampler/gui/components/table/simple-table.xml"/>
+    <screen id="action-table"
+            template="com/haulmont/sampler/gui/components/table/action-table.xml"/>
+    <screen id="aggregatable-table"
+            template="com/haulmont/sampler/gui/components/table/aggregatable-table.xml"/>
+    <screen id="presentations-table"
+            template="com/haulmont/sampler/gui/components/table/presentations-table.xml"/>
+    <screen id="editable-table"
+            template="com/haulmont/sampler/gui/components/table/editable-table.xml"/>
+    <screen id="maxlength-table"
+            template="com/haulmont/sampler/gui/components/table/maxlength-table.xml"/>
+    <screen id="formatter-table"
+            template="com/haulmont/sampler/gui/components/table/formatter-table.xml"/>
+    <screen id="icon-table"
+            template="com/haulmont/sampler/gui/components/table/icon-table.xml"/>
+    <screen id="style-table"
+            template="com/haulmont/sampler/gui/components/table/style-table.xml"/>
+    <screen id="itemclick-table"
+            template="com/haulmont/sampler/gui/components/table/itemclick-table.xml"/>
+    <screen id="enterpress-table"
+            template="com/haulmont/sampler/gui/components/table/enterpress-table.xml"/>
+    <screen id="generate-table"
+            template="com/haulmont/sampler/gui/components/table/generate-table.xml"/>
 </screen-config>
