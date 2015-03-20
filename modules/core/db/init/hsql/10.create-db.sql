@@ -31,6 +31,7 @@ create table SAMPLER_ORDER (
     CUSTOMER_ID varchar(36),
     DATE_ date not null,
     AMOUNT decimal(19, 2),
+    DESCRIPTION varchar(255),
     --
     primary key (ID)
 )^

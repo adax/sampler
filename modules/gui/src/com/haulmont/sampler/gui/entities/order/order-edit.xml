@@ -18,6 +18,8 @@
                 <field id="customer"/>
                 <field id="date"/>
                 <field id="amount"/>
+                <field id="description"
+                       width=""/>
             </column>
         </fieldGroup>
         <iframe id="windowActions"

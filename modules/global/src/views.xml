@@ -6,5 +6,6 @@
                   view="_minimal"/>
         <property name="date"/>
         <property name="amount"/>
+        <property name="description"/>
     </view>
 </views>

@@ -1,16 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         class="com.haulmont.sampler.gui.components.fieldgroup.SimpleFieldGroupFrame">
     <dsContext>
         <datasource id="orderDs"
+                    allowCommit="false"
                     class="com.haulmont.sampler.entity.Order"
-                    view="order-with-customer"
-                    allowCommit="false"/>
+                    view="order-with-customer"/>
     </dsContext>
     <layout>
         <fieldGroup datasource="orderDs">
             <field id="date"/>
             <field id="customer"/>
             <field id="amount"/>
+            <field id="description"
+                   width=""/>
         </fieldGroup>
     </layout>
 </window>

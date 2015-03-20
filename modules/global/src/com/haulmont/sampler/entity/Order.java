@@ -30,6 +30,18 @@ public class Order extends StandardEntity {
 
     private static final long serialVersionUID = 5425074246531061156L;
 
+    @Column(name = "DESCRIPTION")
+    protected String description;
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }

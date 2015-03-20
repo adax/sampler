@@ -31,6 +31,7 @@
                 <column id="customer"/>
                 <column id="date"/>
                 <column id="amount"/>
+                <column id="description"/>
             </columns>
             <rows datasource="orderDs"/>
             <rowsCount/>
