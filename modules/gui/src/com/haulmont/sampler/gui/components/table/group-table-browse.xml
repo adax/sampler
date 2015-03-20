@@ -11,7 +11,7 @@
     </dsContext>
     <layout>
         <groupTable height="200px"
-                    width="400px">
+                    width="480px">
             <columns>
                 <group>
                     <column id="lastName"/>
