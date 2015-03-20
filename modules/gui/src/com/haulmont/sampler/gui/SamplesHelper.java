@@ -75,7 +75,7 @@ public class SamplesHelper {
         List<String> classes = new ArrayList<>();
         for (Element element : (List<Element>) root.elements()) {
             String clazz = element.attributeValue("class");
-            if (StringUtils.isNotEmpty(clazz)) {
+            if (StringUtils.isNotEmpty(clazz) && !clazz.contains("$")) {
                 classes.add(pathFromPackage(clazz));
             }
             classes.addAll(getOtherClassesPath(element));
