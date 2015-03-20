@@ -4,7 +4,7 @@
 @mixin halo-ext {
   @include halo;
 
-  .ace_content {
+  .ace_editor {
     font-size: 14px;
   }
 }
