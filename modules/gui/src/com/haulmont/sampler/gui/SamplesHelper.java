@@ -44,6 +44,7 @@ public class SamplesHelper {
         Map<String, Object> params = new HashMap<>();
         params.put("windowId", item.getId());
         params.put("caption", item.getCaption());
+        params.put("description", item.getDescription());
         params.put("screenSrc", info.getTemplate());
         params.put("docUrlSuffix", item.getUrl());
         Element root = getWindowElement(info.getTemplate());

@@ -153,6 +153,11 @@ public class SamplesMenuConfig {
                     if (StringUtils.isNotBlank(docUrl)) {
                         menuItem.setUrl(docUrl);
                     }
+
+                    String descriptionKey = element.attributeValue("description");
+                    if (StringUtils.isNotBlank(descriptionKey)) {
+                        menuItem.setDescription(messages.getMainMessage(descriptionKey));
+                    }
                 }
             } else {
                 log.warn(String.format("Unknown tag '%s' in sample-config", element.getName()));

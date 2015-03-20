@@ -50,11 +50,15 @@ public class ComponentSampleBrowser extends AbstractWindow {
             caption = id;
         setCaption(caption);
 
+        String description = (String) params.get("description");
+        if (StringUtils.isEmpty(description))
+            description = caption;
+
         if (StringUtils.isNotEmpty(samplesMenuConfig.getDocTemplate())) {
             String docUrlSuffix = (String) params.get("docUrlSuffix");
             if (StringUtils.isNotEmpty(docUrlSuffix)) {
                 addTab(messages.getMessage(getClass(), "sampleBrowser.description"),
-                        createDescription(caption, docUrlSuffix));
+                        createDescription(description, docUrlSuffix));
             }
         }
 

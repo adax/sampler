@@ -19,6 +19,7 @@ public class MenuItem {
     private String id;
     private String url;
     private String caption;
+    private String description;
 
     private boolean isMenu = false;
 
@@ -59,6 +60,15 @@ public class MenuItem {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    @Nullable
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public List<MenuItem> getChildren() {

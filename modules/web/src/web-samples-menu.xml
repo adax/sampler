@@ -10,31 +10,41 @@
             <item id="programmatic-action-button" docUrlSuffix="gui_Button"/>
             <item id="link-button" docUrlSuffix="gui_Link"/>
         </menu>
+
         <item id="bulk-editor" docUrlSuffix="gui_BulkEditor"/>
+
         <menu id="checkBox">
             <item id="simple-checkbox" docUrlSuffix="gui_CheckBox"/>
-            <item id="datasource-checkbox" docUrlSuffix="gui_CheckBox"/>
+            <item id="datasource-checkbox" docUrlSuffix="gui_CheckBox"
+                  description="sample-config.datasource-checkbox.description"/>
         </menu>
+
         <menu id="textField">
             <item id="simple-textfield" docUrlSuffix="gui_TextField"/>
-            <item id="datasource-textfield" docUrlSuffix="gui_TextField"/>
+            <item id="datasource-textfield" docUrlSuffix="gui_TextField"
+                  description="sample-config.datasource-datefield.description"/>
             <item id="datatype-textfield" docUrlSuffix="gui_TextField"/>
             <item id="validator-textfield" docUrlSuffix="gui_TextField"/>
             <item id="trim-textfield" docUrlSuffix="gui_TextField"/>
         </menu>
+
         <menu id="dateField">
             <item id="simple-datefield" docUrlSuffix="gui_DateField"/>
-            <item id="datasource-datefield" docUrlSuffix="gui_DateField"/>
+            <item id="datasource-datefield" docUrlSuffix="gui_DateField"
+                  description="sample-config.datasource-datefield.description"/>
             <item id="format-datefield" docUrlSuffix="gui_DateField"/>
             <item id="resolution-datefield" docUrlSuffix="gui_DateField"/>
         </menu>
+
         <menu id="embedded">
             <item id="image-embedded" docUrlSuffix="gui_Embedded"/>
             <item id="web-embedded" docUrlSuffix="gui_Embedded"/>
         </menu>
+
         <menu id="fieldGroup">
             <item id="simple-fieldgroup" docUrlSuffix="gui_FieldGroup"/>
         </menu>
+
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"/>
             <item id="group-table-browse" docUrlSuffix="gui_GroupTable"/>
