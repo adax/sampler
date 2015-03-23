@@ -6,6 +6,7 @@ package com.haulmont.sampler.gui.config;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -19,7 +20,9 @@ public class MenuItem {
     private String id;
     private String url;
     private String caption;
+    private String controller;
     private String description;
+    private List<String> otherFiles;
 
     private boolean isMenu = false;
 
@@ -51,6 +54,25 @@ public class MenuItem {
 
     public void setCaption(String caption) {
         this.caption = caption;
+    }
+
+    @Nullable
+    public String getController() {
+        return controller;
+    }
+
+    public void setController(String controller) {
+        this.controller = controller;
+    }
+
+    public List<String> getOtherFiles() {
+        if (otherFiles == null)
+            return Collections.emptyList();
+        return otherFiles;
+    }
+
+    public void setOtherFiles(List<String> otherFiles) {
+        this.otherFiles = otherFiles;
     }
 
     @Nullable

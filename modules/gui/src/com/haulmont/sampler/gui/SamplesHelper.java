@@ -44,13 +44,13 @@ public class SamplesHelper {
         Map<String, Object> params = new HashMap<>();
         params.put("windowId", item.getId());
         params.put("caption", item.getCaption());
+        params.put("controller", item.getController());
+        params.put("otherFiles", item.getOtherFiles());
         params.put("description", item.getDescription());
         params.put("screenSrc", info.getTemplate());
         params.put("docUrlSuffix", item.getUrl());
         Element root = getWindowElement(info.getTemplate());
         if (root != null) {
-            params.put("controllerSrc", getScreenClassPath(root));
-            params.put("otherClassesSrc", getOtherClassesPath(root));
             Collection<String> keys = getMessagesKeys(root);
             if (CollectionUtils.isNotEmpty(keys)) {
                 params.put("messagesPack", getMessagePack(root));
@@ -62,25 +62,6 @@ public class SamplesHelper {
 
     public String getFileContent(String src) {
         return resources.getResourceAsString(src);
-    }
-
-    private String getScreenClassPath(Element root) {
-        String clazz = root.attributeValue("class");
-        if (StringUtils.isNotEmpty(clazz))
-            return pathFromPackage(clazz);
-        return null;
-    }
-
-    private List<String> getOtherClassesPath(Element root) {
-        List<String> classes = new ArrayList<>();
-        for (Element element : (List<Element>) root.elements()) {
-            String clazz = element.attributeValue("class");
-            if (StringUtils.isNotEmpty(clazz) && !clazz.contains("$")) {
-                classes.add(pathFromPackage(clazz));
-            }
-            classes.addAll(getOtherClassesPath(element));
-        }
-        return classes;
     }
 
     private Collection<String> getMessagesKeys(Element root) {

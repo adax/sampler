@@ -65,12 +65,12 @@ public class ComponentSampleBrowser extends AbstractWindow {
         String screenSrc = (String) params.get("screenSrc");
         addSourceTab(screenSrc, SourceCodeEditor.Mode.XML);
 
-        String controllerSrc = (String) params.get("controllerSrc");
-        addSourceTab(controllerSrc, SourceCodeEditor.Mode.Java);
+        String controller = (String) params.get("controller");
+        addSourceTab(controller, SourceCodeEditor.Mode.Java);
 
-        List<String> otherClassesSrc = (List<String>) params.get("otherClassesSrc");
-        if (CollectionUtils.isNotEmpty(otherClassesSrc)) {
-            for (String src : otherClassesSrc) {
+        List<String> otherFiles = (List<String>) params.get("otherFiles");
+        if (CollectionUtils.isNotEmpty(otherFiles)) {
+            for (String src : otherFiles) {
                 addSourceTab(src, SourceCodeEditor.Mode.Java);
             }
         }

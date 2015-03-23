@@ -132,35 +132,20 @@ public class SamplesMenuConfig {
     private void loadMenuItems(Element parentElement, MenuItem parentItem) {
         for (Element element : ((List<Element>) parentElement.elements())) {
             MenuItem menuItem = null;
-
-            if ("menu".equals(element.getName())) {
-                String id = element.attributeValue("id");
-
-                if (StringUtils.isBlank(id)) {
-                    log.warn(String.format("Invalid sample-config: 'id' attribute not defined for tag" + element.getName()));
-                }
-
-                menuItem = new MenuItem(parentItem, id);
-                menuItem.setMenu(true);
-
-                loadMenuItems(element, menuItem);
-
-            } else if ("item".equals(element.getName())) {
-                String id = element.attributeValue("id");
-                if (StringUtils.isNotBlank(id)) {
+            String id = element.attributeValue("id");
+            if (StringUtils.isNotBlank(id)) {
+                if ("menu".equals(element.getName())) {
                     menuItem = new MenuItem(parentItem, id);
-                    String docUrl = element.attributeValue("docUrlSuffix");
-                    if (StringUtils.isNotBlank(docUrl)) {
-                        menuItem.setUrl(docUrl);
-                    }
+                    menuItem.setMenu(true);
 
-                    String descriptionKey = element.attributeValue("description");
-                    if (StringUtils.isNotBlank(descriptionKey)) {
-                        menuItem.setDescription(messages.getMainMessage(descriptionKey));
-                    }
+                    loadMenuItems(element, menuItem);
+                } else if ("item".equals(element.getName())) {
+                    menuItem = parseItem(element, parentItem, id);
+                } else {
+                    log.warn(String.format("Unknown tag '%s' in sample-config", element.getName()));
                 }
             } else {
-                log.warn(String.format("Unknown tag '%s' in sample-config", element.getName()));
+                log.warn(String.format("Invalid sample-config: 'id' attribute not defined for tag" + element.getName()));
             }
 
             if (parentItem != null) {
@@ -169,6 +154,36 @@ public class SamplesMenuConfig {
                 addItem(rootItems, menuItem);
             }
         }
+    }
+
+    private MenuItem parseItem(Element element, MenuItem parentItem, String id) {
+        MenuItem menuItem = new MenuItem(parentItem, id);
+        String docUrl = element.attributeValue("docUrlSuffix");
+        if (StringUtils.isNotBlank(docUrl)) {
+            menuItem.setUrl(docUrl);
+        }
+
+        String descriptionKey = element.attributeValue("description");
+        if (StringUtils.isNotBlank(descriptionKey)) {
+            menuItem.setDescription(messages.getMainMessage(descriptionKey));
+        }
+
+        String controller = element.attributeValue("controller");
+        if (StringUtils.isNotBlank(controller)) {
+            menuItem.setController(controller);
+        }
+
+        Element otherFilesElement = element.element("otherFiles");
+        if (otherFilesElement != null && !otherFilesElement.elements().isEmpty()) {
+            List<String> otherFiles = new ArrayList<>();
+            for (Element file : ((List<Element>) otherFilesElement.elements())) {
+                String fileName = file.attributeValue("name");
+                if (StringUtils.isNotEmpty(fileName))
+                    otherFiles.add(fileName);
+            }
+            menuItem.setOtherFiles(otherFiles);
+        }
+        return menuItem;
     }
 
     private void addItem(List<MenuItem> items, MenuItem menuItem) {
@@ -199,9 +214,11 @@ public class SamplesMenuConfig {
 
     private class MenuItemPredicate implements Predicate {
         private String id;
+
         public MenuItemPredicate(String id) {
             this.id = id;
         }
+
         @Override
         public boolean evaluate(Object object) {
             return id.equals(((MenuItem) object).getId());

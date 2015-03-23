@@ -1,27 +1,13 @@
 @import "../halo/halo";
 
-/* Define your theme modifications inside next mixin */
+@import "samples/components/table/table";
+
 @mixin halo-ext {
   @include halo;
+  @include sample-table;
 
   .ace_editor {
     font-size: 14px;
-  }
-
-  .v-table-row-active-customer {
-      font-weight: bold;
-  }
-
-  .v-table-cell-content-premium-grade {
-    background-color: red;
-  }
-
-  .v-table-cell-content-high-grade {
-    background-color: green;
-  }
-
-  .v-table-cell-content-standard-grade {
-    background-color: blue;
   }
 
   .v-button-dark {
@@ -30,5 +16,5 @@
 
   .v-button-small-link {
       font-size: 12px;
-    }
+  }
 }

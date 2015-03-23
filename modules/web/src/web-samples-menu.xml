@@ -4,80 +4,215 @@
 
     <menu id="components">
         <menu id="button">
-            <item id="simple-button" docUrlSuffix="gui_Button"/>
+            <item id="simple-button" docUrlSuffix="gui_Button"
+                  controller="com/haulmont/sampler/gui/components/button/SimpleButtonFrame.java"/>
             <item id="localized-button" docUrlSuffix="gui_Button"/>
-            <item id="action-button" docUrlSuffix="gui_Button"/>
-            <item id="programmatic-action-button" docUrlSuffix="gui_Button"/>
-            <item id="link-button" docUrlSuffix="gui_Link"/>
+            <item id="action-button" docUrlSuffix="gui_Button"
+                  controller="com/haulmont/sampler/gui/components/button/ActionButtonFrame.java"/>
+            <item id="programmatic-action-button" docUrlSuffix="gui_Button"
+                  controller="com/haulmont/sampler/gui/components/button/ProgrammaticActionButtonFrame.java"/>
+            <item id="link-button" docUrlSuffix="gui_Link"
+                  controller="com/haulmont/sampler/gui/components/button/LinkButtonFrame.java"/>
         </menu>
 
-        <item id="bulk-editor" docUrlSuffix="gui_BulkEditor"/>
+        <item id="bulk-editor" docUrlSuffix="gui_BulkEditor">
+            <otherFiles>
+                <file name="com/haulmont/sampler/entity/Customer.java"/>
+            </otherFiles>
+        </item>
 
         <menu id="checkBox">
-            <item id="simple-checkbox" docUrlSuffix="gui_CheckBox"/>
+            <item id="simple-checkbox" docUrlSuffix="gui_CheckBox"
+                    controller="com/haulmont/sampler/gui/components/checkbox/SimpleCheckboxFrame.java"/>
             <item id="datasource-checkbox" docUrlSuffix="gui_CheckBox"
-                  description="sample-config.datasource-checkbox.description"/>
-        </menu>
-
-        <menu id="textField">
-            <item id="simple-textfield" docUrlSuffix="gui_TextField"/>
-            <item id="datasource-textfield" docUrlSuffix="gui_TextField"
-                  description="sample-config.datasource-datefield.description"/>
-            <item id="datatype-textfield" docUrlSuffix="gui_TextField"/>
-            <item id="validator-textfield" docUrlSuffix="gui_TextField"/>
-            <item id="trim-textfield" docUrlSuffix="gui_TextField"/>
+                  description="sample-config.datasource-checkbox.description"
+                  controller="com/haulmont/sampler/gui/components/checkbox/DatasourceCheckboxFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
         </menu>
 
         <menu id="dateField">
             <item id="simple-datefield" docUrlSuffix="gui_DateField"/>
             <item id="datasource-datefield" docUrlSuffix="gui_DateField"
-                  description="sample-config.datasource-datefield.description"/>
+                  controller="com/haulmont/sampler/gui/components/datefield/DatasourceDateFieldFrame.java"
+                  description="sample-config.datasource-datefield.description">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
             <item id="format-datefield" docUrlSuffix="gui_DateField"/>
             <item id="resolution-datefield" docUrlSuffix="gui_DateField"/>
         </menu>
 
         <menu id="embedded">
-            <item id="image-embedded" docUrlSuffix="gui_Embedded"/>
-            <item id="web-embedded" docUrlSuffix="gui_Embedded"/>
+            <item id="image-embedded" docUrlSuffix="gui_Embedded"
+                    controller="com/haulmont/sampler/gui/components/embedded/ImageEmbeddedFrame.java"/>
+            <item id="web-embedded" docUrlSuffix="gui_Embedded"
+                  controller="com/haulmont/sampler/gui/components/embedded/WebEmbeddedFrame.java"/>
         </menu>
 
         <menu id="fieldGroup">
-            <item id="simple-fieldgroup" docUrlSuffix="gui_FieldGroup"/>
+            <item id="simple-fieldgroup" docUrlSuffix="gui_FieldGroup"
+                    controller="com/haulmont/sampler/gui/components/fieldgroup/SimpleFieldGroupFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
         </menu>
 
         <menu id="label">
             <item id="simple-label" docUrlSuffix="gui_Label"/>
             <item id="multiline-label" docUrlSuffix="gui_Label"/>
-            <item id="dynamic-label" docUrlSuffix="gui_Label"/>
-            <item id="datasource-label" docUrlSuffix="gui_Label"/>
-            <item id="html-label" docUrlSuffix="gui_Label"/>
+            <item id="dynamic-label" docUrlSuffix="gui_Label"
+                    controller="com/haulmont/sampler/gui/components/label/DynamicLabelFrame.java"/>
+            <item id="datasource-label" docUrlSuffix="gui_Label"
+                  controller="com/haulmont/sampler/gui/components/label/DatasourceLabelFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="html-label" docUrlSuffix="gui_Label"
+                  controller="com/haulmont/sampler/gui/components/label/HtmlLabelFrame.java"/>
         </menu>
 
         <item id="simple-link" docUrlSuffix="gui_Link"/>
 
         <menu id="lookupField">
-            <item id="simple-lookupfield" docUrlSuffix="gui_LookupField"/>
-            <item id="related-entity-lookupfield" docUrlSuffix="gui_LookupField"/>
-            <item id="custom-options-lookupfield" docUrlSuffix="gui_LookupField"/>
-            <item id="filter-mode-lookupfield" docUrlSuffix="gui_LookupField"/>
-            <item id="user-input-lookupfield" docUrlSuffix="gui_LookupField"/>
+            <item id="simple-lookupfield" docUrlSuffix="gui_LookupField"
+                    controller="com/haulmont/sampler/gui/components/lookupfield/SimpleLookupFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="related-entity-lookupfield" docUrlSuffix="gui_LookupField"
+                  controller="com/haulmont/sampler/gui/components/lookupfield/RelatedEntityLookupFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="custom-options-lookupfield" docUrlSuffix="gui_LookupField"
+                  controller="com/haulmont/sampler/gui/components/lookupfield/CustomOptionsLookupFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="filter-mode-lookupfield" docUrlSuffix="gui_LookupField"
+                  controller="com/haulmont/sampler/gui/components/lookupfield/FilterModeLookupFieldFrame.java"/>
+            <item id="user-input-lookupfield" docUrlSuffix="gui_LookupField"
+                  controller="com/haulmont/sampler/gui/components/lookupfield/UserInputLookupFieldFrame.java"/>
         </menu>
 
         <menu id="table">
-            <item id="simple-table" docUrlSuffix="gui_Table"/>
-            <item id="maxlength-table" docUrlSuffix="gui_Table"/>
-            <item id="action-table" docUrlSuffix="gui_Table"/>
-            <item id="editable-table" docUrlSuffix="gui_Table"/>
-            <item id="formatter-table" docUrlSuffix="gui_Table"/>
-            <item id="icon-table" docUrlSuffix="gui_Table"/>
-            <item id="style-table" docUrlSuffix="gui_Table"/>
-            <item id="itemclick-table" docUrlSuffix="gui_Table"/>
-            <item id="enterpress-table" docUrlSuffix="gui_Table"/>
-            <item id="generate-table" docUrlSuffix="gui_Table"/>
-            <item id="aggregatable-table" docUrlSuffix="gui_Table"/>
-            <item id="presentations-table" docUrlSuffix="gui_Table"/>
-            <item id="group-table-browse" docUrlSuffix="gui_GroupTable"/>
-            <item id="tree-table" docUrlSuffix="gui_TreeTable"/>
+            <item id="simple-table" docUrlSuffix="gui_Table"
+                    controller="com/haulmont/sampler/gui/components/table/SimpleTableFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="maxlength-table" docUrlSuffix="gui_Table">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="action-table" docUrlSuffix="gui_Table"
+                    controller="com/haulmont/sampler/gui/components/table/ActionTableFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="editable-table" docUrlSuffix="gui_Table">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="formatter-table" docUrlSuffix="gui_Table"
+                  controller="com/haulmont/sampler/gui/components/table/FormatterTableFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/gui/components/table/LowercaseFormatter.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="icon-table" docUrlSuffix="gui_Table"
+                    controller="com/haulmont/sampler/gui/components/table/IconTableFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="style-table" docUrlSuffix="gui_Table"
+                  controller="com/haulmont/sampler/gui/components/table/StyleTableFrame.java">
+                <otherFiles>
+                    <file name="themes/halo/samples/components/table/table.scss"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="itemclick-table" docUrlSuffix="gui_Table"
+                  controller="com/haulmont/sampler/gui/components/table/ItemClickTableFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="enterpress-table" docUrlSuffix="gui_Table"
+                  controller="com/haulmont/sampler/gui/components/table/EnterPressTableFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="generate-table" docUrlSuffix="gui_Table"
+                  controller="com/haulmont/sampler/gui/components/table/GenerateTableFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="aggregatable-table" docUrlSuffix="gui_Table">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="presentations-table" docUrlSuffix="gui_Table">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="group-table-browse" docUrlSuffix="gui_GroupTable">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="tree-table" docUrlSuffix="gui_TreeTable">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Task.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
+        <menu id="textField">
+            <item id="simple-textfield" docUrlSuffix="gui_TextField"/>
+            <item id="datasource-textfield" docUrlSuffix="gui_TextField"
+                  controller="com/haulmont/sampler/gui/components/textfield/DatasourceTextFieldFrame.java"
+                  description="sample-config.datasource-datefield.description">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="datatype-textfield" docUrlSuffix="gui_TextField"/>
+            <item id="validator-textfield" docUrlSuffix="gui_TextField"
+                  controller="com/haulmont/sampler/gui/components/textfield/ValidatorTextFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/gui/components/textfield/PositiveIntegerValidator.java"/>
+                </otherFiles>
+            </item>
+            <item id="trim-textfield" docUrlSuffix="gui_TextField"
+                  controller="com/haulmont/sampler/gui/components/textfield/TrimTextFieldFrame.java"/>
         </menu>
     </menu>
 

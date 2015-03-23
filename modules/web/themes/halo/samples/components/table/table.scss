@@ -1,0 +1,17 @@
+@mixin sample-table {
+  .v-table-row-active-customer {
+      font-weight: bold;
+  }
+
+  .v-table-cell-content-premium-grade {
+    background-color: red;
+  }
+
+  .v-table-cell-content-high-grade {
+    background-color: green;
+  }
+
+  .v-table-cell-content-standard-grade {
+    background-color: blue;
+  }
+}

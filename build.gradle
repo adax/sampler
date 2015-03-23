@@ -199,6 +199,10 @@ configure(webModule) {
     }
     task buildScssThemes(type: CubaWebScssThemeCreation)
     assemble.dependsOn buildScssThemes
+
+    jar {
+        from sourceSets.main.allJava
+    }
 }
 
 
