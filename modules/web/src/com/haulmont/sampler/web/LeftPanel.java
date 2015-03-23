@@ -61,8 +61,10 @@ public class LeftPanel extends FoldersPane {
         header.addComponent(label);
         header.setExpandRatio(label, 1);
 
-        Button collapseAll = new Button(WebComponentsHelper.getIcon("icons/compress.png"));
+        Button collapseAll = new Button(messages.getMessage(getClass(), "LeftPanel.collapseAll"));
         collapseAll.addStyleName(Reindeer.BUTTON_LINK);
+        collapseAll.addStyleName("small-link");
+        collapseAll.addStyleName("dark");
         collapseAll.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent event) {
@@ -73,8 +75,10 @@ public class LeftPanel extends FoldersPane {
         header.addComponent(collapseAll);
         header.setComponentAlignment(collapseAll, Alignment.MIDDLE_RIGHT);
 
-        Button expandAll = new Button(WebComponentsHelper.getIcon("icons/expand.png"));
+        Button expandAll = new Button(messages.getMessage(getClass(), "LeftPanel.expandAll"));
         expandAll.addStyleName(Reindeer.BUTTON_LINK);
+        expandAll.addStyleName("small-link");
+        expandAll.addStyleName("dark");
         expandAll.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent event) {
