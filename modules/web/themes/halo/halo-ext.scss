@@ -8,16 +8,20 @@
     font-size: 14px;
   }
 
-  .v-table-row-adult-customer {
-    font-weight: bold;
+  .v-table-row-active-customer {
+      font-weight: bold;
   }
 
-  .v-table-cell-content-customer-active {
+  .v-table-cell-content-premium-grade {
+    background-color: red;
+  }
+
+  .v-table-cell-content-high-grade {
     background-color: green;
   }
 
-  .v-table-cell-content-customer-inactive {
-    background-color: red;
+  .v-table-cell-content-standard-grade {
+    background-color: blue;
   }
 
   .v-button-dark {

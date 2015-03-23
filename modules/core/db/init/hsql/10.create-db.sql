@@ -13,6 +13,7 @@ create table SAMPLER_CUSTOMER (
     LAST_NAME varchar(100) not null,
     AGE integer,
     ACTIVE boolean not null,
+    GRADE integer,
     --
     primary key (ID)
 )^

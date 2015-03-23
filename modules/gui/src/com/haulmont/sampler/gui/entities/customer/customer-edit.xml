@@ -19,6 +19,8 @@
                 <field id="lastName"/>
                 <field id="age"/>
                 <field id="active"/>
+                <field id="grade"
+                       width=""/>
             </column>
         </fieldGroup>
         <iframe id="windowActions"

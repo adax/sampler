@@ -2,9 +2,9 @@
         class="com.haulmont.sampler.gui.components.table.EditableTableFrame">
     <dsContext>
         <collectionDatasource id="customersDs"
+                              allowCommit="false"
                               class="com.haulmont.sampler.entity.Customer"
-                              view="_local"
-                              allowCommit="false">
+                              view="_local">
             <query>
                 <![CDATA[select e from sampler$Customer e]]>
             </query>
@@ -15,10 +15,15 @@
                height="200px"
                width="100%">
             <columns>
-                <column id="name" editable="true"/>
+                <column id="name"
+                        editable="true"/>
                 <column id="lastName"/>
-                <column id="age" editable="true"/>
-                <column id="active" editable="true"/>
+                <column id="age"
+                        editable="true"/>
+                <column id="active"
+                        editable="true"/>
+                <column id="grade"
+                        editable="true"/>
             </columns>
             <rows datasource="customersDs"/>
         </table>

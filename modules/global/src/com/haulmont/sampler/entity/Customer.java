@@ -25,6 +25,18 @@ public class Customer extends StandardEntity {
     @Column(name = "ACTIVE", nullable = false)
     protected Boolean active = false;
 
+    @Column(name = "GRADE")
+    protected Integer grade;
+
+    public void setGrade(CustomerGrade grade) {
+        this.grade = grade == null ? null : grade.getId();
+    }
+
+    public CustomerGrade getGrade() {
+        return grade == null ? null : CustomerGrade.fromId(grade);
+    }
+
+
     public void setActive(Boolean active) {
         this.active = active;
     }

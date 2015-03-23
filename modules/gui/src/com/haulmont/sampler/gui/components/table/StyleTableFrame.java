@@ -22,14 +22,20 @@ public class StyleTableFrame extends AbstractFrame {
             public String getStyleName(Entity entity, String property) {
                 Customer customer = (Customer) entity;
                 if (property == null) {
-                    if (customer.getAge() > 30) {
-                        return "adult-customer";
+                    if (BooleanUtils.isTrue(customer.getActive())) {
+                        return "active-customer";
                     }
-                } else if (property.equals("active")) {
-                    if (BooleanUtils.isTrue(customer.getActive()))
-                        return "customer-active";
-                    else
-                        return "customer-inactive";
+                } else if (property.equals("grade")) {
+                    switch (customer.getGrade()) {
+                        case PREMIUM:
+                            return "premium-grade";
+                        case HIGH:
+                            return "high-grade";
+                        case STANDARD:
+                            return "standard-grade";
+                        default:
+                            return null;
+                    }
                 }
                 return null;
             }
