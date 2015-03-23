@@ -80,4 +80,14 @@
             template="com/haulmont/sampler/gui/components/table/generate-table.xml"/>
     <screen id="tree-table"
             template="com/haulmont/sampler/gui/components/table/tree-table.xml"/>
+    <screen id="simple-label"
+            template="com/haulmont/sampler/gui/components/label/simple-label.xml"/>
+    <screen id="multiline-label"
+            template="com/haulmont/sampler/gui/components/label/multiline-label.xml"/>
+    <screen id="dynamic-label"
+            template="com/haulmont/sampler/gui/components/label/dynamic-label.xml"/>
+    <screen id="datasource-label"
+            template="com/haulmont/sampler/gui/components/label/datasource-label.xml"/>
+    <screen id="html-label"
+            template="com/haulmont/sampler/gui/components/label/html-label.xml"/>
 </screen-config>

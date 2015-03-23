@@ -1,0 +1,6 @@
+package com.haulmont.sampler.gui.components.label;
+
+import com.haulmont.cuba.gui.components.AbstractFrame;
+
+public class SimpleLabelFrame extends AbstractFrame {
+}

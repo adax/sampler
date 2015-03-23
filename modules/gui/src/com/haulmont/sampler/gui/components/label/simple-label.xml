@@ -1,0 +1,8 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.label.SimpleLabelFrame"
+        messagesPack="com.haulmont.sampler.gui.components.label">
+    <dsContext/>
+    <layout>
+        <label value="msg://caption.simpleLabel"/>
+    </layout>
+</window>

@@ -45,6 +45,14 @@
             <item id="simple-fieldgroup" docUrlSuffix="gui_FieldGroup"/>
         </menu>
 
+        <menu id="label">
+            <item id="simple-label" docUrlSuffix="gui_Label"/>
+            <item id="multiline-label" docUrlSuffix="gui_Label"/>
+            <item id="dynamic-label" docUrlSuffix="gui_Label"/>
+            <item id="datasource-label" docUrlSuffix="gui_Label"/>
+            <item id="html-label" docUrlSuffix="gui_Label"/>
+        </menu>
+
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"/>
             <item id="maxlength-table" docUrlSuffix="gui_Table"/>

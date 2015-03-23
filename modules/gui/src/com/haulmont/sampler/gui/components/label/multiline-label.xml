@@ -1,0 +1,8 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.label.MultilineLabelFrame">
+    <dsContext/>
+    <layout>
+        <label value="Label, which should be split into multiple lines"
+               width="200px"/>
+    </layout>
+</window>
