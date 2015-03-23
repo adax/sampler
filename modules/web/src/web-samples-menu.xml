@@ -53,6 +53,8 @@
             <item id="html-label" docUrlSuffix="gui_Label"/>
         </menu>
 
+        <item id="simple-link" docUrlSuffix="gui_Link"/>
+
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"/>
             <item id="maxlength-table" docUrlSuffix="gui_Table"/>

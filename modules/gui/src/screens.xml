@@ -90,4 +90,6 @@
             template="com/haulmont/sampler/gui/components/label/datasource-label.xml"/>
     <screen id="html-label"
             template="com/haulmont/sampler/gui/components/label/html-label.xml"/>
+    <screen id="simple-link"
+            template="com/haulmont/sampler/gui/components/link/simple-link.xml"/>
 </screen-config>

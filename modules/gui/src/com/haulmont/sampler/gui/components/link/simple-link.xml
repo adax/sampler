@@ -1,0 +1,9 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.link.SimpleLinkFrame">
+    <dsContext/>
+    <layout>
+        <link caption="Link"
+              target="_blank"
+              url="https://www.cuba-platform.com/"/>
+    </layout>
+</window>
