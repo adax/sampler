@@ -52,8 +52,6 @@
             template="com/haulmont/sampler/gui/components/datefield/resolution-datefield.xml"/>
     <screen id="simple-fieldgroup"
             template="com/haulmont/sampler/gui/components/fieldgroup/simple-fieldgroup.xml"/>
-    <screen id="group-table-browse"
-            template="com/haulmont/sampler/gui/components/table/group-table-browse.xml"/>
     <screen id="simple-table"
             template="com/haulmont/sampler/gui/components/table/simple-table.xml"/>
     <screen id="action-table"
@@ -78,6 +76,8 @@
             template="com/haulmont/sampler/gui/components/table/enterpress-table.xml"/>
     <screen id="generate-table"
             template="com/haulmont/sampler/gui/components/table/generate-table.xml"/>
+    <screen id="group-table-browse"
+            template="com/haulmont/sampler/gui/components/table/group-table-browse.xml"/>
     <screen id="tree-table"
             template="com/haulmont/sampler/gui/components/table/tree-table.xml"/>
     <screen id="simple-label"
@@ -92,4 +92,14 @@
             template="com/haulmont/sampler/gui/components/label/html-label.xml"/>
     <screen id="simple-link"
             template="com/haulmont/sampler/gui/components/link/simple-link.xml"/>
+    <screen id="simple-lookupfield"
+            template="com/haulmont/sampler/gui/components/lookupfield/simple-lookupfield.xml"/>
+    <screen id="related-entity-lookupfield"
+            template="com/haulmont/sampler/gui/components/lookupfield/related-entity-lookupfield.xml"/>
+    <screen id="custom-options-lookupfield"
+            template="com/haulmont/sampler/gui/components/lookupfield/custom-options-lookupfield.xml"/>
+    <screen id="filter-mode-lookupfield"
+            template="com/haulmont/sampler/gui/components/lookupfield/filter-mode-lookupfield.xml"/>
+    <screen id="user-input-lookupfield"
+            template="com/haulmont/sampler/gui/components/lookupfield/user-input-lookupfield.xml"/>
 </screen-config>

@@ -1,0 +1,13 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.lookupfield.SimpleLookupFieldFrame">
+    <dsContext>
+        <datasource id="customerDs"
+                    class="com.haulmont.sampler.entity.Customer"
+                    allowCommit="false"
+                    view="_local"/>
+    </dsContext>
+    <layout>
+        <lookupField datasource="customerDs"
+                     property="grade"/>
+    </layout>
+</window>

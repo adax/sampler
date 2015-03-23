@@ -1,0 +1,27 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.lookupfield.CustomOptionsLookupFieldFrame">
+    <dsContext>
+        <datasource id="orderDs"
+                    class="com.haulmont.sampler.entity.Order"
+                    allowCommit="false"
+                    view="_local"/>
+        <datasource id="customerDs"
+                    class="com.haulmont.sampler.entity.Customer"
+                    allowCommit="false"
+                    view="_local"/>
+    </dsContext>
+    <layout>
+        <hbox spacing="true">
+            <lookupField id="amountLookup"
+                         caption="OptionsList"
+                         datasource="orderDs"
+                         property="amount"
+                         nullName="(select amount)"/>
+            <lookupField id="agesLookup"
+                         caption="OptionsMap"
+                         datasource="customerDs"
+                         property="age"
+                         nullName="(select age)"/>
+        </hbox>
+    </layout>
+</window>

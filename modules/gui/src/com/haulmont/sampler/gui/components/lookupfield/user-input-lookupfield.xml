@@ -1,0 +1,7 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.lookupfield.UserInputLookupFieldFrame">
+    <dsContext/>
+    <layout>
+        <lookupField id="lookup"/>
+    </layout>
+</window>

@@ -55,6 +55,14 @@
 
         <item id="simple-link" docUrlSuffix="gui_Link"/>
 
+        <menu id="lookupField">
+            <item id="simple-lookupfield" docUrlSuffix="gui_LookupField"/>
+            <item id="related-entity-lookupfield" docUrlSuffix="gui_LookupField"/>
+            <item id="custom-options-lookupfield" docUrlSuffix="gui_LookupField"/>
+            <item id="filter-mode-lookupfield" docUrlSuffix="gui_LookupField"/>
+            <item id="user-input-lookupfield" docUrlSuffix="gui_LookupField"/>
+        </menu>
+
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"/>
             <item id="maxlength-table" docUrlSuffix="gui_Table"/>
