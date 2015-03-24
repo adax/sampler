@@ -16,6 +16,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import static com.haulmont.cuba.gui.components.SourceCodeEditor.Mode;
+
 public class ComponentSampleBrowser extends AbstractWindow {
     @Inject
     private TabSheet tabSheet;
@@ -63,22 +65,23 @@ public class ComponentSampleBrowser extends AbstractWindow {
         }
 
         String screenSrc = (String) params.get("screenSrc");
-        addSourceTab(screenSrc, SourceCodeEditor.Mode.XML);
+        addSourceTab(screenSrc, Mode.XML);
 
         String controller = (String) params.get("controller");
-        addSourceTab(controller, SourceCodeEditor.Mode.Java);
+        if (StringUtils.isNotEmpty(controller))
+            addSourceTab(controller, getMode(samplesHelper.getFileName(controller)));
 
         List<String> otherFiles = (List<String>) params.get("otherFiles");
         if (CollectionUtils.isNotEmpty(otherFiles)) {
             for (String src : otherFiles) {
-                addSourceTab(src, SourceCodeEditor.Mode.Java);
+                addSourceTab(src, getMode(samplesHelper.getFileName(src)));
             }
         }
 
         String messagesPack = (String) params.get("messagesPack");
         if (StringUtils.isNotEmpty(messagesPack)) {
             Collection<String> messagesKeys = (Collection<String>) params.get("messagesKeys");
-            createMessagesContainer(messagesPack, messagesKeys);
+            createMessagesContainers(messagesPack, messagesKeys);
         }
     }
 
@@ -116,7 +119,7 @@ public class ComponentSampleBrowser extends AbstractWindow {
         return doc;
     }
 
-    private SourceCodeEditor createSourceCodeEditor(SourceCodeEditor.Mode mode) {
+    private SourceCodeEditor createSourceCodeEditor(Mode mode) {
         SourceCodeEditor editor = componentsFactory.createComponent(SourceCodeEditor.NAME);
         editor.setMode(mode);
         editor.setEditable(false);
@@ -126,10 +129,10 @@ public class ComponentSampleBrowser extends AbstractWindow {
         return editor;
     }
 
-    private void createMessagesContainer(String messagesPack, Collection<String> messagesKeys) {
+    private void createMessagesContainers(String messagesPack, Collection<String> messagesKeys) {
         Locale defaultLocale = messageTools.getDefaultLocale();
         for (Locale locale : globalConfig.getAvailableLocales().values()) {
-            SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(SourceCodeEditor.Mode.Properties);
+            SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(Mode.Properties);
             StringBuilder sb = new StringBuilder();
             String tabTitle;
             if (defaultLocale.equals(locale)) {
@@ -138,10 +141,14 @@ public class ComponentSampleBrowser extends AbstractWindow {
                 tabTitle = String.format("messages_%s.properties", locale.toString());
             }
             for (String key : messagesKeys) {
-                sb.append(key).append(" = ").append(messages.getMessage(messagesPack, key, locale)).append("\n");
+                String message = messages.findMessage(messagesPack, key, locale);
+                if (StringUtils.isNotEmpty(message))
+                    sb.append(key).append(" = ").append(message).append("\n");
             }
-            sourceCodeEditor.setValue(sb.toString());
-            addTab(tabTitle, sourceCodeEditor);
+            if (sb.length() > 0) {
+                sourceCodeEditor.setValue(sb.toString());
+                addTab(tabTitle, sourceCodeEditor);
+            }
         }
     }
 
@@ -153,11 +160,20 @@ public class ComponentSampleBrowser extends AbstractWindow {
         tab.setCaption(name);
     }
 
-    private void addSourceTab(String src, SourceCodeEditor.Mode mode) {
+    private void addSourceTab(String src, Mode mode) {
         if (StringUtils.isNotEmpty(src)) {
             SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(mode);
             sourceCodeEditor.setValue(samplesHelper.getFileContent(src));
             addTab(samplesHelper.getFileName(src), sourceCodeEditor);
         }
+    }
+    
+    private Mode getMode(String fileName) {
+        int index = fileName.lastIndexOf(".");
+        if (index >= 0) {
+            String extension = fileName.substring(index + 1);
+            return Mode.parse(extension);
+        }
+        return Mode.Text;
     }
 }
