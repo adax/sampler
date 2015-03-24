@@ -123,6 +123,7 @@ public class ComponentSampleBrowser extends AbstractWindow {
 
         Label doc = componentsFactory.createComponent(Label.NAME);
         doc.setHtmlEnabled(true);
+        doc.setWidth("100%");
         doc.setValue(sb.toString());
 
         return doc;
