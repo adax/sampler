@@ -97,10 +97,12 @@ public class ComponentSampleBrowser extends AbstractWindow {
 
     private Component createDescription(String descriptionsPack, String docUrlSuffix, String frameId) {
         StringBuilder sb = new StringBuilder();
-        String text = samplesHelper.getFileContent(getDescriptionFileName(descriptionsPack, frameId));
-        if (StringUtils.isNotEmpty(text)) {
-            sb.append(text);
-            sb.append("<hr>");
+        if (StringUtils.isNotEmpty(descriptionsPack)) {
+            String text = samplesHelper.getFileContent(getDescriptionFileName(descriptionsPack, frameId));
+            if (StringUtils.isNotEmpty(text)) {
+                sb.append(text);
+                sb.append("<hr>");
+            }
         }
         sb.append("<p>");
         sb.append(messages.getMessage(getClass(), "sampleBrowser.documentation"));
