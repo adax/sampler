@@ -5,14 +5,19 @@
     <menu id="components">
         <menu id="button">
             <item id="simple-button" docUrlSuffix="gui_Button"
-                  controller="com/haulmont/sampler/gui/components/button/SimpleButtonFrame.java"/>
-            <item id="localized-button" docUrlSuffix="gui_Button"/>
+                  controller="com/haulmont/sampler/gui/components/button/SimpleButtonFrame.java"
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/description"/>
+            <item id="localized-button" docUrlSuffix="gui_Button"
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/description"/>
             <item id="action-button" docUrlSuffix="gui_Button"
-                  controller="com/haulmont/sampler/gui/components/button/ActionButtonFrame.java"/>
+                  controller="com/haulmont/sampler/gui/components/button/ActionButtonFrame.java"
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/description"/>
             <item id="programmatic-action-button" docUrlSuffix="gui_Button"
-                  controller="com/haulmont/sampler/gui/components/button/ProgrammaticActionButtonFrame.java"/>
-            <item id="link-button" docUrlSuffix="gui_Link"
-                  controller="com/haulmont/sampler/gui/components/button/LinkButtonFrame.java"/>
+                  controller="com/haulmont/sampler/gui/components/button/ProgrammaticActionButtonFrame.java"
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/description"/>
+            <item id="link-button" docUrlSuffix="gui_LinkButton"
+                  controller="com/haulmont/sampler/gui/components/button/LinkButtonFrame.java"
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/description"/>
         </menu>
 
         <item id="bulk-editor" docUrlSuffix="gui_BulkEditor">
@@ -25,7 +30,6 @@
             <item id="simple-checkbox" docUrlSuffix="gui_CheckBox"
                     controller="com/haulmont/sampler/gui/components/checkbox/SimpleCheckboxFrame.java"/>
             <item id="datasource-checkbox" docUrlSuffix="gui_CheckBox"
-                  description="sample-config.datasource-checkbox.description"
                   controller="com/haulmont/sampler/gui/components/checkbox/DatasourceCheckboxFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
@@ -36,8 +40,7 @@
         <menu id="dateField">
             <item id="simple-datefield" docUrlSuffix="gui_DateField"/>
             <item id="datasource-datefield" docUrlSuffix="gui_DateField"
-                  controller="com/haulmont/sampler/gui/components/datefield/DatasourceDateFieldFrame.java"
-                  description="sample-config.datasource-datefield.description">
+                  controller="com/haulmont/sampler/gui/components/datefield/DatasourceDateFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
@@ -198,8 +201,7 @@
         <menu id="textField">
             <item id="simple-textfield" docUrlSuffix="gui_TextField"/>
             <item id="datasource-textfield" docUrlSuffix="gui_TextField"
-                  controller="com/haulmont/sampler/gui/components/textfield/DatasourceTextFieldFrame.java"
-                  description="sample-config.datasource-datefield.description">
+                  controller="com/haulmont/sampler/gui/components/textfield/DatasourceTextFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>

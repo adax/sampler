@@ -21,7 +21,7 @@ public class MenuItem {
     private String url;
     private String caption;
     private String controller;
-    private String description;
+    private String descriptionsPack;
     private List<String> otherFiles;
 
     private boolean isMenu = false;
@@ -85,12 +85,12 @@ public class MenuItem {
     }
 
     @Nullable
-    public String getDescription() {
-        return description;
+    public String getDescriptionsPack() {
+        return descriptionsPack;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescriptionsPack(String description) {
+        this.descriptionsPack = description;
     }
 
     public List<MenuItem> getChildren() {

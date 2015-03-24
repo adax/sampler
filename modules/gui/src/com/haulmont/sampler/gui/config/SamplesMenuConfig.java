@@ -163,9 +163,9 @@ public class SamplesMenuConfig {
             menuItem.setUrl(docUrl);
         }
 
-        String descriptionKey = element.attributeValue("description");
-        if (StringUtils.isNotBlank(descriptionKey)) {
-            menuItem.setDescription(messages.getMainMessage(descriptionKey));
+        String descriptionsPack = element.attributeValue("descriptionsPack");
+        if (StringUtils.isNotBlank(descriptionsPack)) {
+            menuItem.setDescriptionsPack(messages.getMainMessage(descriptionsPack));
         }
 
         String controller = element.attributeValue("controller");

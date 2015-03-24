@@ -46,7 +46,7 @@ public class SamplesHelper {
         params.put("caption", item.getCaption());
         params.put("controller", item.getController());
         params.put("otherFiles", item.getOtherFiles());
-        params.put("description", item.getDescription());
+        params.put("descriptionsPack", item.getDescriptionsPack());
         params.put("screenSrc", info.getTemplate());
         params.put("docUrlSuffix", item.getUrl());
         Element root = getWindowElement(info.getTemplate());

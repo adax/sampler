@@ -3,6 +3,7 @@ package com.haulmont.sampler.gui.components;
 import com.haulmont.cuba.core.global.GlobalConfig;
 import com.haulmont.cuba.core.global.MessageTools;
 import com.haulmont.cuba.core.global.Messages;
+import com.haulmont.cuba.core.global.UserSessionSource;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
 import com.haulmont.sampler.gui.SamplesHelper;
@@ -40,6 +41,9 @@ public class ComponentSampleBrowser extends AbstractWindow {
     @Inject
     private GlobalConfig globalConfig;
 
+    @Inject
+    protected UserSessionSource userSessionSource;
+
     @Override
     public void init(Map<String, Object> params) {
         super.init(params);
@@ -52,15 +56,13 @@ public class ComponentSampleBrowser extends AbstractWindow {
             caption = id;
         setCaption(caption);
 
-        String description = (String) params.get("description");
-        if (StringUtils.isEmpty(description))
-            description = caption;
+        String descriptionsPack = (String) params.get("descriptionsPack");
 
         if (StringUtils.isNotEmpty(samplesMenuConfig.getDocTemplate())) {
             String docUrlSuffix = (String) params.get("docUrlSuffix");
             if (StringUtils.isNotEmpty(docUrlSuffix)) {
                 addTab(messages.getMessage(getClass(), "sampleBrowser.description"),
-                        createDescription(description, docUrlSuffix));
+                        createDescription(descriptionsPack, docUrlSuffix, id));
             }
         }
 
@@ -93,10 +95,14 @@ public class ComponentSampleBrowser extends AbstractWindow {
         return vBox;
     }
 
-    private Component createDescription(String text, String docUrlSuffix) {
+    private Component createDescription(String descriptionsPack, String docUrlSuffix, String frameId) {
         StringBuilder sb = new StringBuilder();
-        sb.append(text);
-        sb.append("<br/><br/>");
+        String text = samplesHelper.getFileContent(getDescriptionFileName(descriptionsPack, frameId));
+        if (StringUtils.isNotEmpty(text)) {
+            sb.append(text);
+            sb.append("<hr>");
+        }
+        sb.append("<p>");
         sb.append(messages.getMessage(getClass(), "sampleBrowser.documentation"));
         sb.append(": ");
 
@@ -111,12 +117,23 @@ public class ComponentSampleBrowser extends AbstractWindow {
             String url = String.format(samplesMenuConfig.getDocTemplate(locale), docUrlSuffix);
             sb.append(String.format("<a href=\"%s\" target=\"_blank\">%s</a>", url, localeName));
         }
+        sb.append("</p>");
 
         Label doc = componentsFactory.createComponent(Label.NAME);
         doc.setHtmlEnabled(true);
         doc.setValue(sb.toString());
 
         return doc;
+    }
+
+    private String getDescriptionFileName(String descriptionsPack, String frameId) {
+        StringBuilder sb = new StringBuilder(descriptionsPack);
+        if (!descriptionsPack.endsWith("/"))
+            sb.append("/");
+        sb.append(getUserLocale().toString()).append("/");
+        sb.append(frameId);
+        sb.append(".html");
+        return sb.toString();
     }
 
     private SourceCodeEditor createSourceCodeEditor(Mode mode) {
@@ -167,7 +184,7 @@ public class ComponentSampleBrowser extends AbstractWindow {
             addTab(samplesHelper.getFileName(src), sourceCodeEditor);
         }
     }
-    
+
     private Mode getMode(String fileName) {
         int index = fileName.lastIndexOf(".");
         if (index >= 0) {
@@ -175,5 +192,9 @@ public class ComponentSampleBrowser extends AbstractWindow {
             return Mode.parse(extension);
         }
         return Mode.Text;
+    }
+
+    private Locale getUserLocale() {
+        return userSessionSource.getUserSession().getLocale();
     }
 }
