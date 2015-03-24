@@ -149,7 +149,7 @@
             <item id="style-table" docUrlSuffix="gui_Table"
                   controller="com/haulmont/sampler/gui/components/table/StyleTableFrame.java">
                 <otherFiles>
-                    <file name="themes/halo/samples/components/table/table.scss"/>
+                    <file name="com/haulmont/sampler/gui/components/table/style.scss"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
