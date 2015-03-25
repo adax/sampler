@@ -34,6 +34,6 @@ public class GenerateTableFrame extends AbstractFrame {
             }
         });
 
-        customerTable.getColumn("language").setCaption("Language");
+        customerTable.setColumnCaption("language", "Language");
     }
 }
