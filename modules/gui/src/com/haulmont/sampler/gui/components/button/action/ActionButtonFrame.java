@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.button.actionbutton;
+package com.haulmont.sampler.gui.components.button.action;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 

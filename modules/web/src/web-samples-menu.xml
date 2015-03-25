@@ -5,16 +5,16 @@
     <menu id="components">
         <menu id="button">
             <item id="simple-button" docUrlSuffix="gui_Button"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/simplebutton"
-                  controller="com/haulmont/sampler/gui/components/button/simplebutton/SimpleButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/simple"
+                  controller="com/haulmont/sampler/gui/components/button/simple/SimpleButtonFrame.java"/>
             <item id="localized-button" docUrlSuffix="gui_Button"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/localizedbutton"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/localized"/>
             <item id="action-button" docUrlSuffix="gui_Button"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/actionbutton"
-                  controller="com/haulmont/sampler/gui/components/button/actionbutton/ActionButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/action"
+                  controller="com/haulmont/sampler/gui/components/button/action/ActionButtonFrame.java"/>
             <item id="programmatic-action-button" docUrlSuffix="gui_Button"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/programmaticactionbutton"
-                  controller="com/haulmont/sampler/gui/components/button/programmaticactionbutton/ProgrammaticActionButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/programmaticaction"
+                  controller="com/haulmont/sampler/gui/components/button/programmaticaction/ProgrammaticActionButtonFrame.java"/>
             <item id="link-button" docUrlSuffix="gui_LinkButton"
                   descriptionsPack="com/haulmont/sampler/gui/components/button/linkbutton"
                   controller="com/haulmont/sampler/gui/components/button/linkbutton/LinkButtonFrame.java"/>
@@ -29,11 +29,11 @@
 
         <menu id="checkBox">
             <item id="simple-checkbox" docUrlSuffix="gui_CheckBox"
-                  descriptionsPack="com/haulmont/sampler/gui/components/checkbox/simplecheckbox"
-                  controller="com/haulmont/sampler/gui/components/checkbox/simplecheckbox/SimpleCheckboxFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/checkbox/simple"
+                  controller="com/haulmont/sampler/gui/components/checkbox/simple/SimpleCheckboxFrame.java"/>
             <item id="datasource-checkbox" docUrlSuffix="gui_CheckBox"
-                  descriptionsPack="com/haulmont/sampler/gui/components/checkbox/datasourcecheckbox"
-                  controller="com/haulmont/sampler/gui/components/checkbox/datasourcecheckbox/DatasourceCheckboxFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/checkbox/datasource"
+                  controller="com/haulmont/sampler/gui/components/checkbox/datasource/DatasourceCheckboxFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
@@ -42,19 +42,19 @@
 
         <menu id="dateField">
             <item id="simple-datefield" docUrlSuffix="gui_DateField"
-                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/simpledatefield"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/simple"/>
             <item id="datasource-datefield" docUrlSuffix="gui_DateField"
-                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/datasourcedatefield"
-                  controller="com/haulmont/sampler/gui/components/datefield/datasourcedatefield/DatasourceDateFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/datasource"
+                  controller="com/haulmont/sampler/gui/components/datefield/datasource/DatasourceDateFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="format-datefield" docUrlSuffix="gui_DateField"
-                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/formatdatefield"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/format"/>
             <item id="resolution-datefield" docUrlSuffix="gui_DateField"
-                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/resolutiondatefield"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/resolution"/>
         </menu>
 
         <menu id="embedded">
