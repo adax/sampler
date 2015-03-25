@@ -1,6 +1,6 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         class="com.haulmont.cuba.gui.components.AbstractFrame"
-        messagesPack="com.haulmont.sampler.gui.components.button">
+        messagesPack="com.haulmont.sampler.gui.components.button.localizedbutton">
     <layout>
         <button caption="msg://caption.localizedButton"
                 description="msg://description.localizedButton"/>

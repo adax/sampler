@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.button;
+package com.haulmont.sampler.gui.components.button.linkbutton;
 
 import com.haulmont.cuba.gui.components.AbstractWindow;
 import com.haulmont.cuba.gui.components.Component;

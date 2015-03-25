@@ -5,19 +5,19 @@
     <menu id="components">
         <menu id="button">
             <item id="simple-button" docUrlSuffix="gui_Button"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/description"
-                  controller="com/haulmont/sampler/gui/components/button/SimpleButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/simplebutton"
+                  controller="com/haulmont/sampler/gui/components/button/simplebutton/SimpleButtonFrame.java"/>
             <item id="localized-button" docUrlSuffix="gui_Button"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/description"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/localizedbutton"/>
             <item id="action-button" docUrlSuffix="gui_Button"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/description"
-                  controller="com/haulmont/sampler/gui/components/button/ActionButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/actionbutton"
+                  controller="com/haulmont/sampler/gui/components/button/actionbutton/ActionButtonFrame.java"/>
             <item id="programmatic-action-button" docUrlSuffix="gui_Button"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/description"
-                  controller="com/haulmont/sampler/gui/components/button/ProgrammaticActionButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/programmaticactionbutton"
+                  controller="com/haulmont/sampler/gui/components/button/programmaticactionbutton/ProgrammaticActionButtonFrame.java"/>
             <item id="link-button" docUrlSuffix="gui_LinkButton"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/description"
-                  controller="com/haulmont/sampler/gui/components/button/LinkButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/button/linkbutton"
+                  controller="com/haulmont/sampler/gui/components/button/linkbutton/LinkButtonFrame.java"/>
         </menu>
 
         <item id="bulk-editor" docUrlSuffix="gui_BulkEditor"
