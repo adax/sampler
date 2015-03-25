@@ -102,4 +102,10 @@
             template="/com/haulmont/sampler/gui/components/lookupfield/filtermode/filter-mode-lookupfield.xml"/>
     <screen id="user-input-lookupfield"
             template="/com/haulmont/sampler/gui/components/lookupfield/userinput/user-input-lookupfield.xml"/>
+    <screen id="column-fieldgroup"
+            template="com/haulmont/sampler/gui/components/fieldgroup/column/column-fieldgroup.xml"/>
+    <screen id="generate-fieldgroup"
+            template="com/haulmont/sampler/gui/components/fieldgroup/generate/generate-fieldgroup.xml"/>
+    <screen id="customize-fieldgroup"
+            template="com/haulmont/sampler/gui/components/fieldgroup/customize/customize-fieldgroup.xml"/>
 </screen-config>

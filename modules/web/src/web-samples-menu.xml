@@ -75,6 +75,27 @@
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
+            <item id="column-fieldgroup" docUrlSuffix="gui_FieldGroup"
+                  descriptionsPack="com/haulmont/sampler/gui/components/fieldgroup/column"
+                  controller="com/haulmont/sampler/gui/components/fieldgroup/column/ColumnFieldGroupFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="generate-fieldgroup" docUrlSuffix="gui_FieldGroup"
+                  descriptionsPack="com/haulmont/sampler/gui/components/fieldgroup/generate"
+                  controller="com/haulmont/sampler/gui/components/fieldgroup/generate/GenerateFieldGroupFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="customize-fieldgroup" docUrlSuffix="gui_FieldGroup"
+                  descriptionsPack="com/haulmont/sampler/gui/components/fieldgroup/customize"
+                  controller="com/haulmont/sampler/gui/components/fieldgroup/customize/CustomizeFieldGroupFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
         </menu>
 
         <menu id="label">

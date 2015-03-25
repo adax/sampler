@@ -1,0 +1,17 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.fieldgroup.generate.GenerateFieldGroupFrame">
+    <dsContext>
+        <datasource id="customerDs"
+                    allowCommit="false"
+                    class="com.haulmont.sampler.entity.Customer"
+                    view="_minimal"/>
+    </dsContext>
+    <layout>
+        <fieldGroup id="customerField"
+                    datasource="customerDs">
+            <field id="name"/>
+            <field id="lastName"/>
+            <field id="language" custom="true"/>
+        </fieldGroup>
+    </layout>
+</window>

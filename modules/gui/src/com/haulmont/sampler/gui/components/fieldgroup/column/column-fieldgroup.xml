@@ -1,0 +1,23 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.fieldgroup.column.ColumnFieldGroupFrame">
+    <dsContext>
+        <datasource id="customerDs"
+                    allowCommit="false"
+                    class="com.haulmont.sampler.entity.Customer"
+                    view="_local"/>
+    </dsContext>
+    <layout>
+        <fieldGroup datasource="customerDs"
+                    width="100%">
+            <column flex="2">
+                <field id="name"/>
+                <field id="lastName"/>
+            </column>
+            <column flex="1">
+                <field id="age"/>
+                <field id="active"/>
+                <field id="grade"/>
+            </column>
+        </fieldGroup>
+    </layout>
+</window>
