@@ -21,7 +21,7 @@
         </menu>
 
         <item id="bulk-editor" docUrlSuffix="gui_BulkEditor"
-              descriptionsPack="com/haulmont/sampler/gui/components/bulkeditor/description">
+              descriptionsPack="com/haulmont/sampler/gui/components/bulkeditor">
             <otherFiles>
                 <file name="com/haulmont/sampler/entity/Customer.java"/>
             </otherFiles>
