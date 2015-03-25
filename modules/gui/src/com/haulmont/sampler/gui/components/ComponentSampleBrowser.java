@@ -133,8 +133,8 @@ public class ComponentSampleBrowser extends AbstractWindow {
         StringBuilder sb = new StringBuilder(descriptionsPack);
         if (!descriptionsPack.endsWith("/"))
             sb.append("/");
-        sb.append(getUserLocale().toString()).append("/");
-        sb.append(frameId);
+        sb.append(frameId).append("-");
+        sb.append(getUserLocale().toString());
         sb.append(".html");
         return sb.toString();
     }
