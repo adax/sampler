@@ -219,7 +219,7 @@
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
-            <item id="group-table-browse" docUrlSuffix="gui_GroupTable"
+            <item id="group-table" docUrlSuffix="gui_GroupTable"
                   descriptionsPack="com/haulmont/sampler/gui/components/table/grouptable">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
