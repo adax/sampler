@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.embedded;
+package com.haulmont.sampler.gui.components.embedded.web;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.Embedded;

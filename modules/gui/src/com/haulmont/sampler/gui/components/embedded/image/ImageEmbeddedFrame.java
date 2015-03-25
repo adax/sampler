@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.embedded;
+package com.haulmont.sampler.gui.components.embedded.image;
 
 import com.haulmont.cuba.core.app.FileStorageService;
 import com.haulmont.cuba.core.entity.FileDescriptor;

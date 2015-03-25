@@ -39,9 +39,9 @@
     <screen id="trim-textfield"
             template="com/haulmont/sampler/gui/components/textfield/trim-textfield.xml"/>
     <screen id="image-embedded"
-            template="com/haulmont/sampler/gui/components/embedded/image-embedded.xml"/>
+            template="/com/haulmont/sampler/gui/components/embedded/image/image-embedded.xml"/>
     <screen id="web-embedded"
-            template="com/haulmont/sampler/gui/components/embedded/web-embedded.xml"/>
+            template="/com/haulmont/sampler/gui/components/embedded/web/web-embedded.xml"/>
     <screen id="simple-datefield"
             template="/com/haulmont/sampler/gui/components/datefield/simpledatefield/simple-datefield.xml"/>
     <screen id="datasource-datefield"

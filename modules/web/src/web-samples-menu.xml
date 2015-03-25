@@ -59,11 +59,11 @@
 
         <menu id="embedded">
             <item id="image-embedded" docUrlSuffix="gui_Embedded"
-                  descriptionsPack="com/haulmont/sampler/gui/components/embedded/description"
-                  controller="com/haulmont/sampler/gui/components/embedded/ImageEmbeddedFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/embedded/image"
+                  controller="com/haulmont/sampler/gui/components/embedded/image/ImageEmbeddedFrame.java"/>
             <item id="web-embedded" docUrlSuffix="gui_Embedded"
-                  descriptionsPack="com/haulmont/sampler/gui/components/embedded/description"
-                  controller="com/haulmont/sampler/gui/components/embedded/WebEmbeddedFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/embedded/web"
+                  controller="com/haulmont/sampler/gui/components/embedded/web/WebEmbeddedFrame.java"/>
         </menu>
 
         <menu id="fieldGroup">
