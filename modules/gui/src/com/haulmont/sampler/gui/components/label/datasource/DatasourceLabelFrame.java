@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.label;
+package com.haulmont.sampler.gui.components.label.datasource;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.data.Datasource;

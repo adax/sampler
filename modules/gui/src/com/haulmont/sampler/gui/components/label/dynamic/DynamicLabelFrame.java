@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.label;
+package com.haulmont.sampler.gui.components.label.dynamic;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.Label;

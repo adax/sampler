@@ -79,22 +79,22 @@
 
         <menu id="label">
             <item id="simple-label" docUrlSuffix="gui_Label"
-                  descriptionsPack="com/haulmont/sampler/gui/components/label/description"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/label/simple"/>
             <item id="multiline-label" docUrlSuffix="gui_Label"
-                  descriptionsPack="com/haulmont/sampler/gui/components/label/description"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/label/multiline"/>
             <item id="dynamic-label" docUrlSuffix="gui_Label"
-                  descriptionsPack="com/haulmont/sampler/gui/components/label/description"
-                  controller="com/haulmont/sampler/gui/components/label/DynamicLabelFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/label/dynamic"
+                  controller="com/haulmont/sampler/gui/components/label/dynamic/DynamicLabelFrame.java"/>
             <item id="datasource-label" docUrlSuffix="gui_Label"
-                  descriptionsPack="com/haulmont/sampler/gui/components/label/description"
-                  controller="com/haulmont/sampler/gui/components/label/DatasourceLabelFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/label/datasource"
+                  controller="com/haulmont/sampler/gui/components/label/datasource/DatasourceLabelFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="html-label" docUrlSuffix="gui_Label"
-                  descriptionsPack="com/haulmont/sampler/gui/components/label/description"
-                  controller="com/haulmont/sampler/gui/components/label/HtmlLabelFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/label/html"
+                  controller="com/haulmont/sampler/gui/components/label/html/HtmlLabelFrame.java"/>
         </menu>
 
         <item id="simple-link" docUrlSuffix="gui_Link"
