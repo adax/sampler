@@ -1,0 +1,19 @@
+<p>Атрибут&nbsp;<code>aggregatable</code>&nbsp;включает режим агрегации строк таблицы. Поддерживаются следующие операции:</p>
+<ul style="list-style-type:circle">
+    <li>
+        <p><code>SUM</code>&nbsp;- сумма</p>
+    </li>
+    <li>
+        <p><code>AVG</code>&nbsp;- среднее значение</p>
+    </li>
+    <li>
+        <p><code>COUNT</code>&nbsp;- количество</p>
+    </li>
+    <li>
+        <p><code>MIN</code>&nbsp;- минимальное значение</p>
+    </li>
+    <li>
+        <p><code>MAX</code>&nbsp;- максимальное значение</p>
+    </li>
+</ul>
+<p>Для агрегируемых колонок необходимо указать элемент&nbsp;<code>aggregation</code>&nbsp;с атрибутом&nbsp;<code>type</code>, задающим функцию агрегации. Агрегированные значения столбцов выводятся в дополнительной строке вверху таблицы.</p>

@@ -1,0 +1,16 @@
+<p>Метод&nbsp;<code>setEnterPressAction()</code>&nbsp;позволяет задать&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/gui_Action.html" target="_blank">действие</a>, выполняемое при нажатии клавиши&nbsp;<strong>Enter</strong>. Если такое действие не задано, при двойном клике таблица пытается найти среди своих действий подходящее в следующем порядке:</p>
+<ul>
+    <li>
+        <p>Действие, назначенное методом&nbsp;<code>setItemClickAction()</code>.</p>
+    </li>
+    <li>
+        <p>Действие, назначенное на клавишу&nbsp;<strong>Enter</strong>&nbsp;посредством свойства&nbsp;<code>shortcut</code>.</p>
+    </li>
+    <li>
+        <p>Действие с именем&nbsp;<code>edit</code>.</p>
+    </li>
+    <li>
+        <p>Действие с именем&nbsp;<code>view</code>.</p>
+    </li>
+</ul>
+<p>Если такое действие найдено и имеет свойство enabled = true, оно выполняется.</p>

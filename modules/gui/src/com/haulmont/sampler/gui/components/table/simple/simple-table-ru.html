@@ -1,0 +1,25 @@
+<p>Компонент&nbsp;<code>Table</code>&nbsp;позволяет выводить информацию в табличном виде, сортировать данные, управлять колонками и заголовками таблицы, вызывать действия для выбранных строк.</p>
+<p>Элементы&nbsp;<code>table</code>:</p>
+<ul>
+    <li>
+        <p><code>rows</code>&nbsp;- обязательный элемент, в атрибуте&nbsp;<code>datasource</code>&nbsp;которого необходимо объявить используемый таблицей&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/datasources.html" target="_blank">источник данных</a>.</p>
+    </li>
+    <li>
+        <p><code>columns</code>&nbsp;- обязательный элемент, определяет набор колонок таблицы.</p>
+    </li>
+</ul>
+<p>Атрибуты&nbsp;<code>table</code>:</p>
+<ul>
+    <li>
+        <p>Атрибут&nbsp;<code>multiselect</code>&nbsp;позволяет задать режим множественного выделения строк в таблице. Если&nbsp;<code>multiselect</code>&nbsp;равен&nbsp;<code>true</code>, то пользователь может выделить несколько строк с помощью клавиатуры или мыши, удерживая клавиши&nbsp;<strong>Ctrl</strong>&nbsp;или&nbsp;<strong>Shift</strong>. По умолчанию режим множественного выделения отключен.</p>
+    </li>
+    <li>
+        <p>Атрибут&nbsp;<code>sortable</code>&nbsp;разрешает или запрещает сортировку в таблице. По умолчанию имеет значение&nbsp;<code>true</code>. Если сортировка разрешена, то при нажатии на название колонки справа от названия появляется значок&nbsp;<img src="http://docs.cuba-platform.com/cuba/5.4/manual/ru/webhelp/img/gui_sortable_down.png" />/<img src="http://docs.cuba-platform.com/cuba/5.4/manual/ru/webhelp/img/gui_sortable_up.png" />.</p>
+    </li>
+    <li>
+        <p>Установка атрибута&nbsp;<code>columnControlVisible</code>&nbsp;в&nbsp;<code>false</code>&nbsp;запрещает пользователю скрывать колонки с помощью меню, выпадающего при нажатия на кнопку&nbsp;<img src="http://docs.cuba-platform.com/cuba/5.4/manual/ru/webhelp/img/gui_table_columnControl.png" />&nbsp;в правой части шапки таблицы. Флажками в меню отмечаются отображаемые в данный момент колонки.</p>
+    </li>
+    <li>
+        <p>Установка атрибута&nbsp;<code>reorderingAllowed</code>&nbsp;в&nbsp;<code>false</code>&nbsp;запрещает пользователю менять местами колонки, перетаскивая их с помощью мыши.</p>
+    </li>
+</ul>
