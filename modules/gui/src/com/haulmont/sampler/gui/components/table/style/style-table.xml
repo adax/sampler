@@ -1,9 +1,9 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        class="com.haulmont.sampler.gui.components.table.IconTableFrame">
+        class="com.haulmont.sampler.gui.components.table.style.StyleTableFrame">
     <dsContext>
         <collectionDatasource id="customersDs"
                               class="com.haulmont.sampler.entity.Customer"
-                              view="_minimal">
+                              view="_local">
             <query>
                 <![CDATA[select e from sampler$Customer e]]>
             </query>
@@ -12,10 +12,13 @@
     <layout>
         <table id="customerTable"
                height="200px"
-               width="480px">
+               width="100%">
             <columns>
                 <column id="name"/>
                 <column id="lastName"/>
+                <column id="age"/>
+                <column id="active"/>
+                <column id="grade"/>
             </columns>
             <rows datasource="customersDs"/>
         </table>

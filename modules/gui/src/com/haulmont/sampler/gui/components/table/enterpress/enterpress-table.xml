@@ -1,0 +1,23 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.table.enterpress.EnterPressTableFrame">
+    <dsContext>
+        <collectionDatasource id="customersDs"
+                              class="com.haulmont.sampler.entity.Customer"
+                              view="_minimal">
+            <query>
+                <![CDATA[select e from sampler$Customer e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout>
+        <table id="customerTable"
+               height="200px"
+               width="480px">
+            <columns>
+                <column id="name"/>
+                <column id="lastName"/>
+            </columns>
+            <rows datasource="customersDs"/>
+        </table>
+    </layout>
+</window>

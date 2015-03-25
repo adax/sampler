@@ -134,99 +134,99 @@
 
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description"
-                  controller="com/haulmont/sampler/gui/components/table/SimpleTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/simple"
+                  controller="com/haulmont/sampler/gui/components/table/simple/SimpleTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="maxlength-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/maxlength">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="action-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description"
-                  controller="com/haulmont/sampler/gui/components/table/ActionTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/action"
+                  controller="com/haulmont/sampler/gui/components/table/action/ActionTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="editable-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/editable">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="formatter-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description"
-                  controller="com/haulmont/sampler/gui/components/table/FormatterTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/formatter"
+                  controller="com/haulmont/sampler/gui/components/table/formatter/FormatterTableFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/components/table/LowercaseFormatter.java"/>
+                    <file name="com/haulmont/sampler/gui/components/table/formatter/LowercaseFormatter.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="icon-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description"
-                  controller="com/haulmont/sampler/gui/components/table/IconTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/icon"
+                  controller="com/haulmont/sampler/gui/components/table/icon/IconTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="style-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description"
-                  controller="com/haulmont/sampler/gui/components/table/StyleTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/style"
+                  controller="com/haulmont/sampler/gui/components/table/style/StyleTableFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/components/table/style.scss"/>
+                    <file name="com/haulmont/sampler/gui/components/table/style/style.scss"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="itemclick-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description"
-                  controller="com/haulmont/sampler/gui/components/table/ItemClickTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/itemclick"
+                  controller="com/haulmont/sampler/gui/components/table/itemclick/ItemClickTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="enterpress-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description"
-                  controller="com/haulmont/sampler/gui/components/table/EnterPressTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/enterpress"
+                  controller="com/haulmont/sampler/gui/components/table/enterpress/EnterPressTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="generate-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description"
-                  controller="com/haulmont/sampler/gui/components/table/GenerateTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/generate"
+                  controller="com/haulmont/sampler/gui/components/table/generate/GenerateTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="aggregatable-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/aggregatable">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="presentations-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/presentations">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="group-table-browse" docUrlSuffix="gui_GroupTable"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/grouptable">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="tree-table" docUrlSuffix="gui_TreeTable"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/description">
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/treetable">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Task.java"/>
                 </otherFiles>

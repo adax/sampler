@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.table;
+package com.haulmont.sampler.gui.components.table.generate;
 
 import com.haulmont.cuba.core.entity.Entity;
 import com.haulmont.cuba.core.global.GlobalConfig;
