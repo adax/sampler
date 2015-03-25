@@ -68,8 +68,8 @@
 
         <menu id="fieldGroup">
             <item id="simple-fieldgroup" docUrlSuffix="gui_FieldGroup"
-                  descriptionsPack="com/haulmont/sampler/gui/components/fieldgroup/description"
-                  controller="com/haulmont/sampler/gui/components/fieldgroup/SimpleFieldGroupFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/fieldgroup/simple"
+                  controller="com/haulmont/sampler/gui/components/fieldgroup/simple/SimpleFieldGroupFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>

@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.fieldgroup;
+package com.haulmont.sampler.gui.components.fieldgroup.simple;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.data.Datasource;

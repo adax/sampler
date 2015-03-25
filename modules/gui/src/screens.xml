@@ -51,7 +51,7 @@
     <screen id="resolution-datefield"
             template="/com/haulmont/sampler/gui/components/datefield/resolution/resolution-datefield.xml"/>
     <screen id="simple-fieldgroup"
-            template="com/haulmont/sampler/gui/components/fieldgroup/simple-fieldgroup.xml"/>
+            template="/com/haulmont/sampler/gui/components/fieldgroup/simple/simple-fieldgroup.xml"/>
     <screen id="simple-table"
             template="com/haulmont/sampler/gui/components/table/simple-table.xml"/>
     <screen id="action-table"
