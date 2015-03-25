@@ -25,9 +25,9 @@
     <screen id="localized-button"
             template="/com/haulmont/sampler/gui/components/button/localizedbutton/localized-button.xml"/>
     <screen id="simple-checkbox"
-            template="com/haulmont/sampler/gui/components/checkbox/simple-checkbox.xml"/>
+            template="/com/haulmont/sampler/gui/components/checkbox/simplecheckbox/simple-checkbox.xml"/>
     <screen id="datasource-checkbox"
-            template="com/haulmont/sampler/gui/components/checkbox/datasource-checkbox.xml"/>
+            template="/com/haulmont/sampler/gui/components/checkbox/datasourcecheckbox/datasource-checkbox.xml"/>
     <screen id="simple-textfield"
             template="com/haulmont/sampler/gui/components/textfield/simple-textfield.xml"/>
     <screen id="datasource-textfield"

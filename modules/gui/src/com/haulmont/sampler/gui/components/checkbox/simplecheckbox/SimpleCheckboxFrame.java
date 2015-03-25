@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.checkbox;
+package com.haulmont.sampler.gui.components.checkbox.simplecheckbox;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.CheckBox;

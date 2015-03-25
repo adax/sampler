@@ -29,11 +29,11 @@
 
         <menu id="checkBox">
             <item id="simple-checkbox" docUrlSuffix="gui_CheckBox"
-                  descriptionsPack="com/haulmont/sampler/gui/components/checkbox/description"
-                  controller="com/haulmont/sampler/gui/components/checkbox/SimpleCheckboxFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/checkbox/simplecheckbox"
+                  controller="com/haulmont/sampler/gui/components/checkbox/simplecheckbox/SimpleCheckboxFrame.java"/>
             <item id="datasource-checkbox" docUrlSuffix="gui_CheckBox"
-                  descriptionsPack="com/haulmont/sampler/gui/components/checkbox/description"
-                  controller="com/haulmont/sampler/gui/components/checkbox/DatasourceCheckboxFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/checkbox/datasourcecheckbox"
+                  controller="com/haulmont/sampler/gui/components/checkbox/datasourcecheckbox/DatasourceCheckboxFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
