@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.lookupfield;
+package com.haulmont.sampler.gui.components.lookupfield.userinput;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.LookupField;

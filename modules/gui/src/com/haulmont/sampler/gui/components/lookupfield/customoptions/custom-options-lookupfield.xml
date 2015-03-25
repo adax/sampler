@@ -1,5 +1,5 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        class="com.haulmont.sampler.gui.components.lookupfield.CustomOptionsLookupFieldFrame">
+        class="com.haulmont.sampler.gui.components.lookupfield.customoptions.CustomOptionsLookupFieldFrame">
     <dsContext>
         <datasource id="orderDs"
                     class="com.haulmont.sampler.entity.Order"
