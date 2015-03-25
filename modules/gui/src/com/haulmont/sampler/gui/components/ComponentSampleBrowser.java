@@ -121,12 +121,17 @@ public class ComponentSampleBrowser extends AbstractWindow {
         }
         sb.append("</p>");
 
+        ScrollBoxLayout scrollBoxLayout = componentsFactory.createComponent(ScrollBoxLayout.NAME);
+        scrollBoxLayout.setWidth("100%");
+        scrollBoxLayout.setHeight("100%");
+
         Label doc = componentsFactory.createComponent(Label.NAME);
         doc.setHtmlEnabled(true);
         doc.setWidth("100%");
         doc.setValue(sb.toString());
+        scrollBoxLayout.add(doc);
 
-        return doc;
+        return scrollBoxLayout;
     }
 
     private String getDescriptionFileName(String descriptionsPack, String frameId) {
