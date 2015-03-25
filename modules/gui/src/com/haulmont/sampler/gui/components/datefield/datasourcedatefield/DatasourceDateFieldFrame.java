@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.datefield;
+package com.haulmont.sampler.gui.components.datefield.datasourcedatefield;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.data.Datasource;

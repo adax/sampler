@@ -43,13 +43,13 @@
     <screen id="web-embedded"
             template="com/haulmont/sampler/gui/components/embedded/web-embedded.xml"/>
     <screen id="simple-datefield"
-            template="com/haulmont/sampler/gui/components/datefield/simple-datefield.xml"/>
+            template="/com/haulmont/sampler/gui/components/datefield/simpledatefield/simple-datefield.xml"/>
     <screen id="datasource-datefield"
-            template="com/haulmont/sampler/gui/components/datefield/datasource-datefield.xml"/>
+            template="/com/haulmont/sampler/gui/components/datefield/datasourcedatefield/datasource-datefield.xml"/>
     <screen id="format-datefield"
-            template="com/haulmont/sampler/gui/components/datefield/format-datefield.xml"/>
+            template="/com/haulmont/sampler/gui/components/datefield/formatdatefield/format-datefield.xml"/>
     <screen id="resolution-datefield"
-            template="com/haulmont/sampler/gui/components/datefield/resolution-datefield.xml"/>
+            template="/com/haulmont/sampler/gui/components/datefield/resolutiondatefield/resolution-datefield.xml"/>
     <screen id="simple-fieldgroup"
             template="com/haulmont/sampler/gui/components/fieldgroup/simple-fieldgroup.xml"/>
     <screen id="simple-table"

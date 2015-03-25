@@ -1,6 +1,6 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         class="com.haulmont.cuba.gui.components.AbstractFrame"
-        messagesPack="com.haulmont.sampler.gui.components.datefield">
+        messagesPack="com.haulmont.sampler.gui.components.datefield.formatdatefield">
     <layout>
         <hbox spacing="true">
             <dateField caption="MM/yy"
