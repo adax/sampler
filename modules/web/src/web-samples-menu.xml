@@ -98,7 +98,7 @@
         </menu>
 
         <item id="simple-link" docUrlSuffix="gui_Link"
-              descriptionsPack="com/haulmont/sampler/gui/components/link/description"/>
+              descriptionsPack="com/haulmont/sampler/gui/components/link"/>
 
         <menu id="lookupField">
             <item id="simple-lookupfield" docUrlSuffix="gui_LookupField"
