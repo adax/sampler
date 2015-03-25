@@ -1,6 +1,6 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         class="com.haulmont.cuba.gui.components.AbstractFrame"
-        messagesPack="com.haulmont.sampler.gui.components.textfield">
+        messagesPack="com.haulmont.sampler.gui.components.textfield.simple">
     <layout spacing="true">
         <textField caption="msg://textfield.simpleCaption"
                    description="msg://textfield.description"/>

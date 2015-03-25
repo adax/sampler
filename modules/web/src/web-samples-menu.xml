@@ -235,26 +235,26 @@
 
         <menu id="textField">
             <item id="simple-textfield" docUrlSuffix="gui_TextField"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/description"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/simple"/>
             <item id="datasource-textfield" docUrlSuffix="gui_TextField"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/description"
-                  controller="com/haulmont/sampler/gui/components/textfield/DatasourceTextFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/datasource"
+                  controller="com/haulmont/sampler/gui/components/textfield/datasource/DatasourceTextFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="datatype-textfield" docUrlSuffix="gui_TextField"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/description"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/datatype"/>
             <item id="validator-textfield" docUrlSuffix="gui_TextField"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/description"
-                  controller="com/haulmont/sampler/gui/components/textfield/ValidatorTextFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/validator"
+                  controller="com/haulmont/sampler/gui/components/textfield/validator/ValidatorTextFieldFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/components/textfield/PositiveIntegerValidator.java"/>
+                    <file name="com/haulmont/sampler/gui/components/textfield/validator/PositiveIntegerValidator.java"/>
                 </otherFiles>
             </item>
             <item id="trim-textfield" docUrlSuffix="gui_TextField"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/description"
-                  controller="com/haulmont/sampler/gui/components/textfield/TrimTextFieldFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/trim"
+                  controller="com/haulmont/sampler/gui/components/textfield/trim/TrimTextFieldFrame.java"/>
         </menu>
     </menu>
 

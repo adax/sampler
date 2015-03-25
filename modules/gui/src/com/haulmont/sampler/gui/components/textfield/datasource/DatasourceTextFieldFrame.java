@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.textfield;
+package com.haulmont.sampler.gui.components.textfield.datasource;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.data.Datasource;

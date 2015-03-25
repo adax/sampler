@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.textfield;
+package com.haulmont.sampler.gui.components.textfield.validator;
 
 import com.haulmont.cuba.gui.components.Field;
 import com.haulmont.cuba.gui.components.ValidationException;

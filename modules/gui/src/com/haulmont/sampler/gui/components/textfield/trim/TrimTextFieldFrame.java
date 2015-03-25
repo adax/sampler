@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.textfield;
+package com.haulmont.sampler.gui.components.textfield.trim;
 
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.data.ValueListener;
