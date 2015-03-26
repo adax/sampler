@@ -178,6 +178,23 @@
                   descriptionsPack="com/haulmont/sampler/gui/components/progressbar/indeterminate"/>
         </menu>
 
+        <menu id="relatedEntities">
+            <item id="simple-relatedentities" docUrlSuffix="gui_RelatedEntities"
+                  descriptionsPack="com/haulmont/sampler/gui/components/relatedentities/simple">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="exclude-relatedentities" docUrlSuffix="gui_RelatedEntities"
+                  descriptionsPack="com/haulmont/sampler/gui/components/relatedentities/exclude">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
         <item id="simple-richtextarea" docUrlSuffix="gui_RichTextArea"
               descriptionsPack="com/haulmont/sampler/gui/components/richtextarea"
               controller="com/haulmont/sampler/gui/components/richtextarea/SimpleRichTextAreaFrame.java"/>
