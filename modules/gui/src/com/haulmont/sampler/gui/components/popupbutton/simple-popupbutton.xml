@@ -1,0 +1,30 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.popupbutton.SimplePopupButtonFrame">
+    <layout>
+        <hbox spacing="true">
+            <popupButton id="popupButton1"
+                         caption="Save">
+                <actions>
+                    <action id="popupAction1" caption="Save 1" invoke="save1"/>
+                    <action id="popupAction2" caption="Save 2" invoke="save2"/>
+                </actions>
+            </popupButton>
+            <popupButton id="popupButton2"
+                         caption="Save"
+                         icon="icons/save.png">
+                <actions>
+                    <action id="popupAction1" caption="Save 1" invoke="save1"/>
+                    <action id="popupAction2" caption="Save 2" invoke="save2"/>
+                </actions>
+            </popupButton>
+            <popupButton id="popupButton3"
+                         description="Save"
+                         icon="icons/save.png">
+                <actions>
+                    <action id="popupAction1" caption="Save 1" invoke="save1"/>
+                    <action id="popupAction2" caption="Save 2" invoke="save2"/>
+                </actions>
+            </popupButton>
+        </hbox>
+    </layout>
+</window>

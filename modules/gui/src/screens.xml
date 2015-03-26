@@ -114,4 +114,6 @@
             template="com/haulmont/sampler/gui/components/textfield/maskedfield/masked-field.xml"/>
     <screen id="simple-passwordfield"
             template="com/haulmont/sampler/gui/components/passwordfield/simple-passwordfield.xml"/>
+    <screen id="simple-popupbutton"
+            template="com/haulmont/sampler/gui/components/popupbutton/simple-popupbutton.xml"/>
 </screen-config>

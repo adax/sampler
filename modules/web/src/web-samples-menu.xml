@@ -167,6 +167,10 @@
               descriptionsPack="com/haulmont/sampler/gui/components/passwordfield"
               controller="com/haulmont/sampler/gui/components/passwordfield/SimplePasswordFieldFrame.java"/>
 
+        <item id="simple-popupbutton" docUrlSuffix="gui_PopupButton"
+              descriptionsPack="com/haulmont/sampler/gui/components/popupbutton"
+              controller="com/haulmont/sampler/gui/components/popupbutton/SimplePopupButtonFrame.java"/>
+
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"
                   descriptionsPack="com/haulmont/sampler/gui/components/table/simple"
