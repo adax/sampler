@@ -61,6 +61,24 @@ public class LeftPanel extends FoldersPane {
         header.addComponent(label);
         header.setExpandRatio(label, 1);
 
+        // TODO For development convenience only
+        // === Begin ===
+        Button refresh = new Button("Refresh");
+        refresh.addStyleName(Reindeer.BUTTON_LINK);
+        refresh.addStyleName("small-link");
+        refresh.addStyleName("dark");
+        refresh.addClickListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                samplesMenuConfig.reset();
+                menuLayout.removeComponent(tree);
+                createMenuTree();
+            }
+        });
+        header.addComponent(refresh);
+        header.setComponentAlignment(refresh, Alignment.MIDDLE_RIGHT);
+        // === End ===
+
         Button collapseAll = new Button(messages.getMessage(getClass(), "LeftPanel.collapseAll"));
         collapseAll.addStyleName(Reindeer.BUTTON_LINK);
         collapseAll.addStyleName("small-link");
