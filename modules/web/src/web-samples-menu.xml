@@ -316,6 +316,18 @@
                   descriptionsPack="com/haulmont/sampler/gui/components/textfield/maskedfield"
                   controller="com/haulmont/sampler/gui/components/textfield/maskedfield/MaskedFieldFrame.java"/>
         </menu>
+
+        <menu id="timeField">
+            <item id="simple-timefield" docUrlSuffix="gui_TimeField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/timefield/simple"/>
+            <item id="datasource-timefield" docUrlSuffix="gui_TimeField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/timefield/datasource"
+                  controller="com/haulmont/sampler/gui/components/timefield/datasource/DatasourceTimeFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                </otherFiles>
+            </item>
+        </menu>
     </menu>
 
 </sample-menu-config>

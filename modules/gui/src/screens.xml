@@ -126,4 +126,8 @@
             template="com/haulmont/sampler/gui/components/progressbar/indeterminate/indeterminate-progressbar.xml"/>
     <screen id="simple-progressbar"
             template="com/haulmont/sampler/gui/components/progressbar/simple/simple-progressbar.xml"/>
+    <screen id="simple-timefield"
+            template="com/haulmont/sampler/gui/components/timefield/simple/simple-timefield.xml"/>
+    <screen id="datasource-timefield"
+            template="com/haulmont/sampler/gui/components/timefield/datasource/datasource-timefield.xml"/>
 </screen-config>
