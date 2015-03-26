@@ -152,6 +152,16 @@
                   descriptionsPack="com/haulmont/sampler/gui/components/lookupfield/userinput"
                   controller="com/haulmont/sampler/gui/components/lookupfield/userinput/UserInputLookupFieldFrame.java"/>
         </menu>
+        
+
+        <item id="simple-lookuppickerfield" docUrlSuffix="gui_LookupPickerField"
+              descriptionsPack="com/haulmont/sampler/gui/components/lookuppickerfield"
+              controller="com/haulmont/sampler/gui/components/lookuppickerfield/SimpleLookupPickerFieldFrame.java">
+            <otherFiles>
+                <file name="com/haulmont/sampler/entity/Order.java"/>
+                <file name="com/haulmont/sampler/entity/Customer.java"/>
+            </otherFiles>
+        </item>
 
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"

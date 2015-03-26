@@ -108,4 +108,6 @@
             template="com/haulmont/sampler/gui/components/fieldgroup/generate/generate-fieldgroup.xml"/>
     <screen id="customize-fieldgroup"
             template="com/haulmont/sampler/gui/components/fieldgroup/customize/customize-fieldgroup.xml"/>
+    <screen id="simple-lookuppickerfield"
+            template="/com/haulmont/sampler/gui/components/lookuppickerfield/simple-lookuppickerfield.xml"/>
 </screen-config>

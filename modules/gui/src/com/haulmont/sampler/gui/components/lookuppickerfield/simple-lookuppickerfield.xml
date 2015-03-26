@@ -1,0 +1,26 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.lookuppickerfield.SimpleLookupPickerFieldFrame">
+    <dsContext>
+        <datasource id="orderDs"
+                    allowCommit="false"
+                    class="com.haulmont.sampler.entity.Order"
+                    view="order-with-customer"/>
+        <collectionDatasource id="customersDs"
+                              class="com.haulmont.sampler.entity.Customer"
+                              view="_minimal">
+            <query>
+                <![CDATA[select e from sampler$Customer e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout>
+        <lookupPickerField datasource="orderDs"
+                           optionsDatasource="customersDs"
+                           property="customer">
+            <actions>
+                <action id="lookup"/>
+                <action id="open"/>
+            </actions>
+        </lookupPickerField>
+    </layout>
+</window>
