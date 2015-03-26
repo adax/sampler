@@ -112,4 +112,6 @@
             template="/com/haulmont/sampler/gui/components/lookuppickerfield/simple-lookuppickerfield.xml"/>
     <screen id="masked-field"
             template="com/haulmont/sampler/gui/components/textfield/maskedfield/masked-field.xml"/>
+    <screen id="simple-passwordfield"
+            template="com/haulmont/sampler/gui/components/passwordfield/simple-passwordfield.xml"/>
 </screen-config>

@@ -163,6 +163,10 @@
             </otherFiles>
         </item>
 
+        <item id="simple-passwordfield" docUrlSuffix="gui_PasswordField"
+              descriptionsPack="com/haulmont/sampler/gui/components/passwordfield"
+              controller="com/haulmont/sampler/gui/components/passwordfield/SimplePasswordFieldFrame.java"/>
+
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"
                   descriptionsPack="com/haulmont/sampler/gui/components/table/simple"
