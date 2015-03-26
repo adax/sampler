@@ -116,4 +116,6 @@
             template="com/haulmont/sampler/gui/components/passwordfield/simple-passwordfield.xml"/>
     <screen id="simple-popupbutton"
             template="com/haulmont/sampler/gui/components/popupbutton/simple-popupbutton.xml"/>
+    <screen id="simple-richtextarea"
+            template="com/haulmont/sampler/gui/components/richtextarea/simple-richtextarea.xml"/>
 </screen-config>

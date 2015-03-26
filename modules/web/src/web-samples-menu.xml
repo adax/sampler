@@ -171,6 +171,10 @@
               descriptionsPack="com/haulmont/sampler/gui/components/popupbutton"
               controller="com/haulmont/sampler/gui/components/popupbutton/SimplePopupButtonFrame.java"/>
 
+        <item id="simple-richtextarea" docUrlSuffix="gui_RichTextArea"
+              descriptionsPack="com/haulmont/sampler/gui/components/richtextarea"
+              controller="com/haulmont/sampler/gui/components/richtextarea/SimpleRichTextAreaFrame.java"/>
+
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"
                   descriptionsPack="com/haulmont/sampler/gui/components/table/simple"
