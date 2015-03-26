@@ -1,0 +1,10 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.textfield.maskedfield.MaskedFieldFrame">
+    <dsContext/>
+    <layout>
+        <hbox spacing="true">
+            <maskedField id="phoneNumberField" mask="(###)###-##-##" valueMode="masked"/>
+            <button caption="Show value" invoke="showPhoneNumber"/>
+        </hbox>
+    </layout>
+</window>

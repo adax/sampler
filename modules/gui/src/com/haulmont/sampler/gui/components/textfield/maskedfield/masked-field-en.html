@@ -1,0 +1,36 @@
+<p>This is a text field, in which data is entered in a predefined format. For example, it is convenient to use&nbsp;<code>MaskedField</code>&nbsp;to enter telephone numbers.</p>
+<p>Basically,&nbsp;<code>MaskedField</code>&nbsp;repeats the functionality of&nbsp;<a href="open?screen=simple-textfield">TextField</a>, except that you cannot set&nbsp;<code>datatype</code>&nbsp;for it. So,&nbsp;<code>MaskedField</code>&nbsp;is intended for work only with text and string entity attributes.&nbsp;<code>MaskedField</code>&nbsp;has the following specific attributes:</p>
+<ul>
+    <li>
+        <p><code>mask</code>&nbsp;&ndash; sets a mask for the field. To set a mask, use the following characters:</p>
+        <ul>
+            <li>
+                <p><code>#</code>&nbsp;&ndash; number</p>
+            </li>
+            <li>
+                <p><code>U</code>&nbsp;&ndash; uppercase letter</p>
+            </li>
+            <li>
+                <p><code>L</code>&nbsp;&ndash; lowercase letter</p>
+            </li>
+            <li>
+                <p><code>?</code>&nbsp;&ndash; letter</p>
+            </li>
+            <li>
+                <p><code>А</code>&nbsp;&ndash; letter or number</p>
+            </li>
+            <li>
+                <p><code>*</code>&nbsp;&ndash; any character</p>
+            </li>
+            <li>
+                <p><code>H</code>&nbsp;&ndash; hex character</p>
+            </li>
+            <li>
+                <p><code>~</code>&nbsp;&ndash; &quot; +&quot; or &quot;-&quot; character</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p><code>valueMode</code>&nbsp;&ndash; defines a format of a returned value (with a mask or not) and can take either&nbsp;<code>masked</code>&nbsp;or&nbsp;<code>clear</code>.</p>
+    </li>
+</ul>

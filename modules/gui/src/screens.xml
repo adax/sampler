@@ -110,4 +110,6 @@
             template="com/haulmont/sampler/gui/components/fieldgroup/customize/customize-fieldgroup.xml"/>
     <screen id="simple-lookuppickerfield"
             template="/com/haulmont/sampler/gui/components/lookuppickerfield/simple-lookuppickerfield.xml"/>
+    <screen id="masked-field"
+            template="com/haulmont/sampler/gui/components/textfield/maskedfield/masked-field.xml"/>
 </screen-config>

@@ -286,6 +286,9 @@
             <item id="trim-textfield" docUrlSuffix="gui_TextField"
                   descriptionsPack="com/haulmont/sampler/gui/components/textfield/trim"
                   controller="com/haulmont/sampler/gui/components/textfield/trim/TrimTextFieldFrame.java"/>
+            <item id="masked-field" docUrlSuffix="gui_MaskedField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/maskedfield"
+                  controller="com/haulmont/sampler/gui/components/textfield/maskedfield/MaskedFieldFrame.java"/>
         </menu>
     </menu>
 
