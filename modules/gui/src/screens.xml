@@ -118,4 +118,8 @@
             template="com/haulmont/sampler/gui/components/popupbutton/simple-popupbutton.xml"/>
     <screen id="simple-richtextarea"
             template="com/haulmont/sampler/gui/components/richtextarea/simple-richtextarea.xml"/>
+    <screen id="simple-textarea"
+            template="com/haulmont/sampler/gui/components/textarea/simple/simple-textarea.xml"/>
+    <screen id="resizable-textarea"
+            template="com/haulmont/sampler/gui/components/textarea/resizable/resizable-textarea.xml"/>
 </screen-config>

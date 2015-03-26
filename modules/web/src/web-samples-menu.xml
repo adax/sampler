@@ -152,7 +152,6 @@
                   descriptionsPack="com/haulmont/sampler/gui/components/lookupfield/userinput"
                   controller="com/haulmont/sampler/gui/components/lookupfield/userinput/UserInputLookupFieldFrame.java"/>
         </menu>
-        
 
         <item id="simple-lookuppickerfield" docUrlSuffix="gui_LookupPickerField"
               descriptionsPack="com/haulmont/sampler/gui/components/lookuppickerfield"
@@ -174,6 +173,13 @@
         <item id="simple-richtextarea" docUrlSuffix="gui_RichTextArea"
               descriptionsPack="com/haulmont/sampler/gui/components/richtextarea"
               controller="com/haulmont/sampler/gui/components/richtextarea/SimpleRichTextAreaFrame.java"/>
+
+        <menu id="textArea">
+            <item id="simple-textarea" docUrlSuffix="gui_TextArea"
+                  descriptionsPack="com/haulmont/sampler/gui/components/textarea/simple"/>
+            <item id="resizable-textarea" docUrlSuffix="gui_TextArea"
+                  descriptionsPack="com/haulmont/sampler/gui/components/textarea/resizable"/>
+        </menu>
 
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table"
