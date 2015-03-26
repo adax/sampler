@@ -170,6 +170,14 @@
               descriptionsPack="com/haulmont/sampler/gui/components/popupbutton"
               controller="com/haulmont/sampler/gui/components/popupbutton/SimplePopupButtonFrame.java"/>
 
+        <menu id="progressBar">
+            <item id="simple-progressbar" docUrlSuffix="gui_ProgressBar"
+                  descriptionsPack="com/haulmont/sampler/gui/components/progressbar/simple"
+                  controller="com/haulmont/sampler/gui/components/progressbar/simple/SimpleProgressBarFrame.java"/>
+            <item id="indeterminate-progressbar" docUrlSuffix="gui_ProgressBar"
+                  descriptionsPack="com/haulmont/sampler/gui/components/progressbar/indeterminate"/>
+        </menu>
+
         <item id="simple-richtextarea" docUrlSuffix="gui_RichTextArea"
               descriptionsPack="com/haulmont/sampler/gui/components/richtextarea"
               controller="com/haulmont/sampler/gui/components/richtextarea/SimpleRichTextAreaFrame.java"/>

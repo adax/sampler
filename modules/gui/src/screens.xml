@@ -122,4 +122,8 @@
             template="com/haulmont/sampler/gui/components/textarea/simple/simple-textarea.xml"/>
     <screen id="resizable-textarea"
             template="com/haulmont/sampler/gui/components/textarea/resizable/resizable-textarea.xml"/>
+    <screen id="indeterminate-progressbar"
+            template="com/haulmont/sampler/gui/components/progressbar/indeterminate/indeterminate-progressbar.xml"/>
+    <screen id="simple-progressbar"
+            template="com/haulmont/sampler/gui/components/progressbar/simple/simple-progressbar.xml"/>
 </screen-config>
