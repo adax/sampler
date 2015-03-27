@@ -154,4 +154,10 @@
             template="com/haulmont/sampler/gui/components/optionsgroup/datasource/datasource-optionsgroup.xml"/>
     <screen id="multiselect-optionsgroup"
             template="com/haulmont/sampler/gui/components/optionsgroup/multiselect/multiselect-optionsgroup.xml"/>
+    <screen id="simple-twincolumn"
+            template="com/haulmont/sampler/gui/components/twincolumn/simple/simple-twincolumn.xml"/>
+    <screen id="style-twincolumn"
+            template="com/haulmont/sampler/gui/components/twincolumn/style/style-twincolumn.xml"/>
+    <screen id="custom-options-twincolumn"
+            template="com/haulmont/sampler/gui/components/twincolumn/customoptions/custom-options-twincolumn.xml"/>
 </screen-config>

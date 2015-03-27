@@ -423,6 +423,27 @@
                 </otherFiles>
             </item>
         </menu>
+
+        <menu id="twinColumn">
+            <item id="simple-twincolumn" docUrlSuffix="gui_TwinColumn"
+                  descriptionsPack="com/haulmont/sampler/gui/components/twincolumn/simple">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="style-twincolumn" docUrlSuffix="gui_TwinColumn"
+                  descriptionsPack="com/haulmont/sampler/gui/components/twincolumn/style"
+                  controller="com/haulmont/sampler/gui/components/twincolumn/style/StyleTwinColumnFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/gui/components/twincolumn/style/style.scss"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="custom-options-twincolumn" docUrlSuffix="gui_TwinColumn"
+                  descriptionsPack="com/haulmont/sampler/gui/components/twincolumn/customoptions"
+                  controller="com/haulmont/sampler/gui/components/twincolumn/customoptions/CustomOptionsTwinColumnFrame.java">
+            </item>
+        </menu>
     </menu>
 
 </sample-menu-config>

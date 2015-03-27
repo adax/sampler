@@ -1,0 +1,17 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.twincolumn.style.StyleTwinColumnFrame">
+    <dsContext>
+        <collectionDatasource id="customersDs"
+                              class="com.haulmont.sampler.entity.Customer"
+                              view="_local">
+            <query>
+                <![CDATA[select e from sampler$Customer e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout>
+        <twinColumn id="twinColumn"
+                    addAllBtnEnabled="true"
+                    optionsDatasource="customersDs"/>
+    </layout>
+</window>
