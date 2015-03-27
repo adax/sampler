@@ -1,11 +1,16 @@
-option.premium-grade {
-    background-color: red;
-}
+@mixin sample-twincolumn {
+    option.premium-grade {
+        background-color: red;
+        color: white;
+    }
 
-option.high-grade {
-    background-color: green;
-}
+    option.high-grade {
+        background-color: green;
+        color: white;
+    }
 
-option.standard-grade {
-    background-color: blue;
+    option.standard-grade {
+        background-color: blue;
+        color: white;
+    }
 }
