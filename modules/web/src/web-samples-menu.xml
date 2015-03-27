@@ -223,6 +223,33 @@
         <item id="simple-richtextarea" docUrlSuffix="gui_RichTextArea"
               descriptionsPack="com/haulmont/sampler/gui/components/richtextarea"
               controller="com/haulmont/sampler/gui/components/richtextarea/SimpleRichTextAreaFrame.java"/>
+        
+        <menu id="searchPickerField">
+            <item id="simple-searchpickerfield" docUrlSuffix="gui_SearchPickerField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/searchpickerfield/simple"
+                  controller="com/haulmont/sampler/gui/components/searchpickerfield/simple/SimpleSearchPickerFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="minlength-searchpickerfield" docUrlSuffix="gui_SearchPickerField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/searchpickerfield/minlength"
+                  controller="com/haulmont/sampler/gui/components/searchpickerfield/minlength/MinLengthSearchPickerFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="notifications-searchpickerfield" docUrlSuffix="gui_SearchPickerField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/searchpickerfield/notifications"
+                  controller="com/haulmont/sampler/gui/components/searchpickerfield/notifications/NotificationsSearchPickerFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+        </menu>
 
         <menu id="textArea">
             <item id="simple-textarea" docUrlSuffix="gui_TextArea"

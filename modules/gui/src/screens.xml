@@ -140,4 +140,10 @@
             template="com/haulmont/sampler/gui/components/pickerfield/actions/actions-pickerfield.xml"/>
     <screen id="metaclass-pickerfield"
             template="com/haulmont/sampler/gui/components/pickerfield/metaclass/metaclass-pickerfield.xml"/>
+    <screen id="simple-searchpickerfield"
+            template="/com/haulmont/sampler/gui/components/searchpickerfield/simple/simple-searchpickerfield.xml"/>
+    <screen id="minlength-searchpickerfield"
+            template="/com/haulmont/sampler/gui/components/searchpickerfield/minlength/minlength-searchpickerfield.xml"/>
+    <screen id="notifications-searchpickerfield"
+            template="com/haulmont/sampler/gui/components/searchpickerfield/notifications/notifications-searchpickerfield.xml"/>
 </screen-config>
