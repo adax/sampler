@@ -162,6 +162,32 @@
             </otherFiles>
         </item>
 
+        <menu id="optionsGroup">
+            <item id="simple-optionsgroup" docUrlSuffix="gui_OptionsGroup"
+                  descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/simple"
+                  controller="com/haulmont/sampler/gui/components/optionsgroup/simple/SimpleOptionsGroupFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="custom-options-optionsgroup" docUrlSuffix="gui_OptionsGroup"
+                  descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/customoptions"
+                  controller="com/haulmont/sampler/gui/components/optionsgroup/customoptions/CustomOptionsGroupFrame.java">
+            </item>
+            <item id="datasource-optionsgroup" docUrlSuffix="gui_OptionsGroup"
+                  descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/datasource">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="multiselect-optionsgroup" docUrlSuffix="gui_OptionsGroup"
+                  descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/multiselect">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
         <item id="simple-passwordfield" docUrlSuffix="gui_PasswordField"
               descriptionsPack="com/haulmont/sampler/gui/components/passwordfield"
               controller="com/haulmont/sampler/gui/components/passwordfield/SimplePasswordFieldFrame.java"/>

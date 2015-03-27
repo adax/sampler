@@ -1,0 +1,11 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.optionsgroup.customoptions.CustomOptionsGroupFrame">
+    <layout>
+        <hbox spacing="true">
+            <optionsGroup id="optionsGroupWithList"
+                          caption="OptionsList"/>
+            <optionsGroup id="optionsGroupWithMap"
+                          caption="OptionsMap"/>
+        </hbox>
+    </layout>
+</window>

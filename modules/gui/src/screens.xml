@@ -146,4 +146,12 @@
             template="/com/haulmont/sampler/gui/components/searchpickerfield/minlength/minlength-searchpickerfield.xml"/>
     <screen id="notifications-searchpickerfield"
             template="com/haulmont/sampler/gui/components/searchpickerfield/notifications/notifications-searchpickerfield.xml"/>
+    <screen id="simple-optionsgroup"
+            template="com/haulmont/sampler/gui/components/optionsgroup/simple/simple-optionsgroup.xml"/>
+    <screen id="custom-options-optionsgroup"
+            template="com/haulmont/sampler/gui/components/optionsgroup/customoptions/custom-options-optionsgroup.xml"/>
+    <screen id="datasource-optionsgroup"
+            template="com/haulmont/sampler/gui/components/optionsgroup/datasource/datasource-optionsgroup.xml"/>
+    <screen id="multiselect-optionsgroup"
+            template="com/haulmont/sampler/gui/components/optionsgroup/multiselect/multiselect-optionsgroup.xml"/>
 </screen-config>
