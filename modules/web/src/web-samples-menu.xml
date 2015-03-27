@@ -166,6 +166,31 @@
               descriptionsPack="com/haulmont/sampler/gui/components/passwordfield"
               controller="com/haulmont/sampler/gui/components/passwordfield/SimplePasswordFieldFrame.java"/>
 
+        <menu id="pickerField">
+            <item id="simple-pickerfield" docUrlSuffix="gui_PickerField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/pickerfield/simple"
+                  controller="com/haulmont/sampler/gui/components/pickerfield/simple/SimplePickerFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="actions-pickerfield" docUrlSuffix="gui_PickerField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/pickerfield/actions"
+                  controller="com/haulmont/sampler/gui/components/pickerfield/actions/ActionsPickerFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="metaclass-pickerfield" docUrlSuffix="gui_PickerField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/pickerfield/metaclass">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
         <item id="simple-popupbutton" docUrlSuffix="gui_PopupButton"
               descriptionsPack="com/haulmont/sampler/gui/components/popupbutton"
               controller="com/haulmont/sampler/gui/components/popupbutton/SimplePopupButtonFrame.java"/>

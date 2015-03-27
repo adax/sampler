@@ -134,4 +134,10 @@
             template="com/haulmont/sampler/gui/components/relatedentities/simple/simple-relatedentities.xml"/>
     <screen id="exclude-relatedentities"
             template="com/haulmont/sampler/gui/components/relatedentities/exclude/exclude-relatedentities.xml"/>
+    <screen id="simple-pickerfield"
+            template="com/haulmont/sampler/gui/components/pickerfield/simple/simple-pickerfield.xml"/>
+    <screen id="actions-pickerfield"
+            template="com/haulmont/sampler/gui/components/pickerfield/actions/actions-pickerfield.xml"/>
+    <screen id="metaclass-pickerfield"
+            template="com/haulmont/sampler/gui/components/pickerfield/metaclass/metaclass-pickerfield.xml"/>
 </screen-config>

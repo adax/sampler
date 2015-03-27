@@ -1,0 +1,18 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.components.pickerfield.simple.SimplePickerFieldFrame">
+    <dsContext>
+        <datasource id="orderDs"
+                    allowCommit="false"
+                    class="com.haulmont.sampler.entity.Order"
+                    view="order-with-customer"/>
+    </dsContext>
+    <layout>
+        <pickerField datasource="orderDs"
+                     property="customer" caption="Choose a customer">
+            <actions>
+                <action id="lookup"/>
+                <action id="clear"/>
+            </actions>
+        </pickerField>
+    </layout>
+</window>
