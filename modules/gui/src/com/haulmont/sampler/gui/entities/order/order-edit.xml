@@ -8,20 +8,41 @@
     <dsContext>
         <datasource id="orderDs"
                     class="com.haulmont.sampler.entity.Order"
-                    view="order-with-customer"/>
+                    view="order-edit">
+            <collectionDatasource id="linesDs"
+                                  property="lines"/>
+        </datasource>
     </dsContext>
-    <layout expand="windowActions"
+    <layout expand="linesTable"
             spacing="true">
         <fieldGroup id="fieldGroup"
                     datasource="orderDs">
             <column width="250px">
-                <field id="customer"/>
                 <field id="date"/>
                 <field id="amount"/>
-                <field id="description"
-                       width=""/>
+                <field id="customer"/>
+                <field id="description"/>
             </column>
         </fieldGroup>
+        <table id="linesTable"
+               width="480px">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="product.name"/>
+                <column id="product.price"/>
+                <column id="quantity"/>
+            </columns>
+            <rows datasource="linesDs"/>
+            <buttonsPanel>
+                <button action="linesTable.create"/>
+                <button action="linesTable.edit"/>
+                <button action="linesTable.remove"/>
+            </buttonsPanel>
+        </table>
         <iframe id="windowActions"
                 screen="editWindowActions"
                 stylename="window-actions"/>

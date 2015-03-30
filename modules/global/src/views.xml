@@ -20,4 +20,25 @@
             <property name="name"/>
         </property>
     </view>
+    <view class="com.haulmont.sampler.entity.OrderLine"
+          name="orderLine-with-product">
+        <property name="product"
+                  view="_local"/>
+        <property name="quantity"/>
+    </view>
+    <view class="com.haulmont.sampler.entity.Order"
+          name="order-edit">
+        <property name="customer"
+                  view="_minimal"/>
+        <property name="date"/>
+        <property name="amount"/>
+        <property name="description"/>
+        <property name="lines">
+            <property name="product">
+                <property name="name"/>
+                <property name="price"/>
+            </property>
+            <property name="quantity"/>
+        </property>
+    </view>
 </views>

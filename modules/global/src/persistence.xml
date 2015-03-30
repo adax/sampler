@@ -6,5 +6,7 @@
         <class>com.haulmont.sampler.entity.Customer</class>
         <class>com.haulmont.sampler.entity.Order</class>
         <class>com.haulmont.sampler.entity.Task</class>
+        <class>com.haulmont.sampler.entity.Product</class>
+        <class>com.haulmont.sampler.entity.OrderLine</class>
     </persistence-unit>
 </persistence>

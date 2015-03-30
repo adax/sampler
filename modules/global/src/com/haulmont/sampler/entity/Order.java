@@ -12,6 +12,11 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.chile.core.annotations.NamePattern;
+import com.haulmont.chile.core.annotations.Composition;
+import com.haulmont.cuba.core.entity.annotation.OnDelete;
+import com.haulmont.cuba.core.global.DeletePolicy;
+import java.util.Set;
+import javax.persistence.OneToMany;
 
 @NamePattern("%s|date")
 @Table(name = "SAMPLER_ORDER")
@@ -32,6 +37,20 @@ public class Order extends StandardEntity {
 
     @Column(name = "DESCRIPTION")
     protected String description;
+
+    @Composition
+    @OnDelete(DeletePolicy.CASCADE)
+    @OneToMany(mappedBy = "order")
+    protected Set<OrderLine> lines;
+
+    public void setLines(Set<OrderLine> lines) {
+        this.lines = lines;
+    }
+
+    public Set<OrderLine> getLines() {
+        return lines;
+    }
+
 
     public void setDescription(String description) {
         this.description = description;
