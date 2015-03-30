@@ -13,9 +13,9 @@ import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.chile.core.annotations.NamePattern;
 
 @NamePattern("%s %s|product,quantity")
-@Table(name = "SAMPLER_ORDER_LINE")
-@Entity(name = "sampler$OrderLine")
-public class OrderLine extends StandardEntity {
+@Table(name = "SAMPLER_INVOICE_ITEM")
+@Entity(name = "sampler$InvoiceItem")
+public class InvoiceItem extends StandardEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "PRODUCT_ID")
     protected Product product;

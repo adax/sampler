@@ -73,8 +73,9 @@ create table SAMPLER_PRODUCT (
     primary key (ID)
 )^
 -- end SAMPLER_PRODUCT
--- begin SAMPLER_ORDER_LINE
-create table SAMPLER_ORDER_LINE (
+
+-- begin SAMPLER_INVOICE_ITEM
+create table SAMPLER_INVOICE_ITEM (
     ID varchar(36) not null,
     CREATE_TS timestamp,
     CREATED_BY varchar(50),
@@ -84,10 +85,10 @@ create table SAMPLER_ORDER_LINE (
     DELETE_TS timestamp,
     DELETED_BY varchar(50),
     --
-    ORDER_ID varchar(36),
     PRODUCT_ID varchar(36),
     QUANTITY decimal(19, 3),
+    ORDER_ID varchar(36),
     --
     primary key (ID)
 )^
--- end SAMPLER_ORDER_LINE
+-- end SAMPLER_INVOICE_ITEM

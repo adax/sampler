@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         caption="msg://browseCaption"
-        class="com.haulmont.sampler.gui.entities.orderline.OrderLineBrowse"
-        focusComponent="orderLinesTable"
-        lookupComponent="orderLinesTable"
-        messagesPack="com.haulmont.sampler.gui.entities.orderline">
+        class="com.haulmont.sampler.gui.entities.invoiceitem.InvoiceItemBrowse"
+        focusComponent="invoiceItemsTable"
+        lookupComponent="invoiceItemsTable"
+        messagesPack="com.haulmont.sampler.gui.entities.invoiceitem">
     <dsContext>
-        <collectionDatasource id="orderLinesDs"
-                              class="com.haulmont.sampler.entity.OrderLine"
-                              view="orderLine-with-product">
+        <collectionDatasource id="invoiceItemsDs"
+                              class="com.haulmont.sampler.entity.InvoiceItem"
+                              view="invoiceItem-with-product">
             <query>
-                <![CDATA[select e from sampler$OrderLine e]]>
+                <![CDATA[select e from sampler$InvoiceItem e]]>
             </query>
         </collectionDatasource>
     </dsContext>
-    <layout expand="orderLinesTable"
+    <layout expand="invoiceItemsTable"
             spacing="true">
         <filter id="filter"
-                datasource="orderLinesDs">
+                datasource="invoiceItemsDs">
             <properties include=".*"/>
         </filter>
-        <table id="orderLinesTable"
+        <table id="invoiceItemsTable"
                width="100%">
             <actions>
                 <action id="create"/>
@@ -31,16 +31,16 @@
                 <column id="product"/>
                 <column id="quantity"/>
             </columns>
-            <rows datasource="orderLinesDs"/>
+            <rows datasource="invoiceItemsDs"/>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"
                           alwaysVisible="true">
                 <button id="createBtn"
-                        action="orderLinesTable.create"/>
+                        action="invoiceItemsTable.create"/>
                 <button id="editBtn"
-                        action="orderLinesTable.edit"/>
+                        action="invoiceItemsTable.edit"/>
                 <button id="removeBtn"
-                        action="orderLinesTable.remove"/>
+                        action="invoiceItemsTable.remove"/>
             </buttonsPanel>
         </table>
     </layout>

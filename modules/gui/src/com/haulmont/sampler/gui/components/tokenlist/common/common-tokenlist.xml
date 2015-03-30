@@ -5,23 +5,23 @@
                     allowCommit="false"
                     class="com.haulmont.sampler.entity.Order"
                     view="order-edit">
-            <collectionDatasource id="linesDs"
+            <collectionDatasource id="invoiceDs"
                                   allowCommit="false"
-                                  property="lines"/>
+                                  property="invoiceItem"/>
         </datasource>
-        <collectionDatasource id="allLinesDs"
-                              class="com.haulmont.sampler.entity.OrderLine"
-                              view="orderLine-with-product">
+        <collectionDatasource id="allInvoicesDs"
+                              class="com.haulmont.sampler.entity.InvoiceItem"
+                              view="invoiceItem-with-product">
             <query>
-                <![CDATA[select e from sampler$OrderLine e]]>
+                <![CDATA[select e from sampler$InvoiceItem e]]>
             </query>
         </collectionDatasource>
     </dsContext>
     <layout>
         <tokenList id="linesList"
-                   width="320px"
-                   datasource="linesDs">
-            <lookup optionsDatasource="allLinesDs"/>
+                   datasource="invoiceDs"
+                   width="320px">
+            <lookup optionsDatasource="allInvoicesDs"/>
             <button icon="icons/plus-btn.png"/>
         </tokenList>
     </layout>

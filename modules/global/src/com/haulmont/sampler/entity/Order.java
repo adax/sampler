@@ -38,17 +38,20 @@ public class Order extends StandardEntity {
     @Column(name = "DESCRIPTION")
     protected String description;
 
+
+
+
     @Composition
     @OnDelete(DeletePolicy.CASCADE)
     @OneToMany(mappedBy = "order")
-    protected Set<OrderLine> lines;
+    protected Set<InvoiceItem> invoice;
 
-    public void setLines(Set<OrderLine> lines) {
-        this.lines = lines;
+    public void setInvoice(Set<InvoiceItem> invoice) {
+        this.invoice = invoice;
     }
 
-    public Set<OrderLine> getLines() {
-        return lines;
+    public Set<InvoiceItem> getInvoice() {
+        return invoice;
     }
 
 

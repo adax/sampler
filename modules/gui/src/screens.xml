@@ -13,12 +13,12 @@
             template="/com/haulmont/sampler/gui/entities/product/product-browse.xml"/>
     <screen id="sampler$Product.edit"
             template="/com/haulmont/sampler/gui/entities/product/product-edit.xml"/>
-    <screen id="sampler$OrderLine.edit"
-            template="com/haulmont/sampler/gui/entities/orderline/orderline-edit.xml"/>
-    <screen id="sampler$OrderLine.lookup"
-            template="/com/haulmont/sampler/gui/entities/orderline/orderline-browse.xml"/>
-    <screen id="sampler$OrderLine.browse"
-            template="/com/haulmont/sampler/gui/entities/orderline/orderline-browse.xml"/>
+    <screen id="sampler$InvoiceItem.lookup"
+            template="com/haulmont/sampler/gui/entities/invoiceitem/invoiceitem-browse.xml"/>
+    <screen id="sampler$InvoiceItem.browse"
+            template="com/haulmont/sampler/gui/entities/invoiceitem/invoiceitem-browse.xml"/>
+    <screen id="sampler$InvoiceItem.edit"
+            template="com/haulmont/sampler/gui/entities/invoiceitem/invoiceitem-edit.xml"/>
     <!-- Components -->
     <screen id="component-sample-browser"
             template="com/haulmont/sampler/gui/components/component-sample-browser.xml"/>
