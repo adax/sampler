@@ -22,8 +22,7 @@
                    width="320px"
                    datasource="linesDs">
             <lookup optionsDatasource="allLinesDs"
-                    lookup="true"
-                    multiselect="true"/>
+                    lookup="true"/>
         </tokenList>
     </layout>
 </window>

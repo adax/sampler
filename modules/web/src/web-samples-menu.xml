@@ -438,6 +438,7 @@
                   descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/simple"
                   controller="com/haulmont/sampler/gui/components/tokenlist/simple/SimpleTokenListFrame.java">
                 <otherFiles>
+                    <file name="com/haulmont/sampler/gui/entities/orderline/OrderLineBrowse.java"/>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/OrderLine.java"/>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
@@ -456,7 +457,6 @@
                   descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/lookup"
                   controller="com/haulmont/sampler/gui/components/tokenlist/lookup/LookupTokenListFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/entities/orderline/OrderLineBrowse.java"/>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/OrderLine.java"/>
                     <file name="com/haulmont/sampler/entity/Product.java"/>

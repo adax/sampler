@@ -22,7 +22,8 @@
                    datasource="linesDs"
                    simple="true"
                    width="320px">
-            <lookup optionsDatasource="allLinesDs"/>
+            <lookup optionsDatasource="allLinesDs"
+                    multiselect="true"/>
             <button icon="icons/plus-btn.png"/>
         </tokenList>
     </layout>
