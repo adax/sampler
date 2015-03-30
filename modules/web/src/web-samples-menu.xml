@@ -424,6 +424,46 @@
             </item>
         </menu>
 
+        <menu id="tokenList">
+            <item id="common-tokenlist" docUrlSuffix="gui_TokenList"
+                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/common"
+                  controller="com/haulmont/sampler/gui/components/tokenlist/common/CommonTokenListFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderLine.java"/>
+                    <file name="com/haulmont/sampler/entity/Product.java"/>
+                </otherFiles>
+            </item>
+            <item id="simple-tokenlist" docUrlSuffix="gui_TokenList"
+                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/simple"
+                  controller="com/haulmont/sampler/gui/components/tokenlist/simple/SimpleTokenListFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderLine.java"/>
+                    <file name="com/haulmont/sampler/entity/Product.java"/>
+                </otherFiles>
+            </item>
+            <item id="position-tokenlist" docUrlSuffix="gui_TokenList"
+                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/position"
+                  controller="com/haulmont/sampler/gui/components/tokenlist/position/PositionTokenListFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderLine.java"/>
+                    <file name="com/haulmont/sampler/entity/Product.java"/>
+                </otherFiles>
+            </item>
+            <item id="lookup-tokenlist" docUrlSuffix="gui_TokenList"
+                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/lookup"
+                  controller="com/haulmont/sampler/gui/components/tokenlist/lookup/LookupTokenListFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/gui/entities/orderline/OrderLineBrowse.java"/>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderLine.java"/>
+                    <file name="com/haulmont/sampler/entity/Product.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
         <menu id="twinColumn">
             <item id="simple-twincolumn" docUrlSuffix="gui_TwinColumn"
                   descriptionsPack="com/haulmont/sampler/gui/components/twincolumn/simple">

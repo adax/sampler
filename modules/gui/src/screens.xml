@@ -170,4 +170,12 @@
             template="com/haulmont/sampler/gui/components/twincolumn/style/style-twincolumn.xml"/>
     <screen id="custom-options-twincolumn"
             template="com/haulmont/sampler/gui/components/twincolumn/customoptions/custom-options-twincolumn.xml"/>
+    <screen id="common-tokenlist"
+            template="com/haulmont/sampler/gui/components/tokenlist/common/common-tokenlist.xml"/>
+    <screen id="simple-tokenlist"
+            template="com/haulmont/sampler/gui/components/tokenlist/simple/simple-tokenlist.xml"/>
+    <screen id="position-tokenlist"
+            template="com/haulmont/sampler/gui/components/tokenlist/position/position-tokenlist.xml"/>
+    <screen id="lookup-tokenlist"
+            template="com/haulmont/sampler/gui/components/tokenlist/lookup/lookup-tokenlist.xml"/>
 </screen-config>

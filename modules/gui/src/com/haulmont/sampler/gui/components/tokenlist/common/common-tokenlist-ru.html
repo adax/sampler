@@ -1,0 +1,9 @@
+<p>Компонент&nbsp;<code>TokenList</code>&nbsp;представляет собой упрощенный вариант работы со списком сущностей: названия экземпляров располагаются в вертикальном или горизонтальном списке, добавление производится из выпадающего списка, удаление - с помощью кнопок, расположенных рядом с каждым экземпляром.</p>
+<p>Здесь в элементе&nbsp;<code>dsContext</code>&nbsp;определен вложенный источник данных&nbsp;<code>linesDs</code>, содержащий коллекцию входящих в состав заказа строк. Кроме того, определен источник данных&nbsp;<code>allLinesDs</code>, содержащий коллекцию всех строк заказа, имеющихся в базе данных. Компонент&nbsp;<code>TokenList</code>&nbsp;с идентификатором&nbsp;<code>linesList</code>&nbsp;отображает содержимое источника данных&nbsp;<code>linesDs</code>, а также позволяет изменять эту коллекцию, добавляя в него экземпляры из источника данных&nbsp;<code>allLinesDs</code>.</p>
+<p>Элементы&nbsp;<code>tokenList</code>:</p>
+<ul>
+    <li><code>lookup</code>&nbsp;&minus; описатель компонента выбора значений.</li>
+    <li>
+        <p><code>button</code>&nbsp;&minus; описатель кнопки добавления значений. Может содержать атрибуты&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/gui_attributes.html#gui_attr_basic_caption" target="_blank">caption</a>&nbsp;и&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/gui_attributes.html#gui_attr_basic_icon" target="_blank">icon</a>.</p>
+    </li>
+</ul>
