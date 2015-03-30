@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        caption="msg://browseCaption"
+        class="com.haulmont.sampler.gui.entities.orderline.OrderLineBrowse"
+        focusComponent="orderLinesTable"
+        lookupComponent="orderLinesTable"
+        messagesPack="com.haulmont.sampler.gui.entities.orderline">
+    <dsContext>
+        <collectionDatasource id="orderLinesDs"
+                              class="com.haulmont.sampler.entity.OrderLine"
+                              view="orderLine-with-product">
+            <query>
+                <![CDATA[select e from sampler$OrderLine e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout expand="orderLinesTable"
+            spacing="true">
+        <filter id="filter"
+                datasource="orderLinesDs">
+            <properties include=".*"/>
+        </filter>
+        <table id="orderLinesTable"
+               width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="product"/>
+                <column id="quantity"/>
+            </columns>
+            <rows datasource="orderLinesDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="orderLinesTable.create"/>
+                <button id="editBtn"
+                        action="orderLinesTable.edit"/>
+                <button id="removeBtn"
+                        action="orderLinesTable.remove"/>
+            </buttonsPanel>
+        </table>
+    </layout>
+</window>
