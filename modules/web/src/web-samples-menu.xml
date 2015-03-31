@@ -526,9 +526,9 @@
 
         <menu id="iframe">
             <item id="src-iframe" docUrlSuffix="gui_IFrame"
-                  descriptionsPack=""/>
+                  descriptionsPack="com/haulmont/sampler/gui/containers/iframe/src"/>
             <item id="screen-iframe" docUrlSuffix="gui_IFrame"
-                  descriptionsPack=""/>
+                  descriptionsPack="com/haulmont/sampler/gui/containers/iframe/screen"/>
         </menu>
 
         <menu id="scrollBoxLayout">
