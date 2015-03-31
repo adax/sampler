@@ -1,8 +1,5 @@
 package com.haulmont.sampler.gui.config;
 
-import org.apache.commons.lang.builder.EqualsBuilder;
-import org.apache.commons.lang.builder.HashCodeBuilder;
-
 import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.Collections;
