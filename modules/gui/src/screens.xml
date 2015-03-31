@@ -189,4 +189,10 @@
             template="com/haulmont/sampler/gui/containers/iframe/screen/screen-iframe.xml"/>
     <screen id="src-iframe"
             template="com/haulmont/sampler/gui/containers/iframe/src/src-iframe.xml"/>
+    <screen id="vertical-groupbox"
+            template="com/haulmont/sampler/gui/containers/groupboxlayout/vertical/vertical-groupbox.xml"/>
+    <screen id="horizontal-groupbox"
+            template="com/haulmont/sampler/gui/containers/groupboxlayout/horizontal/horizontal-groupbox.xml"/>
+    <screen id="collapsable-groupbox"
+            template="com/haulmont/sampler/gui/containers/groupboxlayout/collapsable/collapsable-groupbox.xml"/>
 </screen-config>

@@ -518,10 +518,12 @@
         </menu>
 
         <menu id="groupBoxLayout">
-            <item id="common-groupbox" docUrlSuffix="gui_GroupBoxLayout"
-                  descriptionsPack=""/>
+            <item id="vertical-groupbox" docUrlSuffix="gui_GroupBoxLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/vertical"/>
+            <item id="horizontal-groupbox" docUrlSuffix="gui_GroupBoxLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/horizontal"/>
             <item id="collapsable-groupbox" docUrlSuffix="gui_GroupBoxLayout"
-                  descriptionsPack=""/>
+                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/collapsable"/>
         </menu>
 
         <menu id="iframe">

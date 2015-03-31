@@ -1,0 +1,12 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.cuba.gui.components.AbstractFrame">
+    <layout>
+        <groupBox caption="Vertical GroupBox"
+                  spacing="true"
+                  width="AUTO">
+            <button caption="Button"/>
+            <dateField/>
+            <textField/>
+        </groupBox>
+    </layout>
+</window>
