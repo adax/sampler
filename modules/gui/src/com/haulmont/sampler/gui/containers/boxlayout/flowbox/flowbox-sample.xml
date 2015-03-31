@@ -1,0 +1,18 @@
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.cuba.gui.components.AbstractFrame">
+    <layout>
+        <flowBox height="100%"
+                 spacing="true"
+                 width="300px">
+            <button caption="Button"/>
+            <dateField/>
+            <textField/>
+            <button caption="Button"/>
+            <dateField/>
+            <textField/>
+            <button caption="Button"/>
+            <dateField/>
+            <textField/>
+        </flowBox>
+    </layout>
+</window>

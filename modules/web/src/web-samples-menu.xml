@@ -486,4 +486,76 @@
         </menu>
     </menu>
 
+    <menu id="containers">
+
+        <menu id="boxLayout">
+            <item id="hbox-sample" docUrlSuffix="gui_BoxLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/boxlayout/hbox"/>
+            <item id="vbox-sample" docUrlSuffix="gui_BoxLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/boxlayout/vbox"/>
+            <item id="flowbox-sample" docUrlSuffix="gui_BoxLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/boxlayout/flowbox"/>
+        </menu>
+        
+        <menu id="buttonsPanel">
+            <item id="common-buttonspanel" docUrlSuffix="gui_ButtonsPanel"
+                  descriptionsPack=""/>
+            <item id="table-buttonspanel" docUrlSuffix="gui_ButtonsPanel"
+                  descriptionsPack=""/>
+            <item id="always-visible-buttonspanel" docUrlSuffix="gui_ButtonsPanel"
+                  descriptionsPack=""/>
+        </menu>
+
+        <menu id="gridLayout">
+            <item id="common-grid" docUrlSuffix="gui_GridLayout"
+                  descriptionsPack=""/>
+            <item id="column-flex-grid" docUrlSuffix="gui_GridLayout"
+                  descriptionsPack=""/>
+            <item id="row-flex-grid" docUrlSuffix="gui_GridLayout"
+                  descriptionsPack=""/>
+            <item id="span-grid" docUrlSuffix="gui_GridLayout"
+                  descriptionsPack=""/>
+        </menu>
+
+        <menu id="groupBoxLayout">
+            <item id="common-groupbox" docUrlSuffix="gui_GroupBoxLayout"
+                  descriptionsPack=""/>
+            <item id="collapsable-groupbox" docUrlSuffix="gui_GroupBoxLayout"
+                  descriptionsPack=""/>
+        </menu>
+
+        <menu id="iframe">
+            <item id="src-iframe" docUrlSuffix="gui_IFrame"
+                  descriptionsPack=""/>
+            <item id="screen-iframe" docUrlSuffix="gui_IFrame"
+                  descriptionsPack=""/>
+        </menu>
+
+        <menu id="scrollBoxLayout">
+            <item id="vertical-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
+                  descriptionsPack=""/>
+            <item id="horizontal-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
+                  descriptionsPack=""/>
+            <item id="scrollbars-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
+                  descriptionsPack=""/>
+        </menu>
+
+        <menu id="splitPanel">
+            <item id="vertical-split" docUrlSuffix="gui_SplitPanel"
+                  descriptionsPack=""/>
+            <item id="horizontal-split" docUrlSuffix="gui_SplitPanel"
+                  descriptionsPack=""/>
+            <item id="pos-split" docUrlSuffix="gui_SplitPanel"
+                  descriptionsPack=""/>
+        </menu>
+        
+        <menu id="tabSheet">
+            <item id="common-tabsheet" docUrlSuffix="gui_TabSheet"
+                  descriptionsPack=""/>
+            <item id="lazy-tabsheet" docUrlSuffix="gui_TabSheet"
+                  descriptionsPack=""/>
+        </menu>
+        
+    </menu>
+
 </sample-menu-config>

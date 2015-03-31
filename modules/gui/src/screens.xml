@@ -178,4 +178,10 @@
             template="com/haulmont/sampler/gui/components/tokenlist/position/position-tokenlist.xml"/>
     <screen id="lookup-tokenlist"
             template="com/haulmont/sampler/gui/components/tokenlist/lookup/lookup-tokenlist.xml"/>
+    <screen id="hbox-sample"
+            template="com/haulmont/sampler/gui/containers/boxlayout/hbox/hbox-sample.xml"/>
+    <screen id="vbox-sample"
+            template="com/haulmont/sampler/gui/containers/boxlayout/vbox/vbox-sample.xml"/>
+    <screen id="flowbox-sample"
+            template="com/haulmont/sampler/gui/containers/boxlayout/flowbox/flowbox-sample.xml"/>
 </screen-config>
