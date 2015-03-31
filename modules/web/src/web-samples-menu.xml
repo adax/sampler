@@ -543,12 +543,10 @@
         </menu>
 
         <menu id="splitPanel">
-            <item id="vertical-split" docUrlSuffix="gui_SplitPanel"
-                  descriptionsPack=""/>
             <item id="horizontal-split" docUrlSuffix="gui_SplitPanel"
-                  descriptionsPack=""/>
-            <item id="pos-split" docUrlSuffix="gui_SplitPanel"
-                  descriptionsPack=""/>
+                  descriptionsPack="com/haulmont/sampler/gui/containers/splitpanel/horizontal"/>
+            <item id="vertical-split" docUrlSuffix="gui_SplitPanel"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/splitpanel/vertical"/>
         </menu>
         
         <menu id="tabSheet">

@@ -201,4 +201,8 @@
             template="com/haulmont/sampler/gui/containers/scrollboxlayout/horizontal/horizontal-scrollbox.xml"/>
     <screen id="both-scrollbox"
             template="com/haulmont/sampler/gui/containers/scrollboxlayout/both/both-scrollbox.xml"/>
+    <screen id="vertical-split"
+            template="com/haulmont/sampler/gui/containers/splitpanel/vertical/vertical-split.xml"/>
+    <screen id="horizontal-split"
+            template="com/haulmont/sampler/gui/containers/splitpanel/horizontal/horizontal-split.xml"/>
 </screen-config>
