@@ -1,7 +1,3 @@
-/*
- * Copyright (c) ${YEAR} ${PACKAGE_NAME}
- */
-
 package com.haulmont.sampler.web;
 
 import com.haulmont.cuba.web.AppUI;
