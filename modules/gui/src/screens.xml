@@ -195,4 +195,10 @@
             template="com/haulmont/sampler/gui/containers/groupboxlayout/horizontal/horizontal-groupbox.xml"/>
     <screen id="collapsable-groupbox"
             template="com/haulmont/sampler/gui/containers/groupboxlayout/collapsable/collapsable-groupbox.xml"/>
+    <screen id="vertical-scrollbox"
+            template="com/haulmont/sampler/gui/containers/scrollboxlayout/vertical/vertical-scrollbox.xml"/>
+    <screen id="horizontal-scrollbox"
+            template="com/haulmont/sampler/gui/containers/scrollboxlayout/horizontal/horizontal-scrollbox.xml"/>
+    <screen id="both-scrollbox"
+            template="com/haulmont/sampler/gui/containers/scrollboxlayout/both/both-scrollbox.xml"/>
 </screen-config>

@@ -535,11 +535,11 @@
 
         <menu id="scrollBoxLayout">
             <item id="vertical-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
-                  descriptionsPack=""/>
+                  descriptionsPack="com/haulmont/sampler/gui/containers/scrollboxlayout/vertical"/>
             <item id="horizontal-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
-                  descriptionsPack=""/>
-            <item id="scrollbars-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
-                  descriptionsPack=""/>
+                  descriptionsPack="com/haulmont/sampler/gui/containers/scrollboxlayout/horizontal"/>
+            <item id="both-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/scrollboxlayout/both"/>
         </menu>
 
         <menu id="splitPanel">
