@@ -498,12 +498,16 @@
         </menu>
         
         <menu id="buttonsPanel">
-            <item id="common-buttonspanel" docUrlSuffix="gui_ButtonsPanel"
-                  descriptionsPack=""/>
             <item id="table-buttonspanel" docUrlSuffix="gui_ButtonsPanel"
-                  descriptionsPack=""/>
+                  descriptionsPack="com/haulmont/sampler/gui/containers/buttonspanel/table"/>
             <item id="always-visible-buttonspanel" docUrlSuffix="gui_ButtonsPanel"
-                  descriptionsPack=""/>
+                  controller="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/AlwaysVisibleButtonsPanelFrame.java"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/visible-buttonspanel.xml"/>
+                    <file name="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/invisible-buttonspanel.xml"/>
+                </otherFiles>
+            </item>
         </menu>
 
         <menu id="gridLayout">

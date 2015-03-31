@@ -213,4 +213,12 @@
             template="com/haulmont/sampler/gui/containers/gridlayout/rowsflex/rows-flex-grid.xml"/>
     <screen id="span-grid"
             template="com/haulmont/sampler/gui/containers/gridlayout/span/span-grid.xml"/>
+    <screen id="table-buttonspanel"
+            template="com/haulmont/sampler/gui/containers/buttonspanel/table/table-buttonspanel.xml"/>
+    <screen id="always-visible-buttonspanel"
+            template="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/always-visible-buttonspanel.xml"/>
+    <screen id="visible-buttonspanel"
+            template="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/visible-buttonspanel.xml"/>
+    <screen id="invisible-buttonspanel"
+            template="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/invisible-buttonspanel.xml"/>
 </screen-config>
