@@ -1,0 +1,7 @@
+<p><code>lazy</code>&nbsp;&ndash; sets lazy loading for tab content.</p>
+
+<p>Lazy-tabs do not load their content when a screen is opened, it reduces the number of components in memory. Components within a tab are loaded only when user selects the tab. Additionally, if a lazy-tab includes visual components linked to a&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/datasources.html" target="_blank">data source</a>, containing a JPQL query, this query is not invoked as well. As a result, screen opens quicker and data is loaded only when user requests it by selecting this tab.</p>
+
+<p>Please note that the components located on a lazy-tab do not exist when the screen is opened. That is why they cannot be&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/screen_controller_injection.html" target="_blank">injected</a>&nbsp;into a controller and cannot be obtained by invoking&nbsp;<code>getComponent()</code>&nbsp;in the controller&rsquo;s&nbsp;<code>init()</code>method. The&nbsp;<code>lazy</code>-tab components can be called only after user opens it. This moment may be caught using&nbsp;<code>TabSheet.TabChangeListener.</code></p>
+
+<p>By default, tabs are not&nbsp;<code>lazy</code>, which means that all their content is loaded when a screen is opened.</p>

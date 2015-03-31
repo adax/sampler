@@ -221,4 +221,8 @@
             template="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/visible-buttonspanel.xml"/>
     <screen id="invisible-buttonspanel"
             template="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/invisible-buttonspanel.xml"/>
+    <screen id="common-tabsheet"
+            template="com/haulmont/sampler/gui/containers/tabsheet/common/common-tabsheet.xml"/>
+    <screen id="lazy-tabsheet"
+            template="com/haulmont/sampler/gui/containers/tabsheet/lazy/lazy-tabsheet.xml"/>
 </screen-config>

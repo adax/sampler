@@ -555,9 +555,10 @@
         
         <menu id="tabSheet">
             <item id="common-tabsheet" docUrlSuffix="gui_TabSheet"
-                  descriptionsPack=""/>
+                  descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/common"/>
             <item id="lazy-tabsheet" docUrlSuffix="gui_TabSheet"
-                  descriptionsPack=""/>
+                  controller="com/haulmont/sampler/gui/containers/tabsheet/lazy/LazyTabSheetFrame.java"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/lazy"/>
         </menu>
         
     </menu>
