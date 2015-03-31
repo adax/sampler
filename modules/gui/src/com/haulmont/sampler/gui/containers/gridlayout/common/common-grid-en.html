@@ -1,0 +1,14 @@
+<p><code>GridLayout</code>&nbsp;is a container with grid placement of components.</p>
+
+<p><code>grid</code>&nbsp;elements:</p>
+
+<ul>
+    <li>
+        <p><code>columns</code>&nbsp;&ndash; a required element, describes grid columns. It should have either a&nbsp;<code>count</code>&nbsp;attribute, or a nested&nbsp;<code>column</code>&nbsp;element for each column.</p>
+
+        <p>In the simplest case, it is enough to set the number of columns in the&nbsp;<code>count</code>&nbsp;attribute. Then, if the container width is explicitly defined in pixels or percents, free space will be divided between the columns equally.</p>
+    </li>
+    <li>
+        <p><code>rows</code>&nbsp;&minus; a required element, contains a set of rows. Each line is defined in its own&nbsp;<code>row</code>&nbsp;element.&nbsp;<code>row</code>&nbsp;element should contain elements of the components displayed in the grid&#39;s current row cells. The number of components in a row should not exceed the defined number of columns, but it can be less.</p>
+    </li>
+</ul>

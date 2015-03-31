@@ -1,0 +1,7 @@
+<p>In order to divide screen space non-equally, a&nbsp;<code>column</code>&nbsp;element with a&nbsp;<code>flex</code>&nbsp;attribute should be defined for each column.</p>
+
+<p>If&nbsp;<code>flex</code>&nbsp;is not defined, or is set to 0, the width of the column will be set according to its contents given that at least one other column has a non-zero&nbsp;<code>flex</code>. In the example above, the first and the third columns will get the width according to the maximum text length.</p>
+
+<div style="background:rgb(236, 242, 255); border:1px solid rgb(76, 114, 191); padding:0px 1.2em">
+    <p>In order for the free space to appear, the entire container width should be set in either pixels or percents. Otherwise, column width will be calculated according to content length, and&nbsp;<code>flex</code>&nbsp;attribute will have no effect</p>
+</div>

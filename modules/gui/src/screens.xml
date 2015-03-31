@@ -205,4 +205,12 @@
             template="com/haulmont/sampler/gui/containers/splitpanel/vertical/vertical-split.xml"/>
     <screen id="horizontal-split"
             template="com/haulmont/sampler/gui/containers/splitpanel/horizontal/horizontal-split.xml"/>
+    <screen id="common-grid"
+            template="com/haulmont/sampler/gui/containers/gridlayout/common/common-grid.xml"/>
+    <screen id="columns-flex-grid"
+            template="com/haulmont/sampler/gui/containers/gridlayout/columnsflex/columns-flex-grid.xml"/>
+    <screen id="rows-flex-grid"
+            template="com/haulmont/sampler/gui/containers/gridlayout/rowsflex/rows-flex-grid.xml"/>
+    <screen id="span-grid"
+            template="com/haulmont/sampler/gui/containers/gridlayout/span/span-grid.xml"/>
 </screen-config>

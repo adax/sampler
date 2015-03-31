@@ -508,13 +508,13 @@
 
         <menu id="gridLayout">
             <item id="common-grid" docUrlSuffix="gui_GridLayout"
-                  descriptionsPack=""/>
-            <item id="column-flex-grid" docUrlSuffix="gui_GridLayout"
-                  descriptionsPack=""/>
-            <item id="row-flex-grid" docUrlSuffix="gui_GridLayout"
-                  descriptionsPack=""/>
+                  descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/common"/>
+            <item id="columns-flex-grid" docUrlSuffix="gui_GridLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/columnsflex"/>
+            <item id="rows-flex-grid" docUrlSuffix="gui_GridLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/rowsflex"/>
             <item id="span-grid" docUrlSuffix="gui_GridLayout"
-                  descriptionsPack=""/>
+                  descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/span"/>
         </menu>
 
         <menu id="groupBoxLayout">
