@@ -170,10 +170,10 @@
             template="com/haulmont/sampler/gui/components/twincolumn/style/style-twincolumn.xml"/>
     <screen id="custom-options-twincolumn"
             template="com/haulmont/sampler/gui/components/twincolumn/customoptions/custom-options-twincolumn.xml"/>
-    <screen id="common-tokenlist"
-            template="com/haulmont/sampler/gui/components/tokenlist/common/common-tokenlist.xml"/>
     <screen id="simple-tokenlist"
             template="com/haulmont/sampler/gui/components/tokenlist/simple/simple-tokenlist.xml"/>
+    <screen id="simple-mode-tokenlist"
+            template="com/haulmont/sampler/gui/components/tokenlist/simplemode/simple-mode-tokenlist.xml"/>
     <screen id="position-tokenlist"
             template="com/haulmont/sampler/gui/components/tokenlist/position/position-tokenlist.xml"/>
     <screen id="lookup-tokenlist"
@@ -205,8 +205,8 @@
             template="com/haulmont/sampler/gui/containers/splitpanel/vertical/vertical-split.xml"/>
     <screen id="horizontal-split"
             template="com/haulmont/sampler/gui/containers/splitpanel/horizontal/horizontal-split.xml"/>
-    <screen id="common-grid"
-            template="com/haulmont/sampler/gui/containers/gridlayout/common/common-grid.xml"/>
+    <screen id="simple-grid"
+            template="com/haulmont/sampler/gui/containers/gridlayout/simple/simple-grid.xml"/>
     <screen id="columns-flex-grid"
             template="com/haulmont/sampler/gui/containers/gridlayout/columnsflex/columns-flex-grid.xml"/>
     <screen id="rows-flex-grid"
@@ -221,8 +221,8 @@
             template="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/visible-buttonspanel.xml"/>
     <screen id="invisible-buttonspanel"
             template="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/invisible-buttonspanel.xml"/>
-    <screen id="common-tabsheet"
-            template="com/haulmont/sampler/gui/containers/tabsheet/common/common-tabsheet.xml"/>
+    <screen id="simple-tabsheet"
+            template="com/haulmont/sampler/gui/containers/tabsheet/simple/simple-tabsheet.xml"/>
     <screen id="lazy-tabsheet"
             template="com/haulmont/sampler/gui/containers/tabsheet/lazy/lazy-tabsheet.xml"/>
 </screen-config>

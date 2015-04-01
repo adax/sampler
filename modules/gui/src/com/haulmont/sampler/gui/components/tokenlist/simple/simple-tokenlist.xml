@@ -20,10 +20,8 @@
     <layout>
         <tokenList id="linesList"
                    datasource="invoiceDs"
-                   simple="true"
                    width="320px">
-            <lookup multiselect="true"
-                    optionsDatasource="allInvoicesDs"/>
+            <lookup optionsDatasource="allInvoicesDs"/>
             <button icon="icons/plus-btn.png"/>
         </tokenList>
     </layout>

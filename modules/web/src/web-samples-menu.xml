@@ -425,20 +425,20 @@
         </menu>
 
         <menu id="tokenList">
-            <item id="common-tokenlist" docUrlSuffix="gui_TokenList"
-                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/common"
-                  controller="com/haulmont/sampler/gui/components/tokenlist/common/CommonTokenListFrame.java">
+            <item id="simple-tokenlist" docUrlSuffix="gui_TokenList"
+                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/simple"
+                  controller="com/haulmont/sampler/gui/components/tokenlist/simple/SimpleTokenListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/OrderLine.java"/>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
             </item>
-            <item id="simple-tokenlist" docUrlSuffix="gui_TokenList"
-                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/simple"
-                  controller="com/haulmont/sampler/gui/components/tokenlist/simple/SimpleTokenListFrame.java">
+            <item id="simple-mode-tokenlist" docUrlSuffix="gui_TokenList"
+                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/simplemode"
+                  controller="com/haulmont/sampler/gui/components/tokenlist/simplemode/SimpleModeTokenListFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/entities/orderline/InvoiceItemBrowse.java"/>
+                    <file name="com/haulmont/sampler/gui/entities/invoiceitem/InvoiceItemBrowse.java"/>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/OrderLine.java"/>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
@@ -511,8 +511,8 @@
         </menu>
 
         <menu id="gridLayout">
-            <item id="common-grid" docUrlSuffix="gui_GridLayout"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/common"/>
+            <item id="simple-grid" docUrlSuffix="gui_GridLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/simple"/>
             <item id="columns-flex-grid" docUrlSuffix="gui_GridLayout"
                   descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/columnsflex"/>
             <item id="rows-flex-grid" docUrlSuffix="gui_GridLayout"
@@ -554,8 +554,8 @@
         </menu>
         
         <menu id="tabSheet">
-            <item id="common-tabsheet" docUrlSuffix="gui_TabSheet"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/common"/>
+            <item id="simple-tabsheet" docUrlSuffix="gui_TabSheet"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/simple"/>
             <item id="lazy-tabsheet" docUrlSuffix="gui_TabSheet"
                   controller="com/haulmont/sampler/gui/containers/tabsheet/lazy/LazyTabSheetFrame.java"
                   descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/lazy"/>
