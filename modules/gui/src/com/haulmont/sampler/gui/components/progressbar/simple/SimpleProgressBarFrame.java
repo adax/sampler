@@ -20,11 +20,11 @@ public class SimpleProgressBarFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-        BackgroundTask<Integer, Void> task = new BackgroundTask<Integer, Void>(300, TimeUnit.SECONDS, this) {
+        BackgroundTask<Integer, Void> task = new BackgroundTask<Integer, Void>(300, TimeUnit.SECONDS, getFrame()) {
             @Override
             public Void run(TaskLifeCycle<Integer> taskLifeCycle) throws Exception {
                 for (int i = 1; i <= ITERATIONS; i++) {
-                    TimeUnit.SECONDS.sleep(2); // time consuming task
+                    TimeUnit.SECONDS.sleep(2);
                     taskLifeCycle.publish(i);
                 }
                 return null;
