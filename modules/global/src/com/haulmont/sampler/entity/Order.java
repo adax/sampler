@@ -1,22 +1,15 @@
 package com.haulmont.sampler.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.math.BigDecimal;
-import java.util.Date;
-import javax.persistence.Column;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import com.haulmont.cuba.core.entity.StandardEntity;
-import com.haulmont.chile.core.annotations.NamePattern;
 import com.haulmont.chile.core.annotations.Composition;
+import com.haulmont.chile.core.annotations.NamePattern;
+import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.cuba.core.entity.annotation.OnDelete;
 import com.haulmont.cuba.core.global.DeletePolicy;
+
+import javax.persistence.*;
+import java.math.BigDecimal;
+import java.util.Date;
 import java.util.Set;
-import javax.persistence.OneToMany;
 
 @NamePattern("%s|date")
 @Table(name = "SAMPLER_ORDER")
@@ -37,8 +30,6 @@ public class Order extends StandardEntity {
 
     @Column(name = "DESCRIPTION")
     protected String description;
-
-
 
 
     @Composition

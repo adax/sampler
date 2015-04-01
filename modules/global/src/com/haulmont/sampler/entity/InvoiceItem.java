@@ -1,16 +1,10 @@
 package com.haulmont.sampler.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import com.haulmont.cuba.core.entity.annotation.OnDelete;
-import com.haulmont.cuba.core.global.DeletePolicy;
-import java.math.BigDecimal;
-import javax.persistence.Column;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.chile.core.annotations.NamePattern;
+import com.haulmont.cuba.core.entity.StandardEntity;
+
+import javax.persistence.*;
+import java.math.BigDecimal;
 
 @NamePattern("%s %s|product,quantity")
 @Table(name = "SAMPLER_INVOICE_ITEM")
