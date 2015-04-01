@@ -9,6 +9,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class ColumnFieldGroupFrame extends AbstractFrame {
+
     @Inject
     private Datasource<Customer> customerDs;
 

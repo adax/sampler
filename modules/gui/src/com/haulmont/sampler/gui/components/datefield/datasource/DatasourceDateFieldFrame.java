@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.Map;
 
 public class DatasourceDateFieldFrame extends AbstractFrame {
+
     @Inject
     private Datasource<Order> ordersDs;
 

@@ -8,12 +8,10 @@ import com.haulmont.sampler.entity.Order;
 
 import javax.inject.Inject;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CustomOptionsLookupFieldFrame extends AbstractFrame {
+
     @Inject
     private LookupField agesLookup;
     @Inject

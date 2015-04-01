@@ -49,12 +49,10 @@ public class ImageEmbeddedFrame extends AbstractFrame {
         imageFile.setExtension("png");
 
         byte[] bytes = null;
-        if (imageFile != null) {
-            try {
-                bytes = fileStorageService.loadFile(imageFile);
-            } catch (FileStorageException e) {
-                showNotification("Unable to load image file", NotificationType.HUMANIZED);
-            }
+        try {
+            bytes = fileStorageService.loadFile(imageFile);
+        } catch (FileStorageException e) {
+            showNotification("Unable to load image file", NotificationType.HUMANIZED);
         }
         if (bytes != null) {
             embeddedImage.setSource(imageFile.getName(), new ByteArrayInputStream(bytes));

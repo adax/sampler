@@ -8,6 +8,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class SimpleLookupFieldFrame extends AbstractFrame {
+
     @Inject
     private Datasource<Customer> customerDs;
 

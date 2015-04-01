@@ -2,10 +2,7 @@ package com.haulmont.sampler.gui.components.progressbar.simple;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.ProgressBar;
-import com.haulmont.cuba.gui.executors.BackgroundTask;
-import com.haulmont.cuba.gui.executors.BackgroundTaskHandler;
-import com.haulmont.cuba.gui.executors.BackgroundWorker;
-import com.haulmont.cuba.gui.executors.TaskLifeCycle;
+import com.haulmont.cuba.gui.executors.*;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -13,13 +10,13 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class SimpleProgressBarFrame extends AbstractFrame {
-    @Inject
-    protected ProgressBar progressBar;
-
-    @Inject
-    protected BackgroundWorker backgroundWorker;
 
     private static final int ITERATIONS = 5;
+
+    @Inject
+    private ProgressBar progressBar;
+    @Inject
+    private BackgroundWorker backgroundWorker;
 
     @Override
     public void init(Map<String, Object> params) {

@@ -4,12 +4,10 @@ import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.LookupField;
 
 import javax.inject.Inject;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class UserInputLookupFieldFrame extends AbstractFrame {
+
     @Inject
     private LookupField lookup;
 

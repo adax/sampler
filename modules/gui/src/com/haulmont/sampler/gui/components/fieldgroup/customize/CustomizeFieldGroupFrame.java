@@ -10,6 +10,7 @@ import javax.inject.Named;
 import java.util.Map;
 
 public class CustomizeFieldGroupFrame extends AbstractFrame {
+
     @Named("orderFieldGroup.customer")
     private PickerField customerField;
     @Inject

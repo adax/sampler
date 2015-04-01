@@ -9,6 +9,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class IconTableFrame extends AbstractFrame {
+
     @Inject
     private Table customerTable;
 

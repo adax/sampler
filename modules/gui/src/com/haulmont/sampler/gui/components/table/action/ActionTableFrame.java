@@ -1,7 +1,6 @@
 package com.haulmont.sampler.gui.components.table.action;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.Component;
 import com.haulmont.cuba.gui.components.Table;
 import com.haulmont.sampler.entity.Customer;
 

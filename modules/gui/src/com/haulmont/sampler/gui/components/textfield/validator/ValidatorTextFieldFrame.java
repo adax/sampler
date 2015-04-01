@@ -1,12 +1,11 @@
 package com.haulmont.sampler.gui.components.textfield.validator;
 
-import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.TextField;
-import com.haulmont.cuba.gui.components.ValidationException;
+import com.haulmont.cuba.gui.components.*;
 
 import javax.inject.Inject;
 
 public class ValidatorTextFieldFrame extends AbstractFrame {
+
     @Inject
     private TextField integerField;
 

@@ -9,6 +9,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class StyleTwinColumnFrame extends AbstractFrame {
+
     @Inject
     private TwinColumn twinColumn;
 

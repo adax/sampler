@@ -1,14 +1,13 @@
 package com.haulmont.sampler.gui.components.table.simple;
 
-import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.CheckBox;
-import com.haulmont.cuba.gui.components.Table;
+import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.data.ValueListener;
 
 import javax.inject.Inject;
 import java.util.Map;
 
 public class SimpleTableFrame extends AbstractFrame {
+
     @Inject
     private CheckBox multiselect;
     @Inject

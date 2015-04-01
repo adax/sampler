@@ -1,10 +1,7 @@
 package com.haulmont.sampler.gui.components.fieldgroup.generate;
 
 import com.haulmont.cuba.core.global.GlobalConfig;
-import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.Component;
-import com.haulmont.cuba.gui.components.FieldGroup;
-import com.haulmont.cuba.gui.components.LookupField;
+import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.data.Datasource;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
 import com.haulmont.sampler.entity.Customer;
@@ -15,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 public class GenerateFieldGroupFrame extends AbstractFrame {
+
     @Inject
     private FieldGroup customerField;
     @Inject

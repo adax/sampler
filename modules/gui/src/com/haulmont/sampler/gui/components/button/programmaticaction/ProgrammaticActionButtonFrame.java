@@ -1,14 +1,12 @@
 package com.haulmont.sampler.gui.components.button.programmaticaction;
 
-import com.haulmont.cuba.gui.components.AbstractAction;
-import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.Button;
-import com.haulmont.cuba.gui.components.Component;
+import com.haulmont.cuba.gui.components.*;
 
 import javax.inject.Inject;
 import java.util.Map;
 
 public class ProgrammaticActionButtonFrame extends AbstractFrame {
+
     @Inject
     private Button button;
 

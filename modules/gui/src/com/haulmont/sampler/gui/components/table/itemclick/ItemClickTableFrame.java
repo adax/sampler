@@ -1,15 +1,13 @@
 package com.haulmont.sampler.gui.components.table.itemclick;
 
-import com.haulmont.cuba.gui.components.AbstractAction;
-import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.Component;
-import com.haulmont.cuba.gui.components.Table;
+import com.haulmont.cuba.gui.components.*;
 import com.haulmont.sampler.entity.Customer;
 
 import javax.inject.Inject;
 import java.util.Map;
 
 public class ItemClickTableFrame extends AbstractFrame {
+
     @Inject
     private Table customerTable;
 

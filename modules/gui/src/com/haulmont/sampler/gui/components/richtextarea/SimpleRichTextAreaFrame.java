@@ -7,6 +7,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class SimpleRichTextAreaFrame extends AbstractFrame {
+
     @Inject
     private RichTextArea richTextArea;
 

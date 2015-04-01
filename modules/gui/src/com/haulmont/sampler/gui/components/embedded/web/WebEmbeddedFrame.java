@@ -9,6 +9,7 @@ import java.net.URL;
 import java.util.Map;
 
 public class WebEmbeddedFrame extends AbstractFrame {
+
     @Inject
     private Embedded embedded;
 

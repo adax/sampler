@@ -1,9 +1,6 @@
 package com.haulmont.sampler.gui.components.pickerfield.actions;
 
-import com.haulmont.cuba.gui.components.AbstractAction;
-import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.Component;
-import com.haulmont.cuba.gui.components.PickerField;
+import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.data.Datasource;
 import com.haulmont.sampler.entity.Customer;
 import com.haulmont.sampler.entity.Order;
@@ -12,6 +9,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class ActionsPickerFieldFrame extends AbstractFrame {
+
     @Inject
     private PickerField pickerField;
     @Inject

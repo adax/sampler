@@ -7,6 +7,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class HtmlLabelFrame extends AbstractFrame {
+
     private static final String HTML = "In HTML mode, all HTML formatting tags, such as \n" +
             "<ul>" +
             "  <li><b>bold</b></li>" +

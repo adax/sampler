@@ -7,6 +7,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class TrimTextFieldFrame extends AbstractFrame {
+
     @Inject
     private CheckBox trim;
     @Inject

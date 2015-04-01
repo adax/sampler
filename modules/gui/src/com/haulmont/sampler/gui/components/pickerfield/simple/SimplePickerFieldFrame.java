@@ -8,6 +8,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class SimplePickerFieldFrame extends AbstractFrame {
+
     @Inject
     private Datasource<Order> orderDs;
 

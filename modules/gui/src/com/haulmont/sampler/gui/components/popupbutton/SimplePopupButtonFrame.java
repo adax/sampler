@@ -4,6 +4,7 @@ import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.Component;
 
 public class SimplePopupButtonFrame extends AbstractFrame {
+
     public void save1() {
         showNotification("Save called!", NotificationType.HUMANIZED);
     }

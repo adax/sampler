@@ -1,13 +1,12 @@
 package com.haulmont.sampler.gui.containers.tabsheet.lazy;
 
-import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.Label;
-import com.haulmont.cuba.gui.components.TabSheet;
+import com.haulmont.cuba.gui.components.*;
 
 import javax.inject.Inject;
 import java.util.Map;
 
 public class LazyTabSheetFrame extends AbstractFrame {
+
     @Inject
     private TabSheet tabSheet;
     @Inject

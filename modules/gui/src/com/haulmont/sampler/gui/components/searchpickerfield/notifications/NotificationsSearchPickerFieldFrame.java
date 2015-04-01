@@ -1,9 +1,6 @@
 package com.haulmont.sampler.gui.components.searchpickerfield.notifications;
 
-import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.SearchField;
-import com.haulmont.cuba.gui.components.SearchPickerField;
-import com.haulmont.cuba.gui.components.TextField;
+import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.data.Datasource;
 import com.haulmont.cuba.gui.data.ValueListener;
 import com.haulmont.sampler.entity.Order;
@@ -12,6 +9,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class NotificationsSearchPickerFieldFrame extends AbstractFrame {
+
     @Inject
     private TextField minLength;
     @Inject

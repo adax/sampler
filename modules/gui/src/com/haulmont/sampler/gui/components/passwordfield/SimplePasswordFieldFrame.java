@@ -6,6 +6,7 @@ import com.haulmont.cuba.gui.components.PasswordField;
 import javax.inject.Inject;
 
 public class SimplePasswordFieldFrame extends AbstractFrame {
+
     @Inject
     private PasswordField passwordField;
 

@@ -1,14 +1,13 @@
 package com.haulmont.sampler.gui.components.label.dynamic;
 
-import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.Label;
-import com.haulmont.cuba.gui.components.TextField;
+import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.data.ValueListener;
 
 import javax.inject.Inject;
 import java.util.Map;
 
 public class DynamicLabelFrame extends AbstractFrame {
+
     @Inject
     private Label dynamicLabel;
     @Inject

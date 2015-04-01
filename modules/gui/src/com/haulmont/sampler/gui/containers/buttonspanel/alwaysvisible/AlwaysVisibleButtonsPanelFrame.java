@@ -2,9 +2,6 @@ package com.haulmont.sampler.gui.containers.buttonspanel.alwaysvisible;
 
 import com.haulmont.cuba.gui.WindowManager;
 import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.Component;
-import com.haulmont.cuba.gui.components.IFrame;
-import com.haulmont.cuba.gui.components.Window;
 
 public class AlwaysVisibleButtonsPanelFrame extends AbstractFrame {
 

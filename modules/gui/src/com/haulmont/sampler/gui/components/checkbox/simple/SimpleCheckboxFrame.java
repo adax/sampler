@@ -8,6 +8,7 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class SimpleCheckboxFrame extends AbstractFrame {
+
     @Inject
     private CheckBox checkBox;
 
