@@ -7,7 +7,7 @@
                     view="order-edit">
             <collectionDatasource id="invoiceDs"
                                   allowCommit="false"
-                                  property="invoiceItem"/>
+                                  property="invoice"/>
         </datasource>
         <collectionDatasource id="allInvoicesDs"
                               class="com.haulmont.sampler.entity.InvoiceItem"
