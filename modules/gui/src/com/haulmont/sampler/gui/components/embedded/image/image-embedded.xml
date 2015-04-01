@@ -4,23 +4,11 @@
         <hbox spacing="true">
             <groupBox id="groupBoxImage"
                       caption="Embedded image"
-                      expand="embeddedImage"
                       height="250px"
-                      spacing="true"
                       width="300px">
                 <embedded id="embeddedImage"
                           align="MIDDLE_CENTER"
                           width="100%"/>
-                <hbox align="BOTTOM_CENTER"
-                      spacing="true">
-                    <upload id="uploadField"/>
-                    <button id="downloadImageBtn"
-                            caption="Download"
-                            invoke="onDownloadImageBtnClick"/>
-                    <button id="clearImageBtn"
-                            caption="Clear"
-                            invoke="onClearImageBtnClick"/>
-                </hbox>
             </groupBox>
             <groupBox caption="Embedded image file"
                       height="250px"
