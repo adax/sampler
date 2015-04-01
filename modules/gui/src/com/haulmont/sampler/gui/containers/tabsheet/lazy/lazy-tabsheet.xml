@@ -4,7 +4,8 @@
     <layout>
         <hbox spacing="true">
             <tabSheet id="tabSheet"
-                      width="200">
+                      width="200"
+                      height="100">
                 <tab id="tab1"
                      lazy="true"
                      caption="Tab 1"
