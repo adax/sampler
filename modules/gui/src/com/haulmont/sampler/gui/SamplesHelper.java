@@ -39,6 +39,10 @@ public class SamplesHelper {
     @Inject
     private WindowConfig windowConfig;
 
+    public WindowInfo getSampleBrowser() {
+        return windowConfig.getWindowInfo("sample-browser");
+    }
+
     public Map<String, Object> getParams(MenuItem item) {
         WindowInfo info = windowConfig.getWindowInfo(item.getId());
         Map<String, Object> params = new HashMap<>();

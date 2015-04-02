@@ -6,7 +6,6 @@ import com.haulmont.cuba.gui.config.WindowConfig;
 import com.haulmont.cuba.gui.config.WindowInfo;
 import com.haulmont.cuba.web.AppWindow;
 import com.haulmont.cuba.web.app.folders.FoldersPane;
-import com.haulmont.cuba.web.gui.components.WebComponentsHelper;
 import com.haulmont.cuba.web.toolkit.ui.CubaTree;
 import com.haulmont.sampler.gui.SamplesHelper;
 import com.haulmont.sampler.gui.config.MenuItem;
@@ -41,8 +40,7 @@ public class LeftPanel extends FoldersPane {
     public void init(Component parent) {
         super.init(parent);
         samplesMenuConfig.reset();
-        WindowConfig windowConfig = AppBeans.get(WindowConfig.NAME);
-        sampleWindow = windowConfig.getWindowInfo("component-sample-browser");
+        sampleWindow = samplesHelper.getSampleBrowser();
         createMenuPanel();
     }
 

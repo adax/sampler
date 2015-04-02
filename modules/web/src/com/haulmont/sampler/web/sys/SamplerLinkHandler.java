@@ -1,10 +1,6 @@
 package com.haulmont.sampler.web.sys;
 
-import com.haulmont.cuba.core.global.AppBeans;
-import com.haulmont.cuba.core.global.Configuration;
 import com.haulmont.cuba.gui.WindowManager;
-import com.haulmont.cuba.gui.config.WindowConfig;
-import com.haulmont.cuba.gui.config.WindowInfo;
 import com.haulmont.cuba.web.App;
 import com.haulmont.cuba.web.sys.LinkHandler;
 import com.haulmont.sampler.gui.SamplesHelper;
@@ -24,12 +20,8 @@ public class SamplerLinkHandler extends LinkHandler {
     @Inject
     private SamplesMenuConfig samplesMenuConfig;
 
-    private WindowInfo sampleWindow;
-
     public SamplerLinkHandler(App app, String action, Map<String, String> requestParams) {
         super(app, action, requestParams);
-        WindowConfig windowConfig = AppBeans.get(WindowConfig.NAME);
-        sampleWindow = windowConfig.getWindowInfo("component-sample-browser");
     }
 
     @Override
@@ -43,7 +35,7 @@ public class SamplerLinkHandler extends LinkHandler {
         MenuItem item = samplesMenuConfig.findItemById(screenName);
         if (item != null && !item.isMenu()) {
             Map<String, Object> params = samplesHelper.getParams(item);
-            App.getInstance().getWindowManager().openWindow(sampleWindow, WindowManager.OpenType.NEW_TAB, params);
+            App.getInstance().getWindowManager().openWindow(samplesHelper.getSampleBrowser(), WindowManager.OpenType.NEW_TAB, params);
         } else {
             super.handle();
         }

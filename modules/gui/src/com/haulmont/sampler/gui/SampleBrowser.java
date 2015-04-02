@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components;
+package com.haulmont.sampler.gui;
 
 import com.haulmont.cuba.core.global.GlobalConfig;
 import com.haulmont.cuba.core.global.MessageTools;
@@ -6,7 +6,6 @@ import com.haulmont.cuba.core.global.Messages;
 import com.haulmont.cuba.core.global.UserSessionSource;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
-import com.haulmont.sampler.gui.SamplesHelper;
 import com.haulmont.sampler.gui.config.SamplesMenuConfig;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
@@ -19,7 +18,7 @@ import java.util.Map;
 
 import static com.haulmont.cuba.gui.components.SourceCodeEditor.Mode;
 
-public class ComponentSampleBrowser extends AbstractWindow {
+public class SampleBrowser extends AbstractWindow {
 
     @Inject
     private TabSheet tabSheet;
@@ -162,7 +161,6 @@ public class ComponentSampleBrowser extends AbstractWindow {
         Link permalink = componentsFactory.createComponent(Link.NAME);
         permalink.setAlignment(Alignment.TOP_RIGHT);
         permalink.setDescription("Permalink");
-        permalink.setTarget("_blank");
         permalink.setUrl("open?screen=" + frameId);
         permalink.setIcon("font-icon:EXTERNAL_LINK");
 

@@ -195,6 +195,8 @@ public class SamplesMenuConfig {
 
     @Nullable
     public MenuItem findItemById(String id) {
+        // TODO temp fix
+        reset();
         return (MenuItem) CollectionUtils.find(getItemsAsList(), new MenuItemPredicate(id));
     }
 

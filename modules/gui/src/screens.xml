@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <screen-config xmlns="http://schemas.haulmont.com/cuba/5.4/screens.xsd">
+    <screen id="sample-browser"
+            template="com/haulmont/sampler/gui/sample-browser.xml"/>
     <!-- Entities -->
     <screen id="sampler$Customer.lookup"
             template="com/haulmont/sampler/gui/entities/customer/customer-browse.xml"/>
@@ -20,8 +22,6 @@
     <screen id="sampler$InvoiceItem.edit"
             template="com/haulmont/sampler/gui/entities/invoiceitem/invoiceitem-edit.xml"/>
     <!-- Components -->
-    <screen id="component-sample-browser"
-            template="com/haulmont/sampler/gui/components/component-sample-browser.xml"/>
     <screen id="simple-button"
             template="/com/haulmont/sampler/gui/components/button/simple/simple-button.xml"/>
     <screen id="link-button"

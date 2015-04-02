@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         caption="msg://sampleBrowser"
-        class="com.haulmont.sampler.gui.components.ComponentSampleBrowser"
+        class="com.haulmont.sampler.gui.SampleBrowser"
         messagesPack="com.haulmont.sampler.gui.components">
     <layout margin="true,false,false,false"
             spacing="true" expand="tabSheet">
