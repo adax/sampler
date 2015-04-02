@@ -20,6 +20,7 @@ import java.util.Map;
 import static com.haulmont.cuba.gui.components.SourceCodeEditor.Mode;
 
 public class ComponentSampleBrowser extends AbstractWindow {
+
     @Inject
     private TabSheet tabSheet;
 
@@ -96,15 +97,45 @@ public class ComponentSampleBrowser extends AbstractWindow {
     }
 
     private Component createDescription(String descriptionsPack, String docUrlSuffix, String frameId) {
-        StringBuilder sb = new StringBuilder();
+        ScrollBoxLayout scrollBoxLayout = componentsFactory.createComponent(ScrollBoxLayout.NAME);
+        scrollBoxLayout.setWidth("100%");
+        scrollBoxLayout.setHeight("100%");
+        scrollBoxLayout.setSpacing(true);
+
         if (StringUtils.isNotEmpty(descriptionsPack)) {
-            String text = samplesHelper.getFileContent(getDescriptionFileName(descriptionsPack, frameId));
-            if (StringUtils.isNotEmpty(text)) {
-                sb.append(text);
-                sb.append("<hr>");
-            }
+            scrollBoxLayout.add(descriptionText(frameId, descriptionsPack));
         }
-        sb.append("<p>");
+
+        HBoxLayout hbox = componentsFactory.createComponent(HBoxLayout.NAME);
+        hbox.setWidth("100%");
+
+        Component docLinks = documentLinks(docUrlSuffix);
+        hbox.add(docLinks);
+        hbox.expand(docLinks);
+
+        hbox.add(permalink(frameId));
+
+        scrollBoxLayout.add(hbox);
+
+        return scrollBoxLayout;
+    }
+
+    private Component descriptionText(String frameId, String descriptionsPack) {
+        StringBuilder sb = new StringBuilder();
+        String text = samplesHelper.getFileContent(getDescriptionFileName(descriptionsPack, frameId));
+        if (StringUtils.isNotEmpty(text)) {
+            sb.append(text);
+            sb.append("<hr>");
+        }
+        Label doc = componentsFactory.createComponent(Label.NAME);
+        doc.setHtmlEnabled(true);
+        doc.setWidth("100%");
+        doc.setValue(sb.toString());
+        return doc;
+    }
+
+    private Component documentLinks(String docUrlSuffix) {
+        StringBuilder sb = new StringBuilder();
         sb.append(messages.getMessage(getClass(), "sampleBrowser.documentation"));
         sb.append(": ");
 
@@ -119,19 +150,23 @@ public class ComponentSampleBrowser extends AbstractWindow {
             String url = String.format(samplesMenuConfig.getDocTemplate(locale), docUrlSuffix);
             sb.append(String.format("<a href=\"%s\" target=\"_blank\">%s</a>", url, localeName));
         }
-        sb.append("</p>");
 
-        ScrollBoxLayout scrollBoxLayout = componentsFactory.createComponent(ScrollBoxLayout.NAME);
-        scrollBoxLayout.setWidth("100%");
-        scrollBoxLayout.setHeight("100%");
+        Label docLinks = componentsFactory.createComponent(Label.NAME);
+        docLinks.setHtmlEnabled(true);
+        docLinks.setValue(sb.toString());
 
-        Label doc = componentsFactory.createComponent(Label.NAME);
-        doc.setHtmlEnabled(true);
-        doc.setWidth("100%");
-        doc.setValue(sb.toString());
-        scrollBoxLayout.add(doc);
+        return docLinks;
+    }
 
-        return scrollBoxLayout;
+    private Component permalink(String frameId) {
+        Link permalink = componentsFactory.createComponent(Link.NAME);
+        permalink.setAlignment(Alignment.TOP_RIGHT);
+        permalink.setDescription("Permalink");
+        permalink.setTarget("_blank");
+        permalink.setUrl("open?screen=" + frameId);
+        permalink.setIcon("font-icon:EXTERNAL_LINK");
+
+        return permalink;
     }
 
     private String getDescriptionFileName(String descriptionsPack, String frameId) {

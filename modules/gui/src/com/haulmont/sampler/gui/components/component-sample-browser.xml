@@ -3,7 +3,6 @@
         caption="msg://sampleBrowser"
         class="com.haulmont.sampler.gui.components.ComponentSampleBrowser"
         messagesPack="com.haulmont.sampler.gui.components">
-    <dsContext/>
     <layout margin="true,false,false,false"
             spacing="true" expand="tabSheet">
         <tabSheet id="tabSheet"/>
