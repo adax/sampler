@@ -2,7 +2,6 @@ package com.haulmont.sampler.web;
 
 import com.haulmont.cuba.core.global.AppBeans;
 import com.haulmont.cuba.gui.WindowManager;
-import com.haulmont.cuba.gui.config.WindowConfig;
 import com.haulmont.cuba.gui.config.WindowInfo;
 import com.haulmont.cuba.web.AppWindow;
 import com.haulmont.cuba.web.app.folders.FoldersPane;
@@ -128,6 +127,7 @@ public class LeftPanel extends FoldersPane {
     private void fillTree(List<MenuItem> items, MenuItem parent, boolean expand) {
         for (MenuItem item : items) {
             tree.addItem(item);
+            tree.setItemCaption(item, samplesMenuConfig.getMenuItemCaption(item.getId()));
             tree.setParent(item, parent);
             if (item.isMenu()) {
                 fillTree(item.getChildren(), item, expand);

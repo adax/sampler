@@ -188,15 +188,12 @@ public class SamplesMenuConfig {
 
     private void addItem(List<MenuItem> items, MenuItem menuItem) {
         if (menuItem != null) {
-            menuItem.setCaption(getMenuItemCaption(menuItem.getId()));
             items.add(menuItem);
         }
     }
 
     @Nullable
     public MenuItem findItemById(String id) {
-        // TODO temp fix
-        reset();
         return (MenuItem) CollectionUtils.find(getItemsAsList(), new MenuItemPredicate(id));
     }
 

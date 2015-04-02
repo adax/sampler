@@ -7,6 +7,7 @@ import com.haulmont.cuba.gui.config.WindowConfig;
 import com.haulmont.cuba.gui.config.WindowInfo;
 import com.haulmont.cuba.gui.xml.XmlInheritanceProcessor;
 import com.haulmont.sampler.gui.config.MenuItem;
+import com.haulmont.sampler.gui.config.SamplesMenuConfig;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
@@ -39,6 +40,9 @@ public class SamplesHelper {
     @Inject
     private WindowConfig windowConfig;
 
+    @Inject
+    private SamplesMenuConfig samplesMenuConfig;
+
     public WindowInfo getSampleBrowser() {
         return windowConfig.getWindowInfo("sample-browser");
     }
@@ -47,7 +51,7 @@ public class SamplesHelper {
         WindowInfo info = windowConfig.getWindowInfo(item.getId());
         Map<String, Object> params = new HashMap<>();
         params.put("windowId", item.getId());
-        params.put("caption", item.getCaption());
+        params.put("caption", samplesMenuConfig.getMenuItemCaption(item.getId()));
         params.put("controller", item.getController());
         params.put("otherFiles", item.getOtherFiles());
         params.put("descriptionsPack", item.getDescriptionsPack());

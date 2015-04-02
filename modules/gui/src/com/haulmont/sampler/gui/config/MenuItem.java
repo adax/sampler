@@ -15,7 +15,6 @@ public class MenuItem {
 
     private String id;
     private String url;
-    private String caption;
     private String controller;
     private String descriptionsPack;
     private List<String> otherFiles;
@@ -41,15 +40,6 @@ public class MenuItem {
 
     public void setMenu(boolean isMenu) {
         this.isMenu = isMenu;
-    }
-
-    @Nullable
-    public String getCaption() {
-        return caption;
-    }
-
-    public void setCaption(String caption) {
-        this.caption = caption;
     }
 
     @Nullable
@@ -99,6 +89,6 @@ public class MenuItem {
 
     @Override
     public String toString() {
-        return getCaption();
+        return id;
     }
 }
