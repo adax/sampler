@@ -1,0 +1,30 @@
+<p>Notifications can be invoked using&nbsp;<code>showNotification()</code>&nbsp;method of the&nbsp;<code>IFrame</code>&nbsp;interface. This interface is implemented by&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/screen_controller.html" target="_blank">screen controlller</a>, so this method can be invoked directly from the controller code.</p>
+
+<p><code>showNotification()</code>&nbsp;method takes the following parameters:</p>
+
+<ul>
+    <li>
+        <p><code>caption</code>&nbsp;- notification text. In case of HTML-type (see below), you can format message text using HTML-tags. When using HTML, don&rsquo;t forget to escape data to prevent code injection in the web-client. You can use&nbsp;<code>\n</code>&nbsp;characters for line breaks in non-HTML messages.</p>
+    </li>
+    <li>
+        <p><code>description</code>&nbsp;&ndash; an optional description displayed under the caption. You can also use&nbsp;<code>\n</code>&nbsp;character or HTML-formatting.</p>
+    </li>
+    <li>
+        <p><code>type</code>&nbsp;&ndash; notification type. Possible values:</p>
+
+        <ul>
+            <li>
+                <p><code>TRAY</code>,&nbsp;<code>TRAY_HTML</code>&nbsp;- a notification is displayed in the bottom right corner of the application and disappears automatically.</p>
+            </li>
+            <li>
+                <p><code>HUMANIZED</code>,&nbsp;<code>HUMANIZED_HTML</code>&nbsp;&ndash; a standard notification displayed in the center of the screen, disappears automatically.</p>
+            </li>
+            <li>
+                <p><code>WARNING</code>,&nbsp;<code>WARNING_HTML</code>&nbsp;&ndash; a warning. Disappears when clicked.</p>
+            </li>
+            <li>
+                <p><code>ERROR</code>,&nbsp;<code>ERROR_HTML</code>&nbsp;&ndash; a notification about an error. Disappears when clicked.</p>
+            </li>
+        </ul>
+    </li>
+</ul>

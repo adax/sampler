@@ -1,0 +1,30 @@
+<p>Уведомления вызываются методом&nbsp;<code>showNotification()</code>&nbsp;интерфейса&nbsp;<code>IFrame</code>. Этот интерфейс реализуется&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/screen_controller.html" target="_blank">контроллером экрана</a>, поэтому данный метод можно вызывать напрямую в коде контроллера.</p>
+
+<p>Метод&nbsp;<code>showNotification()</code>&nbsp;принимает следующие параметры:</p>
+
+<ul>
+    <li>
+        <p><code>caption</code>&nbsp;- текст уведомления. В случае HTML-типа (см. ниже) в сообщении можно использовать теги HTML для форматирования. При использовании HTML обязательно экранируйте данных из БД во избежание code injection в веб-клиенте. В не-HTML сообщениях можно использовать символы&nbsp;<code>\n</code>&nbsp;для переноса строки.</p>
+    </li>
+    <li>
+        <p><code>description</code>&nbsp;- опциональное описание, которое будет отображено ниже&nbsp;<code>caption</code>. Также можно использовать символы&nbsp;<code>\n</code>&nbsp;или HTML-форматирование.</p>
+    </li>
+    <li>
+        <p><code>type</code>&nbsp;- тип уведомления. Возможные типы:</p>
+
+        <ul>
+            <li>
+                <p><code>TRAY</code>,&nbsp;<code>TRAY_HTML</code>&nbsp;- уведомление показывается в правом нижнем углу приложения и исчезает автоматически.</p>
+            </li>
+            <li>
+                <p><code>HUMANIZED</code>,&nbsp;<code>HUMANIZED_HTML</code>&nbsp;- стадартное уведомление в центре экрана, исчезает автоматически.</p>
+            </li>
+            <li>
+                <p><code>WARNING</code>,&nbsp;<code>WARNING_HTML</code>&nbsp;- предупреждение. Исчезает при клике пользователя.</p>
+            </li>
+            <li>
+                <p><code>ERROR</code>,&nbsp;<code>ERROR_HTML</code>&nbsp;- уведомление об ошибке. Исчезает при клике пользователя.</p>
+            </li>
+        </ul>
+    </li>
+</ul>

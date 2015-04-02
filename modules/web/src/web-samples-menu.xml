@@ -574,9 +574,9 @@
                   descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/dialog/option"/>
         </menu>
 
-        <menu id="notifications">
-
-        </menu>
+        <item id="notifications-sample" docUrlSuffix="notifications"
+                controller="com/haulmont/sampler/gui/dialogsandnotifications/notification/NotificationsSampleFrame.java"
+                descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/notification"/>
 
     </menu>
 
