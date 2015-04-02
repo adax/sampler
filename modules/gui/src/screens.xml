@@ -225,4 +225,8 @@
             template="com/haulmont/sampler/gui/containers/tabsheet/simple/simple-tabsheet.xml"/>
     <screen id="lazy-tabsheet"
             template="com/haulmont/sampler/gui/containers/tabsheet/lazy/lazy-tabsheet.xml"/>
+    <screen id="message-dialog-sampler"
+            template="com/haulmont/sampler/gui/dialogsandnotifications/dialog/message/message-dialog-sampler.xml"/>
+    <screen id="option-dialog-sampler"
+            template="com/haulmont/sampler/gui/dialogsandnotifications/dialog/option/option-dialog-sampler.xml"/>
 </screen-config>

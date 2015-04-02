@@ -563,4 +563,21 @@
         
     </menu>
 
+    <menu id="dialogsAndNotifications">
+
+        <menu id="dialogs">
+            <item id="message-dialog-sampler" docUrlSuffix="dialogs"
+                  controller="com/haulmont/sampler/gui/dialogsandnotifications/dialog/message/MessageDialogSamplerFrame.java"
+                  descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/dialog/message"/>
+            <item id="option-dialog-sampler" docUrlSuffix="dialogs"
+                  controller="com/haulmont/sampler/gui/dialogsandnotifications/dialog/option/OptionDialogSamplerFrame.java"
+                  descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/dialog/option"/>
+        </menu>
+
+        <menu id="notifications">
+
+        </menu>
+
+    </menu>
+
 </sample-menu-config>

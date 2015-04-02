@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        class="com.haulmont.sampler.gui.dialogsandnotifications.dialog.message.MessageDialogSamplerFrame">
+    <layout>
+        <hbox spacing="true">
+            <button caption="Confirmation"
+                    invoke="confirmation"/>
+            <button caption="Warning"
+                    invoke="warning"/>
+        </hbox>
+    </layout>
+</window>
