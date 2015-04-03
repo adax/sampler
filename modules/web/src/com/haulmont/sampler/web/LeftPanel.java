@@ -5,14 +5,22 @@ import com.haulmont.cuba.gui.WindowManager;
 import com.haulmont.cuba.gui.config.WindowInfo;
 import com.haulmont.cuba.web.AppWindow;
 import com.haulmont.cuba.web.app.folders.FoldersPane;
+import com.haulmont.cuba.web.toolkit.ui.CubaTextField;
 import com.haulmont.cuba.web.toolkit.ui.CubaTree;
 import com.haulmont.sampler.gui.SamplesHelper;
 import com.haulmont.sampler.gui.config.MenuItem;
 import com.haulmont.sampler.gui.config.SamplesMenuConfig;
+import com.vaadin.data.Container;
+import com.vaadin.data.Item;
+import com.vaadin.data.Property;
+import com.vaadin.data.util.HierarchicalContainer;
 import com.vaadin.event.ItemClickEvent;
+import com.vaadin.event.ShortcutListener;
 import com.vaadin.shared.MouseEventDetails;
+import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.Reindeer;
+import org.apache.commons.lang.StringUtils;
 
 import java.util.Collection;
 import java.util.List;
@@ -24,9 +32,12 @@ import java.util.Map;
  */
 public class LeftPanel extends FoldersPane {
 
+    private static final String PROPERTY_CAPTION = "caption";
+
     private VerticalLayout menuLayout;
     private Tree tree;
     private WindowInfo sampleWindow;
+    private Container.Filter filter;
 
     private SamplesHelper samplesHelper = AppBeans.get(SamplesHelper.NAME);
     private SamplesMenuConfig samplesMenuConfig = AppBeans.get(SamplesMenuConfig.NAME);
@@ -49,6 +60,47 @@ public class LeftPanel extends FoldersPane {
         menuLayout.setHeight("100%");
         menuLayout.setWidth("100%");
 
+        createMenuSearch();
+        createMenuHeader();
+        createMenuTree();
+
+        addComponent(menuLayout);
+    }
+
+    private void createMenuSearch() {
+        HorizontalLayout searchLayout = new HorizontalLayout();
+        searchLayout.setSpacing(true);
+        searchLayout.setMargin(new MarginInfo(true, false, true, false));
+        searchLayout.setWidth("100%");
+
+        final CubaTextField searchField = new CubaTextField();
+        searchField.setWidth("100%");
+        searchField.addShortcutListener(new ShortcutListener("", com.vaadin.event.ShortcutAction.KeyCode.ENTER, null) {
+            @Override
+            public void handleAction(Object sender, Object target) {
+                search(searchField.getValue());
+            }
+        });
+        searchField.focus();
+        searchLayout.addComponent(searchField);
+        searchLayout.setExpandRatio(searchField, 1);
+
+        filter = null;
+        Button searchButton = new Button(messages.getMessage(getClass(), "LeftPanel.search"));
+        searchButton.addClickListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                search(searchField.getValue());
+            }
+        });
+        searchLayout.addComponent(searchButton);
+        searchLayout.setComponentAlignment(searchButton, Alignment.MIDDLE_RIGHT);
+
+        menuLayout.addComponent(searchLayout);
+
+    }
+
+    private void createMenuHeader() {
         HorizontalLayout header = new HorizontalLayout();
         header.setSpacing(true);
         header.setWidth("100%");
@@ -67,24 +119,21 @@ public class LeftPanel extends FoldersPane {
         refresh.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent event) {
-                samplesMenuConfig.reset();
-                menuLayout.removeComponent(tree);
-                createMenuTree();
+                resetAllMenuItems();
             }
         });
         header.addComponent(refresh);
         header.setComponentAlignment(refresh, Alignment.MIDDLE_RIGHT);
         // === End ===
 
-        Button collapseAll = new Button(messages.getMessage(getClass(), "LeftPanel.collapseAll"));
+        final Button collapseAll = new Button(messages.getMessage(getClass(), "LeftPanel.collapseAll"));
         collapseAll.addStyleName(Reindeer.BUTTON_LINK);
         collapseAll.addStyleName("small-link");
         collapseAll.addStyleName("dark");
         collapseAll.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent event) {
-                for (MenuItem item : (Collection<MenuItem>) tree.rootItemIds())
-                    tree.collapseItemsRecursively(item);
+                collapseAll();
             }
         });
         header.addComponent(collapseAll);
@@ -97,18 +146,13 @@ public class LeftPanel extends FoldersPane {
         expandAll.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent event) {
-                for (MenuItem item : (Collection<MenuItem>) tree.rootItemIds())
-                    tree.expandItemsRecursively(item);
+                expandAll();
             }
         });
         header.addComponent(expandAll);
         header.setComponentAlignment(expandAll, Alignment.MIDDLE_RIGHT);
 
         menuLayout.addComponent(header);
-
-        addComponent(menuLayout);
-
-        createMenuTree();
     }
 
     private void createMenuTree() {
@@ -117,23 +161,31 @@ public class LeftPanel extends FoldersPane {
         tree.setWidth("100%");
         tree.setSelectable(false);
         tree.addItemClickListener(new MenuItemClickListener());
-
-        fillTree(samplesMenuConfig.getRootItems(), null, true);
+        tree.setItemCaptionPropertyId(PROPERTY_CAPTION);
+        tree.setContainerDataSource(createTreeContent());
+        expandAll();
 
         menuLayout.addComponent(tree);
         menuLayout.setExpandRatio(tree, 1);
     }
 
-    private void fillTree(List<MenuItem> items, MenuItem parent, boolean expand) {
+    private HierarchicalContainer createTreeContent() {
+        HierarchicalContainer container = new HierarchicalContainer();
+        container.addContainerProperty(PROPERTY_CAPTION, String.class, "");
+        fillContainer(container, samplesMenuConfig.getRootItems(), null);
+        return container;
+    }
+
+    private void fillContainer(HierarchicalContainer container, List<MenuItem> items, MenuItem parent) {
         for (MenuItem item : items) {
-            tree.addItem(item);
-            tree.setItemCaption(item, samplesMenuConfig.getMenuItemCaption(item.getId()));
-            tree.setParent(item, parent);
+            Item containerItem = container.addItem(item);
+            Property<String> caption = containerItem.getItemProperty(PROPERTY_CAPTION);
+            caption.setValue(samplesMenuConfig.getMenuItemCaption(item.getId()));
+            container.setParent(item, parent);
             if (item.isMenu()) {
-                fillTree(item.getChildren(), item, expand);
-                if (expand) tree.expandItem(item);
+                fillContainer(container, item.getChildren(), item);
             } else {
-                tree.setChildrenAllowed(item, false);
+                container.setChildrenAllowed(item, false);
             }
         }
     }
@@ -169,6 +221,98 @@ public class LeftPanel extends FoldersPane {
             } else {
                 tree.expandItem(item);
             }
+        }
+    }
+
+    private void expandAll() {
+        for (MenuItem item : (Collection<MenuItem>) tree.rootItemIds())
+            tree.expandItemsRecursively(item);
+    }
+
+    private void collapseAll() {
+        for (MenuItem item : (Collection<MenuItem>) tree.rootItemIds())
+            tree.collapseItemsRecursively(item);
+    }
+
+    private void search(final String searchRequest) {
+        Container.Filterable container = (Container.Filterable) tree.getContainerDataSource();
+        if (StringUtils.isBlank(searchRequest)) {
+            tree.setItemStyleGenerator(null);
+            container.removeContainerFilter(filter);
+        } else {
+            tree.setItemStyleGenerator(new TreeSearchStyle(searchRequest));
+            if (filter != null)
+                container.removeContainerFilter(filter);
+            filter = new TreeSearchFilter(PROPERTY_CAPTION, searchRequest);
+            container.addContainerFilter(filter);
+            expandAll();
+        }
+    }
+
+    private void resetAllMenuItems() {
+        samplesMenuConfig.reset();
+        tree.setItemStyleGenerator(null);
+        tree.setContainerDataSource(createTreeContent());
+        expandAll();
+    }
+
+    private class TreeSearchStyle implements Tree.ItemStyleGenerator {
+
+        private String searchString;
+
+        public TreeSearchStyle(String searchString) {
+            this.searchString = searchString.toLowerCase();
+        }
+
+        @Override
+        public String getStyle(Tree source, Object itemId) {
+            MenuItem item = (MenuItem) itemId;
+            if (samplesMenuConfig
+                    .getMenuItemCaption(item.getId())
+                    .toLowerCase()
+                    .contains(searchString)) {
+                return "bold";
+            }
+            return null;
+        }
+    }
+
+    private class TreeSearchFilter implements Container.Filter {
+
+        private String propertyId;
+        private String searchRequest;
+
+        public TreeSearchFilter(String propertyId, String searchRequest) {
+            this.propertyId = propertyId;
+            this.searchRequest = searchRequest.toLowerCase();
+        }
+
+        @Override
+        public boolean passesFilter(Object itemId, Item item) throws UnsupportedOperationException {
+            Property property = item.getItemProperty(propertyId);
+            if (property == null || !property.getType().equals(String.class))
+                return false;
+
+            String value = (String) property.getValue();
+            return match(value) || checkParents((MenuItem) itemId);
+        }
+
+        @Override
+        public boolean appliesToProperty(Object propertyId) {
+            return propertyId != null &&
+                    propertyId.equals(this.propertyId);
+        }
+
+        private boolean checkParents(MenuItem item) {
+            if (item.getParent() != null) {
+                MenuItem parent = item.getParent();
+                return match(samplesMenuConfig.getMenuItemCaption(parent.getId())) || checkParents(parent);
+            }
+            return false;
+        }
+
+        private boolean match(String value) {
+            return value.toLowerCase().contains(searchRequest);
         }
     }
 }
