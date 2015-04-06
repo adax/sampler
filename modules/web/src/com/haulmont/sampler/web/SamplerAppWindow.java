@@ -16,6 +16,9 @@ import javax.annotation.Nullable;
  * @version $Id$
  */
 public class SamplerAppWindow extends AppWindow {
+
+    private VerticalLayout welcomeLayout;
+
     public SamplerAppWindow(AppUI ui) {
         super(ui);
     }
@@ -33,21 +36,29 @@ public class SamplerAppWindow extends AppWindow {
         mainLayout.setMargin(true);
         mainLayout.setStyleName("sampler-startup-screen");
 
-        VerticalLayout layout = new VerticalLayout();
-        layout.setSpacing(true);
+        if (welcomeLayout == null) {
+            welcomeLayout = new VerticalLayout();
+            welcomeLayout.setSpacing(true);
 
-        Image logo = new Image(null, WebComponentsHelper.getResource("images/platform-logo.png"));
-        layout.addComponent(logo);
-        layout.setComponentAlignment(logo, Alignment.TOP_CENTER);
+            Image logo = new Image(null, WebComponentsHelper.getResource("images/platform-logo.png"));
+            welcomeLayout.addComponent(logo);
+            welcomeLayout.setComponentAlignment(logo, Alignment.TOP_CENTER);
 
-        Label welcomeLabel = new Label(messages.getMessage(getClass(), "StartupScreen.welcome"));
-        welcomeLabel.setStyleName("sampler-startup-screen-welcome");
-        layout.addComponent(welcomeLabel);
+            Label welcomeLabel = new Label(messages.getMessage(getClass(), "StartupScreen.welcome"));
+            welcomeLabel.setStyleName("sampler-startup-screen-welcome");
+            welcomeLayout.addComponent(welcomeLabel);
 
-//        Label descriptionLabel = new Label(messages.getMessage(getClass(), "StartupScreen.description"));
-//        descriptionLabel.setStyleName("sampler-startup-screen-description");
-//        layout.addComponent(descriptionLabel);
+            Label descriptionLabel = new Label(messages.getMessage(getClass(), "StartupScreen.description"));
+            descriptionLabel.setStyleName("sampler-startup-screen-description");
+            welcomeLayout.addComponent(descriptionLabel);
+        }
+        mainLayout.addComponent(welcomeLayout);
+    }
 
-        mainLayout.addComponent(layout);
+    @Override
+    public void closeStartupScreen() {
+        super.closeStartupScreen();
+        mainLayout.removeComponent(welcomeLayout);
+        mainLayout.removeStyleName("sampler-startup-screen");
     }
 }
