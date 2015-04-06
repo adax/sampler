@@ -9,6 +9,9 @@ import javax.persistence.*;
 @Table(name = "SAMPLER_CUSTOMER")
 @Entity(name = "sampler$Customer")
 public class Customer extends StandardEntity {
+
+    private static final long serialVersionUID = -3420505556417816206L;
+
     @Column(name = "NAME", length = 50, nullable = false)
     protected String name;
 
@@ -17,9 +20,6 @@ public class Customer extends StandardEntity {
 
     @Column(name = "AGE")
     protected Integer age;
-
-    private static final long serialVersionUID = -3420505556417816206L;
-
 
     @Column(name = "ACTIVE", nullable = false)
     protected Boolean active = false;

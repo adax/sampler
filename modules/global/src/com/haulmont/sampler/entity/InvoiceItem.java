@@ -10,14 +10,15 @@ import java.math.BigDecimal;
 @Table(name = "SAMPLER_INVOICE_ITEM")
 @Entity(name = "sampler$InvoiceItem")
 public class InvoiceItem extends StandardEntity {
+
+    private static final long serialVersionUID = 7404462282086544503L;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "PRODUCT_ID")
     protected Product product;
 
     @Column(name = "QUANTITY", precision = 19, scale = 3)
     protected BigDecimal quantity;
-
-    private static final long serialVersionUID = 7404462282086544503L;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ORDER_ID")

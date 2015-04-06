@@ -10,13 +10,14 @@ import java.math.BigDecimal;
 @Table(name = "SAMPLER_PRODUCT")
 @Entity(name = "sampler$Product")
 public class Product extends StandardEntity {
+
+    private static final long serialVersionUID = 4256660269544840258L;
+
     @Column(name = "NAME", nullable = false)
     protected String name;
 
     @Column(name = "PRICE", nullable = false)
     protected BigDecimal price;
-
-    private static final long serialVersionUID = 4256660269544840258L;
 
     public void setName(String name) {
         this.name = name;

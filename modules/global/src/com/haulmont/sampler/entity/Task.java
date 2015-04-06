@@ -10,6 +10,9 @@ import java.util.Date;
 @Table(name = "SAMPLER_TASK")
 @Entity(name = "sampler$Task")
 public class Task extends StandardEntity {
+
+    private static final long serialVersionUID = 2652709115420331280L;
+
     @Column(name = "NAME", nullable = false)
     protected String name;
 
@@ -20,8 +23,6 @@ public class Task extends StandardEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ASSIGNEE_ID")
     protected Customer assignee;
-
-    private static final long serialVersionUID = 2652709115420331280L;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "PARENT_TASK_ID")

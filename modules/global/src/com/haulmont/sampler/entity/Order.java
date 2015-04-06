@@ -15,6 +15,9 @@ import java.util.Set;
 @Table(name = "SAMPLER_ORDER")
 @Entity(name = "sampler$Order")
 public class Order extends StandardEntity {
+
+    private static final long serialVersionUID = 5425074246531061156L;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "CUSTOMER_ID")
     protected Customer customer;
@@ -25,8 +28,6 @@ public class Order extends StandardEntity {
 
     @Column(name = "AMOUNT")
     protected BigDecimal amount;
-
-    private static final long serialVersionUID = 5425074246531061156L;
 
     @Column(name = "DESCRIPTION")
     protected String description;
