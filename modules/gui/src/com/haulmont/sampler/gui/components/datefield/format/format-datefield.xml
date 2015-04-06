@@ -1,11 +1,12 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        class="com.haulmont.cuba.gui.components.AbstractFrame">
+        class="com.haulmont.cuba.gui.components.AbstractFrame"
+        messagesPack="com.haulmont.sampler.gui.components.datefield.format">
     <layout>
         <hbox spacing="true">
             <dateField caption="MM/yy"
                        dateFormat="MM/yy"/>
-            <dateField caption="yyyy.MM.dd"
-                       dateFormat="yyyy.MM.dd"/>
+            <dateField caption="msg://myDateFormat"
+                       dateFormat="msg://myDateFormat"/>
         </hbox>
     </layout>
 </window>
