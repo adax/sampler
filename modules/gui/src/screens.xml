@@ -140,6 +140,8 @@
             template="com/haulmont/sampler/gui/components/timefield/simple/simple-timefield.xml"/>
     <screen id="datasource-timefield"
             template="com/haulmont/sampler/gui/components/timefield/datasource/datasource-timefield.xml"/>
+    <screen id="format-timefield"
+            template="com/haulmont/sampler/gui/components/timefield/format/format-timefield.xml"/>
     <screen id="simple-relatedentities"
             template="com/haulmont/sampler/gui/components/relatedentities/simple/simple-relatedentities.xml"/>
     <screen id="exclude-relatedentities"
