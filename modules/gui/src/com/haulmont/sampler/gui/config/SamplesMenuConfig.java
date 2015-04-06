@@ -31,7 +31,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class SamplesMenuConfig {
 
     public static final String NAME = "sampler_SamplesConfig";
-    public static final String MENU_CONFIG_XML_PROP = "sampler.SamplesMenuConfig";
+    public static final String MENU_CONFIG_XML_PROP = "sampler.samplesMenuConfig";
 
     private static Log log = LogFactory.getLog(SamplesMenuConfig.class);
 

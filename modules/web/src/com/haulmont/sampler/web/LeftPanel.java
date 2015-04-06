@@ -1,6 +1,7 @@
 package com.haulmont.sampler.web;
 
 import com.haulmont.cuba.core.global.AppBeans;
+import com.haulmont.cuba.core.sys.AppContext;
 import com.haulmont.cuba.gui.WindowManager;
 import com.haulmont.cuba.gui.config.WindowInfo;
 import com.haulmont.cuba.web.AppWindow;
@@ -20,6 +21,7 @@ import com.vaadin.shared.MouseEventDetails;
 import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.Reindeer;
+import org.apache.commons.lang.BooleanUtils;
 import org.apache.commons.lang.StringUtils;
 
 import java.util.Collection;
@@ -111,26 +113,18 @@ public class LeftPanel extends FoldersPane {
         header.setExpandRatio(label, 1);
 
         // TODO For development convenience only
-        // === Begin ===
-        Button refresh = new Button("Refresh");
-        refresh.addStyleName(Reindeer.BUTTON_LINK);
-        refresh.addStyleName("small-link");
-        refresh.addStyleName("dark");
-        refresh.addClickListener(new Button.ClickListener() {
-            @Override
-            public void buttonClick(Button.ClickEvent event) {
-                resetAllMenuItems();
-            }
-        });
-        header.addComponent(refresh);
-        header.setComponentAlignment(refresh, Alignment.MIDDLE_RIGHT);
-        // === End ===
+        if (BooleanUtils.toBoolean(AppContext.getProperty("sampler.developerMode"))) {
+            Button refresh = createButton("Refresh", new Button.ClickListener() {
+                @Override
+                public void buttonClick(Button.ClickEvent event) {
+                    resetAllMenuItems();
+                }
+            });
+            header.addComponent(refresh);
+            header.setComponentAlignment(refresh, Alignment.MIDDLE_RIGHT);
+        }
 
-        final Button collapseAll = new Button(messages.getMessage(getClass(), "LeftPanel.collapseAll"));
-        collapseAll.addStyleName(Reindeer.BUTTON_LINK);
-        collapseAll.addStyleName("small-link");
-        collapseAll.addStyleName("dark");
-        collapseAll.addClickListener(new Button.ClickListener() {
+        Button collapseAll = createButton("LeftPanel.collapseAll", new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent event) {
                 collapseAll();
@@ -139,11 +133,7 @@ public class LeftPanel extends FoldersPane {
         header.addComponent(collapseAll);
         header.setComponentAlignment(collapseAll, Alignment.MIDDLE_RIGHT);
 
-        Button expandAll = new Button(messages.getMessage(getClass(), "LeftPanel.expandAll"));
-        expandAll.addStyleName(Reindeer.BUTTON_LINK);
-        expandAll.addStyleName("small-link");
-        expandAll.addStyleName("dark");
-        expandAll.addClickListener(new Button.ClickListener() {
+        Button expandAll = createButton("LeftPanel.expandAll", new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent event) {
                 expandAll();
@@ -153,6 +143,16 @@ public class LeftPanel extends FoldersPane {
         header.setComponentAlignment(expandAll, Alignment.MIDDLE_RIGHT);
 
         menuLayout.addComponent(header);
+    }
+
+    private Button createButton(String captionKey, Button.ClickListener listener) {
+        Button button = new Button(messages.getMessage(getClass(), captionKey));
+        button.addStyleName(Reindeer.BUTTON_LINK);
+        button.addStyleName("small-link");
+        button.addStyleName("dark");
+        button.addClickListener(listener);
+
+        return button;
     }
 
     private void createMenuTree() {
