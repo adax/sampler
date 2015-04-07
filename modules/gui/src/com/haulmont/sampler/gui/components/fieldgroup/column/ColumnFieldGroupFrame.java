@@ -15,13 +15,14 @@ public class ColumnFieldGroupFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
+        // Datasource initialization. It is usually done automatically if the screen is
+        // inherited from AbstractEditor and is used as an entity editor.
         Customer customer = new Customer();
         customer.setName("John");
         customer.setLastName("Doe");
         customer.setAge(40);
         customer.setActive(true);
         customer.setGrade(CustomerGrade.STANDARD);
-
         customerDs.setItem(customer);
     }
 }

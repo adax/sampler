@@ -21,7 +21,8 @@ public class CustomizeFieldGroupFrame extends AbstractFrame {
         Order order = new Order();
         orderDs.setItem(order);
 
+        customerField.removeAllActions();
+        customerField.addLookupAction();
         customerField.addOpenAction();
-        customerField.removeAction(customerField.getAction(PickerField.ClearAction.NAME));
     }
 }

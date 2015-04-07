@@ -7,11 +7,12 @@
                     view="_minimal"/>
     </dsContext>
     <layout>
-        <fieldGroup id="customerField"
+        <fieldGroup id="customerFields"
                     datasource="customerDs">
             <field id="name"/>
             <field id="lastName"/>
-            <field id="language" custom="true"/>
+            <field id="active"
+                   custom="true"/>
         </fieldGroup>
     </layout>
 </window>

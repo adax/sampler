@@ -8,36 +8,40 @@ import com.haulmont.sampler.entity.Customer;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 public class GenerateFieldGroupFrame extends AbstractFrame {
 
     @Inject
-    private FieldGroup customerField;
+    private FieldGroup customerFields;
     @Inject
     private Datasource<Customer> customerDs;
     @Inject
     private ComponentsFactory componentsFactory;
-    @Inject
-    private GlobalConfig globalConfig;
 
     @Override
     public void init(Map<String, Object> params) {
+        // Datasource initialization. It is usually done automatically if the screen is
+        // inherited from AbstractEditor and is used as an entity editor.
         Customer customer = new Customer();
         customer.setName("John");
         customer.setLastName("Doe");
-
         customerDs.setItem(customer);
 
-        customerField.addCustomField("language", new FieldGroup.CustomFieldGenerator() {
+        customerFields.addCustomField("active", new FieldGroup.CustomFieldGenerator() {
             @Override
             public Component generateField(Datasource datasource, String propertyId) {
                 LookupField lookupField = componentsFactory.createComponent(LookupField.NAME);
-                List<String> locales = new ArrayList<>(globalConfig.getAvailableLocales().keySet());
-                lookupField.setOptionsList(locales);
+                lookupField.setDatasource(datasource, propertyId);
+
+                Map<String, Object> options = new LinkedHashMap<>();
+                options.put("Yes", Boolean.TRUE);
+                options.put("No", Boolean.FALSE);
+                lookupField.setOptionsMap(options);
+
                 lookupField.setWidth("100%");
-                lookupField.setCaption("Language");
                 return lookupField;
             }
         });

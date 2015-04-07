@@ -7,12 +7,16 @@
                     view="order-with-customer"/>
     </dsContext>
     <layout>
-        <fieldGroup datasource="orderDs">
-            <field id="date"/>
-            <field id="customer"/>
-            <field id="amount"/>
-            <field id="description"
-                   width=""/>
-        </fieldGroup>
+        <hbox spacing="true">
+            <fieldGroup datasource="orderDs">
+                <field id="date"/>
+                <field id="customer"/>
+                <field id="amount"/>
+                <field id="description"/>
+            </fieldGroup>
+            <button align="MIDDLE_LEFT"
+                    caption="Show Order"
+                    invoke="showOrder"/>
+        </hbox>
     </layout>
 </window>

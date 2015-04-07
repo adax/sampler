@@ -3,17 +3,17 @@
     <layout>
         <hbox spacing="true">
             <groupBox id="groupBoxImage"
-                      caption="Embedded image"
+                      caption="Embedded image from FileStorage"
                       height="250px"
                       width="300px">
-                <embedded id="embeddedImage"
+                <embedded id="imageFromFileStorage"
                           align="MIDDLE_CENTER"
                           width="100%"/>
             </groupBox>
             <groupBox caption="Embedded image file"
                       height="250px"
                       width="250px">
-                <embedded id="embeddedImageFile"
+                <embedded id="image"
                           align="MIDDLE_CENTER"/>
             </groupBox>
         </hbox>

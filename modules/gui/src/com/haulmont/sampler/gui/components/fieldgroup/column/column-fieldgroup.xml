@@ -8,12 +8,14 @@
     </dsContext>
     <layout>
         <fieldGroup datasource="customerDs"
+                    width="50%">
+            <column flex="2"
                     width="100%">
-            <column flex="2">
                 <field id="name"/>
                 <field id="lastName"/>
             </column>
-            <column flex="1">
+            <column flex="1"
+                    width="100%">
                 <field id="age"/>
                 <field id="active"/>
                 <field id="grade"/>
