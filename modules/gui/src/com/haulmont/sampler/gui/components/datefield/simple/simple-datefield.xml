@@ -1,8 +1,11 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        class="com.haulmont.cuba.gui.components.AbstractFrame"
+        class="com.haulmont.sampler.gui.components.datefield.simple.SimpleDateFieldFrame"
         messagesPack="com.haulmont.sampler.gui.components.datefield.simple">
     <dsContext/>
-    <layout>
-        <dateField caption="msg://datefield.caption"/>
+    <layout spacing="true">
+        <dateField id="dateField"
+                   caption="msg://datefield.caption"/>
+        <button caption="msg://datefield.value"
+                invoke="showValue"/>
     </layout>
 </window>

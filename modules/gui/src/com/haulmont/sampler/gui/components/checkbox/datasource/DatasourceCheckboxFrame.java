@@ -14,6 +14,8 @@ public class DatasourceCheckboxFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
+        // Datasource initialization. It is usually done automatically if the screen is
+        // inherited from AbstractEditor and is used as an entity editor.
         Customer customer = new Customer();
         customer.setActive(true);
         customersDs.setItem(customer);

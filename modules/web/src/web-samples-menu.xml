@@ -42,13 +42,13 @@
 
         <menu id="dateField">
             <item id="simple-datefield" docUrlSuffix="gui_DateField"
-                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/simple"/>
+                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/simple"
+                  controller="com/haulmont/sampler/gui/components/datefield/simple/SimpleDateFieldFrame.java"/>
             <item id="datasource-datefield" docUrlSuffix="gui_DateField"
                   descriptionsPack="com/haulmont/sampler/gui/components/datefield/datasource"
                   controller="com/haulmont/sampler/gui/components/datefield/datasource/DatasourceDateFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
-                    <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="format-datefield" docUrlSuffix="gui_DateField"

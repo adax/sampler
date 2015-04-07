@@ -10,7 +10,7 @@
         <dateField datasource="ordersDs"
                    property="date"/>
         <hbox spacing="true">
-            <label value="Value From Datasource:"/>
+            <label value="Value in the Datasource:"/>
             <label datasource="ordersDs"
                    property="date"/>
         </hbox>

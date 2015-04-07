@@ -10,17 +10,18 @@ import java.util.Map;
 public class SimpleCheckboxFrame extends AbstractFrame {
 
     @Inject
-    private CheckBox checkBox;
+    private CheckBox carField;
 
     @Override
     public void init(Map<String, Object> params) {
-        checkBox.addListener(new ValueListener() {
+        carField.setValue(true);
+        carField.addListener(new ValueListener() {
             @Override
             public void valueChanged(Object source, String property, Object prevValue, Object value) {
                 if (Boolean.TRUE.equals(value)) {
-                    showNotification("set", NotificationType.HUMANIZED);
+                    showNotification("I have a car", NotificationType.HUMANIZED);
                 } else {
-                    showNotification("not set", NotificationType.HUMANIZED);
+                    showNotification("I don't have a car", NotificationType.HUMANIZED);
                 }
             }
         });

@@ -4,14 +4,14 @@
     <dsContext/>
     <layout spacing="true">
         <hbox spacing="true">
-            <dateField resolution="YEAR" caption="resolution=YEAR"/>
-            <dateField resolution="MONTH" caption="resolution=MONTH"/>
-            <dateField resolution="DAY" caption="resolution=DAY"/>
+            <dateField resolution="YEAR" caption="YEAR"/>
+            <dateField resolution="MONTH" caption="MONTH"/>
+            <dateField resolution="DAY" caption="DAY"/>
         </hbox>
         <hbox spacing="true">
-            <dateField resolution="HOUR" caption="resolution=HOUR"/>
-            <dateField resolution="MIN" caption="resolution=MIN"/>
-            <dateField resolution="SEC" caption="resolution=SEC"/>
+            <dateField resolution="HOUR" caption="HOUR"/>
+            <dateField resolution="MIN" caption="MIN"/>
+            <dateField resolution="SEC" caption="SEC"/>
         </hbox>
     </layout>
 </window>
