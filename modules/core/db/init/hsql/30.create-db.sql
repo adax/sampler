@@ -197,7 +197,7 @@ values ('platform-logo.png', 'png', 15816, '2015-04-01 00:00:00', 1, current_tim
 
 insert into SEC_USER
 (ID, CREATE_TS, VERSION, LOGIN, LOGIN_LC, PASSWORD, NAME, GROUP_ID, ACTIVE)
-values ('60885987-1b61-4247-94c7-dff348347f93', current_timestamp, 1, 'demo', 'demo', '44b607b49bdf4507fbfb3212ed94b64f8662f692', 'Demo user', '0fa2b1a5-1d68-4d69-9fbd-dff348347f93', true);
+values ('e5e934e3-75d5-7f38-668c-a3a2473f4250', current_timestamp, 1, 'demo', 'demo', '44b607b49bdf4507fbfb3212ed94b64f8662f692', 'Demo user', '0fa2b1a5-1d68-4d69-9fbd-dff348347f93', true);
 
 ------------------------------------------------------------------------------------------------------------
 
@@ -209,7 +209,7 @@ values ('abc5c887-12fd-7211-64ee-b07e871cd985', current_timestamp, 1, 'Demo user
 
 insert into SEC_USER_ROLE
 (ID, CREATE_TS, VERSION, USER_ID, ROLE_ID)
-values ('34641bff-9f27-3e1a-1582-894355f5f588', current_timestamp, 1, 'e5e934e3-75d5-7f38-668c-a3a2473f4250', 'bc5c887-12fd-7211-64ee-b07e871cd985');
+values ('34641bff-9f27-3e1a-1582-894355f5f588', current_timestamp, 1, 'e5e934e3-75d5-7f38-668c-a3a2473f4250', 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 ------------------------------------------------------------------------------------------------------------
 
@@ -221,182 +221,182 @@ values ('60885987-1b61-4247-94c7-dff348347f93', 'e5e934e3-75d5-7f38-668c-a3a2473
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('aa603906-4716-b0c1-665b-78242f0820bb', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$InvoiceItem:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('aa603906-4716-b0c1-665b-78242f0820bb', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$InvoiceItem:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('a34db8d2-d336-b800-51ce-eabf2d2fbe71', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$Group:update', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('a34db8d2-d336-b800-51ce-eabf2d2fbe71', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$Group:update', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('9b717790-fb4c-f71d-5936-e00f921e223f', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 50, 'sampler$Product.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('9b717790-fb4c-f71d-5936-e00f921e223f', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 50, 'sampler$Product.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('978c7233-b3cd-a726-31fb-8b7186189df9', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$Group:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('978c7233-b3cd-a726-31fb-8b7186189df9', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$Group:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('8edc5ff8-40e6-30df-5717-b2ea4fb5d90d', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 50, 'sampler$Order.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('8edc5ff8-40e6-30df-5717-b2ea4fb5d90d', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 50, 'sampler$Order.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('8a95eea2-b99a-682a-eda6-cdc9a2ec3212', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Task:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('8a95eea2-b99a-682a-eda6-cdc9a2ec3212', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Task:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('cb3385d3-7d15-b76a-67c8-a281e85944d1', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$User:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('cb3385d3-7d15-b76a-67c8-a281e85944d1', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$User:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('eda98c29-a1e8-3a04-b93d-ee2ba2d5de07', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$UserSessionEntity:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('eda98c29-a1e8-3a04-b93d-ee2ba2d5de07', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$UserSessionEntity:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('f3da498c-317e-70bc-6c28-18ebd6a4c563', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$Role:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('f3da498c-317e-70bc-6c28-18ebd6a4c563', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$Role:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('f4cbc6fc-0d47-ddfc-12ec-db47595a3b9b', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 50, 'sampler$InvoiceItem.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('f4cbc6fc-0d47-ddfc-12ec-db47595a3b9b', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 50, 'sampler$InvoiceItem.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('f97cf8de-ac1b-35cb-0b3e-b9c4c28e5061', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$InvoiceItem:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('f97cf8de-ac1b-35cb-0b3e-b9c4c28e5061', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$InvoiceItem:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('f9d6376d-8e94-a19f-7454-240065a176b9', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Customer:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('f9d6376d-8e94-a19f-7454-240065a176b9', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Customer:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('fd3ebeee-7786-95ea-022d-70d8cbeac742', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Customer:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('fd3ebeee-7786-95ea-022d-70d8cbeac742', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Customer:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('fe0548e4-b5cd-67ab-38ef-4ceebb7c3c6c', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Task:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('fe0548e4-b5cd-67ab-38ef-4ceebb7c3c6c', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Task:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('ee0b4c11-3020-4dfb-10b8-f4b6f730420b', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Order:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('ee0b4c11-3020-4dfb-10b8-f4b6f730420b', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Order:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('647f8f79-6e94-73a7-cf06-bd38ddcf74d7', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$Role:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('647f8f79-6e94-73a7-cf06-bd38ddcf74d7', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$Role:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('61078b42-d932-9901-2ad8-9f1b88119682', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$User:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('61078b42-d932-9901-2ad8-9f1b88119682', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$User:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('e5d3f77d-66e7-21b8-8ea7-a00c54330613', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Product:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('e5d3f77d-66e7-21b8-8ea7-a00c54330613', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Product:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('e476c152-f277-d4a5-781a-b01aee5ef248', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$InvoiceItem:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('e476c152-f277-d4a5-781a-b01aee5ef248', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$InvoiceItem:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('de21ea4b-8cd0-0b3c-ebd9-0555f1147648', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$UserSessionEntity:update', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('de21ea4b-8cd0-0b3c-ebd9-0555f1147648', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$UserSessionEntity:update', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('dd7eec44-0c5b-e006-124b-070f8349e9d6', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Task:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('dd7eec44-0c5b-e006-124b-070f8349e9d6', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Task:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('cd8f6aac-cc7a-d691-892d-b5fc83131a4c', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 10, 'printDomain', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('cd8f6aac-cc7a-d691-892d-b5fc83131a4c', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 10, 'printDomain', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('883a4b54-8b61-0faf-8a87-04cceaa83cd5', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$User:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('883a4b54-8b61-0faf-8a87-04cceaa83cd5', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$User:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('49bfd6fb-b669-2d5d-53aa-9b5a51ec2b95', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 10, 'sec$ScreenHistory.browse', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('49bfd6fb-b669-2d5d-53aa-9b5a51ec2b95', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 10, 'sec$ScreenHistory.browse', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('476a0230-e91c-37c2-40d7-4a7ab80c7dd0', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 10, 'settings', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('476a0230-e91c-37c2-40d7-4a7ab80c7dd0', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 10, 'settings', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('41da45d7-ba2e-7d80-fc8c-acf75746483d', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 10, 'logWindow', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('41da45d7-ba2e-7d80-fc8c-acf75746483d', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 10, 'logWindow', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('3ad287dc-fd62-b422-e5db-356fa3d940e5', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Order:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('3ad287dc-fd62-b422-e5db-356fa3d940e5', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Order:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('3a86fba0-b80c-83e3-b98e-7671a0e61830', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Order:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('3a86fba0-b80c-83e3-b98e-7671a0e61830', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Order:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('23df2bb8-274b-44e4-b843-02e9d7218456', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$InvoiceItem:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('23df2bb8-274b-44e4-b843-02e9d7218456', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$InvoiceItem:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('1f9df966-3064-f074-90fe-7b06eaeed13f', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Order:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('1f9df966-3064-f074-90fe-7b06eaeed13f', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Order:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('b142ac1b-e271-b770-056d-6969aa0a175b', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 10, 'feedback', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('b142ac1b-e271-b770-056d-6969aa0a175b', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 10, 'feedback', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('b19fa728-5f33-9fea-6c38-9a06c0f78f69', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Product:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('b19fa728-5f33-9fea-6c38-9a06c0f78f69', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Product:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('cae3fb86-4f8d-836c-74f4-3f23820d126b', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$User:update', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('cae3fb86-4f8d-836c-74f4-3f23820d126b', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$User:update', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('eaf484d2-8fbf-6f16-6c79-9b065b720a36', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 50, 'sampler$Customer.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('eaf484d2-8fbf-6f16-6c79-9b065b720a36', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 50, 'sampler$Customer.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('1391f05f-0a0a-247b-90c2-c77ab9b13a1e', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$Role:update', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('1391f05f-0a0a-247b-90c2-c77ab9b13a1e', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$Role:update', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('119ba928-49a8-6f91-71f2-ba6d94610496', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Customer:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('119ba928-49a8-6f91-71f2-ba6d94610496', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Customer:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('0eacc9d0-0546-bbcb-0edd-8ac1855a6396', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Product:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('0eacc9d0-0546-bbcb-0edd-8ac1855a6396', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Product:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('0275909a-55b0-4ad3-bd47-21cd9ba651ce', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Task:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('0275909a-55b0-4ad3-bd47-21cd9ba651ce', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Task:create', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('50247f36-ccdc-809f-e095-c8b45258e43e', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 10, 'administration', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('50247f36-ccdc-809f-e095-c8b45258e43e', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 10, 'administration', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('86f1a01c-6333-f9d8-2f82-f290e1447e39', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$Group:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('86f1a01c-6333-f9d8-2f82-f290e1447e39', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$Group:read', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('7df5fdf3-b479-9b08-9a43-802fc0290f07', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Customer:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('7df5fdf3-b479-9b08-9a43-802fc0290f07', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Customer:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('713f77d3-3f14-d9bd-106d-41c4bb83a15f', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 40, 'cuba.gui.administration.downloadlogs', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('713f77d3-3f14-d9bd-106d-41c4bb83a15f', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 40, 'cuba.gui.administration.downloadlogs', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('70f56164-05d0-a327-0efe-fd544023c261', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$Group:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('70f56164-05d0-a327-0efe-fd544023c261', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$Group:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('6769dee7-4f94-cb9e-61f7-ffebf8250c3c', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sec$Role:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('6769dee7-4f94-cb9e-61f7-ffebf8250c3c', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sec$Role:delete', 0, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('64ba6daa-a337-80a3-7dfa-cf98b52e9acc', 'current_timestamp', 'admin', 1, 'current_timestamp', null, null, null, 20, 'sampler$Product:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('64ba6daa-a337-80a3-7dfa-cf98b52e9acc', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$Product:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 ------------------------------------------------------------------------------------------------------------
