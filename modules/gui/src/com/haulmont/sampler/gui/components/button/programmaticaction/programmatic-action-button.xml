@@ -1,7 +1,6 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         class="com.haulmont.sampler.gui.components.button.programmaticaction.ProgrammaticActionButtonFrame">
     <layout>
-        <button id="button"
-                caption="Click Me!"/>
+        <button id="button"/>
     </layout>
 </window>

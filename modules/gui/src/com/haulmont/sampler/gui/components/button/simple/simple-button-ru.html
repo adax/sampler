@@ -1,3 +1,9 @@
 <p>Кнопка может содержать текст или пиктограмму (или и то и другое).</p>
-<p>Название кнопки задается с помощью атрибута&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/gui_attributes.html#gui_attr_basic_caption" target="_blank">caption</a>, всплывающая подсказка &minus; с помощью атрибута&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/gui_attributes.html#gui_attr_basic_description" target="_blank">description</a>.</p>
-<p>Атрибут&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/gui_attributes.html#gui_attr_basic_icon" target="_blank">icon</a>&nbsp;указывает на местоположение пиктограммы.</p>
+
+<p>Атрибут <code>icon</code> задает путь к пиктограмме. Подробное описание правил расположения пиктограмм находится
+    <a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/web_theme_usage.html" target="_blank">здесь</a>.</p>
+
+<p>С помощью атрибута <code>description</code> для кнопки можно задать всплывающую подсказку.</p>
+
+<p>В атрибуте <code>invoke</code> задается имя метода контроллера, который вызывается при нажатии на кнопку. Если метод
+    содержит параметр типа <code>Component</code>, то в него будет передан экземпляр вызвавшей его кнопки.</p>

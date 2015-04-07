@@ -6,7 +6,7 @@ import com.haulmont.cuba.gui.components.Component;
 public class LinkButtonFrame extends AbstractWindow {
 
     public void sayHello() {
-        showNotification("Hello, CUBA!", NotificationType.HUMANIZED);
+        showNotification("Hello, world!", NotificationType.HUMANIZED);
     }
 
     public void save(Component source) {

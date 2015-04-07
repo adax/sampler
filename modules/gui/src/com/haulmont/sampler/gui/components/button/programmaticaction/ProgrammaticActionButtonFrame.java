@@ -1,6 +1,7 @@
 package com.haulmont.sampler.gui.components.button.programmaticaction;
 
 import com.haulmont.cuba.gui.components.*;
+import com.haulmont.cuba.gui.components.actions.BaseAction;
 
 import javax.inject.Inject;
 import java.util.Map;
@@ -12,10 +13,14 @@ public class ProgrammaticActionButtonFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-        button.setAction(new AbstractAction("programmaticallyCreatedAction") {
+        button.setAction(new BaseAction("theAction") {
             @Override
             public void actionPerform(Component component) {
-                showNotification("Programmatically created action performed!", NotificationType.HUMANIZED);
+                showNotification("Action performed", NotificationType.HUMANIZED);
+            }
+            @Override
+            public String getCaption() {
+                return "Click Me!";
             }
         });
     }
