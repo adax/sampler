@@ -101,11 +101,6 @@
         <menu id="label">
             <item id="simple-label" docUrlSuffix="gui_Label"
                   descriptionsPack="com/haulmont/sampler/gui/components/label/simple"/>
-            <item id="multiline-label" docUrlSuffix="gui_Label"
-                  descriptionsPack="com/haulmont/sampler/gui/components/label/multiline"/>
-            <item id="dynamic-label" docUrlSuffix="gui_Label"
-                  descriptionsPack="com/haulmont/sampler/gui/components/label/dynamic"
-                  controller="com/haulmont/sampler/gui/components/label/dynamic/DynamicLabelFrame.java"/>
             <item id="datasource-label" docUrlSuffix="gui_Label"
                   descriptionsPack="com/haulmont/sampler/gui/components/label/datasource"
                   controller="com/haulmont/sampler/gui/components/label/datasource/DatasourceLabelFrame.java">

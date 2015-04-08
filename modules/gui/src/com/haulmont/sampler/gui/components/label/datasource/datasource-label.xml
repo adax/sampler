@@ -6,13 +6,12 @@
                     view="_minimal"
                     allowCommit="false"/>
     </dsContext>
-    <layout spacing="true">
-        <textField caption="Name"
-                   datasource="customerDs"
-                   property="name"/>
+    <layout>
         <hbox spacing="true">
-            <label value="Name from datasource:"/>
-            <label datasource="customerDs"
+            <textField datasource="customerDs"
+                       property="name"/>
+            <label align="MIDDLE_CENTER"
+                   datasource="customerDs"
                    property="name"/>
         </hbox>
     </layout>
