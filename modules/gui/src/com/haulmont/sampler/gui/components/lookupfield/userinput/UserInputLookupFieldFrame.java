@@ -13,9 +13,9 @@ public class UserInputLookupFieldFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-        final List<String> list = new ArrayList<>(Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday"));
-        new ArrayList<String>();
+        final List<String> list = new ArrayList<>(Arrays.asList("One", "Two", "Three"));
         lookup.setOptionsList(list);
+
         lookup.setNewOptionAllowed(true);
         lookup.setNewOptionHandler(new LookupField.NewOptionHandler() {
             @Override

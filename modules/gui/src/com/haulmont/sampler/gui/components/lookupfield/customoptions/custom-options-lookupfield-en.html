@@ -1,10 +1,13 @@
-<p>The list of component options can be specified arbitrarily using&nbsp;<code>setOptionsList()</code>&nbsp;and&nbsp;<code>setOptionsMap()</code>, or using an XML&nbsp;<code>optionsDatasource</code>&nbsp;attribute.</p>
+<p>The list of <code>LookupField</code> options can be specified using <code>setOptionsList()</code> and
+    <code>setOptionsMap()</code> methods.</p>
 <ul style="list-style-type:circle">
     <li>
-        <p><code>setOptionsList()</code>&nbsp;allows you to programmatically specify a list of component options.</p>
+        <p>If you use <code>setOptionsList()</code> method, the drop-down list will display results of
+            <code>toString()</code> transformation of each option value.</p>
     </li>
     <li>
-        <p><code>setOptionsMap()</code>&nbsp;allows to specify string names and option values separately.</p>
+        <p><code>setOptionsMap()</code> method allows you to specify a string caption for each option value explicitly.</p>
     </li>
 </ul>
-<p>The&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_attributes.html#gui_attr_nullName" target="_blank">nullName</a>&nbsp;attribute allows to specify a row to be displayed in this case instead of an empty one.</p>
+
+<p>The <code>nullName</code> attribute allows you to specify a string to display for <code>null</code> value.</p>

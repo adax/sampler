@@ -13,15 +13,14 @@
     <layout>
         <hbox spacing="true">
             <lookupField id="amountLookup"
-                         caption="OptionsList"
+                         caption="Options List"
                          datasource="orderDs"
-                         property="amount"
-                         nullName="(select amount)"/>
-            <lookupField id="agesLookup"
-                         caption="OptionsMap"
+                         property="amount"/>
+            <lookupField id="ageLookup"
+                         caption="Options Map"
                          datasource="customerDs"
                          property="age"
-                         nullName="(select age)"/>
+                         nullName="(not selected)"/>
         </hbox>
     </layout>
 </window>

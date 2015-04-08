@@ -17,7 +17,7 @@ public class FilterModeLookupFieldFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-        List<String> list = Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday");
+        List<String> list = Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
         noFilterLookup.setOptionsList(list);
         startsWithFilterLookup.setOptionsList(list);
         containsFilterLookup.setOptionsList(list);
