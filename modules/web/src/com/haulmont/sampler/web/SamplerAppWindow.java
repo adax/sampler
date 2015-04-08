@@ -35,24 +35,13 @@ public class SamplerAppWindow extends AppWindow {
     protected void initStartupScreen() {
         super.initStartupScreen();
 
-        mainLayout.setMargin(true);
-        mainLayout.setStyleName("sampler-startup-screen");
-
         if (welcomeLayout == null) {
             welcomeLayout = new VerticalLayout();
-            welcomeLayout.setSpacing(true);
+            welcomeLayout.setSizeFull();
 
             Image logo = new Image(null, WebComponentsHelper.getResource("images/platform-logo.png"));
             welcomeLayout.addComponent(logo);
-            welcomeLayout.setComponentAlignment(logo, Alignment.TOP_CENTER);
-
-            Label welcomeLabel = new Label(messages.getMessage(getClass(), "StartupScreen.welcome"));
-            welcomeLabel.setStyleName("sampler-startup-screen-welcome");
-            welcomeLayout.addComponent(welcomeLabel);
-
-            Label descriptionLabel = new Label(messages.getMessage(getClass(), "StartupScreen.description"));
-            descriptionLabel.setStyleName("sampler-startup-screen-description");
-            welcomeLayout.addComponent(descriptionLabel);
+            welcomeLayout.setComponentAlignment(logo, Alignment.MIDDLE_CENTER);
         }
         mainLayout.addComponent(welcomeLayout);
     }
