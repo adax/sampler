@@ -14,13 +14,19 @@
         </collectionDatasource>
     </dsContext>
     <layout>
-        <lookupPickerField datasource="orderDs"
-                           optionsDatasource="customersDs"
-                           property="customer">
-            <actions>
-                <action id="lookup"/>
-                <action id="open"/>
-            </actions>
-        </lookupPickerField>
+        <hbox spacing="true">
+            <lookupPickerField datasource="orderDs"
+                               optionsDatasource="customersDs"
+                               property="customer"/>
+
+            <lookupPickerField datasource="orderDs"
+                               optionsDatasource="customersDs"
+                               property="customer">
+                <actions>
+                    <action id="lookup"/>
+                    <action id="clear"/>
+                </actions>
+            </lookupPickerField>
+        </hbox>
     </layout>
 </window>
