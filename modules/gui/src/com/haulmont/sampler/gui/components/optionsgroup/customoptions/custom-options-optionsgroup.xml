@@ -3,9 +3,9 @@
     <layout>
         <hbox spacing="true">
             <optionsGroup id="optionsGroupWithList"
-                          caption="OptionsList"/>
+                          caption="Options List"/>
             <optionsGroup id="optionsGroupWithMap"
-                          caption="OptionsMap"/>
+                          caption="Options Map"/>
         </hbox>
     </layout>
 </window>

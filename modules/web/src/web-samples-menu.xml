@@ -176,7 +176,8 @@
                 </otherFiles>
             </item>
             <item id="multiselect-optionsgroup" docUrlSuffix="gui_OptionsGroup"
-                  descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/multiselect">
+                  descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/multiselect"
+                  controller="com/haulmont/sampler/gui/components/optionsgroup/multiselect/MultiSelectOptionsGroupFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>

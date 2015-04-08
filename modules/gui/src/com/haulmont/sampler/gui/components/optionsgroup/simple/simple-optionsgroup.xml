@@ -10,6 +10,7 @@
         <optionsGroup datasource="customerDs"
                       property="grade"
                       caption="Vertical"/>
+
         <optionsGroup datasource="customerDs"
                       property="grade"
                       caption="Horizontal"
