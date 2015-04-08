@@ -25,4 +25,12 @@
 
     <bean id="cuba_LinkHandler" class="com.haulmont.sampler.web.sys.SamplerLinkHandler" scope="prototype"/>
 
+    <bean id="sampler_exceptionHandlersConf" class="com.haulmont.cuba.web.exception.ExceptionHandlersConfiguration">
+        <property name="handlerClasses">
+            <list>
+                <value>com.haulmont.sampler.web.exception.SamplerHsqlExceptionHandler</value>
+            </list>
+        </property>
+    </bean>
+
 </beans>

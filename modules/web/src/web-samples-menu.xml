@@ -417,6 +417,8 @@
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                 </otherFiles>
             </item>
+            <item id="format-timefield" docUrlSuffix="gui_TimeField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/timefield/format"/>
         </menu>
 
         <menu id="tokenList">

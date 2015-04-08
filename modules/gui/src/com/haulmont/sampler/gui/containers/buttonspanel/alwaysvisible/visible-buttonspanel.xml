@@ -14,9 +14,9 @@
                height="200px"
                width="100%">
             <actions>
+                <action id="create"/>
                 <action id="edit"/>
-                <action id="excel"/>
-                <action id="refresh"/>
+                <action id="remove"/>
             </actions>
             <columns>
                 <column id="name"/>
@@ -28,12 +28,12 @@
             <rows datasource="customerDs"/>
             <rowsCount/>
             <buttonsPanel alwaysVisible="true">
+                <button id="createBtn"
+                        action="customerTable.create"/>
                 <button id="editBtn"
                         action="customerTable.edit"/>
-                <button id="excelBtn"
-                        action="customerTable.excel"/>
-                <button id="refreshBtn"
-                        action="customerTable.refresh"/>
+                <button id="removeBtn"
+                        action="customerTable.remove"/>
             </buttonsPanel>
         </table>
     </layout>
