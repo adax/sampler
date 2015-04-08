@@ -1,9 +1,15 @@
-<p>Для&nbsp;<code>PickerField</code>&nbsp;можно определить произвольное количество&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/gui_Action.html" target="_blank">действий</a>, отображаемых кнопками справа. Это можно сделать как в XML-дескрипторе с помощью вложенного элемента&nbsp;<code>actions</code>, так и программно в контроллере методом&nbsp;<code>addAction()</code>.</p>
-<p>Существуют&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/standard_actions.html" target="_blank">стандартные действия</a>, определенные перечислением&nbsp;<code>PickerField.ActionType</code>:&nbsp;<code>lookup</code>,&nbsp;<code>clear</code>,&nbsp;<code>open</code>. Они выполняют соответственно выбор связанной сущности, очистку поля и открытие экрана редактирования выбранной связанной сущности. Для стандартных действий в XML не нужно определять никаких атрибутов, кроме идентификатора. Если при объявлении компонента никаких действий в элементе&nbsp;<code>actions</code>&nbsp;не задано, загрузчик XML определит для него действия&nbsp;<code>lookup</code>&nbsp;и&nbsp;<code>clear</code>.</p>
-<p>Элемент&nbsp;<code>action</code>&nbsp;не дополняет, а переопределяет набор стандартных действий, поэтому необходимо указывать идентификаторы всех требуемых действий.</p>
-<p>Для программного задания стандартных действий служат методы&nbsp;<code>addLookupAction()</code>,&nbsp;<code>addOpenAction()</code>&nbsp;и&nbsp;<code>addClearAction()</code>.</p>
-<p>Стандартные действия можно параметризовать. В XML-дескрипторе возможности для этого ограничены: существует только атрибут&nbsp;<code>openType</code>, в котором можно задать режим открытия экрана выбора (для&nbsp;<code>LookupAction</code>) или редактирования (для&nbsp;<code>OpenAction</code>).</p>
-<p>При программном создании действий можно задать любые свойства объектов&nbsp;<code>PickerField.LookupAction</code>,&nbsp;<code>PickerField.OpenAction</code>&nbsp;и&nbsp;<code>PickerField.ClearAction</code>, возвращаемых методами добавления стандартных действий.</p>
-<p>Подробнее см. JavaDocs классов&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/standard_actions.html" target="_blank">стандартных действий</a>.</p>
-<p>Произвольные действия в XML-дескрипторе также определяются во вложенном элементе&nbsp;<code>actions.</code></p>
-<p>Декларативное и программное создание действий подробно описано в&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/gui_Action.html" target="_blank">&laquo;Действия. Интерфейс Action&raquo;</a>.</p>
+<p>Для <code>PickerField</code> можно определить произвольное количество
+    <a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/gui_Action.html" target="_blank">действий</a>,
+    отображаемых кнопками справа. Это можно сделать как в XML-дескрипторе с помощью вложенного элемента <code>actions</code>,
+    так и программно в контроллере методом <code>addAction()</code>.</p>
+
+<p>В данном примере три действия определены в XML:
+    <a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/picker_actions.html" target="_blank">стандартные</a>
+    <code>lookup</code> и <code>open</code>, и собственное <code>greeting</code>, вызывающее метод <code>greet()</code>.
+    В контроллере добавлены собственное действие <code>showGrade</code> и стандартное <code>clear</code> с
+    переопределенной пиктограммой.</p>
+
+<p>Некоторые параметры действий могут быть заданы в XML. В данном примере для стандартного действия <code>open</code>
+    задан атрибут <code>openType="DIALOG"</code>, заставляющий экран редактирования сущности открываться в диалоговом
+    окне.</p>
+

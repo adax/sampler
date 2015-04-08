@@ -17,6 +17,8 @@ public class ActionsPickerFieldFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
+        // Datasource initialization. It is usually done automatically if the screen is
+        // inherited from AbstractEditor and is used as an entity editor.
         Order order = new Order();
         orderDs.setItem(order);
 
@@ -41,7 +43,7 @@ public class ActionsPickerFieldFrame extends AbstractFrame {
         clearAction.setIcon("icons/cancel.png");
     }
 
-    public void greeting() {
+    public void greet() {
         Customer customer = pickerField.getValue();
         if (customer != null)
             showNotification("Hello, " + customer.getName(), NotificationType.HUMANIZED);

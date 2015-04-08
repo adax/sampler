@@ -15,7 +15,7 @@
             <actions>
                 <action id="lookup"/>
                 <action id="open" openType="DIALOG"/>
-                <action id="greeting" invoke="greeting" icon="icons/wf-design-deploy.png"/>
+                <action id="greeting" invoke="greet" icon="icons/wf-design-deploy.png"/>
             </actions>
         </pickerField>
     </layout>

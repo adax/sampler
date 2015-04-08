@@ -7,12 +7,8 @@
                     view="order-with-customer"/>
     </dsContext>
     <layout>
-        <pickerField datasource="orderDs"
-                     property="customer" caption="Choose a customer">
-            <actions>
-                <action id="lookup"/>
-                <action id="clear"/>
-            </actions>
-        </pickerField>
+        <pickerField caption="Choose a customer"
+                     datasource="orderDs"
+                     property="customer" />
     </layout>
 </window>
