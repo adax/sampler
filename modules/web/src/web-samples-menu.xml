@@ -18,6 +18,9 @@
             <item id="link-button" docUrlSuffix="gui_LinkButton"
                   descriptionsPack="com/haulmont/sampler/gui/components/button/linkbutton"
                   controller="com/haulmont/sampler/gui/components/button/linkbutton/LinkButtonFrame.java"/>
+            <item id="simple-popupbutton" docUrlSuffix="gui_PopupButton"
+                  descriptionsPack="com/haulmont/sampler/gui/components/popupbutton"
+                  controller="com/haulmont/sampler/gui/components/popupbutton/SimplePopupButtonFrame.java"/>
         </menu>
 
         <item id="bulk-editor" docUrlSuffix="gui_BulkEditor"
@@ -184,10 +187,6 @@
             </item>
         </menu>
 
-        <item id="simple-passwordfield" docUrlSuffix="gui_PasswordField"
-              descriptionsPack="com/haulmont/sampler/gui/components/passwordfield"
-              controller="com/haulmont/sampler/gui/components/passwordfield/SimplePasswordFieldFrame.java"/>
-
         <menu id="pickerField">
             <item id="simple-pickerfield" docUrlSuffix="gui_PickerField"
                   descriptionsPack="com/haulmont/sampler/gui/components/pickerfield/simple"
@@ -214,10 +213,6 @@
             </item>
         </menu>
 
-        <item id="simple-popupbutton" docUrlSuffix="gui_PopupButton"
-              descriptionsPack="com/haulmont/sampler/gui/components/popupbutton"
-              controller="com/haulmont/sampler/gui/components/popupbutton/SimplePopupButtonFrame.java"/>
-
         <menu id="progressBar">
             <item id="simple-progressbar" docUrlSuffix="gui_ProgressBar"
                   descriptionsPack="com/haulmont/sampler/gui/components/progressbar/simple"
@@ -243,10 +238,6 @@
             </item>
         </menu>
 
-        <item id="simple-richtextarea" docUrlSuffix="gui_RichTextArea"
-              descriptionsPack="com/haulmont/sampler/gui/components/richtextarea"
-              controller="com/haulmont/sampler/gui/components/richtextarea/SimpleRichTextAreaFrame.java"/>
-        
         <menu id="searchPickerField">
             <item id="simple-searchpickerfield" docUrlSuffix="gui_SearchPickerField"
                   descriptionsPack="com/haulmont/sampler/gui/components/searchpickerfield/simple"
@@ -279,6 +270,9 @@
                   descriptionsPack="com/haulmont/sampler/gui/components/textarea/simple"/>
             <item id="resizable-textarea" docUrlSuffix="gui_TextArea"
                   descriptionsPack="com/haulmont/sampler/gui/components/textarea/resizable"/>
+            <item id="simple-richtextarea" docUrlSuffix="gui_RichTextArea"
+                  descriptionsPack="com/haulmont/sampler/gui/components/richtextarea"
+                  controller="com/haulmont/sampler/gui/components/richtextarea/SimpleRichTextAreaFrame.java"/>
         </menu>
 
         <menu id="table">
@@ -404,6 +398,9 @@
             <item id="trim-textfield" docUrlSuffix="gui_TextField"
                   descriptionsPack="com/haulmont/sampler/gui/components/textfield/trim"
                   controller="com/haulmont/sampler/gui/components/textfield/trim/TrimTextFieldFrame.java"/>
+            <item id="simple-passwordfield" docUrlSuffix="gui_PasswordField"
+                  descriptionsPack="com/haulmont/sampler/gui/components/passwordfield"
+                  controller="com/haulmont/sampler/gui/components/passwordfield/SimplePasswordFieldFrame.java"/>
             <item id="masked-field" docUrlSuffix="gui_MaskedField"
                   descriptionsPack="com/haulmont/sampler/gui/components/textfield/maskedfield"
                   controller="com/haulmont/sampler/gui/components/textfield/maskedfield/MaskedFieldFrame.java"/>
