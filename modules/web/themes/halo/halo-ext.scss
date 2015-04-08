@@ -2,11 +2,13 @@
 
 @import "samples/components/table/table";
 @import "samples/components/twincolumn/twincolumn";
+@import "samples/components/splitpanel/splitpanel";
 
 @mixin halo-ext {
   @include halo;
   @include sample-table;
   @include sample-twincolumn;
+  @include sampler-splitpanel;
 
   .ace_editor {
     font-size: 14px;

@@ -1,0 +1,40 @@
+@mixin sampler-splitpanel {
+
+  .cuba-splitpanel-dock-button {
+    cursor: pointer;
+    width: 10px;
+    background: transparent;
+    border: thin solid silver;
+    font-family: FontAwesome;
+    font-size: 12px;
+    text-align: center;
+    color: #474747;
+    padding-top: round($v-unit-size/3);
+    padding-bottom: round($v-unit-size/3);
+    display: inline-block;
+  }
+
+  .cuba-splitpanel-dock-button-left {
+    border-right-color: white;
+    margin-left: -2px;
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+    border-radius: 2px 0 0 2px;
+  }
+
+  .cuba-splitpanel-dock-button-right {
+    border-left-color: white;
+    margin-left: 2px;
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+  }
+
+  .cuba-splitpanel-dock-button-left:after {
+    content: "\f053";
+  }
+
+  .cuba-splitpanel-dock-button-right:after {
+    content: "\f054";
+  }
+}
