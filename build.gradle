@@ -198,7 +198,13 @@ configure(webModule) {
         rename 'platform-logo.png', '61a6a1ee-f13a-f44f-0201-c2f9b3288305.png'
     }
 
-    task deploy(dependsOn: [assemble, cleanConf, copyLogoImage], type: CubaDeployment) {
+    task copyLog4jSettings(type: Copy) {
+        from 'src/sampler-log4j.xml'
+        into "$tomcatDir/conf"
+        rename 'sampler-log4j.xml', 'log4j.xml'
+    }
+
+    task deploy(dependsOn: [assemble, cleanConf, copyLogoImage, copyLog4jSettings], type: CubaDeployment) {
         appName = 'app'
         appJars('cuba-global', 'cuba-client', 'cuba-gui', 'cuba-web', 
                 'app-global', 'app-gui', 'app-web')
