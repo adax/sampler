@@ -3,7 +3,7 @@
     <dsContext>
         <collectionDatasource id="customersDs"
                               class="com.haulmont.sampler.entity.Customer"
-                              view="_minimal">
+                              view="_local">
             <query>
                 <![CDATA[select e from sampler$Customer e]]>
             </query>

@@ -1,4 +1,17 @@
-<p><code>editable</code>&nbsp;attribute allows switching the table to in-place editing mode for cells. In this mode, the columns with&nbsp;<code>editable = true</code>&nbsp;attribute show components to edit the attributes of the corresponding entity.</p>
-<p>The component type for each editable column is selected automatically based on the type of the corresponding entity attribute. For example, for string and numeric attributes, the application will use&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_TextField.html" target="_blank">TextField</a>, for&nbsp;<code>Date</code>&nbsp;&ndash;&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_DateField.html" target="_blank">DateField</a>, for lists &ndash;&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_LookupField.html" target="_blank">LookupField</a>, for links to other entities &ndash;&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_PickerField.html" target="_blank">PickerField</a>.</p>
-<p>For a&nbsp;<code>Date</code>&nbsp;type editable column, you can additionally define&nbsp;<code>dateFormat</code>&nbsp;or&nbsp;<code>resolution</code>&nbsp;attributes similar to the ones described for the&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_DateField.html" target="_blank">DateField</a>.</p>
-<p><a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_attributes.html#gui_attr_basic_optionsDatasource" target="_blank">optionsDatasource</a>&nbsp;and&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_attributes.html#gui_attr_basic_captionProperty" target="_blank">captionProperty</a>&nbsp;attributes can be additionally defined for an editable column showing a linked entity. If&nbsp;<code>optionsDatasource</code>&nbsp;is set, the application will use&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_LookupField.html" target="_blank">LookupField</a>&nbsp;instead of&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_PickerField.html" target="_blank">PickerField</a>.</p>
+<p>You can use <code>editable</code> attribute to switch the table to in-place editing mode. In this mode, the
+    columns with <code>editable="true"</code> attribute show components to edit the attributes of the corresponding
+    entity.</p>
+
+<p>The component type for each editable column is selected automatically based on the type of the corresponding entity
+    attribute. For example, for string and numeric attributes, the application will use <a
+            href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_TextField.html" target="_blank">TextField</a>,
+    for <code>Date</code> - <a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_DateField.html"
+                               target="_blank">DateField</a>, for enumerations - <a
+            href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_LookupField.html" target="_blank">LookupField</a>,
+    for links to other entities - <a
+            href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/gui_PickerField.html" target="_blank">PickerField</a>
+    (or <code>LookupField</code>, if <code>optionsDatasource</code> is additionally specified for the column). For a
+    <code>Date</code> type editable column, you can additionally define <code>dateFormat</code> or
+    <code>resolution</code> attributes similar to the ones described for the <a
+            href="open?screen=format-datefield">DateField</a>.
+</p>

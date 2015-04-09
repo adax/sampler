@@ -11,7 +11,7 @@ public class ActionTableFrame extends AbstractFrame {
     @Inject
     private Table customerTable;
 
-    public void greeting() {
+    public void greet() {
         Customer customer = customerTable.getSingleSelected();
         if (customer != null)
             showNotification("Hello, " + customer.getName(), NotificationType.HUMANIZED);

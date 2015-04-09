@@ -14,12 +14,12 @@
                     width="480px">
             <columns>
                 <group>
-                    <column id="lastName"/>
+                    <column id="grade"/>
                 </group>
                 <column id="name"/>
+                <column id="lastName"/>
                 <column id="age"/>
                 <column id="active"/>
-                <column id="grade"/>
             </columns>
             <rows datasource="customersDs"/>
         </groupTable>

@@ -13,12 +13,20 @@ public class ItemClickTableFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-        customerTable.setItemClickAction(new AbstractAction("double click") {
+        customerTable.setItemClickAction(new AbstractAction("tableClickAction") {
             @Override
             public void actionPerform(Component component) {
                 Customer customer = customerTable.getSingleSelected();
                 if (customer != null)
-                    showNotification(customer.getName(), NotificationType.HUMANIZED);
+                    showNotification("Item clicked for: " + customer.getName(), NotificationType.HUMANIZED);
+            }
+        });
+        customerTable.setEnterPressAction(new AbstractAction("enterPressAction") {
+            @Override
+            public void actionPerform(Component component) {
+                Customer customer = customerTable.getSingleSelected();
+                if (customer != null)
+                    showNotification("Enter pressed for: " + customer.getName(), NotificationType.HUMANIZED);
             }
         });
     }

@@ -336,13 +336,6 @@
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
-            <item id="enterpress-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/enterpress"
-                  controller="com/haulmont/sampler/gui/components/table/enterpress/EnterPressTableFrame.java">
-                <otherFiles>
-                    <file name="com/haulmont/sampler/entity/Customer.java"/>
-                </otherFiles>
-            </item>
             <item id="generate-table" docUrlSuffix="gui_Table"
                   descriptionsPack="com/haulmont/sampler/gui/components/table/generate"
                   controller="com/haulmont/sampler/gui/components/table/generate/GenerateTableFrame.java">

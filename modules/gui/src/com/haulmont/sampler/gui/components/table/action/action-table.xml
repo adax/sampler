@@ -19,7 +19,8 @@
                 <action id="remove"/>
                 <action id="excel"/>
                 <action id="greeting"
-                        invoke="greeting"/>
+                        caption="Greeting"
+                        invoke="greet"/>
             </actions>
             <columns>
                 <column id="name"/>
@@ -34,8 +35,7 @@
                 <button action="customerTable.edit"/>
                 <button action="customerTable.remove"/>
                 <button action="customerTable.excel"/>
-                <button action="customerTable.greeting"
-                        caption="Greeting"/>
+                <button action="customerTable.greeting"/>
             </buttonsPanel>
         </table>
     </layout>

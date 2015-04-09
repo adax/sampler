@@ -82,8 +82,6 @@
             template="/com/haulmont/sampler/gui/components/table/style/style-table.xml"/>
     <screen id="itemclick-table"
             template="/com/haulmont/sampler/gui/components/table/itemclick/itemclick-table.xml"/>
-    <screen id="enterpress-table"
-            template="/com/haulmont/sampler/gui/components/table/enterpress/enterpress-table.xml"/>
     <screen id="generate-table"
             template="/com/haulmont/sampler/gui/components/table/generate/generate-table.xml"/>
     <screen id="group-table"

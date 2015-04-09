@@ -1,8 +1,8 @@
 package com.haulmont.sampler.gui.components.table.icon;
 
-import com.haulmont.cuba.core.entity.Entity;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.Table;
+import com.haulmont.sampler.entity.Customer;
 
 import javax.annotation.Nullable;
 import javax.inject.Inject;
@@ -15,11 +15,11 @@ public class IconTableFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-        customerTable.setIconProvider(new Table.IconProvider() {
+        customerTable.setIconProvider(new Table.IconProvider<Customer>() {
             @Nullable
             @Override
-            public String getItemIcon(Entity entity) {
-                return "icons/ok.png";
+            public String getItemIcon(Customer entity) {
+                return entity.getActive() ? "icons/ok.png" : "icons/cancel.png";
             }
         });
     }

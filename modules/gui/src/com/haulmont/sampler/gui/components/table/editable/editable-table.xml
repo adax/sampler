@@ -15,8 +15,7 @@
                height="200px"
                width="100%">
             <columns>
-                <column id="name"
-                        editable="true"/>
+                <column id="name"/>
                 <column id="lastName"/>
                 <column id="age"
                         editable="true"/>

@@ -4,6 +4,7 @@ import com.haulmont.cuba.core.entity.Entity;
 import com.haulmont.cuba.core.global.GlobalConfig;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
+import com.haulmont.sampler.entity.Customer;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -21,9 +22,9 @@ public class GenerateTableFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-        customerTable.addGeneratedColumn("language", new Table.ColumnGenerator() {
+        customerTable.addGeneratedColumn("language", new Table.ColumnGenerator<Customer>() {
             @Override
-            public Component generateCell(Entity entity) {
+            public Component generateCell(Customer entity) {
                 LookupField lookupField = componentsFactory.createComponent(LookupField.NAME);
                 List<String> locales = new ArrayList<>(globalConfig.getAvailableLocales().keySet());
                 lookupField.setOptionsList(locales);
