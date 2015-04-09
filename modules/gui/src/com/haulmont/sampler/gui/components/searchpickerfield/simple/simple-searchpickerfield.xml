@@ -15,12 +15,7 @@
     </dsContext>
     <layout>
         <searchPickerField datasource="orderDs"
-                           optionsDatasource="customersDs"
-                           property="customer">
-            <actions>
-                <action id="lookup"/>
-                <action id="open"/>
-            </actions>
-        </searchPickerField>
+                           property="customer"
+                           optionsDatasource="customersDs"/>
     </layout>
 </window>

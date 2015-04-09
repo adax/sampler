@@ -1,3 +1,19 @@
-<p>Компонент&nbsp;<code>SearchPickerField</code>&nbsp;служит для поиска экземпляров сущностей по вводимой пользователем строке. Пользователю достаточно ввести несколько символов и нажать клавишу&nbsp;<strong>Enter</strong>. Если поиск дал несколько совпадений, найденные значения отображаются в виде выпадающего списка. Если же критерию поиска соответствует только один экземпляр, он сразу становится значением компонента. <code>SearchPickerField</code>&nbsp;позволяет также выполнять действия нажатием на кнопки справа.</p>
-<p>Для работы компонента&nbsp;<code>SearchPickerField</code>&nbsp;необходимо создать&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/datasources.html" target="_blank">collectionDatasource</a>, и задать в нем запрос, содержащий условия поиска. Условие обязательно должно содержать параметр с именем <code>custom$searchString</code>&nbsp;- именно в него компонент передает введенную пользователем подстроку при нажатии&nbsp;<strong>Enter</strong>. Источник данных с условием поиска должен быть указан в атрибуте&nbsp;<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/gui_attributes.html#gui_attr_basic_optionsDatasource" target="_blank">optionsDatasource</a>&nbsp;компонента.</p>
-<p><code>SearchPickerField</code>&nbsp;реализует интерфейсы&nbsp;<a href="open?screen=simple-lookupfield">LookupField</a>&nbsp;и&nbsp;<a href="open?screen=simple-pickerfield">PickerField</a>, поэтому все описанное для этих интерфейсов в части работы с сущностями верно и для него. Исключением является список действий по умолчанию, добавляемых при определении компонента в XML: для&nbsp;<code>SearchPickerField</code>&nbsp;это действия&nbsp;<code>lookup</code>&nbsp;<img src="http://docs.cuba-platform.com/cuba/5.4/manual/ru/webhelp/img/lookupBtn.png" />&nbsp;и&nbsp;<code>open</code>&nbsp;<img src="http://docs.cuba-platform.com/cuba/5.4/manual/ru/webhelp/img/openBtn.png" />.</p>
+<p>Компонент <code>SearchPickerField</code> служит для поиска экземпляров сущностей по вводимой пользователем строке.
+    Пользователю достаточно ввести несколько символов и нажать клавишу <strong>Enter</strong>. Если поиск дал несколько
+    совпадений, найденные значения отображаются в виде выпадающего списка. Если же критерию поиска соответствует только
+    один экземпляр, он сразу становится значением компонента. <code>SearchPickerField</code> позволяет также выполнять
+    действия нажатием на кнопки справа.</p>
+
+<p>Для работы компонента <code>SearchPickerField</code> необходимо создать <code>collectionDatasource</code>,
+    и задать в нем запрос, содержащий условия поиска. Условие обязательно должно содержать параметр с именем <code>custom$searchString</code>
+    - именно в него компонент передает введенную пользователем подстроку при нажатии <strong>Enter</strong>. Источник
+    данных с условием поиска должен быть указан в атрибуте <code>optionsDatasource</code> компонента.</p>
+
+<p><code>SearchPickerField</code> реализует интерфейсы <a href="open?screen=simple-lookupfield">LookupField</a> и <a
+        href="open?screen=simple-pickerfield">PickerField</a>, поэтому все описанное для этих интерфейсов в части работы
+    с сущностями верно и для него. Исключением является список действий по умолчанию, добавляемых при определении
+    компонента в XML: для <code>SearchPickerField</code> это действия <code>lookup</code> и <code>open</code>.</p>
+
+<p>В данном примере попробуйте ввести в поле "jo" и нажать <strong>Enter</strong>. Поле отобразит список имен, содержащих
+    эту подстроку. Если вы введете "ka" и нажмете <strong>Enter</strong>, поле сразу получит значение "Katherine Potter",
+    потому что это единственное имя, содержащее данную подстроку.</p>

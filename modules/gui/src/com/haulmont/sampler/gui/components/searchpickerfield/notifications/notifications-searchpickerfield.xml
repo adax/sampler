@@ -14,16 +14,15 @@
         </collectionDatasource>
     </dsContext>
     <layout spacing="true">
-        <textField id="minLength"
-                   caption="minSearchStringLength"
-                   datatype="int"/>
         <searchPickerField id="searchPickerField"
                            datasource="orderDs"
+                           property="customer"
                            optionsDatasource="customersDs"
-                           property="customer">
+                           minSearchStringLength="3">
             <actions>
                 <action id="lookup"/>
                 <action id="open"/>
+                <action id="clear"/>
             </actions>
         </searchPickerField>
     </layout>
