@@ -214,9 +214,9 @@
         </menu>
 
         <menu id="progressBar">
-            <item id="simple-progressbar" docUrlSuffix="gui_ProgressBar"
-                  descriptionsPack="com/haulmont/sampler/gui/components/progressbar/simple"
-                  controller="com/haulmont/sampler/gui/components/progressbar/simple/SimpleProgressBarFrame.java"/>
+            <item id="normal-progressbar" docUrlSuffix="gui_ProgressBar"
+                  descriptionsPack="com/haulmont/sampler/gui/components/progressbar/normal"
+                  controller="com/haulmont/sampler/gui/components/progressbar/normal/NormalProgressBarFrame.java"/>
             <item id="indeterminate-progressbar" docUrlSuffix="gui_ProgressBar"
                   descriptionsPack="com/haulmont/sampler/gui/components/progressbar/indeterminate"/>
         </menu>

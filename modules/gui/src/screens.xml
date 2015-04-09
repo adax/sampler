@@ -92,10 +92,6 @@
             template="/com/haulmont/sampler/gui/components/table/treetable/tree-table.xml"/>
     <screen id="simple-label"
             template="/com/haulmont/sampler/gui/components/label/simple/simple-label.xml"/>
-    <screen id="multiline-label"
-            template="/com/haulmont/sampler/gui/components/label/multiline/multiline-label.xml"/>
-    <screen id="dynamic-label"
-            template="/com/haulmont/sampler/gui/components/label/dynamic/dynamic-label.xml"/>
     <screen id="datasource-label"
             template="/com/haulmont/sampler/gui/components/label/datasource/datasource-label.xml"/>
     <screen id="html-label"
@@ -134,8 +130,8 @@
             template="com/haulmont/sampler/gui/components/textarea/resizable/resizable-textarea.xml"/>
     <screen id="indeterminate-progressbar"
             template="com/haulmont/sampler/gui/components/progressbar/indeterminate/indeterminate-progressbar.xml"/>
-    <screen id="simple-progressbar"
-            template="com/haulmont/sampler/gui/components/progressbar/simple/simple-progressbar.xml"/>
+    <screen id="normal-progressbar"
+            template="com/haulmont/sampler/gui/components/progressbar/normal/normal-progressbar.xml"/>
     <screen id="simple-timefield"
             template="com/haulmont/sampler/gui/components/timefield/simple/simple-timefield.xml"/>
     <screen id="datasource-timefield"

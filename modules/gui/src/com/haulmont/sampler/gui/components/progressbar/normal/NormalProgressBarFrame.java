@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.components.progressbar.simple;
+package com.haulmont.sampler.gui.components.progressbar.normal;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.ProgressBar;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-public class SimpleProgressBarFrame extends AbstractFrame {
+public class NormalProgressBarFrame extends AbstractFrame {
 
     private static final int ITERATIONS = 5;
 
