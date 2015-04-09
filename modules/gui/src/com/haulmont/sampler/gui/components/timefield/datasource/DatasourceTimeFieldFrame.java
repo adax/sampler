@@ -15,6 +15,8 @@ public class DatasourceTimeFieldFrame extends AbstractWindow {
 
     @Override
     public void init(Map<String, Object> params) {
+        // Datasource initialization. It is usually done automatically if the screen is
+        // inherited from AbstractEditor and is used as an entity editor.
         Order order = new Order();
         order.setCreateTs(new Date());
         orderDs.setItem(order);

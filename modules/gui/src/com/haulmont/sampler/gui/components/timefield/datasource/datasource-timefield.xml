@@ -8,9 +8,10 @@
                     view="_local"/>
     </dsContext>
     <layout spacing="true">
-        <timeField datasource="orderDs" property="createTs"/>
+        <timeField datasource="orderDs"
+                   property="createTs"/>
         <hbox spacing="true">
-            <label value="Time from datasource:"/>
+            <label value="Time in the datasource:"/>
             <label datasource="orderDs"
                    property="createTs"/>
         </hbox>
