@@ -8,7 +8,8 @@
             <button caption="Show value"
                     invoke="show"/>
             <label id="value"
-                   align="MIDDLE_LEFT"/>
+                   align="MIDDLE_LEFT"
+                   htmlEnabled="true"/>
         </hbox>
     </layout>
 </window>

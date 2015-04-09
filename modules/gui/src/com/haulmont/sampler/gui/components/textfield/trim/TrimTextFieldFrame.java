@@ -1,5 +1,8 @@
 package com.haulmont.sampler.gui.components.textfield.trim;
 
+import com.google.common.escape.Escaper;
+import com.google.common.escape.Escapers;
+import com.google.common.html.HtmlEscapers;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.data.ValueListener;
 
@@ -27,6 +30,8 @@ public class TrimTextFieldFrame extends AbstractFrame {
     }
 
     public void show() {
-        value.setValue("Value: '" + textField.getValue() + "'");
+        String value = textField.getValue() == null ?
+                "null" : HtmlEscapers.htmlEscaper().escape((String) textField.getValue());
+        this.value.setValue("Value: '" + value.replace(" ", "&nbsp;") + "'");
     }
 }

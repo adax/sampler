@@ -4,19 +4,19 @@ import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.MaskedField;
 
 import javax.inject.Inject;
-import java.util.Map;
 
 public class MaskedFieldFrame extends AbstractFrame {
 
     @Inject
-    private MaskedField phoneNumberField;
+    private MaskedField phoneFieldMasked;
+    @Inject
+    private MaskedField phoneFieldClear;
 
-    @Override
-    public void init(Map<String, Object> params) {
-
+    public void showMasked() {
+        showNotification((String) phoneFieldMasked.getValue(), NotificationType.HUMANIZED);
     }
 
-    public void showPhoneNumber() {
-        showNotification((String) phoneNumberField.getValue(), NotificationType.HUMANIZED);
+    public void showClear() {
+        showNotification((String) phoneFieldClear.getValue(), NotificationType.HUMANIZED);
     }
 }

@@ -1,37 +1,43 @@
-<p>Текстовое поле, в которое данные вводятся в определенном формате.&nbsp;<code>MaskedField</code>&nbsp;удобно использовать, например, для ввода телефонных номеров.</p>
-<p><code>MaskedField</code>&nbsp;в основном повторяет функциональность&nbsp;<a href="open?screen=simple-textfield">TextField</a>, за исключением того, что ему нельзя установить&nbsp;<code>datatype</code>. То есть&nbsp;<code>MaskedField</code>&nbsp;предназначен для работы только с текстом и строковыми атрибутами сущностей.&nbsp;<code>MaskedField</code>&nbsp;имеет следующие специфические атрибуты:</p>
+<p><code>MaskedField</code> - это текстовое поле, в которое данные вводятся в определенном формате.
+    <code>MaskedField</code> удобно использовать, например, для ввода телефонных номеров.</p>
+
+<p><code>MaskedField</code> в основном повторяет функциональность <a href="open?screen=simple-textfield">TextField</a>,
+    за исключением того, что ему нельзя установить <code>datatype</code>. То есть <code>MaskedField</code> предназначен
+    для работы только с текстом и строковыми атрибутами сущностей. <code>MaskedField</code> имеет следующие
+    специфические атрибуты:</p>
 <ul>
     <li>
-        <p><code>mask</code>&nbsp;- задает маску для поля. Чтобы задать маску, используются следующие символы:</p>
+        <p><code>mask</code> - задает маску для поля. Чтобы задать маску, используются следующие символы:</p>
 
         <ul>
             <li>
-                <p><code>#</code>&nbsp;- цифра</p>
+                <p><code>#</code> - цифра</p>
             </li>
             <li>
-                <p><code>U</code>&nbsp;- буква верхнего регистра</p>
+                <p><code>U</code> - буква верхнего регистра</p>
             </li>
             <li>
-                <p><code>L</code>&nbsp;- буква нижнего регистра</p>
+                <p><code>L</code> - буква нижнего регистра</p>
             </li>
             <li>
-                <p><code>?</code>&nbsp;- буква</p>
+                <p><code>?</code> - буква</p>
             </li>
             <li>
-                <p><code>А</code>&nbsp;- буква или цифра</p>
+                <p><code>А</code> - буква или цифра</p>
             </li>
             <li>
-                <p><code>*</code>&nbsp;- любой символ</p>
+                <p><code>*</code> - любой символ</p>
             </li>
             <li>
-                <p><code>H</code>&nbsp;- hex символ</p>
+                <p><code>H</code> - hex символ</p>
             </li>
             <li>
-                <p><code>~</code>&nbsp;- знак + или -</p>
+                <p><code>~</code> - знак + или -</p>
             </li>
         </ul>
     </li>
     <li>
-        <p><code>valueMode</code>&nbsp;- определяет формат возвращаемого значения (с маской, или без) и может принимать значение&nbsp;<code>masked</code>&nbsp;или&nbsp;<code>clear</code>.</p>
+        <p><code>valueMode</code> - определяет формат возвращаемого значения (с маской, или без) и может принимать
+            значение <code>masked</code> или <code>clear</code>.</p>
     </li>
 </ul>
