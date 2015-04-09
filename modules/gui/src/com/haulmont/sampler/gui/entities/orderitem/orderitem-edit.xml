@@ -8,7 +8,7 @@
     <dsContext>
         <datasource id="invoiceItemDs"
                     class="com.haulmont.sampler.entity.OrderItem"
-                    view="invoiceItem-with-product"/>
+                    view="orderItem-with-product"/>
     </dsContext>
     <layout expand="windowActions"
             spacing="true">

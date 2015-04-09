@@ -8,13 +8,14 @@ import javax.inject.Inject;
 import java.util.Map;
 
 public class OrderItemBrowse extends AbstractLookup {
+
     @Inject
-    private Table invoiceItemsTable;
+    private Table orderItemsTable;
 
     @Override
     public void init(Map<String, Object> params) {
         if (WindowParams.MULTI_SELECT.getBool(getContext())) {
-            invoiceItemsTable.setMultiSelect(true);
+            orderItemsTable.setMultiSelect(true);
         }
     }
 }

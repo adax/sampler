@@ -21,7 +21,7 @@
         </property>
     </view>
     <view class="com.haulmont.sampler.entity.OrderItem"
-          name="invoiceItem-with-product">
+          name="orderItem-with-product">
         <property name="product"
                   view="_local"/>
         <property name="quantity"/>

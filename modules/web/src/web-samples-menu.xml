@@ -416,9 +416,9 @@
         </menu>
 
         <menu id="tokenList">
-            <item id="simple-tokenlist" docUrlSuffix="gui_TokenList"
-                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/simple"
-                  controller="com/haulmont/sampler/gui/components/tokenlist/simple/SimpleTokenListFrame.java">
+            <item id="normal-tokenlist" docUrlSuffix="gui_TokenList"
+                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/normal"
+                  controller="com/haulmont/sampler/gui/components/tokenlist/normal/NormalTokenListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/OrderItem.java"/>
@@ -429,7 +429,7 @@
                   descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/simplemode"
                   controller="com/haulmont/sampler/gui/components/tokenlist/simplemode/SimpleModeTokenListFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/entities/invoiceitem/OrderItemBrowse.java"/>
+                    <file name="com/haulmont/sampler/gui/entities/orderitem/OrderItemBrowse.java"/>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/OrderItem.java"/>
                     <file name="com/haulmont/sampler/entity/Product.java"/>

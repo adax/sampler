@@ -5,13 +5,13 @@
                     allowCommit="false"
                     class="com.haulmont.sampler.entity.Order"
                     view="order-edit">
-            <collectionDatasource id="invoiceDs"
+            <collectionDatasource id="orderItemsDs"
                                   allowCommit="false"
                                   property="items"/>
         </datasource>
-        <collectionDatasource id="allInvoicesDs"
+        <collectionDatasource id="allItemsDs"
                               class="com.haulmont.sampler.entity.OrderItem"
-                              view="invoiceItem-with-product">
+                              view="orderItem-with-product">
             <query>
                 <![CDATA[select e from sampler$OrderItem e]]>
             </query>
@@ -19,10 +19,10 @@
     </dsContext>
     <layout>
         <tokenList id="invoiceList"
-                   datasource="invoiceDs"
+                   datasource="orderItemsDs"
                    width="320px">
             <lookup lookup="true"
-                    optionsDatasource="allInvoicesDs"/>
+                    optionsDatasource="allItemsDs"/>
         </tokenList>
     </layout>
 </window>
