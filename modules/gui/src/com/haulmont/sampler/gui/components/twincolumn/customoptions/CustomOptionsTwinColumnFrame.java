@@ -2,6 +2,7 @@ package com.haulmont.sampler.gui.components.twincolumn.customoptions;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.TwinColumn;
+import com.haulmont.sampler.entity.Customer;
 
 import javax.inject.Inject;
 import java.util.*;
@@ -28,5 +29,15 @@ public class CustomOptionsTwinColumnFrame extends AbstractFrame {
         map.put("five", 5);
         map.put("seven", 7);
         twinColumnWithOptionsMap.setOptionsMap(map);
+    }
+
+    public void showOptionsListValue() {
+        Object value = twinColumnWithOptionsList.getValue();
+        showNotification(value == null ? "null" : value.toString(), NotificationType.HUMANIZED);
+    }
+
+    public void showOptionsMapValue() {
+        Object value = twinColumnWithOptionsMap.getValue();
+        showNotification(value == null ? "null" : value.toString(), NotificationType.HUMANIZED);
     }
 }

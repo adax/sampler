@@ -2,10 +2,18 @@
         class="com.haulmont.sampler.gui.components.twincolumn.customoptions.CustomOptionsTwinColumnFrame">
     <layout>
         <hbox spacing="true">
-            <twinColumn id="twinColumnWithOptionsList"
-                        caption="OptionsList"/>
-            <twinColumn id="twinColumnWithOptionsMap"
-                        caption="OptionsMap"/>
+            <vbox spacing="true">
+                <twinColumn id="twinColumnWithOptionsList"
+                            caption="Options List"/>
+                <button caption="Show value"
+                        invoke="showOptionsListValue"/>
+            </vbox>
+            <vbox spacing="true">
+                <twinColumn id="twinColumnWithOptionsMap"
+                            caption="Options Map"/>
+                <button caption="Show value"
+                        invoke="showOptionsMapValue"/>
+            </vbox>
         </hbox>
     </layout>
 </window>
