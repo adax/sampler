@@ -191,20 +191,17 @@ public class SampleBrowser extends AbstractWindow {
         Locale defaultLocale = messageTools.getDefaultLocale();
         for (Locale locale : globalConfig.getAvailableLocales().values()) {
             SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(Mode.Properties);
-            StringBuilder sb = new StringBuilder();
+//            StringBuilder sb = new StringBuilder();
             String tabTitle;
             if (defaultLocale.equals(locale)) {
                 tabTitle = "messages.properties";
             } else {
                 tabTitle = String.format("messages_%s.properties", locale.toString());
             }
-            for (String key : messagesKeys) {
-                String message = messages.findMessage(messagesPack, key, locale);
-                if (StringUtils.isNotEmpty(message))
-                    sb.append(key).append(" = ").append(message).append("\n");
-            }
-            if (sb.length() > 0) {
-                sourceCodeEditor.setValue(sb.toString());
+
+            String content = samplesHelper.getFileContent(samplesHelper.packageToPath(messagesPack) + "/" + tabTitle);
+            if (StringUtils.isNotBlank(content)) {
+                sourceCodeEditor.setValue(content);
                 addTab(tabTitle, sourceCodeEditor);
             }
         }
