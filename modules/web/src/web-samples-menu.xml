@@ -227,13 +227,15 @@
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderItem.java"/>
                 </otherFiles>
             </item>
-            <item id="exclude-relatedentities" docUrlSuffix="gui_RelatedEntities"
+            <item id="relatedentities-with-exclude" docUrlSuffix="gui_RelatedEntities"
                   descriptionsPack="com/haulmont/sampler/gui/components/relatedentities/exclude">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderItem.java"/>
                 </otherFiles>
             </item>
         </menu>
@@ -426,7 +428,7 @@
                   controller="com/haulmont/sampler/gui/components/tokenlist/simple/SimpleTokenListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
-                    <file name="com/haulmont/sampler/entity/InvoiceItem.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderItem.java"/>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
             </item>
@@ -434,9 +436,9 @@
                   descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/simplemode"
                   controller="com/haulmont/sampler/gui/components/tokenlist/simplemode/SimpleModeTokenListFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/entities/invoiceitem/InvoiceItemBrowse.java"/>
+                    <file name="com/haulmont/sampler/gui/entities/invoiceitem/OrderItemBrowse.java"/>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
-                    <file name="com/haulmont/sampler/entity/InvoiceItem.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderItem.java"/>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
             </item>
@@ -445,7 +447,7 @@
                   controller="com/haulmont/sampler/gui/components/tokenlist/position/PositionTokenListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
-                    <file name="com/haulmont/sampler/entity/InvoiceItem.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderItem.java"/>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
             </item>
@@ -454,7 +456,7 @@
                   controller="com/haulmont/sampler/gui/components/tokenlist/lookup/LookupTokenListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
-                    <file name="com/haulmont/sampler/entity/InvoiceItem.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderItem.java"/>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
             </item>

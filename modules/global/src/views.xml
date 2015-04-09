@@ -20,7 +20,7 @@
             <property name="name"/>
         </property>
     </view>
-    <view class="com.haulmont.sampler.entity.InvoiceItem"
+    <view class="com.haulmont.sampler.entity.OrderItem"
           name="invoiceItem-with-product">
         <property name="product"
                   view="_local"/>
@@ -33,7 +33,7 @@
         <property name="date"/>
         <property name="amount"/>
         <property name="description"/>
-        <property name="invoice">
+        <property name="items">
             <property name="product">
                 <property name="name"/>
                 <property name="price"/>

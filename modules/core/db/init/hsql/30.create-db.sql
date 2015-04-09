@@ -233,7 +233,7 @@ values ('ac5c75d9-c5b6-4c9d-a18a-934ff186c9cb', current_timestamp, 'admin', 1, c
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('e476c152-f277-d4a5-781a-b01aee5ef248', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$InvoiceItem:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('e476c152-f277-d4a5-781a-b01aee5ef248', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 20, 'sampler$OrderItem:update', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
@@ -269,6 +269,6 @@ values ('8edc5ff8-40e6-30df-5717-b2ea4fb5d90d', current_timestamp, 'admin', 1, c
 
 insert into SEC_PERMISSION
 (ID, CREATE_TS, CREATED_BY, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, "VALUE", ROLE_ID)
-values ('f4cbc6fc-0d47-ddfc-12ec-db47595a3b9b', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 50, 'sampler$InvoiceItem.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
+values ('f4cbc6fc-0d47-ddfc-12ec-db47595a3b9b', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 50, 'sampler$OrderItem.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 ------------------------------------------------------------------------------------------------------------

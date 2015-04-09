@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         caption="msg://editCaption"
-        class="com.haulmont.sampler.gui.entities.invoiceitem.InvoiceItemEdit"
+        class="com.haulmont.sampler.gui.entities.orderitem.OrderItemEdit"
         datasource="invoiceItemDs"
         focusComponent="fieldGroup"
-        messagesPack="com.haulmont.sampler.gui.entities.invoiceitem">
+        messagesPack="com.haulmont.sampler.gui.entities.orderitem">
     <dsContext>
         <datasource id="invoiceItemDs"
-                    class="com.haulmont.sampler.entity.InvoiceItem"
+                    class="com.haulmont.sampler.entity.OrderItem"
                     view="invoiceItem-with-product"/>
     </dsContext>
     <layout expand="windowActions"

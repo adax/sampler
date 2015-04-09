@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui.entities.invoiceitem;
+package com.haulmont.sampler.gui.entities.orderitem;
 
 import com.haulmont.cuba.gui.WindowParams;
 import com.haulmont.cuba.gui.components.AbstractLookup;
@@ -7,7 +7,7 @@ import com.haulmont.cuba.gui.components.Table;
 import javax.inject.Inject;
 import java.util.Map;
 
-public class InvoiceItemBrowse extends AbstractLookup {
+public class OrderItemBrowse extends AbstractLookup {
     @Inject
     private Table invoiceItemsTable;
 

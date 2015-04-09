@@ -10,7 +10,7 @@
                     class="com.haulmont.sampler.entity.Order"
                     view="order-edit">
             <collectionDatasource id="invoiceDs"
-                                  property="invoice"/>
+                                  property="items"/>
         </datasource>
     </dsContext>
     <layout expand="invoiceTable"

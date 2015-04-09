@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
         caption="msg://browseCaption"
-        class="com.haulmont.sampler.gui.entities.invoiceitem.InvoiceItemBrowse"
+        class="com.haulmont.sampler.gui.entities.orderitem.OrderItemBrowse"
         focusComponent="invoiceItemsTable"
         lookupComponent="invoiceItemsTable"
-        messagesPack="com.haulmont.sampler.gui.entities.invoiceitem">
+        messagesPack="com.haulmont.sampler.gui.entities.orderitem">
     <dsContext>
         <collectionDatasource id="invoiceItemsDs"
-                              class="com.haulmont.sampler.entity.InvoiceItem"
+                              class="com.haulmont.sampler.entity.OrderItem"
                               view="invoiceItem-with-product">
             <query>
-                <![CDATA[select e from sampler$InvoiceItem e]]>
+                <![CDATA[select e from sampler$OrderItem e]]>
             </query>
         </collectionDatasource>
     </dsContext>

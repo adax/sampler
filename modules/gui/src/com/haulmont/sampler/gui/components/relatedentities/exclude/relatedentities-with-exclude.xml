@@ -20,7 +20,7 @@
             </columns>
             <rows datasource="ordersDs"/>
             <buttonsPanel>
-                <relatedEntities for="orderTable" exclude="customer"/>
+                <relatedEntities for="orderTable" exclude="items"/>
             </buttonsPanel>
         </table>
     </layout>

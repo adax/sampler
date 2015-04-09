@@ -8,8 +8,8 @@ import java.math.BigDecimal;
 
 @NamePattern("%s %s|product,quantity")
 @Table(name = "SAMPLER_INVOICE_ITEM")
-@Entity(name = "sampler$InvoiceItem")
-public class InvoiceItem extends StandardEntity {
+@Entity(name = "sampler$OrderItem")
+public class OrderItem extends StandardEntity {
 
     private static final long serialVersionUID = 7404462282086544503L;
 
@@ -32,7 +32,6 @@ public class InvoiceItem extends StandardEntity {
         return order;
     }
 
-
     public void setProduct(Product product) {
         this.product = product;
     }
@@ -48,6 +47,4 @@ public class InvoiceItem extends StandardEntity {
     public BigDecimal getQuantity() {
         return quantity;
     }
-
-
 }

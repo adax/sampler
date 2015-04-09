@@ -15,12 +15,12 @@
             template="/com/haulmont/sampler/gui/entities/product/product-browse.xml"/>
     <screen id="sampler$Product.edit"
             template="/com/haulmont/sampler/gui/entities/product/product-edit.xml"/>
-    <screen id="sampler$InvoiceItem.lookup"
-            template="com/haulmont/sampler/gui/entities/invoiceitem/invoiceitem-browse.xml"/>
-    <screen id="sampler$InvoiceItem.browse"
-            template="com/haulmont/sampler/gui/entities/invoiceitem/invoiceitem-browse.xml"/>
-    <screen id="sampler$InvoiceItem.edit"
-            template="com/haulmont/sampler/gui/entities/invoiceitem/invoiceitem-edit.xml"/>
+    <screen id="sampler$OrderItem.lookup"
+            template="com/haulmont/sampler/gui/entities/orderitem/orderitem-browse.xml"/>
+    <screen id="sampler$OrderItem.browse"
+            template="com/haulmont/sampler/gui/entities/orderitem/orderitem-browse.xml"/>
+    <screen id="sampler$OrderItem.edit"
+            template="com/haulmont/sampler/gui/entities/orderitem/orderitem-edit.xml"/>
     <!-- Components -->
     <screen id="simple-button"
             template="/com/haulmont/sampler/gui/components/button/simple/simple-button.xml"/>
@@ -140,8 +140,8 @@
             template="com/haulmont/sampler/gui/components/timefield/format/format-timefield.xml"/>
     <screen id="simple-relatedentities"
             template="com/haulmont/sampler/gui/components/relatedentities/simple/simple-relatedentities.xml"/>
-    <screen id="exclude-relatedentities"
-            template="com/haulmont/sampler/gui/components/relatedentities/exclude/exclude-relatedentities.xml"/>
+    <screen id="relatedentities-with-exclude"
+            template="com/haulmont/sampler/gui/components/relatedentities/exclude/relatedentities-with-exclude.xml"/>
     <screen id="simple-pickerfield"
             template="com/haulmont/sampler/gui/components/pickerfield/simple/simple-pickerfield.xml"/>
     <screen id="actions-pickerfield"

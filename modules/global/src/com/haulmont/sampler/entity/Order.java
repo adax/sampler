@@ -32,20 +32,18 @@ public class Order extends StandardEntity {
     @Column(name = "DESCRIPTION")
     protected String description;
 
-
     @Composition
     @OnDelete(DeletePolicy.CASCADE)
     @OneToMany(mappedBy = "order")
-    protected Set<InvoiceItem> invoice;
+    protected Set<OrderItem> items;
 
-    public void setInvoice(Set<InvoiceItem> invoice) {
-        this.invoice = invoice;
+    public void setItems(Set<OrderItem> items) {
+        this.items = items;
     }
 
-    public Set<InvoiceItem> getInvoice() {
-        return invoice;
+    public Set<OrderItem> getItems() {
+        return items;
     }
-
 
     public void setDescription(String description) {
         this.description = description;
@@ -54,7 +52,6 @@ public class Order extends StandardEntity {
     public String getDescription() {
         return description;
     }
-
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
@@ -79,6 +76,4 @@ public class Order extends StandardEntity {
     public BigDecimal getAmount() {
         return amount;
     }
-
-
 }
