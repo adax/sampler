@@ -54,6 +54,7 @@ public class LeftPanel extends FoldersPane {
         samplesMenuConfig.reset();
         sampleWindow = samplesHelper.getSampleBrowser();
         createMenuPanel();
+        collapseAll();
     }
 
     private void createMenuPanel() {
