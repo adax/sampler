@@ -60,7 +60,7 @@ public class SamplerAppWindow extends AppWindow {
         Label appTitle = new Label(messages.getMessage(getClass(), "menuBar.appTitle"));
         appTitle.setStyleName("sampler-app-tittle-label");
         appTitle.setSizeUndefined();
-        layout.addComponent(appTitle, 1);
+        layout.addComponent(appTitle, 0);
         layout.setComponentAlignment(appTitle, Alignment.MIDDLE_LEFT);
 
         UserSessionSource userSessionSource = AppBeans.get(UserSessionSource.NAME);

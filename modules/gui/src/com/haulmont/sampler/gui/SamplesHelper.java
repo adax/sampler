@@ -8,11 +8,9 @@ import com.haulmont.cuba.gui.config.WindowInfo;
 import com.haulmont.cuba.gui.xml.XmlInheritanceProcessor;
 import com.haulmont.sampler.gui.config.MenuItem;
 import com.haulmont.sampler.gui.config.SamplesMenuConfig;
-import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.Element;
 
@@ -21,7 +19,8 @@ import javax.annotation.Nullable;
 import javax.inject.Inject;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author gorelov
@@ -59,11 +58,7 @@ public class SamplesHelper {
         params.put("docUrlSuffix", item.getUrl());
         Element root = getWindowElement(info.getTemplate());
         if (root != null) {
-            Collection<String> keys = getMessagesKeys(root);
-            if (CollectionUtils.isNotEmpty(keys)) {
-                params.put("messagesPack", getMessagePack(root));
-                params.put("messagesKeys", keys);
-            }
+            params.put("messagesPack", getMessagePack(root));
         }
         return params;
     }
@@ -72,25 +67,12 @@ public class SamplesHelper {
         return resources.getResourceAsString(src);
     }
 
-    private Collection<String> getMessagesKeys(Element root) {
-        Set<String> keys = new HashSet<>();
-        for (Element element : (List<Element>) root.elements()) {
-            for (Attribute attribute : (List<Attribute>) element.attributes()) {
-                String value = attribute.getValue();
-                if (value.startsWith("msg://"))
-                    keys.add(value.substring(6));
-            }
-            keys.addAll(getMessagesKeys(element));
-        }
-        return keys;
-    }
-
     private String getMessagePack(Element root) {
         return root.attributeValue("messagesPack");
     }
 
-    private String pathFromPackage(String screenClass) {
-        return screenClass.replaceAll("[.]", "/") + ".java";
+    public String packageToPath(String pkg) {
+        return pkg.replaceAll("[.]", "/");
     }
 
     public String getFileName(String src) {

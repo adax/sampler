@@ -1,17 +1,16 @@
 @import "../halo/halo";
 @import "samples/components/table/table";
 @import "samples/components/twincolumn/twincolumn";
-@import "samples/components/splitpanel/splitpanel";
 
 @mixin halo-ext {
   @include halo;
   @include sample-table;
   @include sample-twincolumn;
-  @include sampler-splitpanel;
 
   .v-label.sampler-app-tittle-label {
     color: #fff;
     margin-right: 5px;
+    margin-left: 5px;
   }
 
   .ace_editor {
