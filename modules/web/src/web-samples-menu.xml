@@ -526,13 +526,9 @@
         <item id="simple-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
               descriptionsPack="com/haulmont/sampler/gui/containers/scrollboxlayout/simple"/>
 
-        <menu id="splitPanel">
-            <item id="horizontal-split" docUrlSuffix="gui_SplitPanel"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/splitpanel/horizontal"/>
-            <item id="vertical-split" docUrlSuffix="gui_SplitPanel"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/splitpanel/vertical"/>
-        </menu>
-        
+        <item id="simple-split" docUrlSuffix="gui_SplitPanel"
+              descriptionsPack="com/haulmont/sampler/gui/containers/splitpanel/simple"/>
+
         <menu id="tabSheet">
             <item id="simple-tabsheet" docUrlSuffix="gui_TabSheet"
                   descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/simple"/>

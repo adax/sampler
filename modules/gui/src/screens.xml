@@ -189,10 +189,8 @@
             template="com/haulmont/sampler/gui/containers/groupboxlayout/collapsable/collapsable-groupbox.xml"/>
     <screen id="simple-scrollbox"
             template="com/haulmont/sampler/gui/containers/scrollboxlayout/simple/simple-scrollbox.xml"/>
-    <screen id="vertical-split"
-            template="com/haulmont/sampler/gui/containers/splitpanel/vertical/vertical-split.xml"/>
-    <screen id="horizontal-split"
-            template="com/haulmont/sampler/gui/containers/splitpanel/horizontal/horizontal-split.xml"/>
+    <screen id="simple-split"
+            template="com/haulmont/sampler/gui/containers/splitpanel/simple/simple-split.xml"/>
     <screen id="simple-grid"
             template="com/haulmont/sampler/gui/containers/gridlayout/simple/simple-grid.xml"/>
     <screen id="columns-flex-grid"
