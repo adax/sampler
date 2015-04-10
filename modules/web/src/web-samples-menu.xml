@@ -514,10 +514,8 @@
         </menu>
 
         <menu id="groupBoxLayout">
-            <item id="vertical-groupbox" docUrlSuffix="gui_GroupBoxLayout"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/vertical"/>
-            <item id="horizontal-groupbox" docUrlSuffix="gui_GroupBoxLayout"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/horizontal"/>
+            <item id="simple-groupbox" docUrlSuffix="gui_GroupBoxLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/simple"/>
             <item id="collapsable-groupbox" docUrlSuffix="gui_GroupBoxLayout"
                   descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/collapsable"/>
         </menu>
