@@ -181,10 +181,8 @@
             template="com/haulmont/sampler/gui/containers/boxlayout/vbox/vbox-sample.xml"/>
     <screen id="flowbox-sample"
             template="com/haulmont/sampler/gui/containers/boxlayout/flowbox/flowbox-sample.xml"/>
-    <screen id="screen-iframe"
-            template="com/haulmont/sampler/gui/containers/iframe/screen/screen-iframe.xml"/>
-    <screen id="src-iframe"
-            template="com/haulmont/sampler/gui/containers/iframe/src/src-iframe.xml"/>
+    <screen id="simple-iframe"
+            template="com/haulmont/sampler/gui/containers/iframe/simple/simple-iframe.xml"/>
     <screen id="simple-groupbox"
             template="com/haulmont/sampler/gui/containers/groupboxlayout/simple/simple-groupbox.xml"/>
     <screen id="collapsable-groupbox"

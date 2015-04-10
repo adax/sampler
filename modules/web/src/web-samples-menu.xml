@@ -520,12 +520,8 @@
                   descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/collapsable"/>
         </menu>
 
-        <menu id="iframe">
-            <item id="src-iframe" docUrlSuffix="gui_IFrame"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/iframe/src"/>
-            <item id="screen-iframe" docUrlSuffix="gui_IFrame"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/iframe/screen"/>
-        </menu>
+        <item id="simple-iframe" docUrlSuffix="gui_IFrame"
+              descriptionsPack="com/haulmont/sampler/gui/containers/iframe/simple"/>
 
         <menu id="scrollBoxLayout">
             <item id="vertical-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
