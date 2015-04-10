@@ -10,36 +10,32 @@ public class LazyTabSheetFrame extends AbstractFrame {
     @Inject
     private TabSheet tabSheet;
     @Inject
-    private Label checkMessage;
+    private Label info;
 
     @Override
     public void init(Map<String, Object> params) {
+        checkComponents();
+
         tabSheet.addListener(new TabSheet.TabChangeListener() {
             @Override
             public void tabChanged(TabSheet.Tab newTab) {
-                checkComponents();
+                if (newTab.getName().equals("tab2"))
+                    checkComponents();
             }
         });
-        checkComponents();
     }
 
     private void checkComponents() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder("Created components:\n");
 
-        Label label1 = getComponent("label1");
         sb.append("label1 = ");
-        if (label1 != null)
-            sb.append(label1.getValue());
-        else
-            sb.append("null");
+        Label label1 = getComponent("label1");
+        sb.append(label1 == null ? null : label1.getValue());
 
+        sb.append(", label2 = ");
         Label label2 = getComponent("label2");
-        sb.append("\nlabel2 = ");
-        if (label2 != null)
-            sb.append(label2.getValue());
-        else
-            sb.append("null");
+        sb.append(label2 == null ? null : label2.getValue());
 
-        checkMessage.setValue(sb.toString());
+        info.setValue(sb.toString());
     }
 }
