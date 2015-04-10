@@ -1,5 +1,6 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        class="com.haulmont.cuba.gui.components.AbstractLookup">
+        class="com.haulmont.cuba.gui.components.AbstractLookup"
+        lookupComponent="customerTable">
     <dsContext>
         <collectionDatasource id="customerDs"
                               class="com.haulmont.sampler.entity.Customer"
