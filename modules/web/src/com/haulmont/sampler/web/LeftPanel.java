@@ -54,7 +54,6 @@ public class LeftPanel extends FoldersPane {
         samplesMenuConfig.reset();
         sampleWindow = samplesHelper.getSampleBrowser();
         createMenuPanel();
-        collapseAll();
     }
 
     private void createMenuPanel() {
@@ -164,7 +163,6 @@ public class LeftPanel extends FoldersPane {
         tree.addItemClickListener(new MenuItemClickListener());
         tree.setItemCaptionPropertyId(PROPERTY_CAPTION);
         tree.setContainerDataSource(createTreeContent());
-        expandAll();
 
         menuLayout.addComponent(tree);
         menuLayout.setExpandRatio(tree, 1);
