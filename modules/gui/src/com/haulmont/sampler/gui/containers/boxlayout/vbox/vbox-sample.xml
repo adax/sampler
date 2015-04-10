@@ -2,9 +2,10 @@
         class="com.haulmont.cuba.gui.components.AbstractFrame">
     <layout>
         <vbox spacing="true">
+            <label value="Label"/>
+            <textField inputPrompt="TextField"/>
             <button caption="Button"/>
-            <dateField/>
-            <textField/>
+            <button caption="Button"/>
         </vbox>
     </layout>
 </window>
