@@ -101,7 +101,12 @@ configure(coreModule) {
         }
     }
 
-    task deploy(dependsOn: [assemble, cleanConf], type: CubaDeployment) {
+    task copyDb(type: Copy) {
+        from 'db/backup/hsql'
+        into "$tomcatDir/bin/db"
+    }
+
+    task deploy(dependsOn: [assemble, cleanConf, copyDb], type: CubaDeployment) {
         appName = 'app-core'
         appJars('cuba-global', 'cuba-core', 
                 'app-global', 'app-core')

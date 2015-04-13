@@ -1,4 +1,11 @@
 ------------------------------------------------------------------------------------------------------------
+
+update SEC_USER
+set PASSWORD='e761c1285eb7002e9e058caacc29ece57cb8bfc5'
+where ID='60885987-1b61-4247-94c7-dff348347f93';
+
+------------------------------------------------------------------------------------------------------------
+
 insert into SAMPLER_CUSTOMER
 (NAME, LAST_NAME, AGE, ACTIVE, GRADE, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
 values ('Dora', 'Abrams', 47, true, 20, 1, current_timestamp, null, null, null, '4d750fdb-8ed7-a4e4-88d2-40974615cab2', current_timestamp, 'admin');
@@ -102,6 +109,7 @@ insert into SAMPLER_PRODUCT
 values ('DVD', 1000.00, 1, current_timestamp, null, null, null, 'dab66821-e3b0-b6a8-eae1-e0b3f0e71d4f', current_timestamp, 'admin');
 
 ------------------------------------------------------------------------------------------------------------
+
 insert into SAMPLER_TASK
 (NAME, DUE_DATE, ASSIGNEE_ID, PARENT_TASK_ID, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
 values ('Task1', '2015-03-30 00:00:00', '48eda61c-4142-0e47-5ca8-f338c36cfb0e', null, 1, current_timestamp, null, null, null, '10685e09-25c8-b3fe-22ba-238304d292b3', current_timestamp, 'admin');
@@ -127,6 +135,7 @@ insert into SAMPLER_TASK
 values ('Task6', '2015-04-01 00:00:00', 'e7e127d7-33b4-2bd9-d405-0f7923a8bec6', null, 1, current_timestamp, null, null, null, '2373294a-f53c-ea74-2c24-c80725b7ba85', current_timestamp, 'admin');
 
 ------------------------------------------------------------------------------------------------------------
+
 insert into SAMPLER_ORDER
 (CUSTOMER_ID, DATE_, AMOUNT, DESCRIPTION, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
 values ('068ff1ae-992e-51db-b20f-8e21bcd19bfc', '2015-03-01', 24990.00, 'Office equipment', 1, current_timestamp, null, null, null, '23872068-ec86-ba3e-8d9b-a06d4c573aef', current_timestamp, 'admin');
@@ -144,6 +153,7 @@ insert into SAMPLER_ORDER
 values ('ee875696-0a4d-0d54-41c8-b3dea6e3e7d1', '2015-03-26', 59999.00, 'Gamer equipment', 1, current_timestamp, null, null, null, 'bbb4351b-d605-40c6-55da-d785c7f32e03', current_timestamp, 'admin');
 
 ------------------------------------------------------------------------------------------------------------
+
 insert into SAMPLER_INVOICE_ITEM
 (PRODUCT_ID, QUANTITY, ORDER_ID, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
 values ('d7496b01-215d-f90c-7442-4d7e8c47848f', 1.000, 'bbb4351b-d605-40c6-55da-d785c7f32e03', 1, current_timestamp, null, null, null, '08f26f09-4e6c-125a-12a0-0a8877a57ab2', current_timestamp, 'admin');
@@ -189,6 +199,7 @@ insert into SAMPLER_INVOICE_ITEM
 values ('17bc9b95-b562-0dd2-f904-db6df80b9c71', 1.000, '3fbc4ce8-7f8c-dcd0-5788-967f94f6ddbf', 1, current_timestamp, null, null, null, 'e2e78593-5939-2941-4518-f79e47c7f257', current_timestamp, 'admin');
 
 ------------------------------------------------------------------------------------------------------------
+
 insert into SYS_FILE
 (NAME, EXT, FILE_SIZE, CREATE_DATE, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
 values ('platform-logo.png', 'png', 15816, '2015-04-01 00:00:00', 1, current_timestamp, null, null, null, '61a6a1ee-f13a-f44f-0201-c2f9b3288305', current_timestamp, 'admin');
