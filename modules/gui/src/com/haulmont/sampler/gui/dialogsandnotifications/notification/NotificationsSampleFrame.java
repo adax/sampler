@@ -13,10 +13,10 @@ public class NotificationsSampleFrame extends AbstractFrame {
     }
 
     public void warning() {
-        showNotification("<em>Warning notification</em>", NotificationType.WARNING_HTML);
+        showNotification("<i>Warning notification</i>", NotificationType.WARNING_HTML);
     }
 
     public void error() {
-        showNotification("<code>Error notification</code>", "<ins>with description</ins>", NotificationType.ERROR_HTML);
+        showNotification("<code>Error notification</code>", "<u>with description</u>", NotificationType.ERROR_HTML);
     }
 }

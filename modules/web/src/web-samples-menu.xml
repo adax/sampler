@@ -542,11 +542,11 @@
     <menu id="dialogsAndNotifications">
 
         <menu id="dialogs">
-            <item id="message-dialog-sampler" docUrlSuffix="dialogs"
-                  controller="com/haulmont/sampler/gui/dialogsandnotifications/dialog/message/MessageDialogSamplerFrame.java"
+            <item id="message-dialog-sample" docUrlSuffix="dialogs"
+                  controller="com/haulmont/sampler/gui/dialogsandnotifications/dialog/message/MessageDialogSampleFrame.java"
                   descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/dialog/message"/>
-            <item id="option-dialog-sampler" docUrlSuffix="dialogs"
-                  controller="com/haulmont/sampler/gui/dialogsandnotifications/dialog/option/OptionDialogSamplerFrame.java"
+            <item id="option-dialog-sample" docUrlSuffix="dialogs"
+                  controller="com/haulmont/sampler/gui/dialogsandnotifications/dialog/option/OptionDialogSampleFrame.java"
                   descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/dialog/option"/>
         </menu>
 
