@@ -1,6 +1,0 @@
-<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        class="com.haulmont.cuba.gui.components.AbstractFrame">
-    <layout>
-        <iframe screen="simple-button"/>
-    </layout>
-</window>

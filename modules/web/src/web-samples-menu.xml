@@ -514,37 +514,21 @@
         </menu>
 
         <menu id="groupBoxLayout">
-            <item id="vertical-groupbox" docUrlSuffix="gui_GroupBoxLayout"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/vertical"/>
-            <item id="horizontal-groupbox" docUrlSuffix="gui_GroupBoxLayout"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/horizontal"/>
+            <item id="simple-groupbox" docUrlSuffix="gui_GroupBoxLayout"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/simple"/>
             <item id="collapsable-groupbox" docUrlSuffix="gui_GroupBoxLayout"
                   descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/collapsable"/>
         </menu>
 
-        <menu id="iframe">
-            <item id="src-iframe" docUrlSuffix="gui_IFrame"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/iframe/src"/>
-            <item id="screen-iframe" docUrlSuffix="gui_IFrame"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/iframe/screen"/>
-        </menu>
+        <item id="simple-iframe" docUrlSuffix="gui_IFrame"
+              descriptionsPack="com/haulmont/sampler/gui/containers/iframe/simple"/>
 
-        <menu id="scrollBoxLayout">
-            <item id="vertical-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/scrollboxlayout/vertical"/>
-            <item id="horizontal-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/scrollboxlayout/horizontal"/>
-            <item id="both-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/scrollboxlayout/both"/>
-        </menu>
+        <item id="simple-scrollbox" docUrlSuffix="gui_ScrollBoxLayout"
+              descriptionsPack="com/haulmont/sampler/gui/containers/scrollboxlayout/simple"/>
 
-        <menu id="splitPanel">
-            <item id="horizontal-split" docUrlSuffix="gui_SplitPanel"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/splitpanel/horizontal"/>
-            <item id="vertical-split" docUrlSuffix="gui_SplitPanel"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/splitpanel/vertical"/>
-        </menu>
-        
+        <item id="simple-split" docUrlSuffix="gui_SplitPanel"
+              descriptionsPack="com/haulmont/sampler/gui/containers/splitpanel/simple"/>
+
         <menu id="tabSheet">
             <item id="simple-tabsheet" docUrlSuffix="gui_TabSheet"
                   descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/simple"/>
