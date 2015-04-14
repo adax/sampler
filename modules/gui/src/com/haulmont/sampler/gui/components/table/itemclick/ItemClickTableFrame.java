@@ -18,7 +18,7 @@ public class ItemClickTableFrame extends AbstractFrame {
             public void actionPerform(Component component) {
                 Customer customer = customerTable.getSingleSelected();
                 if (customer != null)
-                    showNotification("Item clicked for: " + customer.getName(), NotificationType.HUMANIZED);
+                    showNotification("Item clicked for: " + customer.getInstanceName(), NotificationType.HUMANIZED);
             }
         });
         customerTable.setEnterPressAction(new AbstractAction("enterPressAction") {
@@ -26,7 +26,7 @@ public class ItemClickTableFrame extends AbstractFrame {
             public void actionPerform(Component component) {
                 Customer customer = customerTable.getSingleSelected();
                 if (customer != null)
-                    showNotification("Enter pressed for: " + customer.getName(), NotificationType.HUMANIZED);
+                    showNotification("Enter pressed for: " + customer.getInstanceName(), NotificationType.HUMANIZED);
             }
         });
     }

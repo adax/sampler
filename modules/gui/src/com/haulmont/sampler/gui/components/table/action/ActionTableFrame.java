@@ -14,7 +14,7 @@ public class ActionTableFrame extends AbstractFrame {
     public void greet() {
         Customer customer = customerTable.getSingleSelected();
         if (customer != null)
-            showNotification("Hello, " + customer.getName(), NotificationType.HUMANIZED);
+            showNotification("Hello, " + customer.getInstanceName(), NotificationType.HUMANIZED);
         else
             showNotification("No selection", NotificationType.HUMANIZED);
     }
