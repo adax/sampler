@@ -24,7 +24,10 @@ public class SimpleFieldGroupFrame extends AbstractFrame {
         Order order = orderDs.getItem();
         StringBuilder sb = new StringBuilder();
         sb.append("date = ").append(order.getDate()).append("\n");
-        sb.append("customer = ").append(order.getCustomer().getInstanceName()).append("\n");
+        sb.append("customer = ").append(order.getCustomer() != null
+                ? order.getCustomer().getInstanceName()
+                : null)
+                .append("\n");
         sb.append("amount = ").append(order.getAmount()).append("\n");
         sb.append("description = ").append(order.getDescription());
         showNotification(sb.toString(), NotificationType.HUMANIZED);
