@@ -12,6 +12,7 @@
     <layout>
         <table id="orderTable"
                height="200px"
+               multiselect="true"
                width="480px">
             <columns>
                 <column id="date"/>
