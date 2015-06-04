@@ -1,5 +1,6 @@
 <window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
-        class="com.haulmont.cuba.gui.components.AbstractFrame">
+        class="com.haulmont.cuba.gui.components.AbstractFrame"
+        messagesPack="com.haulmont.sampler.gui.components.relatedentities.simple">
     <dsContext>
         <collectionDatasource id="ordersDs"
                               class="com.haulmont.sampler.entity.Order"
@@ -21,7 +22,9 @@
             </columns>
             <rows datasource="ordersDs"/>
             <buttonsPanel>
-                <relatedEntities for="orderTable"/>
+                <relatedEntities for="orderTable">
+                    <property name="customer" caption="msg://customers" filterCaption="msg://filterCustomer"/>
+                </relatedEntities>
             </buttonsPanel>
         </table>
     </layout>
