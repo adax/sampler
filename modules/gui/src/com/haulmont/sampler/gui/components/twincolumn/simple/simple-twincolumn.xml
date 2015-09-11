@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.haulmont.sampler.gui.components.twincolumn.simple.SimpleTwinColumnFrame">
     <dsContext>
@@ -11,6 +12,7 @@
     </dsContext>
     <layout spacing="true">
         <twinColumn id="twinColumn"
+                    addAllBtnEnabled="true"
                     optionsDatasource="customersDs"/>
         <button caption="Show value"
                 invoke="showValue"/>

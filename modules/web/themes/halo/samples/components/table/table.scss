@@ -1,19 +1,19 @@
 @mixin sample-table {
-  .v-table-row-active-customer {
+  .active-customer {
       font-weight: bold;
   }
 
-  .v-table-cell-content-premium-grade {
+  .premium-grade {
     background-color: red;
     color: white;
   }
 
-  .v-table-cell-content-high-grade {
+  .high-grade {
     background-color: green;
     color: white;
   }
 
-  .v-table-cell-content-standard-grade {
+  .standard-grade {
     background-color: blue;
     color: white;
   }

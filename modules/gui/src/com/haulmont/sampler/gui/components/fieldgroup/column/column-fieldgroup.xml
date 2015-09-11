@@ -17,8 +17,8 @@
             <column flex="1"
                     width="100%">
                 <field id="age"/>
-                <field id="active"/>
                 <field id="grade"/>
+                <field id="active"/>
             </column>
         </fieldGroup>
     </layout>
