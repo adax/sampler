@@ -49,7 +49,9 @@ public class SampleBrowser extends AbstractWindow {
         super.init(params);
 
         String id = (String) params.get("windowId");
-        add(openFrame(null, id), 0);
+        IFrame frame = openFrame(null, id);
+        frame.setId("sampleFrame");
+        add(frame, 0);
 
         String caption = (String) params.get("caption");
         if (StringUtils.isEmpty(caption))
