@@ -1,5 +1,6 @@
-<screen-config xmlns="http://schemas.haulmont.com/cuba/5.4/screens.xsd">
-
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
     <include file="/screens.xml"/>
-
+    <screen id="mainWindow"
+            template="/com/haulmont/sampler/web/app/mainwindow/sampler-main-window.xml"/>
 </screen-config>

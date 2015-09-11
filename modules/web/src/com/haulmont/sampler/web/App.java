@@ -1,12 +1,12 @@
 package com.haulmont.sampler.web;
 
-import com.haulmont.cuba.web.AppUI;
-import com.haulmont.cuba.web.AppWindow;
 import com.haulmont.cuba.web.DefaultApp;
+import com.haulmont.cuba.web.gui.WebComponentsFactory;
+import com.haulmont.sampler.web.gui.components.mainwindow.SamplerWebFoldersPane;
 
 public class App extends DefaultApp {
-    @Override
-    protected AppWindow createAppWindow(AppUI ui) {
-        return new SamplerAppWindow(ui);
+
+    static {
+        WebComponentsFactory.registerComponent(SamplerWebFoldersPane.NAME, SamplerWebFoldersPane.class);
     }
 }

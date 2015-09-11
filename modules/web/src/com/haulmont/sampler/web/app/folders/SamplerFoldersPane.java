@@ -1,16 +1,17 @@
-package com.haulmont.sampler.web;
+package com.haulmont.sampler.web.app.folders;
 
 import com.haulmont.cuba.core.global.AppBeans;
+import com.haulmont.cuba.core.global.Messages;
 import com.haulmont.cuba.core.sys.AppContext;
 import com.haulmont.cuba.gui.WindowManager;
 import com.haulmont.cuba.gui.config.WindowInfo;
-import com.haulmont.cuba.web.AppWindow;
-import com.haulmont.cuba.web.app.folders.FoldersPane;
+import com.haulmont.cuba.web.app.folders.CubaFoldersPane;
 import com.haulmont.cuba.web.toolkit.ui.CubaTextField;
 import com.haulmont.cuba.web.toolkit.ui.CubaTree;
 import com.haulmont.sampler.gui.SamplesHelper;
 import com.haulmont.sampler.gui.config.MenuItem;
 import com.haulmont.sampler.gui.config.SamplesMenuConfig;
+import com.haulmont.sampler.web.App;
 import com.vaadin.data.Container;
 import com.vaadin.data.Item;
 import com.vaadin.data.Property;
@@ -32,7 +33,7 @@ import java.util.Map;
  * @author gorelov
  * @version $Id$
  */
-public class LeftPanel extends FoldersPane {
+public class SamplerFoldersPane extends CubaFoldersPane {
 
     private static final String PROPERTY_CAPTION = "caption";
 
@@ -41,18 +42,17 @@ public class LeftPanel extends FoldersPane {
     private WindowInfo sampleWindow;
     private Container.Filter filter;
 
+    private Messages messages = AppBeans.get(Messages.NAME);
     private SamplesHelper samplesHelper = AppBeans.get(SamplesHelper.NAME);
     private SamplesMenuConfig samplesMenuConfig = AppBeans.get(SamplesMenuConfig.NAME);
 
-    public LeftPanel(MenuBar menuBar, AppWindow appWindow) {
-        super(menuBar, appWindow);
+    public SamplerFoldersPane() {
+        samplesMenuConfig.reset();
+        sampleWindow = samplesHelper.getSampleBrowser();
     }
 
     @Override
-    public void init(Component parent) {
-        super.init(parent);
-        samplesMenuConfig.reset();
-        sampleWindow = samplesHelper.getSampleBrowser();
+    protected void createFoldersPaneLayout(Component appFoldersPane, Component searchFoldersPane) {
         createMenuPanel();
     }
 
@@ -96,7 +96,7 @@ public class LeftPanel extends FoldersPane {
             }
         });
         searchLayout.addComponent(searchButton);
-        searchLayout.setComponentAlignment(searchButton, Alignment.MIDDLE_RIGHT);
+        searchLayout.setComponentAlignment(searchButton, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
 
         menuLayout.addComponent(searchLayout);
 
@@ -112,7 +112,7 @@ public class LeftPanel extends FoldersPane {
         header.addComponent(label);
         header.setExpandRatio(label, 1);
 
-        // TODO For development convenience only
+        // NOTE: For development convenience only
         if (BooleanUtils.toBoolean(AppContext.getProperty("sampler.developerMode"))) {
             Button refresh = createButton("Refresh", new Button.ClickListener() {
                 @Override
@@ -121,7 +121,7 @@ public class LeftPanel extends FoldersPane {
                 }
             });
             header.addComponent(refresh);
-            header.setComponentAlignment(refresh, Alignment.MIDDLE_RIGHT);
+            header.setComponentAlignment(refresh, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
         }
 
         Button collapseAll = createButton("LeftPanel.collapseAll", new Button.ClickListener() {
@@ -131,7 +131,7 @@ public class LeftPanel extends FoldersPane {
             }
         });
         header.addComponent(collapseAll);
-        header.setComponentAlignment(collapseAll, Alignment.MIDDLE_RIGHT);
+        header.setComponentAlignment(collapseAll, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
 
         Button expandAll = createButton("LeftPanel.expandAll", new Button.ClickListener() {
             @Override
@@ -140,7 +140,7 @@ public class LeftPanel extends FoldersPane {
             }
         });
         header.addComponent(expandAll);
-        header.setComponentAlignment(expandAll, Alignment.MIDDLE_RIGHT);
+        header.setComponentAlignment(expandAll, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
 
         menuLayout.addComponent(header);
     }
@@ -187,11 +187,6 @@ public class LeftPanel extends FoldersPane {
                 container.setChildrenAllowed(item, false);
             }
         }
-    }
-
-    @Override
-    protected Component createSearchFoldersPane() {
-        return null;
     }
 
     private class MenuItemClickListener implements ItemClickEvent.ItemClickListener {
