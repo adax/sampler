@@ -148,10 +148,10 @@ public class SamplesMenuConfig {
                 log.warn(String.format("Invalid sample-config: 'id' attribute not defined for tag" + element.getName()));
             }
 
-            if (parentItem != null) {
-                addItem(parentItem.getChildren(), menuItem);
+            if (parentItem != null && menuItem != null) {
+                parentItem.addChild(menuItem);
             } else {
-                addItem(rootItems, menuItem);
+                rootItems.add(menuItem);
             }
         }
     }
@@ -198,12 +198,6 @@ public class SamplesMenuConfig {
         }
 
         return menuItem;
-    }
-
-    private void addItem(List<MenuItem> items, MenuItem menuItem) {
-        if (menuItem != null) {
-            items.add(menuItem);
-        }
     }
 
     @Nullable

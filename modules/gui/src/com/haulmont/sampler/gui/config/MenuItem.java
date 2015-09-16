@@ -83,7 +83,7 @@ public class MenuItem {
     }
 
     public List<MenuItem> getChildren() {
-        return children;
+        return Collections.unmodifiableList(children);
     }
 
     public void addChild(MenuItem item) {
