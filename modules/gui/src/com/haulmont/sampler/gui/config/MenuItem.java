@@ -4,12 +4,14 @@ import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author gorelov
  * @version $Id$
  */
 public class MenuItem {
+
     private MenuItem parent;
     private List<MenuItem> children = new ArrayList<>();
 
@@ -18,6 +20,7 @@ public class MenuItem {
     private String controller;
     private String descriptionsPack;
     private List<String> otherFiles;
+    private Map<String, String> screenParams;
 
     private boolean isMenu = false;
 
@@ -90,5 +93,13 @@ public class MenuItem {
     @Override
     public String toString() {
         return id;
+    }
+
+    public Map<String, String> getScreenParams() {
+        return Collections.unmodifiableMap(screenParams);
+    }
+
+    public void setScreenParams(Map<String, String> screenParams) {
+        this.screenParams = screenParams;
     }
 }

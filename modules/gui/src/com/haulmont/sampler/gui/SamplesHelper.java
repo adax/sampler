@@ -53,6 +53,7 @@ public class SamplesHelper {
         params.put("caption", samplesMenuConfig.getMenuItemCaption(item.getId()));
         params.put("controller", item.getController());
         params.put("otherFiles", item.getOtherFiles());
+        params.put("screenParams", item.getScreenParams());
         params.put("descriptionsPack", item.getDescriptionsPack());
         params.put("screenSrc", info.getTemplate());
         params.put("docUrlSuffix", item.getUrl());

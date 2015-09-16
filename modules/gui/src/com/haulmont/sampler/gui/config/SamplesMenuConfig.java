@@ -183,6 +183,20 @@ public class SamplesMenuConfig {
             }
             menuItem.setOtherFiles(otherFiles);
         }
+
+        Element screenParamsElement = element.element("screenParams");
+        if (screenParamsElement != null && !screenParamsElement.elements().isEmpty()) {
+            Map<String, String> params = new HashMap<>();
+            for (Element param : ((List<Element>) screenParamsElement.elements())) {
+                String paramName = param.attributeValue("name");
+                if (StringUtils.isNotEmpty(paramName)) {
+                    String value = param.attributeValue("value");
+                    params.put(paramName, value);
+                }
+            }
+            menuItem.setScreenParams(params);
+        }
+
         return menuItem;
     }
 

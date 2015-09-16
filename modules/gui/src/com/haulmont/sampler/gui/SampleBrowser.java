@@ -11,10 +11,7 @@ import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 
 import javax.inject.Inject;
-import java.util.Collection;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 
 import static com.haulmont.cuba.gui.components.SourceCodeEditor.Mode;
 
@@ -49,7 +46,8 @@ public class SampleBrowser extends AbstractWindow {
         super.init(params);
 
         String id = (String) params.get("windowId");
-        IFrame frame = openFrame(null, id);
+        Map<String, Object> screenParams = (Map<String, Object>) params.get("screenParams");
+        IFrame frame = openFrame(null, id, screenParams);
         frame.setId("sampleFrame");
         add(frame, 0);
 

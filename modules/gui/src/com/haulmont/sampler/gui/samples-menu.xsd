@@ -23,6 +23,7 @@
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:element name="otherFiles" type="otherFilesType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="screenParams" type="screenParamsType" minOccurs="0" maxOccurs="1"/>
             </xs:choice>
         </xs:sequence>
         <xs:attribute name="id" type="xs:string" use="required"/>
@@ -49,6 +50,19 @@
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:element name="file" type="fileType"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="paramType">
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="value" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="screenParamsType">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="param" type="paramType"/>
             </xs:choice>
         </xs:sequence>
     </xs:complexType>
