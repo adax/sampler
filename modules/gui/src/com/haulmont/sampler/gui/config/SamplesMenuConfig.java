@@ -186,7 +186,7 @@ public class SamplesMenuConfig {
 
         Element screenParamsElement = element.element("screenParams");
         if (screenParamsElement != null && !screenParamsElement.elements().isEmpty()) {
-            Map<String, String> params = new HashMap<>();
+            Map<String, Object> params = new HashMap<>();
             for (Element param : ((List<Element>) screenParamsElement.elements())) {
                 String paramName = param.attributeValue("name");
                 if (StringUtils.isNotEmpty(paramName)) {

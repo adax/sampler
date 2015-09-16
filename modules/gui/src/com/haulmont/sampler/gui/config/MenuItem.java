@@ -20,7 +20,7 @@ public class MenuItem {
     private String controller;
     private String descriptionsPack;
     private List<String> otherFiles;
-    private Map<String, String> screenParams;
+    private Map<String, Object> screenParams;
 
     private boolean isMenu = false;
 
@@ -95,11 +95,13 @@ public class MenuItem {
         return id;
     }
 
-    public Map<String, String> getScreenParams() {
-        return Collections.unmodifiableMap(screenParams);
+    public Map<String, Object> getScreenParams() {
+        return screenParams != null
+                ? Collections.unmodifiableMap(screenParams)
+                : Collections.<String, Object>emptyMap();
     }
 
-    public void setScreenParams(Map<String, String> screenParams) {
+    public void setScreenParams(Map<String, Object> screenParams) {
         this.screenParams = screenParams;
     }
 }
