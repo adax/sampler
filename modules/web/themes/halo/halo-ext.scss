@@ -26,6 +26,10 @@
     color: #5a5a5a;
   }
 
+  .v-button-dark:focus:after {
+    border-color: #191919;
+  }
+
   .v-button-small-link {
     font-size: 12px;
   }
