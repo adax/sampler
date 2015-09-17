@@ -286,7 +286,7 @@ values ('f4cbc6fc-0d47-ddfc-12ec-db47595a3b9b', current_timestamp, 'admin', 1, c
 
 insert into SEC_FILTER
 (COMPONENT, NAME, CODE, XML, USER_ID, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
-values ('sample-browser.multiple-filter.filter', 'Multiple conditions', 'Multiple Filter', '<?xml version="1.0" encoding="UTF-8"?>
+values ('sample-browser.multiple-filter.filter', 'Multiple Conditions', 'Multiple Conditions', '<?xml version="1.0" encoding="UTF-8"?>
 
 <filter>
   <and>
@@ -301,11 +301,11 @@ values ('sample-browser.multiple-filter.filter', 'Multiple conditions', 'Multipl
     </c>
   </and>
 </filter>
-', '60885987-1b61-4247-94c7-dff348347f93', 1, current_timestamp, 'admin', null, null, 'd3c7de25-2a98-625a-19ad-0a51abfd1d8a', current_timestamp, 'admin');
+', null, 1, current_timestamp, 'admin', null, null, 'd3c7de25-2a98-625a-19ad-0a51abfd1d8a', current_timestamp, 'admin');
 
 insert into SEC_FILTER
 (COMPONENT, NAME, CODE, XML, USER_ID, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
-values ('sample-browser.group-filter.filter', 'Group', 'Group Filter', '<?xml version="1.0" encoding="UTF-8"?>
+values ('sample-browser.group-filter.filter', 'Group', 'Group Conditions', '<?xml version="1.0" encoding="UTF-8"?>
 
 <filter>
   <and>
@@ -324,11 +324,11 @@ values ('sample-browser.group-filter.filter', 'Group', 'Group Filter', '<?xml ve
     </and>
   </and>
 </filter>
-', '60885987-1b61-4247-94c7-dff348347f93', 1, current_timestamp, 'admin', null, null, 'e21cb18b-5af0-0968-1dcc-55649ffbb105', current_timestamp, 'admin');
+', null, 1, current_timestamp, 'admin', null, null, 'e21cb18b-5af0-0968-1dcc-55649ffbb105', current_timestamp, 'admin');
 
 insert into SEC_FILTER
 (COMPONENT, NAME, CODE, XML, USER_ID, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
-values ('sample-browser.related-filter.filter', 'Related entity', 'Related Filter', '<?xml version="1.0" encoding="UTF-8"?>
+values ('sample-browser.related-filter.filter', 'Related Entity', 'Related Entity', '<?xml version="1.0" encoding="UTF-8"?>
 
 <filter>
   <and>
@@ -337,11 +337,11 @@ values ('sample-browser.related-filter.filter', 'Related entity', 'Related Filte
     </c>
   </and>
 </filter>
-', '60885987-1b61-4247-94c7-dff348347f93', 1, current_timestamp, 'admin', null, null, '91072fda-7a6d-fd14-a099-6ce6b647575b', current_timestamp, 'admin');
+', null, 1, current_timestamp, 'admin', null, null, '91072fda-7a6d-fd14-a099-6ce6b647575b', current_timestamp, 'admin');
 
 insert into SEC_FILTER
 (COMPONENT, NAME, CODE, XML, USER_ID, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
-values ('sample-browser.custom-filter.filter', 'Custom condition', 'Custom Filter', '<?xml version="1.0" encoding="UTF-8"?>
+values ('sample-browser.custom-filter.filter', 'Custom Condition', 'Custom Condition', '<?xml version="1.0" encoding="UTF-8"?>
 
 <filter>
   <and>

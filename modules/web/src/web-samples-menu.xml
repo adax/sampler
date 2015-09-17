@@ -105,25 +105,25 @@
             <item id="multiple-filter" docUrlSuffix="gui_Filter"
                   descriptionsPack="com/haulmont/sampler/gui/components/filter/multiple">
                 <screenParams>
-                    <param name="filter" value="Multiple Filter"/>
+                    <param name="filter" value="Multiple Conditions"/>
                 </screenParams>
             </item>
             <item id="group-filter" docUrlSuffix="gui_Filter"
                   descriptionsPack="com/haulmont/sampler/gui/components/filter/group">
                 <screenParams>
-                    <param name="filter" value="Group Filter"/>
+                    <param name="filter" value="Group Conditions"/>
                 </screenParams>
             </item>
             <item id="related-filter" docUrlSuffix="gui_Filter"
                   descriptionsPack="com/haulmont/sampler/gui/components/filter/related">
                 <screenParams>
-                    <param name="filter" value="Related Filter"/>
+                    <param name="filter" value="Related Entity"/>
                 </screenParams>
             </item>
             <item id="custom-filter" docUrlSuffix="gui_Filter"
                   descriptionsPack="com/haulmont/sampler/gui/components/filter/custom">
                 <screenParams>
-                    <param name="filter" value="Custom Filter"/>
+                    <param name="filter" value="Custom Condition"/>
                 </screenParams>
             </item>
         </menu>
