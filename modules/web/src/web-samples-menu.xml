@@ -101,6 +101,33 @@
             </item>
         </menu>
 
+        <menu id="filter">
+            <item id="multiple-filter" docUrlSuffix="gui_Filter"
+                  descriptionsPack="com/haulmont/sampler/gui/components/filter/multiple">
+                <screenParams>
+                    <param name="filter" value="Multiple Filter"/>
+                </screenParams>
+            </item>
+            <item id="group-filter" docUrlSuffix="gui_Filter"
+                  descriptionsPack="com/haulmont/sampler/gui/components/filter/group">
+                <screenParams>
+                    <param name="filter" value="Group Filter"/>
+                </screenParams>
+            </item>
+            <item id="related-filter" docUrlSuffix="gui_Filter"
+                  descriptionsPack="com/haulmont/sampler/gui/components/filter/related">
+                <screenParams>
+                    <param name="filter" value="Related Filter"/>
+                </screenParams>
+            </item>
+            <item id="custom-filter" docUrlSuffix="gui_Filter"
+                  descriptionsPack="com/haulmont/sampler/gui/components/filter/custom">
+                <screenParams>
+                    <param name="filter" value="Custom Filter"/>
+                </screenParams>
+            </item>
+        </menu>
+
         <menu id="label">
             <item id="simple-label" docUrlSuffix="gui_Label"
                   descriptionsPack="com/haulmont/sampler/gui/components/label/simple"/>

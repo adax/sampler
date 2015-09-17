@@ -112,6 +112,14 @@
             template="com/haulmont/sampler/gui/components/fieldgroup/generate/generate-fieldgroup.xml"/>
     <screen id="customize-fieldgroup"
             template="com/haulmont/sampler/gui/components/fieldgroup/customize/customize-fieldgroup.xml"/>
+    <screen id="multiple-filter"
+            template="com/haulmont/sampler/gui/components/filter/multiple/multiple-filter.xml"/>
+    <screen id="group-filter"
+            template="com/haulmont/sampler/gui/components/filter/group/group-filter.xml"/>
+    <screen id="custom-filter"
+            template="com/haulmont/sampler/gui/components/filter/custom/custom-filter.xml"/>
+    <screen id="related-filter"
+            template="com/haulmont/sampler/gui/components/filter/related/related-filter.xml"/>
     <screen id="simple-lookuppickerfield"
             template="/com/haulmont/sampler/gui/components/lookuppickerfield/simple-lookuppickerfield.xml"/>
     <screen id="masked-field"

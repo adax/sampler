@@ -1,0 +1,27 @@
+<p><code>custom</code> - элемент, определяющий произвольное условие. Содержимым элемента должно быть выражение на JPQL (возможно использование <a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/jpql_macro.html" target="_blank">JPQL Macros</a>), которое будет добавлено в условие <code>where</code> запроса источника данных. Вместо алиаса отбираемой сущности в выражении нужно использовать метку (placeholder) <code>{E}</code>. Параметр условия может быть только один, и если он есть, обозначается символом <code>?</code>.</p>
+<p>Атрибуты элемента <code>custom</code>:</p>
+<div>
+    <ul>
+        <li>
+            <p><code>name</code> - обязательный атрибут - имя условия.</p>
+        </li>
+        <li>
+            <p><code>caption</code> - обязательный атрибут - локализованное название условия. Как правило, представляет из себя строку с префиксом <code>msg://</code> по правилам <code>MessageTools.<a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/messageTools.html#messageTools.loadString" target="_blank">loadString</a>()</code>.</p>
+        </li>
+        <li>
+            <p><code>paramClass</code> - Java-класс параметра условия. Если параметр отсутствует, то данный атрибут не обязателен.</p>
+        </li>
+        <li>
+            <p><code>inExpr</code> - должен быть установлен в <code>true</code>, если выражение JPQL содержит условие <code>in (?)</code>. При этом пользователь будет иметь возможность ввести несколько значений параметра данного условия.</p>
+        </li>
+        <li>
+            <p><code>join</code> - необязательный атрибут для задания строки, которая будет добавлена в секцию <code>from</code> запроса источника данных. Это может потребоваться для создания условия по атрибуту связанной коллекции. Значение данного атрибута должно включать в себя предложения <code>join</code> или <code>left join</code>.</p>
+        </li>
+        <li>
+            <p><code>paramWhere</code> - задает выражение на JPQL для отбора списка значений параметра условия, если параметр является связанной сущностью. См. описание одноименного атрибута элемента <code>property</code>.</p>
+        </li>
+        <li>
+            <p><code>paramView</code> - задает <a href="http://docs.cuba-platform.com/cuba/latest/manual/ru/webhelp/views.html" target="_blank">представление</a>, с которым будет загружаться список значений параметра условия, если параметр является связанной сущностью. Например, <code>_local</code>. Если не указано, используется <code>_minimal</code>.</p>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,13 @@
+<p>By default, the component is in quick filter mode. This means that a user can add a set of conditions for a one-off data search. After the screen is closed, the conditions will disappear.</p>
+<p>To create a quick filter, click Add search condition link. The condition selection screen will be displayed:</p>
+<ul>
+    <li>
+        <p>Attributes - attributes of this entity and related entities. Only persistent attributes are displayed. They should also either be explicitly set in the <code>property</code> element of the filter XML descriptor, or comply with the rules specified in the<code>properties</code> element (see below).</p>
+    </li>
+    <li>
+        <p>Custom conditions - conditions specified by developer in the <code>custom</code> elements of the filter XML descriptor.</p>
+    </li>
+    <li>
+        <p>Create new... - allows creating a new arbitrary JPQL condition. This option is only available to users having the specific <code>cuba.gui.filter.customConditions</code> <a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/permissions.html" target="_blank">permission</a>.</p>
+    </li>
+</ul>

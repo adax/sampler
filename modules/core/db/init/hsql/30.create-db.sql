@@ -283,3 +283,74 @@ insert into SEC_PERMISSION
 values ('f4cbc6fc-0d47-ddfc-12ec-db47595a3b9b', current_timestamp, 'admin', 1, current_timestamp, null, null, null, 50, 'sampler$OrderItem.edit:fieldGroup', 1, 'abc5c887-12fd-7211-64ee-b07e871cd985');
 
 ------------------------------------------------------------------------------------------------------------
+
+insert into SEC_FILTER
+(COMPONENT, NAME, CODE, XML, USER_ID, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('sample-browser.multiple-filter.filter', 'Multiple conditions', 'Multiple Filter', '<?xml version="1.0" encoding="UTF-8"?>
+
+<filter>
+  <and>
+    <c name="age" class="java.lang.Integer" operatorType="GREATER_OR_EQUAL" width="1" type="PROPERTY"><![CDATA[e.age >= :component$sampleFrame.filter.age80232]]>
+      <param name="component$sampleFrame.filter.age80232" javaClass="java.lang.Integer">30</param>
+    </c>
+    <c name="grade" class="com.haulmont.sampler.entity.CustomerGrade" inExpr="true" operatorType="IN" width="1" type="PROPERTY"><![CDATA[e.grade in (:component$sampleFrame.filter.grade17245)]]>
+      <param name="component$sampleFrame.filter.grade17245" javaClass="com.haulmont.sampler.entity.CustomerGrade">PREMIUM,HIGH</param>
+    </c>
+    <c name="active" class="java.lang.Boolean" operatorType="EQUAL" width="1" type="PROPERTY"><![CDATA[e.active = :component$sampleFrame.filter.active20980]]>
+      <param name="component$sampleFrame.filter.active20980" javaClass="java.lang.Boolean">true</param>
+    </c>
+  </and>
+</filter>
+', '60885987-1b61-4247-94c7-dff348347f93', 1, current_timestamp, 'admin', null, null, 'd3c7de25-2a98-625a-19ad-0a51abfd1d8a', current_timestamp, 'admin');
+
+insert into SEC_FILTER
+(COMPONENT, NAME, CODE, XML, USER_ID, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('sample-browser.group-filter.filter', 'Group', 'Group Filter', '<?xml version="1.0" encoding="UTF-8"?>
+
+<filter>
+  <and>
+    <and name="group" unary="true" width="1">
+      <or name="group" unary="true" width="1">
+        <c name="active" class="java.lang.Boolean" operatorType="EQUAL" width="1" type="PROPERTY"><![CDATA[e.active = :component$sampleFrame.filter.active95893]]>
+          <param name="component$sampleFrame.filter.active95893" javaClass="java.lang.Boolean">false</param>
+        </c>
+        <c name="grade" class="com.haulmont.sampler.entity.CustomerGrade" operatorType="EQUAL" width="1" type="PROPERTY"><![CDATA[e.grade = :component$sampleFrame.filter.grade65770]]>
+          <param name="component$sampleFrame.filter.grade65770" javaClass="com.haulmont.sampler.entity.CustomerGrade">PREMIUM</param>
+        </c>
+      </or>
+      <c name="age" class="java.lang.Integer" operatorType="GREATER_OR_EQUAL" width="1" type="PROPERTY"><![CDATA[e.age = :component$sampleFrame.filter.age37008]]>
+        <param name="component$sampleFrame.filter.age37008" javaClass="java.lang.Integer">30</param>
+      </c>
+    </and>
+  </and>
+</filter>
+', '60885987-1b61-4247-94c7-dff348347f93', 1, current_timestamp, 'admin', null, null, 'e21cb18b-5af0-0968-1dcc-55649ffbb105', current_timestamp, 'admin');
+
+insert into SEC_FILTER
+(COMPONENT, NAME, CODE, XML, USER_ID, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('sample-browser.related-filter.filter', 'Related entity', 'Related Filter', '<?xml version="1.0" encoding="UTF-8"?>
+
+<filter>
+  <and>
+    <c name="customer.grade" class="com.haulmont.sampler.entity.CustomerGrade" operatorType="EQUAL" width="1" type="PROPERTY"><![CDATA[e.customer.grade = :component$sampleFrame.filter.customer_grade88264]]>
+      <param name="component$sampleFrame.filter.customer_grade88264" javaClass="com.haulmont.sampler.entity.CustomerGrade">STANDARD</param>
+    </c>
+  </and>
+</filter>
+', '60885987-1b61-4247-94c7-dff348347f93', 1, current_timestamp, 'admin', null, null, '91072fda-7a6d-fd14-a099-6ce6b647575b', current_timestamp, 'admin');
+
+insert into SEC_FILTER
+(COMPONENT, NAME, CODE, XML, USER_ID, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('sample-browser.custom-filter.filter', 'Custom condition', 'Custom Filter', '<?xml version="1.0" encoding="UTF-8"?>
+
+<filter>
+  <and>
+    <c name="OrderItems" class="com.haulmont.sampler.entity.Product" caption="Order Items contains" width="1" type="CUSTOM" entityAlias="e"><![CDATA[i.product.id = :component$sampleFrame.filter.OrderItems81751]]>
+      <param name="component$sampleFrame.filter.OrderItems81751" javaClass="com.haulmont.sampler.entity.Product">dab66821-e3b0-b6a8-eae1-e0b3f0e71d4f</param>
+      <join><![CDATA[join {E}.items i]]></join>
+    </c>
+  </and>
+</filter>
+', '60885987-1b61-4247-94c7-dff348347f93', 1, current_timestamp, 'admin', null, null, '0d5dbf8e-97f3-6abc-6c3a-a856182f6073', current_timestamp, 'admin');
+
+------------------------------------------------------------------------------------------------------------
