@@ -351,6 +351,6 @@ values ('sample-browser.custom-filter.filter', 'Custom Condition', 'Custom Condi
     </c>
   </and>
 </filter>
-', '60885987-1b61-4247-94c7-dff348347f93', 1, current_timestamp, 'admin', null, null, '0d5dbf8e-97f3-6abc-6c3a-a856182f6073', current_timestamp, 'admin');
+', null, 1, current_timestamp, 'admin', null, null, '0d5dbf8e-97f3-6abc-6c3a-a856182f6073', current_timestamp, 'admin');
 
 ------------------------------------------------------------------------------------------------------------
