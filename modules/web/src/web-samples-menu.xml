@@ -233,7 +233,7 @@
             </item>
             <item id="metaclass-pickerfield" docUrlSuffix="gui_PickerField"
                   descriptionsPack="com/haulmont/sampler/gui/components/pickerfield/metaclass"
-                    controller="com/haulmont/sampler/gui/components/pickerfield/metaclass/MetaClassPickerFieldFrame.java">
+                  controller="com/haulmont/sampler/gui/components/pickerfield/metaclass/MetaClassPickerFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
@@ -515,7 +515,7 @@
             <item id="flowbox-sample" docUrlSuffix="gui_BoxLayout"
                   descriptionsPack="com/haulmont/sampler/gui/containers/boxlayout/flowbox"/>
         </menu>
-        
+
         <menu id="buttonsPanel">
             <item id="table-buttonspanel" docUrlSuffix="gui_ButtonsPanel"
                   descriptionsPack="com/haulmont/sampler/gui/containers/buttonspanel/table"/>
@@ -563,7 +563,7 @@
                   controller="com/haulmont/sampler/gui/containers/tabsheet/lazy/LazyTabSheetFrame.java"
                   descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/lazy"/>
         </menu>
-        
+
     </menu>
 
     <menu id="dialogsAndNotifications">
@@ -578,8 +578,46 @@
         </menu>
 
         <item id="notifications-sample" docUrlSuffix="notifications"
-                controller="com/haulmont/sampler/gui/dialogsandnotifications/notification/NotificationsSampleFrame.java"
-                descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/notification"/>
+              controller="com/haulmont/sampler/gui/dialogsandnotifications/notification/NotificationsSampleFrame.java"
+              descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/notification"/>
+
+    </menu>
+
+    <menu id="charts">
+
+        <menu id="serialChart">
+            <item id="line-chart" docUrlSuffix="chart"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/line"/>
+            <item id="stackedarea-chart" docUrlSuffix="chart"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/stackedarea"/>
+            <item id="columnline-chart" docUrlSuffix="chart"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/columnline"/>
+            <item id="column3d-chart" docUrlSuffix="chart"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/column3d"/>
+        </menu>
+
+        <item id="xy-chart" docUrlSuffix="chart"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/xy"/>
+
+        <item id="pie-chart" docUrlSuffix="chart"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/pie"/>
+
+        <menu id="radarChart">
+            <item id="radar-chart" docUrlSuffix="chart"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/radar/radar"/>
+            <item id="polar-chart" docUrlSuffix="chart"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/radar/polar"/>
+        </menu>
+
+        <item id="gauge-chart" docUrlSuffix="chart"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/gauge"/>
+
+        <menu id="funnelChart">
+            <item id="funnel-chart" docUrlSuffix="chart"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/funnel"/>
+            <item id="funnel3d-chart" docUrlSuffix="chart"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/funnel3d"/>
+        </menu>
 
     </menu>
 

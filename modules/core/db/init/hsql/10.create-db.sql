@@ -92,3 +92,148 @@ create table SAMPLER_INVOICE_ITEM (
     primary key (ID)
 )^
 -- end SAMPLER_INVOICE_ITEM
+-- begin SAMPLER_DATE_VALUE
+create table SAMPLER_DATE_VALUE (
+    ID varchar(36) not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    VERSION integer,
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    DATE_ date not null,
+    VALUE_ integer not null,
+    --
+    primary key (ID)
+)^
+-- end SAMPLER_DATE_VALUE
+-- begin SAMPLER_TRANSPORT_COUNT
+create table SAMPLER_TRANSPORT_COUNT (
+    ID varchar(36) not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    VERSION integer,
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    YEAR_ integer not null,
+    CARS integer not null,
+    MOTORCYCLES integer not null,
+    BICYCLES integer not null,
+    --
+    primary key (ID)
+)^
+-- end SAMPLER_TRANSPORT_COUNT
+-- begin SAMPLER_INCOME_EXPENSES
+create table SAMPLER_INCOME_EXPENSES (
+    ID varchar(36) not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    VERSION integer,
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    YEAR_ integer not null,
+    INCOME double precision not null,
+    EXPENSES double precision not null,
+    ALPHA double precision,
+    DASH_LENGTH_LINE integer,
+    DASH_LENGTH_COLUMN integer,
+    --
+    primary key (ID)
+)^
+-- end SAMPLER_INCOME_EXPENSES
+-- begin SAMPLER_COUNTRY_GROWTH
+create table SAMPLER_COUNTRY_GROWTH (
+    ID varchar(36) not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    VERSION integer,
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    COUNTRY varchar(255) not null,
+    YEAR2014 double precision not null,
+    YEAR2015 double precision not null,
+    --
+    primary key (ID)
+)^
+-- end SAMPLER_COUNTRY_GROWTH
+-- begin SAMPLER_POINT_PAIR
+create table SAMPLER_POINT_PAIR (
+    ID varchar(36) not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    VERSION integer,
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    AX double precision not null,
+    AY double precision not null,
+    BX double precision not null,
+    BY_ double precision not null,
+    --
+    primary key (ID)
+)^
+-- end SAMPLER_POINT_PAIR
+-- begin SAMPLER_COUNTRY_LITRES
+create table SAMPLER_COUNTRY_LITRES (
+    ID varchar(36) not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    VERSION integer,
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    COUNTRY varchar(255) not null,
+    LITRES double precision not null,
+    --
+    primary key (ID)
+)^
+-- end SAMPLER_COUNTRY_LITRES
+-- begin SAMPLER_TITLE_VALUE
+create table SAMPLER_TITLE_VALUE (
+    ID varchar(36) not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    VERSION integer,
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    TITLE varchar(255) not null,
+    VALUE_ integer not null,
+    --
+    primary key (ID)
+)^
+-- end SAMPLER_TITLE_VALUE
+-- begin SAMPLER_DIRECTION_VALUE
+create table SAMPLER_DIRECTION_VALUE (
+    ID varchar(36) not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    VERSION integer,
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    DIRECTION varchar(50) not null,
+    VALUE_ double precision not null,
+    --
+    primary key (ID)
+)^
+-- end SAMPLER_DIRECTION_VALUE

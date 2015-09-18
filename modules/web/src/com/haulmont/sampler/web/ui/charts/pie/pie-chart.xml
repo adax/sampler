@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.haulmont.cuba.gui.components.AbstractFrame"
+        xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
+    <dsContext>
+        <collectionDatasource id="countryLitresDs"
+                              class="com.haulmont.sampler.entity.CountryLitres"
+                              view="_local">
+            <query>
+                <![CDATA[select e from sampler$CountryLitres e order by e.litres desc]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout>
+        <chart:pieChart id="pieChart"
+                        angle="30"
+                        balloonText="[[title]] - [[percents]]%"
+                        datasource="countryLitresDs"
+                        depth3D="15"
+                        height="500px"
+                        titleField="country"
+                        valueField="litres"
+                        width="100%">
+            <chart:legend autoMargins="false"
+                          marginRight="80"
+                          markerType="CIRCLE"
+                          position="RIGHT"/>
+            <chart:exportConfig menuTop="0px">
+                <chart:menuItems>
+                    <chart:menu format="PNG"
+                                icon="VAADIN/resources/amcharts/images/export.png"/>
+                </chart:menuItems>
+            </chart:exportConfig>
+        </chart:pieChart>
+    </layout>
+</window>

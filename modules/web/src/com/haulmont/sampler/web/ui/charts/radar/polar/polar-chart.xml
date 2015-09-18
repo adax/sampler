@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.haulmont.cuba.gui.components.AbstractFrame"
+        xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
+    <dsContext>
+        <collectionDatasource id="countryLitresDs"
+                              class="com.haulmont.sampler.entity.DirectionValue"
+                              view="_local">
+            <query>
+                <![CDATA[select e from sampler$DirectionValue e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout>
+        <chart:radarChart id="radarChart"
+                          categoryField="direction"
+                          datasource="countryLitresDs"
+                          height="500px"
+                          startDuration="1"
+                          width="100%">
+            <chart:valueAxes>
+                <chart:axis autoGridCount="false"
+                            axisAlpha="0.2"
+                            fillAlpha="0.05"
+                            fillColor="WHITE"
+                            gridAlpha="0.08"
+                            gridType="CIRCLES"
+                            minimum="0"
+                            position="LEFT">
+                    <chart:guides>
+                        <chart:guide angle="255"
+                                     fillAlpha="0.3"
+                                     fillColor="#0066CC"
+                                     lineAlpha="0"
+                                     tickLength="0"
+                                     toAngle="315"
+                                     toValue="14"
+                                     value="0"/>
+                        <chart:guide angle="45"
+                                     fillAlpha="0.3"
+                                     fillColor="#CC3333"
+                                     lineAlpha="0"
+                                     tickLength="0"
+                                     toAngle="135"
+                                     toValue="14"
+                                     value="0"/>
+                    </chart:guides>
+                </chart:axis>
+            </chart:valueAxes>
+            <chart:graphs>
+                <chart:graph balloonText="[[category]]: [[value]] m/s"
+                             bullet="ROUND"
+                             fillAlphas="0.3"
+                             valueField="value"/>
+            </chart:graphs>
+        </chart:radarChart>
+    </layout>
+</window>

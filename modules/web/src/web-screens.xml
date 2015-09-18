@@ -3,4 +3,27 @@
     <include file="/screens.xml"/>
     <screen id="mainWindow"
             template="/com/haulmont/sampler/web/app/mainwindow/sampler-main-window.xml"/>
+    <!-- Charts -->
+    <screen id="line-chart"
+            template="com/haulmont/sampler/web/ui/charts/serial/line/line-chart.xml"/>
+    <screen id="stackedarea-chart"
+            template="com/haulmont/sampler/web/ui/charts/serial/stackedarea/stackedarea-chart.xml"/>
+    <screen id="columnline-chart"
+            template="com/haulmont/sampler/web/ui/charts/serial/columnline/columnline-chart.xml"/>
+    <screen id="column3d-chart"
+            template="com/haulmont/sampler/web/ui/charts/serial/column3d/column3d-chart.xml"/>
+    <screen id="xy-chart"
+            template="com/haulmont/sampler/web/ui/charts/xy/xy-chart.xml"/>
+    <screen id="pie-chart"
+            template="com/haulmont/sampler/web/ui/charts/pie/pie-chart.xml"/>
+    <screen id="radar-chart"
+            template="com/haulmont/sampler/web/ui/charts/radar/radar/radar-chart.xml"/>
+    <screen id="gauge-chart"
+            template="com/haulmont/sampler/web/ui/charts/gauge/gauge-chart.xml"/>
+    <screen id="funnel-chart"
+            template="com/haulmont/sampler/web/ui/charts/funnel/funnel/funnel-chart.xml"/>
+    <screen id="funnel3d-chart"
+            template="com/haulmont/sampler/web/ui/charts/funnel/funnel3d/funnel3d-chart.xml"/>
+    <screen id="polar-chart"
+            template="com/haulmont/sampler/web/ui/charts/radar/polar/polar-chart.xml"/>
 </screen-config>

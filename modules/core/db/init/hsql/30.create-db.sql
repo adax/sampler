@@ -354,3 +354,1043 @@ values ('sample-browser.custom-filter.filter', 'Custom Condition', 'Custom Condi
 ', null, 1, current_timestamp, 'admin', null, null, '0d5dbf8e-97f3-6abc-6c3a-a856182f6073', current_timestamp, 'admin');
 
 ------------------------------------------------------------------------------------------------------------
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-07-27', 13, 1, current_timestamp, null, null, null, 'a38bc5af-e5ae-487d-9f68-eda244579c4c', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-07-28', 11, 1, current_timestamp, null, null, null, '38fc001c-7a1d-48c6-9880-53045358a57b', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-07-29', 15, 1, current_timestamp, null, null, null, '2b33aa8c-98af-42cc-96c5-ecc0bfd11adc', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-07-30', 16, 1, current_timestamp, null, null, null, 'f92f6377-5a15-4cc2-b1c0-a6a4ae9d69ae', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-07-31', 18, 1, current_timestamp, null, null, null, '41e9b3b7-16ab-47a0-bba5-5f5d7009b184', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-01', 13, 1, current_timestamp, null, null, null, '5b46b2d2-bdfd-4271-827f-f64bf7740c76', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-02', 22, 1, current_timestamp, null, null, null, 'bb91dfe0-2f8a-40c6-86ab-9a04432eeae5', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-03', 23, 1, current_timestamp, null, null, null, 'af2cce91-ffce-49bf-a687-8384ed672a07', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-04', 20, 1, current_timestamp, null, null, null, '18b41cfc-4f37-4c9e-8494-d1cc9c830bba', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-05', 17, 1, current_timestamp, null, null, null, 'bbce4ad9-80a2-4c60-96c8-771bb528ce6f', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-06', 16, 1, current_timestamp, null, null, null, '55f77b83-f613-4e33-af39-1a896de8ebd7', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-07', 18, 1, current_timestamp, null, null, null, 'e5972386-69db-4948-aa07-4c54f8999837', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-08', 21, 1, current_timestamp, null, null, null, 'fb99d6f1-887f-4b4b-9a91-cbf12af7795f', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-09', 26, 1, current_timestamp, null, null, null, 'a6e1f239-70af-4a2c-ab93-52deb8cd53d4', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-10', 24, 1, current_timestamp, null, null, null, 'c11aa48f-a099-44df-9269-c3de1e39854a', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-11', 29, 1, current_timestamp, null, null, null, 'af87a1a4-bbc4-41d4-85bb-f03f191c99b8', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-12', 32, 1, current_timestamp, null, null, null, '93aadf8a-d0c2-4f51-b3db-2eabcd798d4e', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-13', 18, 1, current_timestamp, null, null, null, 'bc4c657e-671c-427a-a0fa-4c19bb972115', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-14', 24, 1, current_timestamp, null, null, null, '2e573e8b-0f22-448f-9287-089512ed652f', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-15', 22, 1, current_timestamp, null, null, null, '2c6c0232-3b6d-4352-a0e5-a2896b6e75fb', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-16', 18, 1, current_timestamp, null, null, null, '7e1b3a43-5912-449f-b53d-566ef46efadb', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-17', 19, 1, current_timestamp, null, null, null, '6dec20ba-0314-49fb-aa98-e477741e1e80', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-18', 14, 1, current_timestamp, null, null, null, '837fae9a-93f1-4344-9530-f723c6cb6d32', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-19', 15, 1, current_timestamp, null, null, null, '7f3e70ff-c4e3-49a9-b5e1-5387e95cdb59', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-20', 12, 1, current_timestamp, null, null, null, '856c9237-b7b9-419b-976e-7ac8a42f35c1', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-21', 8, 1, current_timestamp, null, null, null, '4e8af7af-84ef-4441-8c4a-29bd1dffbb4b', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-22', 9, 1, current_timestamp, null, null, null, '50bbd21e-b9b0-488b-a659-9cefc8369b62', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-23', 8, 1, current_timestamp, null, null, null, 'bd2646a7-f6d6-4758-9fb6-8e7fa29d9061', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-24', 7, 1, current_timestamp, null, null, null, '819fc308-4c6e-4ce0-a933-5edbbd647a65', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-25', 5, 1, current_timestamp, null, null, null, 'beb7ff22-aba4-495d-8f3f-1cbcd52e1586', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-26', 11, 1, current_timestamp, null, null, null, '2c0786bc-3078-457d-a114-9242ee020ae9', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-27', 13, 1, current_timestamp, null, null, null, '282b9092-ae76-41b4-b09a-5e752240a5a3', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-28', 18, 1, current_timestamp, null, null, null, '882490be-e3d8-48cc-be65-47219542a047', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-29', 20, 1, current_timestamp, null, null, null, 'c33a82d4-33e6-4c9c-b077-4bd7f74bc90d', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-30', 29, 1, current_timestamp, null, null, null, 'f3eae5a9-d0c3-43a3-b93d-5b36c5d30b22', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-08-31', 33, 1, current_timestamp, null, null, null, 'f6f532a6-5901-43d5-8e03-8939f5ec6338', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-01', 42, 1, current_timestamp, null, null, null, 'c71a17d4-fc68-4f54-9bbd-598fd8770c36', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-02', 35, 1, current_timestamp, null, null, null, '7f71f0fa-1c69-423f-908f-a5f459fca06d', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-03', 31, 1, current_timestamp, null, null, null, 'fd4a7b9a-7b25-4d8e-8c43-fdb75f3ad7c8', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-04', 47, 1, current_timestamp, null, null, null, '54900ad4-c923-4876-8ca1-3df1270cf6c9', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-05', 52, 1, current_timestamp, null, null, null, '452df036-4654-42b5-80bb-cfbc468cdc6e', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-06', 46, 1, current_timestamp, null, null, null, 'b77b7f57-4a4a-4108-8e94-5280bbb116bd', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-07', 41, 1, current_timestamp, null, null, null, '86479e5d-d2b7-4801-920b-78701c564aec', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-08', 43, 1, current_timestamp, null, null, null, '52da01bc-ff98-4708-94de-aed21b2656aa', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-09', 40, 1, current_timestamp, null, null, null, '5ddf232d-69a1-4ddb-860c-0e62d13c48ce', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-10', 39, 1, current_timestamp, null, null, null, 'd9b7bebf-e619-4394-ae42-d141adcad707', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-11', 34, 1, current_timestamp, null, null, null, '274e2c8b-08ff-4b2b-b9dc-7396ccde4d59', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-12', 29, 1, current_timestamp, null, null, null, '20c5ac3e-61ce-4fde-b76e-eb591b6a55ad', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-13', 34, 1, current_timestamp, null, null, null, '4e681421-e6a9-4ad5-a3b6-dd40d6b74ef8', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-14', 37, 1, current_timestamp, null, null, null, '44bcec8f-9369-47b4-a332-e1ec8c1dd24a', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-15', 42, 1, current_timestamp, null, null, null, '7a7011a8-1966-4156-b815-186551b69c49', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-16', 49, 1, current_timestamp, null, null, null, '38013868-84ef-4e58-860d-620cd04b2f70', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-17', 46, 1, current_timestamp, null, null, null, 'd5d40970-6f9e-478d-a49a-e8824541bda8', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-18', 47, 1, current_timestamp, null, null, null, '5b59f726-306f-4c9c-9104-a631814b19cf', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-19', 55, 1, current_timestamp, null, null, null, '214b9cc2-35bd-4ebc-a3f3-4f8c0065a334', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-20', 59, 1, current_timestamp, null, null, null, '5c679523-d10c-45c4-a18a-363d10b02b87', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-21', 58, 1, current_timestamp, null, null, null, 'c2450163-3e55-4b43-ad56-b30f305d4a66', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-22', 57, 1, current_timestamp, null, null, null, '62ec7acb-fcb2-4665-abdd-bb7458b9c6cd', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-23', 61, 1, current_timestamp, null, null, null, 'dd06e89f-7522-4a2c-857f-a5069c0b46bd', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-24', 59, 1, current_timestamp, null, null, null, '30a42aee-e523-4b96-8268-d7e13949c080', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-25', 67, 1, current_timestamp, null, null, null, '645bf453-b490-4a25-a3d4-5dcb0c990c9e', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-26', 65, 1, current_timestamp, null, null, null, '26cfddf0-9e51-405a-ad44-fe92eafd41e1', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-27', 61, 1, current_timestamp, null, null, null, 'e8db5690-6d7a-4490-a115-0ab57a07cb69', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-28', 66, 1, current_timestamp, null, null, null, 'c0ca140e-fb87-4a5d-b957-5cab41cf9e34', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-29', 69, 1, current_timestamp, null, null, null, '90df9f08-ea89-4e01-aa78-18061b168e79', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-09-30', 71, 1, current_timestamp, null, null, null, '84a3f021-0935-4550-8325-88cf5d7fe220', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-01', 67, 1, current_timestamp, null, null, null, '239c8c11-316e-43c1-bcf6-fd423aea9e51', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-02', 63, 1, current_timestamp, null, null, null, 'dd82d2b0-d0c2-4ec5-bd5c-5085a284fbb9', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-03', 46, 1, current_timestamp, null, null, null, 'fae51849-7f58-490f-9f65-ed78e1519012', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-04', 32, 1, current_timestamp, null, null, null, '9d317cbb-4f1f-4453-843d-1b364ae527a6', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-05', 21, 1, current_timestamp, null, null, null, '638114d5-159c-46fb-8c2d-6d80879f9697', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-06', 18, 1, current_timestamp, null, null, null, '75bd1890-a996-4bba-b973-837bae2294d0', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-07', 21, 1, current_timestamp, null, null, null, '69d48e93-d57a-429c-a9d5-f2f7b783e1d8', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-08', 28, 1, current_timestamp, null, null, null, '90a71d35-5824-47a2-a69f-0daad7a7b741', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-09', 27, 1, current_timestamp, null, null, null, '4d360d62-49da-4603-951c-8bc6ea062f70', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-10', 36, 1, current_timestamp, null, null, null, '6604fd38-e9f9-4bb9-85f2-99e39ea34571', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-11', 33, 1, current_timestamp, null, null, null, 'bb17d986-3c5a-4451-ad4e-09b7e0de67aa', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-12', 31, 1, current_timestamp, null, null, null, 'f95fa343-00ca-4f2e-a755-feef0dbe047c', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-13', 30, 1, current_timestamp, null, null, null, '1424a255-7d34-4147-a9e0-58b0fc429f08', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-14', 34, 1, current_timestamp, null, null, null, 'adfb2337-25c5-4ca0-a936-e736b5834430', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-15', 38, 1, current_timestamp, null, null, null, 'a00261a5-2b1f-49c5-bd4a-41fc9f8b65bb', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-16', 37, 1, current_timestamp, null, null, null, '2f39db20-5e52-48bd-b0d5-4af7be431f41', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-17', 44, 1, current_timestamp, null, null, null, '4dfd4d4a-6778-4f15-ad48-2d7eaf1ea9a4', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-18', 49, 1, current_timestamp, null, null, null, 'ed8a2c70-3d35-47fd-a632-786c40796eae', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-19', 53, 1, current_timestamp, null, null, null, 'b0407c34-f6ad-4ba1-b269-809c8ae088fb', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-20', 57, 1, current_timestamp, null, null, null, '5c941478-d0de-412f-8de1-4aece61c269d', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-21', 60, 1, current_timestamp, null, null, null, '4e5b1f22-1a97-42d7-9605-acd0331d39d3', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-22', 61, 1, current_timestamp, null, null, null, 'e693e7c4-d159-4034-8373-9abaf4edbd0b', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-23', 69, 1, current_timestamp, null, null, null, '122af6d1-033e-4598-8b10-2389b6f2d7ea', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-24', 67, 1, current_timestamp, null, null, null, 'd3d30f76-2276-4f41-a8c0-1f0ccb01e9f8', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-25', 72, 1, current_timestamp, null, null, null, '469a83b6-dd24-4187-ab85-2fd471d66ef5', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-26', 77, 1, current_timestamp, null, null, null, '3e4e44db-1784-4ed0-9d2c-dcfabdd517be', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-27', 75, 1, current_timestamp, null, null, null, 'a3279bd3-58ff-4c10-8744-7bc07491c5fb', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-28', 70, 1, current_timestamp, null, null, null, '3adf0cb6-04b6-4b9a-8c11-bcf2709f2589', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-29', 72, 1, current_timestamp, null, null, null, 'ca026ed8-35bc-44be-b377-8920c8bc0998', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-30', 70, 1, current_timestamp, null, null, null, '58e65777-3113-412c-a7f3-815ee8c091c2', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-10-31', 72, 1, current_timestamp, null, null, null, '7c799a51-7497-4603-b883-7a89b9e762cc', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-01', 73, 1, current_timestamp, null, null, null, '2fb11127-eb9f-4ac1-9ce2-707c1b3dcaaa', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-02', 67, 1, current_timestamp, null, null, null, '041d43bb-5022-4509-bd0c-0b4bd75e7d5e', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-03', 68, 1, current_timestamp, null, null, null, '6b24bb04-367f-4eb1-ae0b-0f86dfb2c778', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-04', 65, 1, current_timestamp, null, null, null, '4bbc39f6-5a97-4392-ae00-dcf63e5e7ca5', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-05', 71, 1, current_timestamp, null, null, null, 'de59907e-5f7d-4b8f-a874-6d4bcae63170', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-06', 75, 1, current_timestamp, null, null, null, '75e7c4f9-8fac-41dc-9dd1-21eddd01f05e', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-07', 74, 1, current_timestamp, null, null, null, 'aab6c3f9-f844-489e-a3d1-8ae6ba66f189', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-08', 71, 1, current_timestamp, null, null, null, '8f296fca-6400-4a6f-a169-012c68a0c306', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-09', 76, 1, current_timestamp, null, null, null, '411443f8-bc13-484d-a446-7486901b4229', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-10', 77, 1, current_timestamp, null, null, null, '5929073a-a785-4c44-812e-9609b8348d5f', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-11', 81, 1, current_timestamp, null, null, null, 'd8c827f8-1173-417f-bc63-a86637f0a683', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-12', 83, 1, current_timestamp, null, null, null, '5e6969ab-b174-4aaa-bd10-ab41ae592107', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-13', 80, 1, current_timestamp, null, null, null, '924b589f-10c8-4cb9-82f9-2f7ac1dbe3f7', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-14', 81, 1, current_timestamp, null, null, null, 'b7415573-b8b5-438c-93bf-24a410684721', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-15', 87, 1, current_timestamp, null, null, null, '58d7a1b9-55d1-4048-86ee-813e8e7d42f9', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-16', 82, 1, current_timestamp, null, null, null, 'fc634316-86a5-472c-9167-29106233b3df', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-17', 86, 1, current_timestamp, null, null, null, '25d56ee0-4ec3-4911-b4ef-00160f6a6de3', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-18', 80, 1, current_timestamp, null, null, null, '90b2fd13-e358-4c1c-9eef-1dc01cf64c3a', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-19', 87, 1, current_timestamp, null, null, null, '86a3dc0a-9d54-4733-9694-7ad1ff4a991e', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-20', 83, 1, current_timestamp, null, null, null, '8d61837c-bf8b-4efe-a6e5-108c9239ac22', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-21', 85, 1, current_timestamp, null, null, null, 'e15a1709-0d92-4970-9721-29f15d2496d8', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-22', 84, 1, current_timestamp, null, null, null, '8a6abae1-522a-493b-b88c-8aafbf4e939f', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-23', 82, 1, current_timestamp, null, null, null, '829c4c02-3c89-47f5-be86-4220a11b997b', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-24', 73, 1, current_timestamp, null, null, null, 'e52cafc5-d624-4d12-8523-3daff01f71e6', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-25', 71, 1, current_timestamp, null, null, null, 'bec751ee-6e3d-4ca2-8a0a-cec9b4de4aa1', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-26', 75, 1, current_timestamp, null, null, null, '128aafb7-cf3b-44f5-b8ee-21ec6cdb029c', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-27', 79, 1, current_timestamp, null, null, null, '5f6acecf-5c56-485a-a041-9910b5373fc0', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-28', 70, 1, current_timestamp, null, null, null, '738028bf-6a7d-4ccc-be7a-ff8a7f490d65', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-29', 73, 1, current_timestamp, null, null, null, 'd0228a47-f936-484b-a331-05defec2e524', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-11-30', 61, 1, current_timestamp, null, null, null, '813b7b77-bcc8-482b-9a87-5ebffaffff5c', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-01', 62, 1, current_timestamp, null, null, null, 'df6ca321-073f-4016-bd0f-7ef59c759206', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-02', 66, 1, current_timestamp, null, null, null, '183eb3de-b64b-46e2-ae33-2de0c8d2e41e', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-03', 65, 1, current_timestamp, null, null, null, '86717bd0-6044-4e4b-b6d4-07e4412f0cb3', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-04', 73, 1, current_timestamp, null, null, null, '4f4d90cf-a95e-4e99-a801-53610e65a9e8', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-05', 79, 1, current_timestamp, null, null, null, '571f1894-2f37-4652-8267-8903131421ea', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-06', 78, 1, current_timestamp, null, null, null, '59499d04-4aa5-4ff5-9ba6-985470add684', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-07', 78, 1, current_timestamp, null, null, null, '21d3d80f-2c4c-4e6f-87ee-0aa3af9373d3', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-08', 78, 1, current_timestamp, null, null, null, '06f2f581-8ca8-403b-9848-b9e56218b9cf', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-09', 74, 1, current_timestamp, null, null, null, 'b12c5c49-237f-48ba-932e-d0dec82aa012', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-10', 73, 1, current_timestamp, null, null, null, '128c71b5-154d-4070-80fa-c5ff53956bfa', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-11', 75, 1, current_timestamp, null, null, null, '3eb7f336-70f0-4605-841b-2c8646997d48', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-12', 70, 1, current_timestamp, null, null, null, 'bfc22c06-2f68-46c7-90e9-f877c71a95ab', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-13', 77, 1, current_timestamp, null, null, null, '290f4f2c-39be-4499-ba68-6c4ed6b8866a', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-14', 67, 1, current_timestamp, null, null, null, 'f2eae508-a2cb-4011-b83f-6c6820aaa2ad', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-15', 62, 1, current_timestamp, null, null, null, 'aea67829-d50d-4029-a422-ceab814de6d2', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-16', 64, 1, current_timestamp, null, null, null, 'd1000683-9fa3-44aa-9dce-3f1621057649', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-17', 61, 1, current_timestamp, null, null, null, '6098cd8f-25ac-4cc5-b932-99bc1ce76926', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-18', 59, 1, current_timestamp, null, null, null, '6b4eb94b-896c-4359-868c-9f44465c1eb6', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-19', 53, 1, current_timestamp, null, null, null, 'd87f77a6-52fc-4eee-9f1e-30915231ac9b', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-20', 54, 1, current_timestamp, null, null, null, '004bca52-f62a-44d4-a39f-7b30fa2b3b35', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-21', 56, 1, current_timestamp, null, null, null, '3c10d193-de24-4276-8bf9-aad7c1f155aa', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-22', 59, 1, current_timestamp, null, null, null, '474a8f3f-ec2b-49dc-a3f1-c07a59ad208c', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-23', 58, 1, current_timestamp, null, null, null, '0fac802c-0f62-45de-85c7-a08300c78925', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-24', 55, 1, current_timestamp, null, null, null, '24237ffb-b75b-4f1f-aa4e-3f16dcc4aa49', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-25', 52, 1, current_timestamp, null, null, null, '1b7dfb1a-860b-4cc1-bf8a-b0bbef7b3de9', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-26', 54, 1, current_timestamp, null, null, null, '87361d03-715b-4eb9-8c85-c7aacc2d6e6a', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-27', 50, 1, current_timestamp, null, null, null, '44000a0c-25ef-41fc-8fd3-1ab674f4cfab', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-28', 50, 1, current_timestamp, null, null, null, 'a7f5bdf2-c65f-43ec-87f3-b8a7cf418b51', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-29', 51, 1, current_timestamp, null, null, null, 'cc1f296c-5b30-4b39-8f6b-a8a65fdf7d52', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-30', 52, 1, current_timestamp, null, null, null, 'fc331ce0-7241-4856-90af-76821b4336b6', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2012-12-31', 58, 1, current_timestamp, null, null, null, 'fba7ba8f-5412-429c-b6a3-039ac9580cdb', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-01', 60, 1, current_timestamp, null, null, null, 'e7b8a86e-f4bf-451e-9f51-0b0cb340e9a1', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-02', 67, 1, current_timestamp, null, null, null, 'f5c699a5-52e0-40b9-8f9a-39c50d2bafc4', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-03', 64, 1, current_timestamp, null, null, null, 'c386be2d-a551-44b9-bc07-d2636404ec19', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-04', 66, 1, current_timestamp, null, null, null, '4cbc7dfe-aeef-488e-bac7-4083107e3e09', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-05', 60, 1, current_timestamp, null, null, null, 'b60e3517-0dec-47a1-9c33-faa9b40fb5d4', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-06', 63, 1, current_timestamp, null, null, null, '33a2a844-2335-4888-b303-8efb14f0b104', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-07', 61, 1, current_timestamp, null, null, null, '0cd6676e-d055-4908-9011-0afabd0766b6', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-08', 60, 1, current_timestamp, null, null, null, '07c38aa8-c1c8-4488-9ca6-a7e361ffda37', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-09', 65, 1, current_timestamp, null, null, null, 'ec17a83d-5c0c-4a0d-aa6a-a2187ff909c9', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-10', 75, 1, current_timestamp, null, null, null, 'a9b55d24-f1d2-47c3-bb16-3193f322e815', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-11', 77, 1, current_timestamp, null, null, null, '9c14fb55-739a-45e3-9533-b65e4490c83c', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-12', 78, 1, current_timestamp, null, null, null, 'fbfa6d88-e4fc-4bb6-9db1-22ffb624f874', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-13', 70, 1, current_timestamp, null, null, null, '3b600d4b-43aa-4777-b288-9435fd11709b', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-14', 70, 1, current_timestamp, null, null, null, '93ff130b-4b95-446d-9cf6-05a8c39a8cee', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-15', 73, 1, current_timestamp, null, null, null, '2c3402d2-aac0-47e6-941d-10ce39d39769', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-16', 71, 1, current_timestamp, null, null, null, '62f35e5f-0f7b-4248-b4cd-f45711abb643', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-17', 74, 1, current_timestamp, null, null, null, 'd535ff03-a56b-4dcb-9cd0-20d28c010632', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-18', 78, 1, current_timestamp, null, null, null, 'fb6d340f-34fc-4241-ab01-aaf5a973918b', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-19', 85, 1, current_timestamp, null, null, null, 'a1bb9dc5-1023-43dc-bf34-db30d1f814df', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-20', 82, 1, current_timestamp, null, null, null, '004706fc-dba5-4e79-8bd3-6ab9cd088805', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-21', 83, 1, current_timestamp, null, null, null, '4e6cae8d-eeb0-44b4-b0d3-0db5238e497f', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-22', 88, 1, current_timestamp, null, null, null, 'facba445-9316-4b46-baee-88f7c7d45f87', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-23', 85, 1, current_timestamp, null, null, null, 'c38b0abd-1562-46d7-a4c6-aff5c81b7891', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-24', 85, 1, current_timestamp, null, null, null, 'f5ffa844-ba7b-4171-a38e-cc900981bdcc', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-25', 80, 1, current_timestamp, null, null, null, '3405a7fe-6d28-4e57-b586-083d797c231e', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-26', 87, 1, current_timestamp, null, null, null, 'fee0ff2f-3eb4-4ab3-a789-0f03ab8c2803', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-27', 84, 1, current_timestamp, null, null, null, 'eee44ade-ee1d-48a7-8222-75e38f89f00b', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-28', 83, 1, current_timestamp, null, null, null, 'c388ea59-8396-472e-97d1-b32a6e8dfdbe', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-29', 84, 1, current_timestamp, null, null, null, '7e84b1ea-a649-45a7-9827-0e6e54a18cc2', current_timestamp, 'admin');
+
+insert into SAMPLER_DATE_VALUE
+(DATE_, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('2013-01-30', 81, 1, current_timestamp, null, null, null, '95f6c0c5-ce68-498b-ad1d-ff2536607a47', current_timestamp, 'admin');
+
+------------------------------------------------------------------------------------------------------------
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (1994, 1587, 650, 121, 1, current_timestamp, null, null, null, 'c081cbd4-6f56-4e12-a1c6-7d365f8c1ed3', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (1995, 1567, 683, 146, 1, current_timestamp, null, null, null, 'f4e3492b-5ea6-4dc5-9600-d42d104a176b', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (1996, 1617, 691, 138, 1, current_timestamp, null, null, null, 'b8a512a7-585b-4f48-8c7c-3dc6142addd1', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (1997, 1630, 642, 127, 1, current_timestamp, null, null, null, '6bd5599e-95f7-47d8-abc6-8ea8676c3134', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (1998, 1660, 699, 105, 1, current_timestamp, null, null, null, '35f887b5-c137-4d6e-b281-7baa18776ad0', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (1999, 1683, 721, 109, 1, current_timestamp, null, null, null, 'fd2e2323-91ea-4791-980c-5f93a6341625', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2000, 1691, 737, 112, 1, current_timestamp, null, null, null, '9655090a-b716-4ee9-94b8-96b63e351ede', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2001, 1298, 680, 101, 1, current_timestamp, null, null, null, 'a1919ff9-37f4-4660-b09d-a6361c0463f1', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2002, 1275, 664, 97, 1, current_timestamp, null, null, null, 'fbccfb2a-aa46-4588-8611-0aff4eef7e19', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2003, 1246, 648, 93, 1, current_timestamp, null, null, null, 'ce2927ce-7422-4a62-bbf6-3b363ab01aa9', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2004, 1318, 697, 111, 1, current_timestamp, null, null, null, 'cdc62347-50ba-469e-a1b3-b3c2e5c1196a', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2005, 1213, 633, 87, 1, current_timestamp, null, null, null, '3d4cc153-4a66-4372-893d-68c9aaa4186a', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2006, 1199, 621, 79, 1, current_timestamp, null, null, null, 'ebbbbc3b-64e4-404b-a5df-8c70d865631a', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2007, 1110, 210, 81, 1, current_timestamp, null, null, null, 'b08c4523-1b89-48f5-afa9-8df84c961305', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2008, 1165, 232, 75, 1, current_timestamp, null, null, null, '44940ee1-a50c-4e3d-9b31-00699a57bd2f', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2009, 1145, 219, 88, 1, current_timestamp, null, null, null, '3dc721e4-19c5-4b69-9dae-c780b62435d4', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2010, 1163, 201, 82, 1, current_timestamp, null, null, null, 'a9096485-cf19-4972-9db9-b669547de8c5', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2011, 1180, 285, 87, 1, current_timestamp, null, null, null, '6c3e2d79-8266-42f3-9f6f-eaab33ea017b', current_timestamp, 'admin');
+
+insert into SAMPLER_TRANSPORT_COUNT
+(YEAR_, CARS, MOTORCYCLES, BICYCLES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2012, 1159, 277, 71, 1, current_timestamp, null, null, null, '1f805b20-b11f-4652-b0e7-95c0c8386529', current_timestamp, 'admin');
+
+------------------------------------------------------------------------------------------------------------
+
+insert into SAMPLER_INCOME_EXPENSES
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2009, 23.5, 18.1, null, null, null, 1, current_timestamp, null, null, null, '066dd94f-ae77-46ce-bdee-07fadd44a757', current_timestamp, 'admin');
+
+insert into SAMPLER_INCOME_EXPENSES
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2010, 26.2, 22.8, null, null, null, 1, current_timestamp, null, null, null, '25cdeab4-e31b-4702-911d-2c35b8f03413', current_timestamp, 'admin');
+
+insert into SAMPLER_INCOME_EXPENSES
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2011, 30.1, 23.9, null, null, null, 1, current_timestamp, null, null, null, '6b13081c-394f-4b83-9e59-028bb4f78020', current_timestamp, 'admin');
+
+insert into SAMPLER_INCOME_EXPENSES
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2012, 29.5, 25.1, null, null, null, 1, current_timestamp, null, null, null, '4839a394-4e90-46de-9a93-0385fd556856', current_timestamp, 'admin');
+
+insert into SAMPLER_INCOME_EXPENSES
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2013, 30.6, 27.2, null, 5, null, 1, current_timestamp, null, null, null, 'dca0e2db-3aeb-4df0-91a4-bd692371fd39', current_timestamp, 'admin');
+
+insert into SAMPLER_INCOME_EXPENSES
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2014, 34.1, 29.9, 0.2, null, 5, 1, current_timestamp, null, null, null, '5b306626-115a-492f-a3d4-8b2808feaa21', current_timestamp, 'admin');
+
+------------------------------------------------------------------------------------------------------------
+
+insert into SAMPLER_COUNTRY_GROWTH
+(COUNTRY, YEAR2014, YEAR2015, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('USA', 3.5, 4.2, 1, current_timestamp, null, null, null, '719b65f6-a32d-426f-8f69-db3f800a5124', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_GROWTH
+(COUNTRY, YEAR2014, YEAR2015, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('UK', 1.7, 3.1, 1, current_timestamp, null, null, null, 'f74efb19-3d52-43cf-918e-87f48a9ac960', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_GROWTH
+(COUNTRY, YEAR2014, YEAR2015, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Canada', 2.8, 2.9, 1, current_timestamp, null, null, null, '104ccf82-7d0a-4dc2-9273-6d66470ba661', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_GROWTH
+(COUNTRY, YEAR2014, YEAR2015, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Japan', 2.6, 2.3, 1, current_timestamp, null, null, null, 'b06075ab-66da-46fb-bbd9-6584e943367a', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_GROWTH
+(COUNTRY, YEAR2014, YEAR2015, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('France', 1.4, 2.1, 1, current_timestamp, null, null, null, '6f05051f-3dc3-4605-9287-467ea7b408ae', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_GROWTH
+(COUNTRY, YEAR2014, YEAR2015, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Brazil', 2.6, 4.9, 1, current_timestamp, null, null, null, '47bd990b-b54d-4d77-989f-edfb6b52d5c9', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_GROWTH
+(COUNTRY, YEAR2014, YEAR2015, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Russia', 6.4, 7.2, 1, current_timestamp, null, null, null, 'a9ce13f3-bcb9-4924-9651-a15ede3b3f3e', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_GROWTH
+(COUNTRY, YEAR2014, YEAR2015, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('India', 8.0, 7.1, 1, current_timestamp, null, null, null, 'ebe80366-5264-4955-861c-bdabcea8c18a', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_GROWTH
+(COUNTRY, YEAR2014, YEAR2015, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('China', 9.9, 10.1, 1, current_timestamp, null, null, null, '054a6e6a-86f8-4400-9e2d-1ccb0aa487f5', current_timestamp, 'admin');
+
+------------------------------------------------------------------------------------------------------------
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (1.0, 0.5, 1.0, 2.2, 1, current_timestamp, null, null, null, '6f2386f4-f457-4247-afb9-4665f8d15a02', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2.0, 1.3, 2.0, 4.9, 1, current_timestamp, null, null, null, 'ddaacf74-feac-4c64-90e8-bd3dca4450e0', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (3.0, 2.3, 3.0, 5.1, 1, current_timestamp, null, null, null, 'e7fad59f-e926-4c1e-8b12-be7ed59a0423', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (4.0, 2.8, 4.0, 5.3, 1, current_timestamp, null, null, null, '6043ce84-c4f3-42fd-b036-570828fc74fa', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (5.0, 3.5, 5.0, 6.1, 1, current_timestamp, null, null, null, 'fe77952c-bb32-4eb9-9902-3614220af8e0', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (6.0, 5.1, 6.0, 8.3, 1, current_timestamp, null, null, null, 'f10d8239-8c04-4f7b-a37a-b568e1073cec', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (7.0, 6.7, 7.0, 10.5, 1, current_timestamp, null, null, null, '6b5928b1-2a30-4164-92b8-c546941a9c91', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (8.0, 8.0, 8.0, 12.3, 1, current_timestamp, null, null, null, 'e0ff1c70-e97e-4617-b8b5-fc0d3050e352', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (9.0, 8.9, 9.0, 14.5, 1, current_timestamp, null, null, null, '961f1f66-c320-4c80-b5a9-14ff18727a09', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (10.0, 9.7, 10.0, 15.0, 1, current_timestamp, null, null, null, '237b09d2-6fd4-4358-a116-fd4e377e1353', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (11.0, 10.4, 11.0, 18.8, 1, current_timestamp, null, null, null, '161b4a67-68b4-420f-b417-55e267b92e96', current_timestamp, 'admin');
+
+insert into SAMPLER_POINT_PAIR
+(AX, AY, BX, BY_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (12.0, 11.7, 12.0, 19.0, 1, current_timestamp, null, null, null, 'de9456f9-8984-4891-8e1a-26464338875d', current_timestamp, 'admin');
+
+------------------------------------------------------------------------------------------------------------
+
+insert into SAMPLER_COUNTRY_LITRES
+(COUNTRY, LITRES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Russia', 256.9, 1, current_timestamp, null, null, null, '6d206bd6-f17f-48f6-a007-a55199a1067f', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_LITRES
+(COUNTRY, LITRES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Ireland', 131.1, 1, current_timestamp, null, null, null, '1eacbf39-7da2-472b-9527-9a2fbec7868e', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_LITRES
+(COUNTRY, LITRES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Germany', 115.8, 1, current_timestamp, null, null, null, 'a988fa3f-1126-4560-8504-9354f9f5fc57', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_LITRES
+(COUNTRY, LITRES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Australia', 109.9, 1, current_timestamp, null, null, null, 'ec6dac6b-63c7-470f-81a7-c4a7a6ddac80', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_LITRES
+(COUNTRY, LITRES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Austria', 108.3, 1, current_timestamp, null, null, null, 'b9d30c9c-cf10-4acd-8ce5-f4124ad2ec70', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_LITRES
+(COUNTRY, LITRES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('UK', 65.0, 1, current_timestamp, null, null, null, '6507a392-5252-4bff-b2a4-3c9f294aab2a', current_timestamp, 'admin');
+
+insert into SAMPLER_COUNTRY_LITRES
+(COUNTRY, LITRES, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Belgium', 40.0, 1, current_timestamp, null, null, null, '8df0609a-317a-4f03-81db-0aa6653a4c8b', current_timestamp, 'admin');
+
+------------------------------------------------------------------------------------------------------------
+
+insert into SAMPLER_TITLE_VALUE
+(TITLE, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Website visits', 300, 1, current_timestamp, null, null, null, '0b3cba71-290f-4954-9aac-17db1eb7178b', current_timestamp, 'admin');
+
+insert into SAMPLER_TITLE_VALUE
+(TITLE, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Downloads', 123, 1, current_timestamp, null, null, null, 'a10f2002-ac28-4a56-9df9-731e4c0611c9', current_timestamp, 'admin');
+
+insert into SAMPLER_TITLE_VALUE
+(TITLE, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Requested prices', 98, 1, current_timestamp, null, null, null, '2fb9c084-8b1d-4555-a08a-95721d1d85df', current_timestamp, 'admin');
+
+insert into SAMPLER_TITLE_VALUE
+(TITLE, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Contaced', 72, 1, current_timestamp, null, null, null, 'b87dc1cb-813a-42b7-829b-86ead4c5933d', current_timestamp, 'admin');
+
+insert into SAMPLER_TITLE_VALUE
+(TITLE, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Purchased', 35, 1, current_timestamp, null, null, null, 'ebd1406c-b6e6-469d-8227-fee96651e108', current_timestamp, 'admin');
+
+insert into SAMPLER_TITLE_VALUE
+(TITLE, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Asked for support', 25, 1, current_timestamp, null, null, null, 'a0bd883f-0be3-49bd-b000-d5f27da7bdbf', current_timestamp, 'admin');
+
+insert into SAMPLER_TITLE_VALUE
+(TITLE, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('Purchased more', 18, 1, current_timestamp, null, null, null, '0be7a2b2-8b28-44b6-9430-8e18daa2a0f0', current_timestamp, 'admin');
+
+------------------------------------------------------------------------------------------------------------
+
+insert into SAMPLER_DIRECTION_VALUE
+(DIRECTION, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('N', 8.0, 1, current_timestamp, null, null, null, '8dd43f2f-1bb5-410e-847b-3ef83be1d657', current_timestamp, 'admin');
+
+insert into SAMPLER_DIRECTION_VALUE
+(DIRECTION, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('NE', 9.0, 1, current_timestamp, null, null, null, '56723203-29b7-44e9-bee2-8dcd7a93bb97', current_timestamp, 'admin');
+
+insert into SAMPLER_DIRECTION_VALUE
+(DIRECTION, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('E', 4.5, 1, current_timestamp, null, null, null, '317ca0a2-1bcd-45d8-811c-b3ea5a0f7bbc', current_timestamp, 'admin');
+
+insert into SAMPLER_DIRECTION_VALUE
+(DIRECTION, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('SE', 3.5, 1, current_timestamp, null, null, null, '7f258c96-3bac-4b5f-8a1e-d0853e82478b', current_timestamp, 'admin');
+
+insert into SAMPLER_DIRECTION_VALUE
+(DIRECTION, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('S', 9.2, 1, current_timestamp, null, null, null, '80b32f49-5d4a-40fc-915e-177d5b2dcae6', current_timestamp, 'admin');
+
+insert into SAMPLER_DIRECTION_VALUE
+(DIRECTION, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('SW', 8.4, 1, current_timestamp, null, null, null, '2c8160ee-c976-430e-b062-666b688cb022', current_timestamp, 'admin');
+
+insert into SAMPLER_DIRECTION_VALUE
+(DIRECTION, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('W', 11.1, 1, current_timestamp, null, null, null, 'e31621f5-64e9-4451-bf3f-3357ef7bd407', current_timestamp, 'admin');
+
+insert into SAMPLER_DIRECTION_VALUE
+(DIRECTION, VALUE_, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values ('NW', 10.0, 1, current_timestamp, null, null, null, '7b8e817a-f13c-407c-a7e8-a194f34c7621', current_timestamp, 'admin');
+
+------------------------------------------------------------------------------------------------------------
