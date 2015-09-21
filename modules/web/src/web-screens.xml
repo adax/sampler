@@ -30,4 +30,14 @@
             template="com/haulmont/sampler/web/ui/charts/pie/pie3d/pie3d-chart.xml"/>
     <screen id="donut-chart"
             template="com/haulmont/sampler/web/ui/charts/pie/donut/donut-chart.xml"/>
+    <screen id="marker-map"
+            template="com/haulmont/sampler/web/ui/map/marker/marker-map.xml"/>
+    <screen id="polygon-map"
+            template="com/haulmont/sampler/web/ui/map/polygon/polygon-map.xml"/>
+    <screen id="polyline-map"
+            template="com/haulmont/sampler/web/ui/map/polyline/polyline-map.xml"/>
+    <screen id="heat-map"
+            template="com/haulmont/sampler/web/ui/map/heat/heat-map.xml"/>
+    <screen id="actions-map"
+            template="com/haulmont/sampler/web/ui/map/actions/actions-map.xml"/>
 </screen-config>
