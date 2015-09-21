@@ -54,20 +54,6 @@ public class SamplesMenuConfig {
         }
     }
 
-    public String getDocTemplate() {
-        return getDocTemplate(null);
-    }
-
-    public String getDocTemplate(@Nullable Locale locale) {
-        String url;
-        if (locale == null)
-            url = messages.getMainMessage("sample-config.docUrl");
-        else
-            url = messages.getMainMessage("sample-config.docUrl", locale);
-
-        return url + "%s.html";
-    }
-
     private void checkInitialized() {
         if (!initialized) {
             lock.readLock().unlock();

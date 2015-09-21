@@ -6,7 +6,6 @@ import com.haulmont.cuba.core.global.Messages;
 import com.haulmont.cuba.core.global.UserSessionSource;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
-import com.haulmont.sampler.gui.config.SamplesMenuConfig;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 
@@ -17,6 +16,8 @@ import static com.haulmont.cuba.gui.components.SourceCodeEditor.Mode;
 
 public class SampleBrowser extends AbstractWindow {
 
+    private static final String DOC_URL_MESSAGES_KEY = "docUrl";
+
     @Inject
     private TabSheet tabSheet;
 
@@ -25,9 +26,6 @@ public class SampleBrowser extends AbstractWindow {
 
     @Inject
     private SamplesHelper samplesHelper;
-
-    @Inject
-    private SamplesMenuConfig samplesMenuConfig;
 
     @Inject
     private Messages messages;
@@ -58,11 +56,11 @@ public class SampleBrowser extends AbstractWindow {
 
         String descriptionsPack = (String) params.get("descriptionsPack");
 
-        if (StringUtils.isNotEmpty(samplesMenuConfig.getDocTemplate())) {
+        if (StringUtils.isNotEmpty(messages.getMessage(frame.getClass(), DOC_URL_MESSAGES_KEY))) {
             String docUrlSuffix = (String) params.get("docUrlSuffix");
             if (StringUtils.isNotEmpty(docUrlSuffix)) {
                 addTab(messages.getMessage(getClass(), "sampleBrowser.description"),
-                        createDescription(descriptionsPack, docUrlSuffix, id));
+                        createDescription(frame.getClass(), descriptionsPack, docUrlSuffix, id));
             }
         }
 
@@ -95,7 +93,7 @@ public class SampleBrowser extends AbstractWindow {
         return vBox;
     }
 
-    private Component createDescription(String descriptionsPack, String docUrlSuffix, String frameId) {
+    private Component createDescription(Class<? extends IFrame> aClass, String descriptionsPack, String docUrlSuffix, String frameId) {
         ScrollBoxLayout scrollBoxLayout = componentsFactory.createComponent(ScrollBoxLayout.NAME);
         scrollBoxLayout.setWidth("100%");
         scrollBoxLayout.setHeight("100%");
@@ -108,7 +106,7 @@ public class SampleBrowser extends AbstractWindow {
         HBoxLayout hbox = componentsFactory.createComponent(HBoxLayout.NAME);
         hbox.setWidth("100%");
 
-        Component docLinks = documentLinks(docUrlSuffix);
+        Component docLinks = documentLinks(aClass, docUrlSuffix);
         hbox.add(docLinks);
         hbox.expand(docLinks);
 
@@ -133,7 +131,7 @@ public class SampleBrowser extends AbstractWindow {
         return doc;
     }
 
-    private Component documentLinks(String docUrlSuffix) {
+    private Component documentLinks(Class<? extends IFrame> aClass, String docUrlSuffix) {
         StringBuilder sb = new StringBuilder();
         sb.append(messages.getMessage(getClass(), "sampleBrowser.documentation"));
         sb.append(": ");
@@ -146,7 +144,7 @@ public class SampleBrowser extends AbstractWindow {
                 sb.append(" | ");
             }
 
-            String url = String.format(samplesMenuConfig.getDocTemplate(locale), docUrlSuffix);
+            String url = messages.getMessage(aClass, DOC_URL_MESSAGES_KEY, locale) + docUrlSuffix + ".html";
             sb.append(String.format("<a href=\"%s\" target=\"_blank\">%s</a>", url, localeName));
         }
 
