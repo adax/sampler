@@ -138,6 +138,10 @@ configure(guiModule) {
         include "com/haulmont/sampler/**"
         into "$tomcatDir/conf/app"
     }
+
+    jar {
+        from sourceSets.main.allJava
+    }
 }
 
 configure(webModule) {
@@ -198,6 +202,10 @@ configure(webModule) {
     }
     task buildScssThemes(type: CubaWebScssThemeCreation)
     assemble.dependsOn buildScssThemes
+
+    jar {
+        from sourceSets.main.allJava
+    }
 }
 
 
