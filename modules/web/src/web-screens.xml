@@ -15,7 +15,7 @@
     <screen id="xy-chart"
             template="com/haulmont/sampler/web/ui/charts/xy/xy-chart.xml"/>
     <screen id="pie-chart"
-            template="com/haulmont/sampler/web/ui/charts/pie/pie-chart.xml"/>
+            template="com/haulmont/sampler/web/ui/charts/pie/pie/pie-chart.xml"/>
     <screen id="radar-chart"
             template="com/haulmont/sampler/web/ui/charts/radar/radar/radar-chart.xml"/>
     <screen id="gauge-chart"
@@ -26,4 +26,8 @@
             template="com/haulmont/sampler/web/ui/charts/funnel/funnel3d/funnel3d-chart.xml"/>
     <screen id="polar-chart"
             template="com/haulmont/sampler/web/ui/charts/radar/polar/polar-chart.xml"/>
+    <screen id="pie3d-chart"
+            template="com/haulmont/sampler/web/ui/charts/pie/pie3d/pie3d-chart.xml"/>
+    <screen id="donut-chart"
+            template="com/haulmont/sampler/web/ui/charts/pie/donut/donut-chart.xml"/>
 </screen-config>

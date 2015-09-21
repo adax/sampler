@@ -12,7 +12,7 @@
         </collectionDatasource>
     </dsContext>
     <layout>
-        <chart:pieChart id="pieChart"
+        <chart:pieChart id="pie3dChart"
                         angle="30"
                         balloonText="[[title]] - [[percents]]%"
                         datasource="countryLitresDs"

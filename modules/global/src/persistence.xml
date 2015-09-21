@@ -15,6 +15,5 @@
         <class>com.haulmont.sampler.entity.PointPair</class>
         <class>com.haulmont.sampler.entity.CountryLitres</class>
         <class>com.haulmont.sampler.entity.TitleValue</class>
-        <class>com.haulmont.sampler.entity.DirectionValue</class>
     </persistence-unit>
 </persistence>

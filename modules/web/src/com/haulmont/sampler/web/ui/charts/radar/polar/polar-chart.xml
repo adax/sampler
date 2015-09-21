@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
-        class="com.haulmont.cuba.gui.components.AbstractFrame"
+        class="com.haulmont.sampler.web.ui.charts.radar.polar.PolarChartFrame"
         xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
-    <dsContext>
-        <collectionDatasource id="countryLitresDs"
-                              class="com.haulmont.sampler.entity.DirectionValue"
-                              view="_local">
-            <query>
-                <![CDATA[select e from sampler$DirectionValue e]]>
-            </query>
-        </collectionDatasource>
-    </dsContext>
     <layout>
-        <chart:radarChart id="radarChart"
+        <chart:radarChart id="polarChart"
                           categoryField="direction"
-                          datasource="countryLitresDs"
                           height="500px"
                           startDuration="1"
                           width="100%">

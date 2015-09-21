@@ -599,13 +599,22 @@
         <item id="xy-chart" docUrlSuffix="chart"
               descriptionsPack="com/haulmont/sampler/web/ui/charts/xy"/>
 
-        <item id="pie-chart" docUrlSuffix="chart"
-              descriptionsPack="com/haulmont/sampler/web/ui/charts/pie"/>
+        <menu id="pieChart">
+            <item id="pie-chart" docUrlSuffix="chart"
+                  controller="com/haulmont/sampler/web/ui/charts/pie/pie/PieChartFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/pie/pie"/>
+            <item id="pie3d-chart" docUrlSuffix="chart"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/pie/pie3d"/>
+            <item id="donut-chart" docUrlSuffix="chart"
+                  controller="com/haulmont/sampler/web/ui/charts/pie/donut/DonutChartFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/pie/donut"/>
+        </menu>
 
         <menu id="radarChart">
             <item id="radar-chart" docUrlSuffix="chart"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/radar/radar"/>
             <item id="polar-chart" docUrlSuffix="chart"
+                  controller="com/haulmont/sampler/web/ui/charts/radar/polar/PolarChartFrame.java"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/radar/polar"/>
         </menu>
 
