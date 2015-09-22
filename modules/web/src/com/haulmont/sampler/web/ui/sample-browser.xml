@@ -2,17 +2,22 @@
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://sampleBrowser"
         class="com.haulmont.sampler.web.ui.SampleBrowser">
-    <layout spacing="true">
-        <split id="split"
-               height="100%"
-               orientation="vertical"
-               width="100%">
-            <hbox id="frameBox"
-                  height="100%"
-                  margin="true,false,true,false"
-                  width="100%"/>
-            <tabSheet id="tabSheet"
-                      height="100%"/>
-        </split>
+    <layout margin="true,false,false,false"
+            spacing="true" expand="tabSheet">
+        <label id="spacer" height="10px"/>
+        <tabSheet id="tabSheet"/>
     </layout>
+    <!--<layout spacing="true">-->
+    <!--<split id="split"-->
+    <!--height="100%"-->
+    <!--orientation="vertical"-->
+    <!--width="100%">-->
+    <!--<hbox id="frameBox"-->
+    <!--height="100%"-->
+    <!--margin="true,false,true,false"-->
+    <!--width="100%"/>-->
+    <!--<tabSheet id="tabSheet"-->
+    <!--height="100%"/>-->
+    <!--</split>-->
+    <!--</layout>-->
 </window>

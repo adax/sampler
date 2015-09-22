@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.haulmont.sampler.gui.components.table.formatter.FormatterTableFrame">
     <dsContext>
@@ -10,8 +11,8 @@
         </collectionDatasource>
     </dsContext>
     <layout>
-        <table height="200px"
-               width="480px">
+        <table height="100%"
+               width="100%">
             <columns>
                 <column id="name">
                     <formatter class="com.haulmont.sampler.gui.components.table.formatter.FormatterTableFrame$UppercaseFormatter"/>

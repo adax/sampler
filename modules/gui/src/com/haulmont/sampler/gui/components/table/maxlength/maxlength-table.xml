@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.haulmont.cuba.gui.components.AbstractFrame">
     <dsContext>
@@ -10,13 +11,14 @@
         </collectionDatasource>
     </dsContext>
     <layout>
-        <table height="200px"
+        <table height="100%"
                width="100%">
             <columns>
                 <column id="date"/>
                 <column id="customer"/>
                 <column id="amount"/>
-                <column id="description" maxTextLength="5"/>
+                <column id="description"
+                        maxTextLength="5"/>
             </columns>
             <rows datasource="ordersDs"/>
         </table>

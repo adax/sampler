@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.haulmont.sampler.gui.components.table.action.ActionTableFrame">
     <dsContext>
@@ -11,7 +12,7 @@
     </dsContext>
     <layout>
         <table id="customerTable"
-               height="200px"
+               height="100%"
                width="100%">
             <actions>
                 <action id="create"/>

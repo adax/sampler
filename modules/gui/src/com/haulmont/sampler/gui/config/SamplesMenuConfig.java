@@ -159,6 +159,16 @@ public class SamplesMenuConfig {
             menuItem.setController(controller);
         }
 
+        String splitPosition = element.attributeValue("sampleSize");
+        if (StringUtils.isNotBlank(splitPosition)) {
+            menuItem.setSampleSize(splitPosition);
+        }
+
+        String splitEnabled = element.attributeValue("splitEnabled");
+        if (StringUtils.isNotBlank(splitEnabled)) {
+            menuItem.setSplitEnabled(splitEnabled);
+        }
+
         Element otherFilesElement = element.element("otherFiles");
         if (otherFilesElement != null && !otherFilesElement.elements().isEmpty()) {
             List<String> otherFiles = new ArrayList<>();

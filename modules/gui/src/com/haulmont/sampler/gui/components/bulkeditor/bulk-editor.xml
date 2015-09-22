@@ -11,9 +11,9 @@
     </dsContext>
     <layout>
         <table id="customersTable"
-               height="200px"
+               height="100%"
                multiselect="true"
-               width="480px">
+               width="100%">
             <columns>
                 <column id="name"/>
                 <column id="lastName"/>

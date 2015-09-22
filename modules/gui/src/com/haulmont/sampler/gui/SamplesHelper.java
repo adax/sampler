@@ -52,6 +52,8 @@ public class SamplesHelper {
         params.put("windowId", item.getId());
         params.put("caption", samplesMenuConfig.getMenuItemCaption(item.getId()));
         params.put("controller", item.getController());
+        params.put("sampleSize", item.getSampleSize());
+        params.put("splitEnabled", item.getSplitEnabled());
         params.put("otherFiles", item.getOtherFiles());
         params.put("screenParams", item.getScreenParams());
         params.put("descriptionsPack", item.getDescriptionsPack());

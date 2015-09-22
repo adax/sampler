@@ -10,17 +10,17 @@
             </query>
         </collectionDatasource>
     </dsContext>
-    <layout spacing="true">
+    <layout expand="orderTable"
+            spacing="true">
         <filter id="filter"
                 datasource="ordersDs">
+            <custom caption="Order Items contains"
+                    join="join {E}.items i"
+                    name="OrderItems"
+                    paramClass="com.haulmont.sampler.entity.Product">i.product.id = ?</custom>
             <properties include=".*"/>
-            <custom name="OrderItems" caption="Order Items contains" paramClass="com.haulmont.sampler.entity.Product"
-                    join="join {E}.items i">
-                i.product.id = ?
-            </custom>
         </filter>
         <table id="orderTable"
-               height="200px"
                width="100%">
             <columns>
                 <column id="date"/>

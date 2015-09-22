@@ -12,9 +12,9 @@
     </dsContext>
     <layout>
         <table id="orderTable"
-               height="200px"
+               height="100%"
                multiselect="true"
-               width="480px">
+               width="100%">
             <columns>
                 <column id="date"/>
                 <column id="amount"/>

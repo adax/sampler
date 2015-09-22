@@ -30,6 +30,8 @@
         <xs:attribute name="controller" type="xs:string" use="optional"/>
         <xs:attribute name="descriptionsPack" type="xs:string" use="optional"/>
         <xs:attribute name="docUrlSuffix" type="xs:string" use="optional"/>
+        <xs:attribute name="sampleSize" type="xs:integer" use="optional"/>
+        <xs:attribute name="splitEnabled" type="xs:boolean" use="optional"/>
     </xs:complexType>
 
     <xs:complexType name="menuType">

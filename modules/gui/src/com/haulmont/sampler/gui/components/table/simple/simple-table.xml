@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.haulmont.sampler.gui.components.table.simple.SimpleTableFrame">
     <dsContext>
@@ -9,7 +10,8 @@
             </query>
         </collectionDatasource>
     </dsContext>
-    <layout spacing="true">
+    <layout expand="ordersTable"
+            spacing="true">
         <hbox spacing="true">
             <checkBox id="multiselect"
                       caption="multiselect"/>

@@ -19,6 +19,8 @@ public class MenuItem {
     private String url;
     private String controller;
     private String descriptionsPack;
+    private String sampleSize;
+    private String splitEnabled;
     private List<String> otherFiles;
     private Map<String, Object> screenParams;
 
@@ -52,6 +54,24 @@ public class MenuItem {
 
     public void setController(String controller) {
         this.controller = controller;
+    }
+
+    @Nullable
+    public String getSampleSize() {
+        return sampleSize;
+    }
+
+    public void setSampleSize(String sampleSize) {
+        this.sampleSize = sampleSize;
+    }
+
+    @Nullable
+    public String getSplitEnabled() {
+        return splitEnabled;
+    }
+
+    public void setSplitEnabled(String splitEnabled) {
+        this.splitEnabled = splitEnabled;
     }
 
     public List<String> getOtherFiles() {

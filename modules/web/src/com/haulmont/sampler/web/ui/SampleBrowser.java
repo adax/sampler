@@ -6,10 +6,9 @@ import com.haulmont.cuba.core.global.Messages;
 import com.haulmont.cuba.core.global.UserSessionSource;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
-import com.haulmont.cuba.web.gui.components.WebComponentsHelper;
-import com.haulmont.cuba.web.gui.components.WebSplitPanel;
 import com.haulmont.sampler.gui.SamplesHelper;
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang.BooleanUtils;
 import org.apache.commons.lang.StringUtils;
 
 import javax.inject.Inject;
@@ -22,12 +21,17 @@ import static com.haulmont.cuba.gui.components.SourceCodeEditor.Mode;
 public class SampleBrowser extends AbstractWindow {
 
     private static final String DOC_URL_MESSAGES_KEY = "docUrl";
+    private static final int SPLIT_POSITION_SPACING = 30;
+
+//    @Inject
+//    private SplitPanel split;
+//
+//    @Inject
+//    private BoxLayout frameBox;
+
 
     @Inject
-    private SplitPanel split;
-
-    @Inject
-    private BoxLayout frameBox;
+    private Label spacer;
 
     @Inject
     private TabSheet tabSheet;
@@ -54,12 +58,38 @@ public class SampleBrowser extends AbstractWindow {
     public void init(Map<String, Object> params) {
         super.init(params);
 
+        String sampleSize = (String) params.get("sampleSize");
+
         String id = (String) params.get("windowId");
         Map<String, Object> screenParams = (Map<String, Object>) params.get("screenParams");
         IFrame frame = openFrame(null, id, screenParams);
         frame.setId("sampleFrame");
-        frame.setHeight("100%");
-        frameBox.add(frame);
+        if (StringUtils.isEmpty(sampleSize)) {
+            frame.setHeight("100%");
+        }
+
+        if (BooleanUtils.toBoolean((String) params.get("splitEnabled"))) {
+
+            remove(spacer);
+            remove(tabSheet);
+
+            SplitPanel split = componentsFactory.createComponent(SplitPanel.NAME);
+            split.setOrientation(SplitPanel.ORIENTATION_VERTICAL);
+            split.setWidth("100%");
+            split.setHeight("100%");
+
+            split.add(frame);
+            split.add(tabSheet);
+
+            if (StringUtils.isNotEmpty(sampleSize)) {
+                split.setSplitPosition(Integer.valueOf(sampleSize) + SPLIT_POSITION_SPACING, UNITS_PIXELS);
+            }
+
+            add(split);
+        } else {
+            add(frame, 0);
+        }
+
 
         String caption = (String) params.get("caption");
         if (StringUtils.isEmpty(caption))

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.haulmont.cuba.gui.components.AbstractFrame">
     <dsContext>
@@ -11,7 +12,7 @@
     </dsContext>
     <layout>
         <table id="orderTable"
-               height="200px"
+               height="100%"
                presentations="true"
                width="100%">
             <columns>

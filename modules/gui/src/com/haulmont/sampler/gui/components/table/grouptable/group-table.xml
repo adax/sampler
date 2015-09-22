@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.haulmont.cuba.gui.components.AbstractFrame">
     <dsContext>
@@ -10,8 +11,8 @@
         </groupDatasource>
     </dsContext>
     <layout>
-        <groupTable height="200px"
-                    width="480px">
+        <groupTable height="100%"
+                    width="100%">
             <columns>
                 <group>
                     <column id="grade"/>
