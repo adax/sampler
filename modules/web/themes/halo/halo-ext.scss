@@ -1,9 +1,13 @@
 @import "../halo/halo";
 @import "samples/components/table/table";
 @import "samples/components/twincolumn/twincolumn";
+@import "samples/folderspane/folderspane";
+@import "samples/samplebrowser/samplebrowser";
 
 @mixin halo-ext {
   @include halo;
+  @include sample-browser;
+  @include sampler-folderspane;
   @include sample-table;
   @include sample-twincolumn;
 
@@ -14,27 +18,4 @@
     margin-left: 5px;
   }
 
-  .ace_editor {
-    font-size: 14px;
-  }
-
-  .v-button-dark {
-    color: #191919;
-  }
-
-  .v-button-dark:hover {
-    color: #5a5a5a;
-  }
-
-  .v-button-dark:focus:after {
-    border-color: #191919;
-  }
-
-  .v-button-small-link {
-    font-size: 12px;
-  }
-
-  .v-tree-node-caption-bold {
-    font-weight: bold;
-  }
 }

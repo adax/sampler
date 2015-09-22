@@ -1,0 +1,21 @@
+@mixin sampler-folderspane{
+  .v-button-dark {
+    color: #191919;
+  }
+
+  .v-button-dark:hover {
+    color: #5a5a5a;
+  }
+
+  .v-button-dark:focus:after {
+    border-color: #191919;
+  }
+
+  .v-button-small-link {
+    font-size: 12px;
+  }
+
+  .v-tree-node-caption-bold {
+    font-weight: bold;
+  }
+}
