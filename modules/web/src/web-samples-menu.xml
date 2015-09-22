@@ -640,6 +640,9 @@
         <item id="polyline-map" docUrlSuffix="map" splitEnabled="true"
               controller="com/haulmont/sampler/web/ui/map/polyline/PolylineMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/polyline"/>
+        <item id="circle-map" docUrlSuffix="map" splitEnabled="true"
+              controller="com/haulmont/sampler/web/ui/map/circle/CircleMapFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/map/circle"/>
         <item id="heat-map" docUrlSuffix="map" splitEnabled="true"
               controller="com/haulmont/sampler/web/ui/map/heat/HeatMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/heat"/>

@@ -42,4 +42,6 @@
             template="com/haulmont/sampler/web/ui/map/heat/heat-map.xml"/>
     <screen id="actions-map"
             template="com/haulmont/sampler/web/ui/map/actions/actions-map.xml"/>
+    <screen id="circle-map"
+            template="com/haulmont/sampler/web/ui/map/circle/circle-map.xml"/>
 </screen-config>
