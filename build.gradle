@@ -71,6 +71,10 @@ configure(globalModule) {
     task enhanceTransient(type: CubaEnhanceTransient) {
         metadataXml = "$globalModule.projectDir/src/metadata.xml"
     }
+
+    jar {
+        from sourceSets.main.allJava
+    }
 }
 
 configure(coreModule) {
