@@ -5,7 +5,7 @@
         messagesPack="com.haulmont.sampler.gui.components">
     <layout margin="true,false,false,false"
             spacing="true" expand="tabSheet">
-        <label height="10px"/>
+        <label id="spacer" height="10px"/>
         <tabSheet id="tabSheet"/>
     </layout>
 </window>
