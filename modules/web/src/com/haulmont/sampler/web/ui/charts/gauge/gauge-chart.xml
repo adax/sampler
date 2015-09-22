@@ -9,7 +9,7 @@
             <chart:axes>
                 <chart:axis axisAlpha="0.2"
                             axisThickness="1"
-                            bottomText="0 km/h"
+                            bottomText="60 km/h"
                             bottomTextYOffset="-20"
                             endValue="220"
                             tickAlpha="0.2"
@@ -29,7 +29,7 @@
                 </chart:axis>
             </chart:axes>
             <chart:arrows>
-                <chart:arrow/>
+                <chart:arrow value="60"/>
             </chart:arrows>
             <chart:exportConfig menuTop="0px">
                 <chart:menuItems>
