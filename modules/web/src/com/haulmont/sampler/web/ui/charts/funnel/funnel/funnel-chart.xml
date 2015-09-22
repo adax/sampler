@@ -15,7 +15,7 @@
         <chart:funnelChart id="funnel"
                            balloonText="[[title]]: [[value]]"
                            datasource="titleValueDs"
-                           height="500px"
+                           height="100%"
                            labelPosition="RIGHT"
                            marginLeft="15"
                            marginRight="160"

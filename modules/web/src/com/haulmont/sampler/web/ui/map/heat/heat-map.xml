@@ -4,7 +4,7 @@
         xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
     <layout>
         <chart:mapViewer id="map"
-                         height="500px"
+                         height="100%"
                          mapType="satellite"
                          width="100%"/>
     </layout>

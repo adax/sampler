@@ -17,7 +17,7 @@
                            categoryField="country"
                            datasource="countryGrowthDs"
                            depth3D="60"
-                           height="500px"
+                           height="100%"
                            plotAreaFillAlphas="0.1"
                            startDuration="1"
                            width="100%">

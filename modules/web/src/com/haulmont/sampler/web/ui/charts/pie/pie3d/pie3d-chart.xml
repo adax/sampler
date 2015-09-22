@@ -17,7 +17,7 @@
                         balloonText="[[title]] - [[percents]]%"
                         datasource="countryLitresDs"
                         depth3D="15"
-                        height="500px"
+                        height="100%"
                         titleField="country"
                         valueField="litres"
                         width="100%">

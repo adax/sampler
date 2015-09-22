@@ -15,7 +15,7 @@
         <chart:serialChart id="stackedArea"
                            categoryField="year"
                            datasource="TransportCountDs"
-                           height="500px"
+                           height="100%"
                            marginLeft="0"
                            marginTop="10"
                            plotAreaBorderAlpha="0"

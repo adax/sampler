@@ -4,7 +4,7 @@
         xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
     <layout>
         <chart:gaugeChart id="gaugeChart"
-                          height="500px"
+                          height="100%"
                           width="100%">
             <chart:axes>
                 <chart:axis axisAlpha="0.2"

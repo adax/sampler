@@ -14,7 +14,7 @@
     <layout>
         <chart:xyChart id="xyChart"
                        datasource="pointPairDs"
-                       height="500px"
+                       height="100%"
                        marginBottom="60"
                        marginLeft="64"
                        startDuration="1"

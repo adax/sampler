@@ -15,7 +15,7 @@
         <chart:serialChart id="lineChart"
                            categoryField="date"
                            datasource="dateValueDs"
-                           height="500px"
+                           height="100%"
                            width="100%">
             <chart:valueAxes>
                 <chart:axis axisAlpha="0"

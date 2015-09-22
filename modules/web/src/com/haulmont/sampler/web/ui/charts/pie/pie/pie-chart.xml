@@ -15,7 +15,7 @@
         <chart:pieChart id="pieChart"
                         balloonText="[[title]] - [[percents]]%"
                         datasource="countryLitresDs"
-                        height="500px"
+                        height="100%"
                         titleField="country"
                         valueField="litres"
                         width="100%">
