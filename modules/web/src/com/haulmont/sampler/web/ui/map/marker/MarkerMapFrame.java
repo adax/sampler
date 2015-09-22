@@ -3,8 +3,8 @@ package com.haulmont.sampler.web.ui.map.marker;
 import com.haulmont.charts.gui.components.map.MapViewer;
 import com.haulmont.charts.gui.map.model.InfoWindow;
 import com.haulmont.charts.gui.map.model.Marker;
-import com.haulmont.charts.gui.map.model.listeners.MapClickListener;
-import com.haulmont.charts.gui.map.model.listeners.MarkerClickListener;
+import com.haulmont.charts.gui.map.model.listeners.click.MapClickListener;
+import com.haulmont.charts.gui.map.model.listeners.click.MarkerClickListener;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 
 import javax.inject.Inject;
