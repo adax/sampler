@@ -3,6 +3,8 @@
     <include file="/screens.xml"/>
     <screen id="mainWindow"
             template="/com/haulmont/sampler/web/app/mainwindow/sampler-main-window.xml"/>
+    <screen id="sample-browser"
+            template="com/haulmont/sampler/web/ui/sample-browser.xml"/>
     <!-- Charts -->
     <screen id="line-chart"
             template="com/haulmont/sampler/web/ui/charts/serial/line/line-chart.xml"/>

@@ -1,4 +1,4 @@
-package com.haulmont.sampler.gui;
+package com.haulmont.sampler.web.ui;
 
 import com.haulmont.cuba.core.global.GlobalConfig;
 import com.haulmont.cuba.core.global.MessageTools;
@@ -6,17 +6,28 @@ import com.haulmont.cuba.core.global.Messages;
 import com.haulmont.cuba.core.global.UserSessionSource;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
+import com.haulmont.cuba.web.gui.components.WebComponentsHelper;
+import com.haulmont.cuba.web.gui.components.WebSplitPanel;
+import com.haulmont.sampler.gui.SamplesHelper;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 
 import javax.inject.Inject;
-import java.util.*;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 
 import static com.haulmont.cuba.gui.components.SourceCodeEditor.Mode;
 
 public class SampleBrowser extends AbstractWindow {
 
     private static final String DOC_URL_MESSAGES_KEY = "docUrl";
+
+    @Inject
+    private SplitPanel split;
+
+    @Inject
+    private BoxLayout frameBox;
 
     @Inject
     private TabSheet tabSheet;
@@ -47,7 +58,8 @@ public class SampleBrowser extends AbstractWindow {
         Map<String, Object> screenParams = (Map<String, Object>) params.get("screenParams");
         IFrame frame = openFrame(null, id, screenParams);
         frame.setId("sampleFrame");
-        add(frame, 0);
+        frame.setHeight("100%");
+        frameBox.add(frame);
 
         String caption = (String) params.get("caption");
         if (StringUtils.isEmpty(caption))
@@ -80,8 +92,7 @@ public class SampleBrowser extends AbstractWindow {
 
         String messagesPack = (String) params.get("messagesPack");
         if (StringUtils.isNotEmpty(messagesPack)) {
-            Collection<String> messagesKeys = (Collection<String>) params.get("messagesKeys");
-            createMessagesContainers(messagesPack, messagesKeys);
+            createMessagesContainers(messagesPack);
         }
     }
 
@@ -185,11 +196,10 @@ public class SampleBrowser extends AbstractWindow {
         return editor;
     }
 
-    private void createMessagesContainers(String messagesPack, Collection<String> messagesKeys) {
+    private void createMessagesContainers(String messagesPack) {
         Locale defaultLocale = messageTools.getDefaultLocale();
         for (Locale locale : globalConfig.getAvailableLocales().values()) {
             SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(Mode.Properties);
-//            StringBuilder sb = new StringBuilder();
             String tabTitle;
             if (defaultLocale.equals(locale)) {
                 tabTitle = "messages.properties";
