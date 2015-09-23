@@ -2,8 +2,6 @@ package com.haulmont.sampler.web.ui.map.circle;
 
 import com.haulmont.charts.gui.components.map.MapViewer;
 import com.haulmont.charts.gui.map.model.Circle;
-import com.haulmont.charts.gui.map.model.GeoPoint;
-import com.haulmont.cuba.gui.components.AbstractWindow;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 
 import javax.inject.Inject;

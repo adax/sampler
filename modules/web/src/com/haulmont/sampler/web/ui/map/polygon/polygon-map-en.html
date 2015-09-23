@@ -1,121 +1,14 @@
 <ul>
     <li>
-        <p>Map configuration methods:</p>
-        <ul>
-            <li>
-                <p><code>setZoom()</code> - sets the map zoom level.</p>
-            </li>
-            <li>
-                <p><code>setCenter()</code> - sets the map center point.</p>
-            </li>
-            <li>
-                <p><code>setVisibleAreaBoundLimitsEnabled()</code> - enables visible area limitation mode.</p>
-            </li>
-            <li>
-                <p><code>setVisibleAreaBoundLimits()</code> - sets boundaries of the visible area of the map.</p>
-            </li>
-            <li>
-                <p><code>fitToBounds()</code> - sets the minimum map zoom as the one which will be sufficient to show in
-                    full an area limited by north-eastern and south-western coordinates.</p>
-            </li>
-            <li>
-                <p><code>setMaxZoom()</code> - sets the maximum available zoom level.</p>
-            </li>
-            <li>
-                <p><code>setMinZoom()</code> - sets the minimum available zoom level.</p>
-            </li>
-            <li>
-                <p><code>setDraggable()</code> - enables/disables map dragging mode.</p>
-            </li>
-            <li>
-                <p><code>setKeyboardShortcutsEnabled()</code> - enables/disables keyboard shortcuts.</p>
-            </li>
-            <li>
-                <p><code>setScrollWheelEnabled()</code> - enables/disables map zoom with a mouse scroll wheel.</p>
-            </li>
-            <li>
-                <p><code>setMapType()</code> - defines map type.</p>
-            </li>
-        </ul>
+        <p><code>GeoPoint</code> - an auxiliary component, which is not displayed on the map. This component can
+            be used to set such map parameters as the center point, boundaries, or to create more complex map
+            components. The object can be created using the <code>createGeoPoint()</code>method of the
+            <code>MapViewer</code>
+            interface.</p>
     </li>
     <li>
-        <p>Map component interfaces (can be found in <code>com.haulmont.charts.gui.map.model</code> package):</p>
-        <ul>
-            <li>
-                <p><code>GeoPoint</code> - an auxiliary component, which is not displayed on the map. This component can
-                    be used to set such map parameters as the center point, boundaries, or to create more complex map
-                    components. The object can be created using the <code>createGeoPoint()</code>method of the <code>MapViewer</code>
-                    interface. For example:</p>
-<pre>GeoPoint center = map.createGeoPoint(53.490905, -2.249558);
-map.setCenter(center);</pre>
-            </li>
-            <li>
-                <p><code>Marker</code> - a component that marks a location on the map. By default, a standard icon of
-                    the map service vendor is used. You can use the <code>createMarker()</code> and
-                    <code>addMarker()</code>methods of the <code>MapViewer</code> interface to create this object and
-                    put it on a map.</p>
-            </li>
-            <li>
-                <p><code>Polyline</code> - a component that displays a polyline. You can use the
-                    <code>createPolyline()</code> and <code>addPolyline()</code> methods of the <code>MapViewer</code>
-                    interface to create this object and put it on a map.</p>
-            </li>
-            <li>
-                <p><code>Polygon</code> - a component that displays a polygon. You can use the
-                    <code>createPolygon()</code> and <code>addPolygonOverlay()</code> methods of the
-                    <code>MapViewer</code> interface to create this object and put it on a map.</p>
-            </li>
-            <li>
-                <p><code>InfoWindow</code> - a map component that displays information in a pop-up window. You can use
-                    the <code>createInfoWindow()</code> and <code>openInfoWindow()</code> methods of the
-                    <code>MapViewer</code> interface to create this object and put it on a map.</p>
-            </li>
-            <li>
-                <p><code>HeatMapLayer</code> - a map layer showing a heat map intended to display data density
-                    distribution across different geopoints. Data density is highlighted with color. By default, regions
-                    with higher points density are displayed in red and regions with lower density &ndash; in green. You
-                    can use the <code>createHeatMapLayer()</code> and <code>addHeatMapLayer()</code> methods of the
-                    <code>MapViewer</code> interface to create this object and put it on a map.</p>
-
-                <p>The data used for the heat map layer can be changed using a separate <code>setData()</code> method.
-                    This change does not require re-adding the layer to the map.</p>
-            </li>
-            <li>
-                <p><code>DrawingOptions</code> - auxiliary drawing component. Only polygon drawing is currently
-                    supported. Drawing mode can be enabled by passing an instance of <code>DrawingOptions</code> to the
-                    <code>MapViewer</code>.</p>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <p>Event listeners (located in the <code>com.haulmont.charts.gui.map.model.listeners</code>) package):</p>
-        <ul>
-            <li>
-                <p><code>MapMoveListener</code> - user drags a map with a mouse button pressed.</p>
-            </li>
-            <li>
-                <p><code>MapClickListener</code> - user clicks on a map.</p>
-            </li>
-            <li>
-                <p><code>MarkerClickListener</code> - user clicks on a marker.</p>
-            </li>
-            <li>
-                <p><code>MarkerDragListener</code> - user drags a marker.</p>
-            </li>
-            <li>
-                <p><code>InfoWindowClosedListener</code> - user closes an information window.</p>
-            </li>
-            <li>
-                <p><code>PolygonCompleteListener</code> - user creates a polygon in map editing mode.</p>
-            </li>
-            <li>
-                <p><code>PolygonEditListener</code> - user edits a polygon (moves or adds a vertex to an existing
-                    polygon).</p>
-            </li>
-            <li>
-                <p><code>MapInitListener</code> - map initialization complete. This listener is invoked once after the
-                    first load of the map when all the tiles are loaded and coordinates are available.</p>
-            </li>
-        </ul>
+        <p><code>Polygon</code> - a component that displays a polygon. You can use the
+            <code>createPolygon()</code> and <code>addPolygonOverlay()</code> methods of the
+            <code>MapViewer</code> interface to create this object and put it on a map.</p>
     </li>
 </ul>

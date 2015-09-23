@@ -1,15 +1,11 @@
 package com.haulmont.sampler.web.ui.map.polyline;
 
-import com.google.common.collect.Lists;
 import com.haulmont.charts.gui.components.map.MapViewer;
-import com.haulmont.charts.gui.map.model.GeoPoint;
 import com.haulmont.charts.gui.map.model.Polyline;
-import com.haulmont.charts.gui.map.model.base.MarkerImage;
 import com.haulmont.charts.gui.map.model.directions.*;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 
 import javax.inject.Inject;
-import java.util.List;
 import java.util.Map;
 
 public class PolylineMapFrame extends AbstractFrame {
