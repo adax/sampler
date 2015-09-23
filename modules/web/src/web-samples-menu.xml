@@ -64,7 +64,7 @@
             <item id="image-embedded" docUrlSuffix="gui_Embedded" sampleHeight="250px"
                   descriptionsPack="com/haulmont/sampler/gui/components/embedded/image"
                   controller="com/haulmont/sampler/gui/components/embedded/image/ImageEmbeddedFrame.java"/>
-            <item id="web-embedded" docUrlSuffix="gui_Embedded" splitEnabled="true"
+            <item id="web-embedded" docUrlSuffix="gui_Embedded" splitEnabled="true" sampleHeight="70"
                   descriptionsPack="com/haulmont/sampler/gui/components/embedded/web"
                   controller="com/haulmont/sampler/gui/components/embedded/web/WebEmbeddedFrame.java"/>
         </menu>
@@ -517,7 +517,7 @@
         </menu>
 
         <menu id="buttonsPanel">
-            <item id="table-buttonspanel" docUrlSuffix="gui_ButtonsPanel"
+            <item id="table-buttonspanel" docUrlSuffix="gui_ButtonsPanel" splitEnabled="true"
                   descriptionsPack="com/haulmont/sampler/gui/containers/buttonspanel/table"/>
             <item id="always-visible-buttonspanel" docUrlSuffix="gui_ButtonsPanel" sampleHeight="30px"
                   controller="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/AlwaysVisibleButtonsPanelFrame.java"
