@@ -52,16 +52,17 @@ public class SampleBrowser extends AbstractWindow {
         super.init(params);
 
         String sampleHeight = (String) params.get("sampleHeight");
+        String splitEnabled = (String) params.get("splitEnabled");
 
         String id = (String) params.get("windowId");
         Map<String, Object> screenParams = (Map<String, Object>) params.get("screenParams");
         IFrame frame = openFrame(null, id, screenParams);
         frame.setId("sampleFrame");
-        if (StringUtils.isEmpty(sampleHeight)) {
+        if (StringUtils.isEmpty(sampleHeight) && StringUtils.isNotEmpty(splitEnabled)) {
             frame.setHeight("100%");
         }
 
-        if (BooleanUtils.toBoolean((String) params.get("splitEnabled"))) {
+        if (BooleanUtils.toBoolean(splitEnabled)) {
 
             remove(spacer);
             remove(tabSheet);
