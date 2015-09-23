@@ -51,17 +51,13 @@ public class SampleBrowser extends AbstractWindow {
     public void init(Map<String, Object> params) {
         super.init(params);
 
-        String sampleHeight = (String) params.get("sampleHeight");
-        String splitEnabled = (String) params.get("splitEnabled");
-
         String id = (String) params.get("windowId");
         Map<String, Object> screenParams = (Map<String, Object>) params.get("screenParams");
         IFrame frame = openFrame(null, id, screenParams);
         frame.setId("sampleFrame");
-        if (StringUtils.isEmpty(sampleHeight) && StringUtils.isNotEmpty(splitEnabled)) {
-            frame.setHeight("100%");
-        }
 
+        String sampleHeight = (String) params.get("sampleHeight");
+        String splitEnabled = (String) params.get("splitEnabled");
         if (BooleanUtils.toBoolean(splitEnabled)) {
 
             remove(spacer);
@@ -83,8 +79,11 @@ public class SampleBrowser extends AbstractWindow {
                     String height = sampleHeight.replace("px", "");
                     split.setSplitPosition(Integer.valueOf(height) + SPLIT_POSITION_SPACING, UNITS_PIXELS);
                 } else {
+                    frame.setHeight("100%");
                     split.setSplitPosition(Integer.valueOf(sampleHeight));
                 }
+            } else {
+                frame.setHeight("100%");
             }
 
             add(split);
