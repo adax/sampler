@@ -64,6 +64,9 @@ public class SampleBrowser extends AbstractWindow {
             remove(tabSheet);
 
             SplitPanel split = componentsFactory.createComponent(SplitPanel.NAME);
+            if (split instanceof HasSettings) {
+                ((HasSettings) split).setSettingsEnabled(false);
+            }
             split.setOrientation(SplitPanel.ORIENTATION_VERTICAL);
             split.setWidth("100%");
             split.setHeight("100%");
