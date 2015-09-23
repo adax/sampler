@@ -159,9 +159,9 @@ public class SamplesMenuConfig {
             menuItem.setController(controller);
         }
 
-        String splitPosition = element.attributeValue("sampleSize");
+        String splitPosition = element.attributeValue("sampleHeight");
         if (StringUtils.isNotBlank(splitPosition)) {
-            menuItem.setSampleSize(splitPosition);
+            menuItem.setSampleHeight(splitPosition);
         }
 
         String splitEnabled = element.attributeValue("splitEnabled");

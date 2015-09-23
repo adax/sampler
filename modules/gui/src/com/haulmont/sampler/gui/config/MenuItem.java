@@ -19,7 +19,7 @@ public class MenuItem {
     private String url;
     private String controller;
     private String descriptionsPack;
-    private String sampleSize;
+    private String sampleHeight;
     private String splitEnabled;
     private List<String> otherFiles;
     private Map<String, Object> screenParams;
@@ -57,12 +57,12 @@ public class MenuItem {
     }
 
     @Nullable
-    public String getSampleSize() {
-        return sampleSize;
+    public String getSampleHeight() {
+        return sampleHeight;
     }
 
-    public void setSampleSize(String sampleSize) {
-        this.sampleSize = sampleSize;
+    public void setSampleHeight(String sampleHeight) {
+        this.sampleHeight = sampleHeight;
     }
 
     @Nullable
