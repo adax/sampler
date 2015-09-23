@@ -78,7 +78,12 @@ public class SampleBrowser extends AbstractWindow {
             split.add(tabSheet);
 
             if (StringUtils.isNotEmpty(sampleHeight)) {
-                split.setSplitPosition(Integer.valueOf(sampleHeight) + SPLIT_POSITION_SPACING, UNITS_PIXELS);
+                if (sampleHeight.contains("px")) {
+                    String height = sampleHeight.replace("px", "");
+                    split.setSplitPosition(Integer.valueOf(height) + SPLIT_POSITION_SPACING, UNITS_PIXELS);
+                } else {
+                    split.setSplitPosition(Integer.valueOf(sampleHeight));
+                }
             }
 
             add(split);
