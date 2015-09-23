@@ -631,22 +631,22 @@
     </menu>
 
     <menu id="maps">
-        <item id="marker-map" docUrlSuffix="map" splitEnabled="true"
+        <item id="marker-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
               controller="com/haulmont/sampler/web/ui/map/marker/MarkerMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/marker"/>
-        <item id="polygon-map" docUrlSuffix="map" splitEnabled="true"
+        <item id="polygon-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
               controller="com/haulmont/sampler/web/ui/map/polygon/PolygonMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/polygon"/>
-        <item id="polyline-map" docUrlSuffix="map" splitEnabled="true"
+        <item id="polyline-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
               controller="com/haulmont/sampler/web/ui/map/polyline/PolylineMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/polyline"/>
-        <item id="circle-map" docUrlSuffix="map" splitEnabled="true"
+        <item id="circle-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
               controller="com/haulmont/sampler/web/ui/map/circle/CircleMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/circle"/>
-        <item id="heat-map" docUrlSuffix="map" splitEnabled="true"
+        <item id="heat-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
               controller="com/haulmont/sampler/web/ui/map/heat/HeatMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/heat"/>
-        <item id="actions-map" docUrlSuffix="map" splitEnabled="true"
+        <item id="actions-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
               controller="com/haulmont/sampler/web/ui/map/actions/ActionsMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/actions"/>
     </menu>
