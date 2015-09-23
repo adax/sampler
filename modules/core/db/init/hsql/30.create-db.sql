@@ -309,19 +309,17 @@ values ('sample-browser.group-filter.filter', 'Group', 'Group Conditions', '<?xm
 
 <filter>
   <and>
-    <and name="group" unary="true" width="1">
-      <or name="group" unary="true" width="1">
-        <c name="active" class="java.lang.Boolean" operatorType="EQUAL" width="1" type="PROPERTY"><![CDATA[e.active = :component$sampleFrame.filter.active95893]]>
-          <param name="component$sampleFrame.filter.active95893" javaClass="java.lang.Boolean">false</param>
-        </c>
-        <c name="grade" class="com.haulmont.sampler.entity.CustomerGrade" operatorType="EQUAL" width="1" type="PROPERTY"><![CDATA[e.grade = :component$sampleFrame.filter.grade65770]]>
-          <param name="component$sampleFrame.filter.grade65770" javaClass="com.haulmont.sampler.entity.CustomerGrade">PREMIUM</param>
-        </c>
-      </or>
-      <c name="age" class="java.lang.Integer" operatorType="GREATER_OR_EQUAL" width="1" type="PROPERTY"><![CDATA[e.age = :component$sampleFrame.filter.age37008]]>
-        <param name="component$sampleFrame.filter.age37008" javaClass="java.lang.Integer">30</param>
+    <or name="group" unary="true" width="1">
+      <c name="active" class="java.lang.Boolean" operatorType="EQUAL" width="1" type="PROPERTY"><![CDATA[e.active = :component$sampleFrame.filter.active95893]]>
+        <param name="component$sampleFrame.filter.active95893" javaClass="java.lang.Boolean">false</param>
       </c>
-    </and>
+      <c name="grade" class="com.haulmont.sampler.entity.CustomerGrade" operatorType="EQUAL" width="1" type="PROPERTY"><![CDATA[e.grade = :component$sampleFrame.filter.grade65770]]>
+        <param name="component$sampleFrame.filter.grade65770" javaClass="com.haulmont.sampler.entity.CustomerGrade">PREMIUM</param>
+      </c>
+    </or>
+    <c name="age" class="java.lang.Integer" operatorType="GREATER_OR_EQUAL" width="1" type="PROPERTY"><![CDATA[e.age = :component$sampleFrame.filter.age37008]]>
+      <param name="component$sampleFrame.filter.age37008" javaClass="java.lang.Integer">30</param>
+    </c>
   </and>
 </filter>
 ', null, 1, current_timestamp, 'admin', null, null, 'e21cb18b-5af0-0968-1dcc-55649ffbb105', current_timestamp, 'admin');
