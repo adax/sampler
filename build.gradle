@@ -111,6 +111,14 @@ configure(coreModule) {
                 'app-global', 'app-core')
     }
 
+    task startDb(type: CubaHsqlStart) {
+        dbName = 'sampler'
+    }
+
+    task stopDb(type: CubaHsqlStop) {
+        dbName = 'sampler'
+    }
+
     task createDb(dependsOn: assembleDbScripts, description: 'Creates local database', type: CubaDbCreation) {
         dbms = 'hsql'
         host = 'localhost'

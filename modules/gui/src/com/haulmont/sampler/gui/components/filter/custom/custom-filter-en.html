@@ -1,27 +1,3 @@
-<p><code>custom</code> - the element defining an arbitrary condition. The element content should be a JPQL expression (<a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/jpql_macro.html" target="_blank">JPQL Macros</a> can be used), which will be added to the data source query's <code>where</code> clause. The <code>{E}</code> placeholder should be used in the expression instead of the alias of the entity being selected. The condition can only have one parameter denoted by "?" if used.</p>
-<p><code>custom</code> attributes:</p>
-<div>
-    <ul>
-        <li>
-            <p><code>name</code> - required attribute, condition name.</p>
-        </li>
-        <li>
-            <p><code>caption</code> - required attribute, localized condition name. Generally it is a string with the <code>msg://</code> prefix in accordance with <a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/messageTools.html#messageTools.loadString" target="_blank">MessageTools.loadString()</a> rules.</p>
-        </li>
-        <li>
-            <p><code>paramClass</code> - Java class of the condition parameter. If the parameter is not specified, this attribute is optional.</p>
-        </li>
-        <li>
-            <p><code>inExpr</code> - should be set to <code>true</code>, if the JPQL expression contains <code>in (?)</code> conditions. In this case user will be able to enter several condition parameter values.</p>
-        </li>
-        <li>
-            <p><code>join</code> - optional attribute. It specifies a string, which will be added to the data source query <code>from</code> section. This can be required to create a complex condition based on an attribute of a related collection. <code>join</code> or <code>left join</code>statements should be included into the attribute value.</p>
-        </li>
-        <li>
-            <p><code>paramWhere</code> - specifies a JPQL expression used to select the list of condition parameter values if the parameter is a related entity. See the description of the <code>property</code> element's attribute of the same name.</p>
-        </li>
-        <li>
-            <p><code>paramView</code> - specifies a <a href="http://docs.cuba-platform.com/cuba/latest/manual/en/webhelp/views.html" target="_blank">view</a>, which will be used when a list of condition parameter values are loaded if the parameter is a related entity. For example, <code>_local</code>. If it is not specified, <code>_minimal</code> view will be used.</p>
-        </li>
-    </ul>
-</div>
+<p>A user can create custom conditions based on JPQL expressions by selecting <b>Create new...</b> in the <b>Add condition</b> dialog. Custom conditions can also be defined in the screen XML. Such predefined conditions are available to users in the <b>Custom conditions</b> group of the <b>Add condition</b> dialog.</p>
+
+<p>In this example, the <b>Order items contain</b> condition allows a user to filter orders by a product contained in order lines. You can see the condition properties in the advanced filter editor available via the <b>Edit</b> settings menu item.</p>
