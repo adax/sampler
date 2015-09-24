@@ -330,8 +330,11 @@ values ('sample-browser.related-filter.filter', 'Related Entity', 'Related Entit
 
 <filter>
   <and>
+    <c name="customer" class="com.haulmont.sampler.entity.Customer" operatorType="EQUAL" width="1" type="PROPERTY"><![CDATA[e.customer.id = :component$sampleFrame.filter.customer59415]]>
+      <param name="component$sampleFrame.filter.customer59415" javaClass="com.haulmont.sampler.entity.Customer">NULL</param>
+    </c>
     <c name="customer.grade" class="com.haulmont.sampler.entity.CustomerGrade" operatorType="EQUAL" width="1" type="PROPERTY"><![CDATA[e.customer.grade = :component$sampleFrame.filter.customer_grade88264]]>
-      <param name="component$sampleFrame.filter.customer_grade88264" javaClass="com.haulmont.sampler.entity.CustomerGrade">STANDARD</param>
+      <param name="component$sampleFrame.filter.customer_grade88264" javaClass="com.haulmont.sampler.entity.CustomerGrade">NULL</param>
     </c>
   </and>
 </filter>
@@ -343,7 +346,7 @@ values ('sample-browser.custom-filter.filter', 'Custom Condition', 'Custom Condi
 
 <filter>
   <and>
-    <c name="OrderItems" class="com.haulmont.sampler.entity.Product" caption="Order Items contains" width="1" type="CUSTOM" entityAlias="e"><![CDATA[i.product.id = :component$sampleFrame.filter.OrderItems81751]]>
+    <c name="OrderItems" class="com.haulmont.sampler.entity.Product" caption="Order Items contain" width="1" type="CUSTOM" entityAlias="e"><![CDATA[i.product.id = :component$sampleFrame.filter.OrderItems81751]]>
       <param name="component$sampleFrame.filter.OrderItems81751" javaClass="com.haulmont.sampler.entity.Product">dab66821-e3b0-b6a8-eae1-e0b3f0e71d4f</param>
       <join><![CDATA[join {E}.items i]]></join>
     </c>
