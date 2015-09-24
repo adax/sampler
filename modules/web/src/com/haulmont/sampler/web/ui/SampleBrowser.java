@@ -101,13 +101,10 @@ public class SampleBrowser extends AbstractWindow {
         setCaption(caption);
 
         String descriptionsPack = (String) params.get("descriptionsPack");
-
-        if (StringUtils.isNotEmpty(messages.getMessage(frame.getClass(), DOC_URL_MESSAGES_KEY))) {
+        if (StringUtils.isNotEmpty(descriptionsPack)) {
             String docUrlSuffix = (String) params.get("docUrlSuffix");
-            if (StringUtils.isNotEmpty(docUrlSuffix)) {
-                addTab(messages.getMessage(getClass(), "sampleBrowser.description"),
-                        createDescription(frame.getClass(), descriptionsPack, docUrlSuffix, id));
-            }
+            addTab(messages.getMessage(getClass(), "sampleBrowser.description"),
+                    createDescription(descriptionsPack, docUrlSuffix, id));
         }
 
         String screenSrc = (String) params.get("screenSrc");
@@ -142,26 +139,26 @@ public class SampleBrowser extends AbstractWindow {
         return vBox;
     }
 
-    private Component createDescription(Class<? extends IFrame> aClass, String descriptionsPack, String docUrlSuffix, String frameId) {
+    private Component createDescription(String descriptionsPack, String docUrlSuffix, String frameId) {
         ScrollBoxLayout scrollBoxLayout = componentsFactory.createComponent(ScrollBoxLayout.NAME);
         scrollBoxLayout.setWidth("100%");
         scrollBoxLayout.setHeight("100%");
         scrollBoxLayout.setSpacing(true);
 
-        if (StringUtils.isNotEmpty(descriptionsPack)) {
-            scrollBoxLayout.add(descriptionText(frameId, descriptionsPack));
+        scrollBoxLayout.add(descriptionText(frameId, descriptionsPack));
+
+        if (StringUtils.isNotEmpty(docUrlSuffix)) {
+            HBoxLayout hbox = componentsFactory.createComponent(HBoxLayout.NAME);
+            hbox.setWidth("100%");
+
+            Component docLinks = documentLinks(descriptionsPack, docUrlSuffix);
+            hbox.add(docLinks);
+            hbox.expand(docLinks);
+
+            hbox.add(permalink(frameId));
+
+            scrollBoxLayout.add(hbox);
         }
-
-        HBoxLayout hbox = componentsFactory.createComponent(HBoxLayout.NAME);
-        hbox.setWidth("100%");
-
-        Component docLinks = documentLinks(aClass, docUrlSuffix);
-        hbox.add(docLinks);
-        hbox.expand(docLinks);
-
-        hbox.add(permalink(frameId));
-
-        scrollBoxLayout.add(hbox);
 
         return scrollBoxLayout;
     }
@@ -180,7 +177,7 @@ public class SampleBrowser extends AbstractWindow {
         return doc;
     }
 
-    private Component documentLinks(Class<? extends IFrame> aClass, String docUrlSuffix) {
+    private Component documentLinks(String descriptionsPack, String docUrlSuffix) {
         StringBuilder sb = new StringBuilder();
         sb.append(messages.getMessage(getClass(), "sampleBrowser.documentation"));
         sb.append(": ");
@@ -193,7 +190,7 @@ public class SampleBrowser extends AbstractWindow {
                 sb.append(" | ");
             }
 
-            String url = messages.getMessage(aClass, DOC_URL_MESSAGES_KEY, locale) + docUrlSuffix + ".html";
+            String url = messages.getMessage(descriptionsPack, DOC_URL_MESSAGES_KEY, locale) + docUrlSuffix + ".html";
             sb.append(String.format("<a href=\"%s\" target=\"_blank\">%s</a>", url, localeName));
         }
 
