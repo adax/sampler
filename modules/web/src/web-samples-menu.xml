@@ -586,67 +586,67 @@
     <menu id="charts">
 
         <menu id="serialChart">
-            <item id="line-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="line-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/line"/>
-            <item id="stackedarea-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="stackedarea-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/stackedarea"/>
-            <item id="columnline-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="columnline-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/columnline"/>
-            <item id="column3d-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="column3d-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/column3d"/>
         </menu>
 
-        <item id="xy-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+        <item id="xy-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
               descriptionsPack="com/haulmont/sampler/web/ui/charts/xy"/>
 
         <menu id="pieChart">
-            <item id="pie-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="pie-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   controller="com/haulmont/sampler/web/ui/charts/pie/pie/PieChartFrame.java"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/pie/pie"/>
-            <item id="pie3d-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="pie3d-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/pie/pie3d"/>
-            <item id="donut-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="donut-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   controller="com/haulmont/sampler/web/ui/charts/pie/donut/DonutChartFrame.java"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/pie/donut"/>
         </menu>
 
         <menu id="radarChart">
-            <item id="radar-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="radar-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/radar/radar"/>
-            <item id="polar-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="polar-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   controller="com/haulmont/sampler/web/ui/charts/radar/polar/PolarChartFrame.java"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/radar/polar"/>
         </menu>
 
-        <item id="gauge-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+        <item id="gauge-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
               descriptionsPack="com/haulmont/sampler/web/ui/charts/gauge"/>
 
         <menu id="funnelChart">
-            <item id="funnel-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="funnel-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/funnel/funnel"/>
-            <item id="funnel3d-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="70"
+            <item id="funnel3d-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/funnel/funnel3d"/>
         </menu>
 
     </menu>
 
     <menu id="maps">
-        <item id="marker-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
+        <item id="marker-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
               controller="com/haulmont/sampler/web/ui/map/marker/MarkerMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/marker"/>
-        <item id="polygon-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
+        <item id="polygon-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
               controller="com/haulmont/sampler/web/ui/map/polygon/PolygonMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/polygon"/>
-        <item id="polyline-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
+        <item id="polyline-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
               controller="com/haulmont/sampler/web/ui/map/polyline/PolylineMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/polyline"/>
-        <item id="circle-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
+        <item id="circle-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
               controller="com/haulmont/sampler/web/ui/map/circle/CircleMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/circle"/>
-        <item id="heat-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
+        <item id="heat-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
               controller="com/haulmont/sampler/web/ui/map/heat/HeatMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/heat"/>
-        <item id="actions-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="70"
+        <item id="actions-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
               controller="com/haulmont/sampler/web/ui/map/actions/ActionsMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/actions"/>
     </menu>

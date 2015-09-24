@@ -346,7 +346,7 @@ values ('sample-browser.custom-filter.filter', 'Custom Condition', 'Custom Condi
 
 <filter>
   <and>
-    <c name="OrderItems" class="com.haulmont.sampler.entity.Product" caption="Order Items contain" width="1" type="CUSTOM" entityAlias="e"><![CDATA[i.product.id = :component$sampleFrame.filter.OrderItems81751]]>
+    <c name="OrderItems" class="com.haulmont.sampler.entity.Product" caption="Order items contain" width="1" type="CUSTOM" entityAlias="e"><![CDATA[i.product.id = :component$sampleFrame.filter.OrderItems81751]]>
       <param name="component$sampleFrame.filter.OrderItems81751" javaClass="com.haulmont.sampler.entity.Product">dab66821-e3b0-b6a8-eae1-e0b3f0e71d4f</param>
       <join><![CDATA[join {E}.items i]]></join>
     </c>
