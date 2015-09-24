@@ -15,7 +15,7 @@ public class CircleMapFrame extends AbstractFrame {
     @Override
     public void init(Map<String, Object> params) {
 
-        map.setZoom(12);
+        map.setZoom(11);
         map.setCenter(map.createGeoPoint(53.79, -2.65));
 
         Circle circle = map.createCircle(map.createGeoPoint(53.79, -2.79), 3000);

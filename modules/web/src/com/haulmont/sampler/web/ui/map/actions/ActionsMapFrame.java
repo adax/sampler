@@ -17,11 +17,16 @@ public class ActionsMapFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-        initMap();
+        map.setCenter(map.createGeoPoint(53.490905, -2.249558));
+        map.setZoom(8);
         addMapListeners();
     }
 
-    private void initMap() {
+    private String string(GeoPoint p) {
+        return p != null ? String.format("(%.2f, %.2f)", p.getLatitude(), p.getLongitude()) : "null";
+    }
+
+    private void addMapListeners() {
         map.addMapInitListener(new MapInitListener() {
             @Override
             public void init(GeoPoint center, int zoom, GeoPoint boundNE, GeoPoint boundSW) {
@@ -31,15 +36,6 @@ public class ActionsMapFrame extends AbstractFrame {
             }
         });
 
-        map.setCenter(map.createGeoPoint(53.490905, -2.249558));
-        map.setZoom(8);
-    }
-
-    private String string(GeoPoint p) {
-        return p != null ? String.format("(%.2f, %.2f)", p.getLatitude(), p.getLongitude()) : "null";
-    }
-
-    private void addMapListeners() {
         map.addMapClickListener(new MapClickListener() {
             @Override
             public void onClick(MapClickListener.MapClickEvent event) {
