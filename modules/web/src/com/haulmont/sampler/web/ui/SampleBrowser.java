@@ -190,7 +190,7 @@ public class SampleBrowser extends AbstractWindow {
                 sb.append(" | ");
             }
 
-            String url = messages.getMessage(descriptionsPack, DOC_URL_MESSAGES_KEY, locale) + docUrlSuffix + ".html";
+            String url = messages.getMessage(descriptionsPack, DOC_URL_MESSAGES_KEY, locale) + "#" + docUrlSuffix;
             sb.append(String.format("<a href=\"%s\" target=\"_blank\">%s</a>", url, localeName));
         }
 
