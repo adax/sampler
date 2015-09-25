@@ -4,7 +4,7 @@
     <dsContext>
         <collectionDatasource id="ordersDs"
                               class="com.haulmont.sampler.entity.Order"
-                              view="_local">
+                              view="order-with-customer">
             <query>
                 <![CDATA[select e from sampler$Order e]]>
             </query>
@@ -19,6 +19,7 @@
                height="200px"
                width="100%">
             <columns>
+                <column id="customer"/>
                 <column id="date"/>
                 <column id="amount"/>
                 <column id="description"/>
