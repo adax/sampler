@@ -39,7 +39,7 @@ public class ActionsMapFrame extends AbstractFrame {
         map.addMapClickListener(new MapClickListener() {
             @Override
             public void onClick(MapClickListener.MapClickEvent event) {
-                String caption = String.format("Map clicked: %.2f, %.2f", event.getPosition().getLatitude(),
+                String caption = String.format("Map click: %.2f, %.2f", event.getPosition().getLatitude(),
                         event.getPosition().getLongitude());
                 showNotification(caption, NotificationType.HUMANIZED);
             }
@@ -52,7 +52,7 @@ public class ActionsMapFrame extends AbstractFrame {
                         ", " + map.getBoundNorthEast().getLongitude() + "\n"
                         + "South-west bound: " + map.getBoundSouthWest().getLatitude() +
                         ", " + map.getBoundSouthWest().getLongitude() + "\n";
-                showNotification("Map have been moved",  content, NotificationType.HUMANIZED);
+                showNotification("Map has been moved",  content, NotificationType.HUMANIZED);
             }
         });
     }

@@ -32,7 +32,7 @@ public class MarkerMapFrame extends AbstractFrame {
             @Override
             public void onClick(MarkerClickEvent event) {
                 Marker marker = event.getMarker();
-                String caption = String.format("Marker clicked: %.2f, %.2f",
+                String caption = String.format("Marker click: %.2f, %.2f",
                         marker.getPosition().getLatitude(),
                         marker.getPosition().getLongitude());
                 InfoWindow infoWindow = map.createInfoWindow(caption, marker);
