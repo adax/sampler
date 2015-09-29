@@ -10,13 +10,13 @@ allprojects {
 }
 
 buildscript {
-    ext.cubaVersion = '5.6-SNAPSHOT'
+    ext.cubaVersion = '5.6.7'
     repositories {
         maven {
             url 'http://repository.haulmont.com:8587/nexus/content/groups/work'
             credentials {
-                username(rootProject.hasProperty('repoUser') ? rootProject['repoUser'] : 'developer')
-                password(rootProject.hasProperty('repoPass') ? rootProject['repoPass'] : 'Haul2010')
+                username(rootProject.hasProperty('repoUser') ? rootProject['repoUser'] : System.getenv('HAULMONT_REPOSITORY_USER'))
+                password(rootProject.hasProperty('repoPass') ? rootProject['repoPass'] : System.getenv('HAULMONT_REPOSITORY_PASSWORD'))
             }
         }
     }
