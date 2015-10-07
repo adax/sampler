@@ -31,12 +31,7 @@
             <chart:arrows>
                 <chart:arrow value="60"/>
             </chart:arrows>
-            <chart:exportConfig menuTop="0px">
-                <chart:menuItems>
-                    <chart:menu format="PNG"
-                                icon="VAADIN/resources/amcharts/images/export.png"/>
-                </chart:menuItems>
-            </chart:exportConfig>
+            <chart:export/>
         </chart:gaugeChart>
     </layout>
 </window>

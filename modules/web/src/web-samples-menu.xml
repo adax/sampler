@@ -102,25 +102,25 @@
         </menu>
 
         <menu id="filter">
-            <item id="multiple-filter" docUrlSuffix="gui_Filter"
+            <item id="multiple-filter" docUrlSuffix="gui_Filter" splitEnabled="true" sampleHeight="50"
                   descriptionsPack="com/haulmont/sampler/gui/components/filter/multiple">
                 <screenParams>
                     <param name="filter" value="Multiple Conditions"/>
                 </screenParams>
             </item>
-            <item id="group-filter" docUrlSuffix="gui_Filter"
+            <item id="group-filter" docUrlSuffix="gui_Filter" splitEnabled="true" sampleHeight="50"
                   descriptionsPack="com/haulmont/sampler/gui/components/filter/group">
                 <screenParams>
                     <param name="filter" value="Group Conditions"/>
                 </screenParams>
             </item>
-            <item id="related-filter" docUrlSuffix="gui_Filter"
+            <item id="related-filter" docUrlSuffix="gui_Filter" splitEnabled="true" sampleHeight="50"
                   descriptionsPack="com/haulmont/sampler/gui/components/filter/related">
                 <screenParams>
                     <param name="filter" value="Related Entity"/>
                 </screenParams>
             </item>
-            <item id="custom-filter" docUrlSuffix="gui_Filter"
+            <item id="custom-filter" docUrlSuffix="gui_Filter" splitEnabled="true" sampleHeight="50"
                   descriptionsPack="com/haulmont/sampler/gui/components/filter/custom">
                 <screenParams>
                     <param name="filter" value="Custom Condition"/>
@@ -547,8 +547,8 @@
                   descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/collapsable"/>
         </menu>
 
-        <item id="simple-iframe" docUrlSuffix="gui_IFrame" sampleHeight="150px"
-              descriptionsPack="com/haulmont/sampler/gui/containers/iframe/simple"/>
+        <item id="simple-frame" docUrlSuffix="gui_IFrame" sampleHeight="150px"
+              descriptionsPack="com/haulmont/sampler/gui/containers/frame/simple"/>
 
         <item id="simple-scrollbox" docUrlSuffix="gui_ScrollBoxLayout" sampleHeight="150px"
               descriptionsPack="com/haulmont/sampler/gui/containers/scrollboxlayout/simple"/>

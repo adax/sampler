@@ -11,6 +11,8 @@
                         radius="42%"
                         titleField="title"
                         valueField="value"
-                        width="100%"/>
+                        width="100%">
+            <chart:export/>
+        </chart:pieChart>
     </layout>
 </window>

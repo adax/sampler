@@ -3,7 +3,6 @@ package com.haulmont.sampler.gui.components.pickerfield.simple;
 import com.haulmont.cuba.core.entity.Entity;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.data.Datasource;
-import com.haulmont.cuba.gui.data.impl.DsListenerAdapter;
 import com.haulmont.sampler.entity.Order;
 
 import javax.inject.Inject;
@@ -21,12 +20,9 @@ public class SimplePickerFieldFrame extends AbstractFrame {
         Order order = new Order();
         orderDs.setItem(order);
 
-        orderDs.addListener(new DsListenerAdapter<Order>() {
-            @Override
-            public void valueChanged(Order source, String property, Object prevValue, Object value) {
-                Object str = value instanceof Entity ? ((Entity) value).getInstanceName() : value;
-                showNotification(property + " = " + str, NotificationType.HUMANIZED);
-            }
+        orderDs.addItemPropertyChangeListener(e -> {
+            Object str = e.getValue() instanceof Entity ? ((Entity) e.getValue()).getInstanceName() : e.getValue();
+            showNotification(e.getProperty() + " = " + str, NotificationType.HUMANIZED);
         });
     }
 }

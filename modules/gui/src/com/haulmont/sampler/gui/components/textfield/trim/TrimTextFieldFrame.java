@@ -1,10 +1,10 @@
 package com.haulmont.sampler.gui.components.textfield.trim;
 
-import com.google.common.escape.Escaper;
-import com.google.common.escape.Escapers;
 import com.google.common.html.HtmlEscapers;
-import com.haulmont.cuba.gui.components.*;
-import com.haulmont.cuba.gui.data.ValueListener;
+import com.haulmont.cuba.gui.components.AbstractFrame;
+import com.haulmont.cuba.gui.components.CheckBox;
+import com.haulmont.cuba.gui.components.Label;
+import com.haulmont.cuba.gui.components.TextField;
 
 import javax.inject.Inject;
 import java.util.Map;
@@ -21,17 +21,12 @@ public class TrimTextFieldFrame extends AbstractFrame {
     @Override
     public void init(Map<String, Object> params) {
         trim.setValue(textField.isTrimming());
-        trim.addListener(new ValueListener() {
-            @Override
-            public void valueChanged(Object source, String property, Object prevValue, Object value) {
-                textField.setTrimming((boolean) trim.getValue());
-            }
-        });
+        trim.addValueChangeListener(e -> textField.setTrimming(trim.getValue()));
     }
 
     public void show() {
         String value = textField.getValue() == null ?
-                "null" : HtmlEscapers.htmlEscaper().escape((String) textField.getValue());
+                "null" : HtmlEscapers.htmlEscaper().escape(textField.getValue());
         this.value.setValue("Value: '" + value.replace(" ", "&nbsp;") + "'");
     }
 }

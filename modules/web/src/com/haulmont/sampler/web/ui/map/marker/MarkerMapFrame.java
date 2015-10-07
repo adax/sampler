@@ -3,8 +3,6 @@ package com.haulmont.sampler.web.ui.map.marker;
 import com.haulmont.charts.gui.components.map.MapViewer;
 import com.haulmont.charts.gui.map.model.InfoWindow;
 import com.haulmont.charts.gui.map.model.Marker;
-import com.haulmont.charts.gui.map.model.listeners.click.MapClickListener;
-import com.haulmont.charts.gui.map.model.listeners.click.MarkerClickListener;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 
 import javax.inject.Inject;
@@ -21,23 +19,15 @@ public class MarkerMapFrame extends AbstractFrame {
         map.setCenter(map.createGeoPoint(53.590905, -2.24955));
         addMarker(53.590905, -2.24955);
 
-        map.addMapClickListener(new MapClickListener() {
-            @Override
-            public void onClick(MapClickEvent event) {
-                addMarker(event.getPosition().getLatitude(), event.getPosition().getLongitude());
-            }
-        });
+        map.addMapClickListener(event -> addMarker(event.getPosition().getLatitude(), event.getPosition().getLongitude()));
 
-        map.addMarkerClickListener(new MarkerClickListener() {
-            @Override
-            public void onClick(MarkerClickEvent event) {
-                Marker marker = event.getMarker();
-                String caption = String.format("Marker click: %.2f, %.2f",
-                        marker.getPosition().getLatitude(),
-                        marker.getPosition().getLongitude());
-                InfoWindow infoWindow = map.createInfoWindow(caption, marker);
-                map.openInfoWindow(infoWindow);
-            }
+        map.addMarkerClickListener(event -> {
+            Marker marker = event.getMarker();
+            String caption = String.format("Marker click: %.2f, %.2f",
+                    marker.getPosition().getLatitude(),
+                    marker.getPosition().getLongitude());
+            InfoWindow infoWindow = map.createInfoWindow(caption, marker);
+            map.openInfoWindow(infoWindow);
         });
     }
 

@@ -1,16 +1,6 @@
 
-allprojects {
-    ext.artifactGroup = 'com.haulmont.sampler'
-    ext.artifactVersion = '0.1'
-    ext.isSnapshot = true
-    ext.tomcatDir = "$rootDir/build/tomcat"
-    ext.copyright = '''''' // Copyright Notice for IDEA project
-    ext.classComment =''''''
-    ext.vcs = 'Git'
-}
-
 buildscript {
-    ext.cubaVersion = '5.6.7'
+    ext.cubaVersion = '6.0-SNAPSHOT'
     repositories {
         maven {
             url 'http://repository.haulmont.com:8587/nexus/content/groups/work'
@@ -30,12 +20,26 @@ def coreModule = project(':app-core')
 def guiModule = project(':app-gui')
 def webModule = project(':app-web')
 
-def hsql = 'org.hsqldb:hsqldb:2.2.9'
-def servletApi = 'org.apache.tomcat:tomcat-servlet-api:7.0.53'
+def hsql = 'org.hsqldb:hsqldb:2.3.3'
+def servletApi = 'org.apache.tomcat:tomcat-servlet-api:8.0.26'
 
 
 apply(plugin: 'idea')
 apply(plugin: 'cuba')
+
+cuba {
+    artifact {
+        group = 'com.haulmont.sampler'
+        version = '0.1'
+        isSnapshot = true
+    }
+    tomcat {
+        dir = "$project.rootDir/build/tomcat"
+    }
+    ide {
+        vcs = 'Git'
+    }
+}
 
 configure([globalModule, coreModule, guiModule, webModule]) {
     apply(plugin: 'java')
@@ -64,13 +68,9 @@ configure(globalModule) {
 
     }
 
-    task enhance(type: CubaEnhancing) {
-        persistenceXml = "$globalModule.projectDir/src/persistence.xml"
-    }
+    task enhance(type: CubaEnhancing) 
 
-    task enhanceTransient(type: CubaEnhanceTransient) {
-        metadataXml = "$globalModule.projectDir/src/metadata.xml"
-    }
+    
 
     jar {
         from sourceSets.main.allJava
@@ -90,14 +90,14 @@ configure(coreModule) {
         jdbc(hsql)
         testRuntime(hsql)
         compile("com.haulmont.cuba:cuba-core:$cubaVersion")
-        testCompile("com.haulmont.cuba:cuba-core:$cubaVersion:tests")
+        testCompile("com.haulmont.cuba:cuba-core-tests:$cubaVersion")
         testCompile("com.haulmont.cuba:cuba-shared-lib:$cubaVersion")
         dbscripts("com.haulmont.cuba:cuba-core:$cubaVersion:db@zip")
 
     }
 
     task cleanConf(description: 'Cleans up conf directory') << {
-        def dir = new File(tomcatDir, '/conf/app-core')
+        def dir = new File(cuba.tomcat.dir, '/conf/app-core')
         if (dir.isDirectory()) {
             ant.delete(includeemptydirs: true) {
                 fileset(dir: dir, includes: '**/*', excludes: 'local.app.properties')
@@ -148,7 +148,7 @@ configure(guiModule) {
     task deployConf(type: Copy) {
         from file('src')
         include "com/haulmont/sampler/**"
-        into "$tomcatDir/conf/app"
+        into "$cuba.tomcat.dir/conf/app"
     }
 
     jar {
@@ -189,7 +189,7 @@ configure(webModule) {
     task deployConf(type: Copy) {
         from file('src')
         include "com/haulmont/sampler/**"
-        into "$tomcatDir/conf/app"
+        into "$cuba.tomcat.dir/conf/app"
     }
     
     task clearMessagesCache(type: CubaClearMessagesCache) {
@@ -199,7 +199,7 @@ configure(webModule) {
 
     
     task cleanConf(description: 'Cleans up conf directory') << {
-        def dir = new File(tomcatDir, '/conf/app')
+        def dir = new File(cuba.tomcat.dir, '/conf/app')
         if (dir.isDirectory()) {
             ant.delete(includeemptydirs: true) {
                 fileset(dir: dir, includes: '**/*', excludes: 'local.app.properties')
@@ -224,9 +224,9 @@ configure(webModule) {
 
 
 task undeploy(type: Delete, dependsOn: ':app-web:cleanConf') {
-    delete("$tomcatDir/shared")
-    delete("$tomcatDir/webapps/app-core")
-    delete("$tomcatDir/webapps/app")
+    delete("$cuba.tomcat.dir/shared")
+    delete("$cuba.tomcat.dir/webapps/app-core")
+    delete("$cuba.tomcat.dir/webapps/app")
 }
 
 task restart(dependsOn: ['stop', ':app-core:deploy', ':app-web:deploy'], description: 'Redeploys applications and restarts local Tomcat') << {
@@ -239,5 +239,5 @@ task restart(dependsOn: ['stop', ':app-core:deploy', ':app-web:deploy'], descrip
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.12'
+    gradleVersion = '2.6'
 }

@@ -53,7 +53,7 @@ public class SampleBrowser extends AbstractWindow {
 
         String id = (String) params.get("windowId");
         Map<String, Object> screenParams = (Map<String, Object>) params.get("screenParams");
-        IFrame frame = openFrame(null, id, screenParams);
+        Frame frame = openFrame(null, id, screenParams);
         frame.setId("sampleFrame");
 
         String sampleHeight = (String) params.get("sampleHeight");
@@ -63,7 +63,7 @@ public class SampleBrowser extends AbstractWindow {
             remove(spacer);
             remove(tabSheet);
 
-            SplitPanel split = componentsFactory.createComponent(SplitPanel.NAME);
+            SplitPanel split = componentsFactory.createComponent(SplitPanel.class);
             if (split instanceof HasSettings) {
                 ((HasSettings) split).setSettingsEnabled(false);
             }
@@ -132,7 +132,7 @@ public class SampleBrowser extends AbstractWindow {
     }
 
     private Container createContainer(boolean topEnable, boolean rightEnable, boolean bottomEnable, boolean leftEnable) {
-        VBoxLayout vBox = componentsFactory.createComponent(VBoxLayout.NAME);
+        VBoxLayout vBox = componentsFactory.createComponent(VBoxLayout.class);
         vBox.setMargin(topEnable, rightEnable, bottomEnable, leftEnable);
         vBox.setHeight("100%");
 
@@ -140,7 +140,7 @@ public class SampleBrowser extends AbstractWindow {
     }
 
     private Component createDescription(String descriptionsPack, String docUrlSuffix, String frameId) {
-        ScrollBoxLayout scrollBoxLayout = componentsFactory.createComponent(ScrollBoxLayout.NAME);
+        ScrollBoxLayout scrollBoxLayout = componentsFactory.createComponent(ScrollBoxLayout.class);
         scrollBoxLayout.setWidth("100%");
         scrollBoxLayout.setHeight("100%");
         scrollBoxLayout.setSpacing(true);
@@ -148,7 +148,7 @@ public class SampleBrowser extends AbstractWindow {
         scrollBoxLayout.add(descriptionText(frameId, descriptionsPack));
 
         if (StringUtils.isNotEmpty(docUrlSuffix)) {
-            HBoxLayout hbox = componentsFactory.createComponent(HBoxLayout.NAME);
+            HBoxLayout hbox = componentsFactory.createComponent(HBoxLayout.class);
             hbox.setWidth("100%");
 
             Component docLinks = documentLinks(descriptionsPack, docUrlSuffix);
@@ -170,7 +170,7 @@ public class SampleBrowser extends AbstractWindow {
             sb.append(text);
             sb.append("<hr>");
         }
-        Label doc = componentsFactory.createComponent(Label.NAME);
+        Label doc = componentsFactory.createComponent(Label.class);
         doc.setHtmlEnabled(true);
         doc.setWidth("100%");
         doc.setValue(sb.toString());
@@ -194,7 +194,7 @@ public class SampleBrowser extends AbstractWindow {
             sb.append(String.format("<a href=\"%s\" target=\"_blank\">%s</a>", url, localeName));
         }
 
-        Label docLinks = componentsFactory.createComponent(Label.NAME);
+        Label docLinks = componentsFactory.createComponent(Label.class);
         docLinks.setHtmlEnabled(true);
         docLinks.setValue(sb.toString());
 
@@ -202,7 +202,7 @@ public class SampleBrowser extends AbstractWindow {
     }
 
     private Component permalink(String frameId) {
-        Link permalink = componentsFactory.createComponent(Link.NAME);
+        Link permalink = componentsFactory.createComponent(Link.class);
         permalink.setAlignment(Alignment.TOP_RIGHT);
         permalink.setDescription("Permalink");
         permalink.setUrl("open?screen=" + frameId);
@@ -222,7 +222,7 @@ public class SampleBrowser extends AbstractWindow {
     }
 
     private SourceCodeEditor createSourceCodeEditor(Mode mode) {
-        SourceCodeEditor editor = componentsFactory.createComponent(SourceCodeEditor.NAME);
+        SourceCodeEditor editor = componentsFactory.createComponent(SourceCodeEditor.class);
         editor.setMode(mode);
         editor.setEditable(false);
         editor.setWidth("100%");

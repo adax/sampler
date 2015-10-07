@@ -187,8 +187,6 @@
             template="com/haulmont/sampler/gui/containers/boxlayout/vbox/vbox-sample.xml"/>
     <screen id="flowbox-sample"
             template="com/haulmont/sampler/gui/containers/boxlayout/flowbox/flowbox-sample.xml"/>
-    <screen id="simple-iframe"
-            template="com/haulmont/sampler/gui/containers/iframe/simple/simple-iframe.xml"/>
     <screen id="simple-groupbox"
             template="com/haulmont/sampler/gui/containers/groupboxlayout/simple/simple-groupbox.xml"/>
     <screen id="collapsable-groupbox"
@@ -225,4 +223,6 @@
     <screen id="notifications-sample"
             template="com/haulmont/sampler/gui/dialogsandnotifications/notification/notifications-sample.xml"/>
     <!--  -->
+    <screen id="simple-frame"
+            template="com/haulmont/sampler/gui/containers/frame/simple/simple-frame.xml"/>
 </screen-config>

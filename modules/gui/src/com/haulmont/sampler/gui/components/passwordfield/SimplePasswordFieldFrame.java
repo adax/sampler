@@ -11,6 +11,6 @@ public class SimplePasswordFieldFrame extends AbstractFrame {
     private PasswordField passwordField;
 
     public void showPassword() {
-        showNotification((String) passwordField.getValue(), NotificationType.HUMANIZED);
+        showNotification(passwordField.getValue(), NotificationType.HUMANIZED);
     }
 }

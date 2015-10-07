@@ -9,7 +9,7 @@ import javax.inject.Inject;
 public class ActionTableFrame extends AbstractFrame {
 
     @Inject
-    private Table customerTable;
+    private Table<Customer> customerTable;
 
     public void greet() {
         Customer customer = customerTable.getSingleSelected();

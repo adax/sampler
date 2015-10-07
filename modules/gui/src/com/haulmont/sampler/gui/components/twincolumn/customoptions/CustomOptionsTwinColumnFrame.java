@@ -2,7 +2,6 @@ package com.haulmont.sampler.gui.components.twincolumn.customoptions;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.TwinColumn;
-import com.haulmont.sampler.entity.Customer;
 
 import javax.inject.Inject;
 import java.util.*;

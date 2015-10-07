@@ -10,7 +10,7 @@
             </query>
         </collectionDatasource>
     </dsContext>
-    <layout spacing="true">
+    <layout spacing="true" expand="orderTable">
         <filter id="filter"
                 datasource="ordersDs">
             <properties include=".*"/>
@@ -20,7 +20,6 @@
                     paramClass="com.haulmont.sampler.entity.Product">i.product.id = ?</custom>
         </filter>
         <table id="orderTable"
-               height="200px"
                width="100%">
             <columns>
                 <column id="date"/>

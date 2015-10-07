@@ -25,7 +25,6 @@ import com.vaadin.ui.themes.Reindeer;
 import org.apache.commons.lang.BooleanUtils;
 import org.apache.commons.lang.StringUtils;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -89,12 +88,7 @@ public class SamplerFoldersPane extends CubaFoldersPane {
 
         filter = null;
         Button searchButton = new Button(messages.getMessage(getClass(), "LeftPanel.search"));
-        searchButton.addClickListener(new Button.ClickListener() {
-            @Override
-            public void buttonClick(Button.ClickEvent event) {
-                search(searchField.getValue());
-            }
-        });
+        searchButton.addClickListener(event -> search(searchField.getValue()));
         searchLayout.addComponent(searchButton);
         searchLayout.setComponentAlignment(searchButton, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
 
@@ -114,31 +108,16 @@ public class SamplerFoldersPane extends CubaFoldersPane {
 
         // NOTE: For development convenience only
         if (BooleanUtils.toBoolean(AppContext.getProperty("sampler.developerMode"))) {
-            Button refresh = createButton("Refresh", new Button.ClickListener() {
-                @Override
-                public void buttonClick(Button.ClickEvent event) {
-                    resetAllMenuItems();
-                }
-            });
+            Button refresh = createButton("Refresh", event -> resetAllMenuItems());
             header.addComponent(refresh);
             header.setComponentAlignment(refresh, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
         }
 
-        Button collapseAll = createButton("LeftPanel.collapseAll", new Button.ClickListener() {
-            @Override
-            public void buttonClick(Button.ClickEvent event) {
-                collapseAll();
-            }
-        });
+        Button collapseAll = createButton("LeftPanel.collapseAll", event -> collapseAll());
         header.addComponent(collapseAll);
         header.setComponentAlignment(collapseAll, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
 
-        Button expandAll = createButton("LeftPanel.expandAll", new Button.ClickListener() {
-            @Override
-            public void buttonClick(Button.ClickEvent event) {
-                expandAll();
-            }
-        });
+        Button expandAll = createButton("LeftPanel.expandAll", event -> expandAll());
         header.addComponent(expandAll);
         header.setComponentAlignment(expandAll, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
 
@@ -219,13 +198,11 @@ public class SamplerFoldersPane extends CubaFoldersPane {
     }
 
     private void expandAll() {
-        for (MenuItem item : (Collection<MenuItem>) tree.rootItemIds())
-            tree.expandItemsRecursively(item);
+        tree.rootItemIds().forEach(tree::expandItemsRecursively);
     }
 
     private void collapseAll() {
-        for (MenuItem item : (Collection<MenuItem>) tree.rootItemIds())
-            tree.collapseItemsRecursively(item);
+        tree.rootItemIds().forEach(tree::collapseItemsRecursively);
     }
 
     private void search(final String searchRequest) {

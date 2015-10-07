@@ -14,13 +14,10 @@ public class PieChartFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-        pieChart.addSlicePullOutListener(new Chart.SlicePullOutListener() {
-            @Override
-            public void onPullOut(Chart.SlicePullOutEvent event) {
-                CountryLitres countryLitres = (CountryLitres) event.getItem();
-                String msg = countryLitres.getCountry() + ": " + countryLitres.getLitres() + " litres";
-                showNotification(msg, NotificationType.HUMANIZED);
-            }
+        pieChart.addSlicePullOutListener(event -> {
+            CountryLitres countryLitres = (CountryLitres) event.getItem();
+            String msg = countryLitres.getCountry() + ": " + countryLitres.getLitres() + " litres";
+            showNotification(msg, NotificationType.HUMANIZED);
         });
     }
 }

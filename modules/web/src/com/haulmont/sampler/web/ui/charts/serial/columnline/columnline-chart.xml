@@ -48,6 +48,7 @@
             <chart:categoryAxis axisAlpha="0"
                                 gridPosition="START"
                                 tickLength="0"/>
+            <chart:export/>
         </chart:serialChart>
     </layout>
 </window>

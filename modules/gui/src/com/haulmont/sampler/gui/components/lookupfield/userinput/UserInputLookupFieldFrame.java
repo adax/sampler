@@ -17,12 +17,9 @@ public class UserInputLookupFieldFrame extends AbstractFrame {
         lookup.setOptionsList(list);
 
         lookup.setNewOptionAllowed(true);
-        lookup.setNewOptionHandler(new LookupField.NewOptionHandler() {
-            @Override
-            public void addNewOption(String caption) {
-                showNotification(caption + " added", NotificationType.HUMANIZED);
-                list.add(caption);
-            }
+        lookup.setNewOptionHandler(caption -> {
+            showNotification(caption + " added", NotificationType.HUMANIZED);
+            list.add(caption);
         });
     }
 }

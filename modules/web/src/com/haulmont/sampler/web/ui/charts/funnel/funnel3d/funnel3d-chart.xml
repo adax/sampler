@@ -29,6 +29,7 @@
                            valueField="value"
                            width="100%">
             <chart:balloon fixedPosition="true"/>
+            <chart:export/>
         </chart:funnelChart>
     </layout>
 </window>

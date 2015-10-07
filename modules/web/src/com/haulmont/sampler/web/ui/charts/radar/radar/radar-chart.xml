@@ -23,6 +23,7 @@
                              bullet="ROUND"
                              valueField="litres"/>
             </chart:graphs>
+            <chart:export/>
         </chart:radarChart>
     </layout>
 </window>

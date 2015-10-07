@@ -69,15 +69,7 @@
                                  lineColor="#CC0000"/>
                 </chart:guides>
             </chart:categoryAxis>
-            <chart:exportConfig menuBottom="auto"
-                                menuRight="10px"
-                                menuTop="10px">
-                <chart:menuItems>
-                    <chart:menu format="PNG"
-                                icon="VAADIN/resources/amcharts/images/export.png"/>
-                </chart:menuItems>
-                <chart:menuItemOutput fileName="stacked-area"/>
-            </chart:exportConfig>
+            <chart:export/>
         </chart:serialChart>
     </layout>
 </window>

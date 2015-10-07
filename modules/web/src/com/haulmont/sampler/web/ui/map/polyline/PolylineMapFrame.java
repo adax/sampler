@@ -28,16 +28,13 @@ public class PolylineMapFrame extends AbstractFrame {
         request.setDestination(map.createGeoPoint(53.61913, -2.14849));
         request.setTravelMode(TravelMode.DRIVING);
 
-        map.route(request, new DirectionsRequestCallback() {
-            @Override
-            public void onCallback(DirectionsResult result, DirectionsStatus status) {
-                if (status == DirectionsStatus.OK && result.getRoutes() != null && !result.getRoutes().isEmpty()) {
-                    DirectionsRoute route = result.getRoutes().get(0);
-                    Polyline routeLine = map.createPolyline(route.getOverviewPath());
-                    routeLine.setStrokeWeight(5);
-                    routeLine.setStrokeOpacity(0.8);
-                    map.addPolyline(routeLine);
-                }
+        map.route(request, (result, status) -> {
+            if (status == DirectionsStatus.OK && result.getRoutes() != null && !result.getRoutes().isEmpty()) {
+                DirectionsRoute route = result.getRoutes().get(0);
+                Polyline routeLine = map.createPolyline(route.getOverviewPath());
+                routeLine.setStrokeWeight(5);
+                routeLine.setStrokeOpacity(0.8);
+                map.addPolyline(routeLine);
             }
         });
     }

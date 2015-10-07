@@ -18,7 +18,7 @@ public class WebEmbeddedFrame extends AbstractFrame {
         try {
             embedded.setSource(new URL("https://www.cuba-platform.com"));
         } catch (MalformedURLException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(e.getMessage(), e);
         }
     }
 }

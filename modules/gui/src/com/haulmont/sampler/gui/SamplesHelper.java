@@ -31,7 +31,7 @@ public class SamplesHelper {
     public static final String NAME = "sampler_SamplesHelper";
     private static final Map<String, Object> EMPTY_MAP = new HashMap<>();
 
-    private Log logger = LogFactory.getLog(SamplesHelper.class);
+    private final Log logger = LogFactory.getLog(SamplesHelper.class);
 
     @Inject
     private Resources resources;

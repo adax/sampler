@@ -13,10 +13,10 @@ public class MaskedFieldFrame extends AbstractFrame {
     private MaskedField phoneFieldClear;
 
     public void showMasked() {
-        showNotification((String) phoneFieldMasked.getValue(), NotificationType.HUMANIZED);
+        showNotification(phoneFieldMasked.getValue(), NotificationType.HUMANIZED);
     }
 
     public void showClear() {
-        showNotification((String) phoneFieldClear.getValue(), NotificationType.HUMANIZED);
+        showNotification(phoneFieldClear.getValue(), NotificationType.HUMANIZED);
     }
 }

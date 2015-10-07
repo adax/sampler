@@ -33,7 +33,7 @@ public class SamplesMenuConfig {
     public static final String NAME = "sampler_SamplesConfig";
     public static final String MENU_CONFIG_XML_PROP = "sampler.samplesMenuConfig";
 
-    private static Log log = LogFactory.getLog(SamplesMenuConfig.class);
+    private static final Log log = LogFactory.getLog(SamplesMenuConfig.class);
 
     @Inject
     private Resources resources;
@@ -85,7 +85,7 @@ public class SamplesMenuConfig {
                     Element rootElement = Dom4j.readDocument(stream).getRootElement();
                     loadMenuItems(rootElement, null);
                 } catch (IOException e) {
-                    throw new RuntimeException(e);
+                    throw new RuntimeException(e.getMessage(), e);
                 } finally {
                     IOUtils.closeQuietly(stream);
                 }
@@ -131,7 +131,7 @@ public class SamplesMenuConfig {
                     log.warn(String.format("Unknown tag '%s' in sample-config", element.getName()));
                 }
             } else {
-                log.warn(String.format("Invalid sample-config: 'id' attribute not defined for tag" + element.getName()));
+                log.warn("Invalid sample-config: 'id' attribute not defined for tag" + element.getName());
             }
 
             if (parentItem != null && menuItem != null) {

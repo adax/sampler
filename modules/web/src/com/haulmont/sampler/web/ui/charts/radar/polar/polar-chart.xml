@@ -43,6 +43,7 @@
                              fillAlphas="0.3"
                              valueField="value"/>
             </chart:graphs>
+            <chart:export/>
         </chart:radarChart>
     </layout>
 </window>

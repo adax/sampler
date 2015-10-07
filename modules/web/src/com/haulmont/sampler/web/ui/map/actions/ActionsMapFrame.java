@@ -2,9 +2,6 @@ package com.haulmont.sampler.web.ui.map.actions;
 
 import com.haulmont.charts.gui.components.map.MapViewer;
 import com.haulmont.charts.gui.map.model.GeoPoint;
-import com.haulmont.charts.gui.map.model.listeners.MapInitListener;
-import com.haulmont.charts.gui.map.model.listeners.MapMoveListener;
-import com.haulmont.charts.gui.map.model.listeners.click.MapClickListener;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 
 import javax.inject.Inject;
@@ -27,33 +24,24 @@ public class ActionsMapFrame extends AbstractFrame {
     }
 
     private void addMapListeners() {
-        map.addMapInitListener(new MapInitListener() {
-            @Override
-            public void init(GeoPoint center, int zoom, GeoPoint boundNE, GeoPoint boundSW) {
-                String content = String.format("Map init. center: %s, zoom: %d, boundNE: %s, boundSW: %s",
-                        string(center), zoom, string(boundNE), string(boundSW));
-                showNotification(content, NotificationType.HUMANIZED);
-            }
+        map.addMapInitListener((center, zoom, boundNE, boundSW) -> {
+            String content = String.format("Map init. center: %s, zoom: %d, boundNE: %s, boundSW: %s",
+                    string(center), zoom, string(boundNE), string(boundSW));
+            showNotification(content, NotificationType.HUMANIZED);
         });
 
-        map.addMapClickListener(new MapClickListener() {
-            @Override
-            public void onClick(MapClickListener.MapClickEvent event) {
-                String caption = String.format("Map click: %.2f, %.2f", event.getPosition().getLatitude(),
-                        event.getPosition().getLongitude());
-                showNotification(caption, NotificationType.HUMANIZED);
-            }
+        map.addMapClickListener(event -> {
+            String caption = String.format("Map click: %.2f, %.2f", event.getPosition().getLatitude(),
+                    event.getPosition().getLongitude());
+            showNotification(caption, NotificationType.HUMANIZED);
         });
 
-        map.addMapMoveListener(new MapMoveListener() {
-            @Override
-            public void onMove(MapMoveListener.MapMoveEvent event) {
-                String content = "North-east bound: " + map.getBoundNorthEast().getLatitude() +
-                        ", " + map.getBoundNorthEast().getLongitude() + "\n"
-                        + "South-west bound: " + map.getBoundSouthWest().getLatitude() +
-                        ", " + map.getBoundSouthWest().getLongitude() + "\n";
-                showNotification("Map has been moved",  content, NotificationType.HUMANIZED);
-            }
+        map.addMapMoveListener(event -> {
+            String content = "North-east bound: " + map.getBoundNorthEast().getLatitude() +
+                    ", " + map.getBoundNorthEast().getLongitude() + "\n"
+                    + "South-west bound: " + map.getBoundSouthWest().getLatitude() +
+                    ", " + map.getBoundSouthWest().getLongitude() + "\n";
+            showNotification("Map has been moved", content, NotificationType.HUMANIZED);
         });
     }
 }

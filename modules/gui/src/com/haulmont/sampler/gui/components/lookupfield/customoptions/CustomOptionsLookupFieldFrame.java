@@ -2,10 +2,8 @@ package com.haulmont.sampler.gui.components.lookupfield.customoptions;
 
 import com.haulmont.cuba.core.entity.Entity;
 import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.IFrame;
 import com.haulmont.cuba.gui.components.LookupField;
 import com.haulmont.cuba.gui.data.Datasource;
-import com.haulmont.cuba.gui.data.impl.DsListenerAdapter;
 import com.haulmont.sampler.entity.Customer;
 import com.haulmont.sampler.entity.Order;
 
@@ -47,14 +45,15 @@ public class CustomOptionsLookupFieldFrame extends AbstractFrame {
         map.put("fifty", 50);
         ageLookup.setOptionsMap(map);
 
-        orderDs.addListener(new DsListener());
-        customerDs.addListener(new DsListener());
+        orderDs.addItemPropertyChangeListener(new ItemPropertyChangeListener<>());
+        customerDs.addItemPropertyChangeListener(new ItemPropertyChangeListener<>());
     }
 
-    private class DsListener extends DsListenerAdapter {
+    private class ItemPropertyChangeListener<T extends Entity> implements Datasource.ItemPropertyChangeListener<T> {
         @Override
-        public void valueChanged(Entity source, String property, Object prevValue, Object value) {
-            showNotification(source.getClass().getSimpleName() + "." + property + " = " + value, NotificationType.HUMANIZED);
+        public void itemPropertyChanged(Datasource.ItemPropertyChangeEvent<T> e) {
+            String msg = e.getItem().getClass().getSimpleName() + "." + e.getProperty() + " = " + e.getValue();
+            showNotification(msg, NotificationType.HUMANIZED);
         }
     }
 }

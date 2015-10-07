@@ -10,13 +10,12 @@
             </query>
         </collectionDatasource>
     </dsContext>
-    <layout spacing="true">
+    <layout spacing="true" expand="orderTable">
         <filter id="filter"
                 datasource="ordersDs">
             <properties include=".*"/>
         </filter>
         <table id="orderTable"
-               height="200px"
                width="100%">
             <columns>
                 <column id="customer"/>

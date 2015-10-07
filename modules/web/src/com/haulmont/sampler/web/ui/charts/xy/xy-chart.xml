@@ -57,6 +57,7 @@
                             position="LEFT"
                             title="Y Axis"/>
             </chart:valueAxes>
+            <chart:export/>
         </chart:xyChart>
     </layout>
 </window>
