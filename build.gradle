@@ -20,7 +20,7 @@ def coreModule = project(':app-core')
 def guiModule = project(':app-gui')
 def webModule = project(':app-web')
 
-def hsql = 'org.hsqldb:hsqldb:2.3.3'
+def hsql = 'org.hsqldb:hsqldb:2.2.9'
 def servletApi = 'org.apache.tomcat:tomcat-servlet-api:8.0.26'
 
 
