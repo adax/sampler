@@ -178,27 +178,13 @@ public class SampleBrowser extends AbstractWindow {
     }
 
     private Component documentLinks(String descriptionsPack, String docUrlSuffix) {
-        StringBuilder sb = new StringBuilder();
-        sb.append(messages.getMessage(getClass(), "sampleBrowser.documentation"));
-        sb.append(": ");
-
-        Locale defaultLocale = messageTools.getDefaultLocale();
-        Map<String, Locale> availableLocales = globalConfig.getAvailableLocales();
-        for (String localeName : availableLocales.keySet()) {
-            Locale locale = availableLocales.get(localeName);
-            if (!defaultLocale.equals(locale)) {
-                sb.append(" | ");
-            }
-
-            String url = messages.getMessage(descriptionsPack, DOC_URL_MESSAGES_KEY, locale) + "#" + docUrlSuffix;
-            sb.append(String.format("<a href=\"%s\" target=\"_blank\">%s</a>", url, localeName));
-        }
-
-        Label docLinks = componentsFactory.createComponent(Label.class);
-        docLinks.setHtmlEnabled(true);
-        docLinks.setValue(sb.toString());
-
-        return docLinks;
+        Link docLink = componentsFactory.createComponent(Link.class);
+        Locale locale = userSessionSource.getLocale();
+        String url = messages.getMessage(descriptionsPack, DOC_URL_MESSAGES_KEY, locale) + "#" + docUrlSuffix;
+        docLink.setUrl(url);
+        docLink.setCaption(messages.getMessage(getClass(), "sampleBrowser.documentation"));
+        docLink.setTarget("_blank");
+        return docLink;
     }
 
     private Component permalink(String frameId) {
