@@ -650,6 +650,13 @@
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/radar/polar"/>
         </menu>
 
+        <item id="gantt-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/gantt">
+            <otherFiles>
+                <file name="com/haulmont/sampler/entity/Segment.java"/>
+                <file name="com/haulmont/sampler/entity/TaskSpan.java"/>
+            </otherFiles>
+        </item>
         <item id="gauge-chart" docUrlSuffix="chart" splitEnabled="true" sampleHeight="60"
               descriptionsPack="com/haulmont/sampler/web/ui/charts/gauge"/>
 

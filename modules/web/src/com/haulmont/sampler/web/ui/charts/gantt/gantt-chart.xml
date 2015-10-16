@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.haulmont.cuba.gui.components.AbstractFrame"
+        xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
+    <dsContext>
+        <collectionDatasource id="taskSpansDs"
+                              class="com.haulmont.sampler.entity.TaskSpan"
+                              view="taskSpan-with-segments">
+            <query>
+                <![CDATA[select e from sampler$TaskSpan e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout>
+        <chart:ganttChart id="ganttChart"
+                          additionalSegmentFields="task"
+                          balloonDateFormat="JJ:NN"
+                          brightnessStep="10"
+                          categoryField="category"
+                          colorField="color"
+                          columnWidth="0.5"
+                          datasource="taskSpansDs"
+                          durationField="duration"
+                          endField="end"
+                          height="100%"
+                          marginRight="70"
+                          period="hh"
+                          rotate="true"
+                          segmentsField="segments"
+                          startDate="2015-01-01"
+                          startField="start"
+                          theme="LIGHT"
+                          width="100%">
+            <chart:graph balloonText="[[task]]: [[open]] [[value]]"
+                         fillAlphas="1"/>
+            <chart:valueAxis maximum="31"
+                             minimum="7"
+                             type="DATE"/>
+            <chart:chartScrollbar/>
+            <chart:chartCursor cursorAlpha="0.1"
+                               fullWidth="true"
+                               valueBalloonsEnabled="false"
+                               valueLineBalloonEnabled="true"
+                               valueLineEnabled="true"/>
+            <chart:export/>
+        </chart:ganttChart>
+    </layout>
+</window>

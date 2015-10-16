@@ -32,6 +32,9 @@
             template="com/haulmont/sampler/web/ui/charts/pie/pie3d/pie3d-chart.xml"/>
     <screen id="donut-chart"
             template="com/haulmont/sampler/web/ui/charts/pie/donut/donut-chart.xml"/>
+    <screen id="gantt-chart"
+            template="com/haulmont/sampler/web/ui/charts/gantt/gantt-chart.xml"/>
+    <!-- Maps -->
     <screen id="marker-map"
             template="com/haulmont/sampler/web/ui/map/marker/marker-map.xml"/>
     <screen id="polygon-map"
