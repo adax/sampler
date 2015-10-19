@@ -23,7 +23,7 @@
                        width=""/>
             </column>
         </fieldGroup>
-        <iframe id="windowActions"
+        <frame id="windowActions"
                 screen="editWindowActions"
                 stylename="window-actions"/>
     </layout>

@@ -49,6 +49,7 @@
             <property name="duration"/>
             <property name="color"/>
             <property name="task"/>
+            <property name="index"/>
         </property>
     </view>
 </views>

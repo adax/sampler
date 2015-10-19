@@ -4,11 +4,11 @@
     <layout spacing="true">
         <groupBox caption="Frame 1"
                   width="AUTO">
-            <iframe screen="simple-button"/>
+            <frame screen="simple-button"/>
         </groupBox>
         <groupBox caption="Frame 2"
                   width="AUTO">
-            <iframe src="com/haulmont/sampler/gui/components/button/simple/simple-button.xml"/>
+            <frame src="com/haulmont/sampler/gui/components/button/simple/simple-button.xml"/>
         </groupBox>
     </layout>
 </window>

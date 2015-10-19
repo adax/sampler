@@ -10,6 +10,7 @@ import javax.persistence.OneToMany;
 import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.chile.core.annotations.Composition;
 import java.util.List;
+import javax.persistence.OrderBy;
 
 @Table(name = "SAMPLER_TASK_SPAN")
 @Entity(name = "sampler$TaskSpan")
@@ -19,6 +20,7 @@ public class TaskSpan extends StandardEntity {
     @Column(name = "CATEGORY")
     protected String category;
 
+    @OrderBy("index")
     @Composition
     @OnDelete(DeletePolicy.CASCADE)
     @OneToMany(mappedBy = "taskSpan")

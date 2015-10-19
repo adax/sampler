@@ -236,6 +236,7 @@ create table SAMPLER_SEGMENT (
     COLOR varchar(255),
     TASK_ varchar(255),
     TASK_SPAN_ID varchar(36),
+    INDEX_ integer,
     --
     primary key (ID)
 )^

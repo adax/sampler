@@ -29,18 +29,22 @@ public class Segment extends StandardEntity {
     @JoinColumn(name = "TASK_SPAN_ID")
     protected TaskSpan taskSpan;
 
+    @Column(name = "INDEX_")
+    protected Integer index;
+
     public void setTaskSpan(TaskSpan taskSpan) {
         this.taskSpan = taskSpan;
     }
+
 
     public TaskSpan getTaskSpan() {
         return taskSpan;
     }
 
-
     public void setStart(Integer start) {
         this.start = start;
     }
+
 
     public Integer getStart() {
         return start;
@@ -70,5 +74,11 @@ public class Segment extends StandardEntity {
         return task;
     }
 
+    public void setIndex(Integer index) {
+        this.index = index;
+    }
 
+    public Integer getIndex() {
+        return index;
+    }
 }
