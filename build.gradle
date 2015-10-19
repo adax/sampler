@@ -209,7 +209,7 @@ configure(webModule) {
 
     task copyLogoImage(type: Copy) {
         from 'themes/halo/images/platform-logo.png'
-        into "$tomcatDir/work/app-core/filestorage/2015/04/01"
+        into "$cuba.tomcat.dir/work/app-core/filestorage/2015/04/01"
         rename 'platform-logo.png', '61a6a1ee-f13a-f44f-0201-c2f9b3288305.png'
     }
 
