@@ -1,13 +1,23 @@
+/*
+ * Copyright (c) 2008-2015 Haulmont. All rights reserved.
+ * Use is subject to license terms, see http://www.cuba-platform.com/license for details.
+ */
+
 package com.haulmont.sampler.gui.components.embedded.image;
 
+import com.haulmont.cuba.core.app.FileStorageService;
 import com.haulmont.cuba.core.entity.FileDescriptor;
 import com.haulmont.cuba.core.global.ClientType;
+import com.haulmont.cuba.core.global.FileStorageException;
 import com.haulmont.cuba.gui.AppConfig;
-import com.haulmont.cuba.gui.components.*;
-import com.haulmont.cuba.gui.export.FileDataProvider;
+import com.haulmont.cuba.gui.components.AbstractFrame;
+import com.haulmont.cuba.gui.components.Embedded;
 
 import javax.inject.Inject;
-import java.util.*;
+import java.io.ByteArrayInputStream;
+import java.util.Date;
+import java.util.Map;
+import java.util.UUID;
 
 public class ImageEmbeddedFrame extends AbstractFrame {
 
@@ -15,6 +25,8 @@ public class ImageEmbeddedFrame extends AbstractFrame {
     private Embedded imageFromFileStorage;
     @Inject
     private Embedded image;
+    @Inject
+    private FileStorageService fileStorageService;
 
     @Override
     public void init(Map<String, Object> params) {
@@ -34,9 +46,17 @@ public class ImageEmbeddedFrame extends AbstractFrame {
         imageFile.setCreateDate(new Date(1427857200503L));
         imageFile.setExtension("png");
 
-        FileDataProvider provider = new FileDataProvider(imageFile);
-        imageFromFileStorage.setSource(imageFile.getName(), provider);
-        imageFromFileStorage.setType(Embedded.Type.IMAGE);
-        imageFromFileStorage.setVisible(true);
+        byte[] bytes = null;
+        try {
+            bytes = fileStorageService.loadFile(imageFile);
+        } catch (FileStorageException e) {
+            showNotification("Unable to load image file", NotificationType.HUMANIZED);
+        }
+        if (bytes != null) {
+            imageFromFileStorage.setSource(imageFile.getName(), new ByteArrayInputStream(bytes));
+            imageFromFileStorage.setType(Embedded.Type.IMAGE);
+        } else {
+            imageFromFileStorage.setVisible(false);
+        }
     }
 }
