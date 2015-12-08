@@ -18,7 +18,7 @@ public class PolygonMapFrame extends AbstractFrame {
     @Override
     public void init(Map<String, Object> params) {
 
-        map.setCenter(map.createGeoPoint(53.590905, -2.24955));
+        map.setCenter(map.createGeoPoint(53.590905, -1.24955));
 
         List<GeoPoint> coordinates = new ArrayList<>();
         coordinates.add(map.createGeoPoint(53.49, -2.54));
@@ -26,6 +26,15 @@ public class PolygonMapFrame extends AbstractFrame {
         coordinates.add(map.createGeoPoint(53.89, -2.22));
         coordinates.add(map.createGeoPoint(53.99, -2.94));
         Polygon polygon = map.createPolygon(coordinates, "#9CFBA9", 0.6, "#2CA860", 1.0, 2);
+        map.addPolygonOverlay(polygon);
+
+        coordinates = new ArrayList<>();
+        coordinates.add(map.createGeoPoint(53.74, -1.35));
+        coordinates.add(map.createGeoPoint(53.69, -0.59));
+        coordinates.add(map.createGeoPoint(53.31, -0.64));
+        coordinates.add(map.createGeoPoint(53.34, -1.41));
+        polygon = map.createPolygon(coordinates, "#0068A3", 0.6, "#081B42", 1.0, 2);
+        polygon.setEditable(true);
         map.addPolygonOverlay(polygon);
     }
 }
