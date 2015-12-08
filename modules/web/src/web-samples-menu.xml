@@ -687,6 +687,9 @@
         <item id="polyline-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
               controller="com/haulmont/sampler/web/ui/map/polyline/PolylineMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/polyline"/>
+        <item id="directions-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
+              controller="com/haulmont/sampler/web/ui/map/directions/DirectionsMapFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/map/directions"/>
         <item id="circle-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
               controller="com/haulmont/sampler/web/ui/map/circle/CircleMapFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/map/circle"/>
