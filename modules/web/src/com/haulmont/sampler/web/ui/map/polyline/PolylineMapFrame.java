@@ -1,11 +1,14 @@
 package com.haulmont.sampler.web.ui.map.polyline;
 
 import com.haulmont.charts.gui.components.map.MapViewer;
+import com.haulmont.charts.gui.map.model.GeoPoint;
 import com.haulmont.charts.gui.map.model.Polyline;
 import com.haulmont.charts.gui.map.model.directions.*;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class PolylineMapFrame extends AbstractFrame {
@@ -15,27 +18,17 @@ public class PolylineMapFrame extends AbstractFrame {
 
     @Override
     public void init(Map<String, Object> params) {
-
-        map.setZoom(10);
         map.setCenter(map.createGeoPoint(53.476475, -2.246761));
 
-        addRoute();
-    }
-
-    private void addRoute() {
-        DirectionsRequest request = map.createDirectionsRequest();
-        request.setOrigin(map.createGeoPoint(53.40139, -2.22626));
-        request.setDestination(map.createGeoPoint(53.61913, -2.14849));
-        request.setTravelMode(TravelMode.DRIVING);
-
-        map.route(request, (result, status) -> {
-            if (status == DirectionsStatus.OK && result.getRoutes() != null && !result.getRoutes().isEmpty()) {
-                DirectionsRoute route = result.getRoutes().get(0);
-                Polyline routeLine = map.createPolyline(route.getOverviewPath());
-                routeLine.setStrokeWeight(5);
-                routeLine.setStrokeOpacity(0.8);
-                map.addPolyline(routeLine);
-            }
-        });
+        List<GeoPoint> coordinates = new ArrayList<>();
+        coordinates.add(map.createGeoPoint(53.49, -2.24));
+        coordinates.add(map.createGeoPoint(53.49, -2.48));
+        coordinates.add(map.createGeoPoint(53.53, -2.54));
+        coordinates.add(map.createGeoPoint(53.89, -2.54));
+        coordinates.add(map.createGeoPoint(53.89, -2.24));
+        Polyline polyline = map.createPolyline(coordinates);
+        polyline.setStrokeWeight(2);
+        polyline.setStrokeOpacity(0.8);
+        map.addPolyline(polyline);
     }
 }
