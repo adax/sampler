@@ -22,7 +22,6 @@
                    datasource="orderItemsDs"
                    width="320px">
             <lookup optionsDatasource="allItemsDs"/>
-            <button icon="icons/plus-btn.png"/>
         </tokenList>
     </layout>
 </window>
