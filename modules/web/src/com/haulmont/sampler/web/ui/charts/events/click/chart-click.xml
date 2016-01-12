@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
-        class="com.haulmont.cuba.gui.components.AbstractFrame"
+        class="com.haulmont.sampler.web.ui.charts.events.click.ChartClickFrame"
         xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
     <dsContext>
         <collectionDatasource id="pointPairDs"
@@ -12,7 +12,7 @@
         </collectionDatasource>
     </dsContext>
     <layout>
-        <chart:xyChart id="xyChart"
+        <chart:xyChart id="chart"
                        datasource="pointPairDs"
                        height="100%"
                        marginBottom="60"

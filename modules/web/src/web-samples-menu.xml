@@ -675,6 +675,44 @@
             </item>
         </menu>
 
+        <menu id="chartEvents">
+            <item id="chart-click" docUrlSuffix="chart_listeners" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/events/click/ChartClickFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/events/click">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/PointPair.java"/>
+                </otherFiles>
+            </item>
+            <item id="chart-graph-click" docUrlSuffix="chart_listeners" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/events/graphclick/ChartGraphClickFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/events/graphclick">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/IncomeExpenses.java"/>
+                </otherFiles>
+            </item>
+            <item id="chart-legend" docUrlSuffix="chart_listeners" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/events/legend/ChartLegendFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/events/legend">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/CountryLitres.java"/>
+                </otherFiles>
+            </item>
+            <item id="chart-slice" docUrlSuffix="chart_listeners" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/events/slice/ChartSliceFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/events/slice">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/CountryLitres.java"/>
+                </otherFiles>
+            </item>
+            <item id="chart-zoom" docUrlSuffix="chart_listeners" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/events/zoom/ChartZoomFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/events/zoom">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/DateValue.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
     </menu>
 
     <menu id="maps">

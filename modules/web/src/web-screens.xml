@@ -34,6 +34,16 @@
             template="com/haulmont/sampler/web/ui/charts/pie/donut/donut-chart.xml"/>
     <screen id="gantt-chart"
             template="com/haulmont/sampler/web/ui/charts/gantt/gantt-chart.xml"/>
+    <screen id="chart-zoom"
+            template="/com/haulmont/sampler/web/ui/charts/events/zoom/chart-zoom.xml"/>
+    <screen id="chart-click"
+            template="com/haulmont/sampler/web/ui/charts/events/click/chart-click.xml"/>
+    <screen id="chart-graph-click"
+            template="com/haulmont/sampler/web/ui/charts/events/graphclick/chart-graph-click.xml"/>
+    <screen id="chart-slice"
+            template="com/haulmont/sampler/web/ui/charts/events/slice/chart-slice.xml"/>
+    <screen id="chart-legend"
+            template="com/haulmont/sampler/web/ui/charts/events/legend/chart-legend.xml"/>
     <!-- Maps -->
     <screen id="marker-map"
             template="com/haulmont/sampler/web/ui/map/marker/marker-map.xml"/>
