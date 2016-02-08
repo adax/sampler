@@ -16,7 +16,12 @@
     <!-- Application properties config files -->
     <context-param>
         <param-name>appPropertiesConfig</param-name>
-        <param-value>classpath:cuba-web-app.properties&#xA;            classpath:web-app.properties&#xA;            /WEB-INF/local.app.properties&#xA;            file:${catalina.home}/conf/app/local.app.properties</param-value>
+        <param-value>
+            classpath:cuba-web-app.properties
+            classpath:web-app.properties
+            /WEB-INF/local.app.properties
+            file:${catalina.home}/conf/app/local.app.properties
+        </param-value>
     </context-param>
     <listener>
         <listener-class>com.haulmont.cuba.web.sys.WebAppContextLoader</listener-class>
