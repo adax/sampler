@@ -176,6 +176,8 @@
             template="com/haulmont/sampler/gui/components/tokenlist/normal/normal-tokenlist.xml"/>
     <screen id="simple-mode-tokenlist"
             template="com/haulmont/sampler/gui/components/tokenlist/simplemode/simple-mode-tokenlist.xml"/>
+    <screen id="clear-tokenlist"
+            template="com/haulmont/sampler/gui/components/tokenlist/clear/clear-tokenlist.xml"/>
     <screen id="position-tokenlist"
             template="com/haulmont/sampler/gui/components/tokenlist/position/position-tokenlist.xml"/>
     <screen id="lookup-tokenlist"
@@ -215,6 +217,8 @@
             template="com/haulmont/sampler/gui/containers/tabsheet/simple/simple-tabsheet.xml"/>
     <screen id="lazy-tabsheet"
             template="com/haulmont/sampler/gui/containers/tabsheet/lazy/lazy-tabsheet.xml"/>
+    <screen id="simple-frame"
+            template="com/haulmont/sampler/gui/containers/frame/simple/simple-frame.xml"/>
     <!-- Dialogs and Notifications -->
     <screen id="message-dialog-sample"
             template="com/haulmont/sampler/gui/dialogsandnotifications/dialog/message/message-dialog-sample.xml"/>
@@ -223,8 +227,4 @@
     <screen id="notifications-sample"
             template="com/haulmont/sampler/gui/dialogsandnotifications/notification/notifications-sample.xml"/>
     <!--  -->
-    <screen id="simple-frame"
-            template="com/haulmont/sampler/gui/containers/frame/simple/simple-frame.xml"/>
-    <screen id="clear-tokenlist"
-            template="com/haulmont/sampler/gui/components/tokenlist/clear/clear-tokenlist.xml"/>
 </screen-config>
