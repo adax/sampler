@@ -225,4 +225,6 @@
     <!--  -->
     <screen id="simple-frame"
             template="com/haulmont/sampler/gui/containers/frame/simple/simple-frame.xml"/>
+    <screen id="clear-tokenlist"
+            template="com/haulmont/sampler/gui/components/tokenlist/clear/clear-tokenlist.xml"/>
 </screen-config>

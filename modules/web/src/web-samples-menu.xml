@@ -462,6 +462,15 @@
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
             </item>
+            <item id="clear-tokenlist" docUrlSuffix="gui_TokenList" sampleHeight="30px"
+                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/clear"
+                  controller="com/haulmont/sampler/gui/components/tokenlist/clear/ClearTokenListFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                    <file name="com/haulmont/sampler/entity/OrderItem.java"/>
+                    <file name="com/haulmont/sampler/entity/Product.java"/>
+                </otherFiles>
+            </item>
             <item id="position-tokenlist" docUrlSuffix="gui_TokenList" sampleHeight="30px"
                   descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/position"
                   controller="com/haulmont/sampler/gui/components/tokenlist/position/PositionTokenListFrame.java">
