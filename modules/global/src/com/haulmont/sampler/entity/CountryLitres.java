@@ -31,6 +31,4 @@ public class CountryLitres extends StandardEntity {
     public Double getLitres() {
         return litres;
     }
-
-
 }

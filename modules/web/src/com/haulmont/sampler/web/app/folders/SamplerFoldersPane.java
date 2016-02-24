@@ -30,7 +30,6 @@ import java.util.Map;
 
 /**
  * @author gorelov
- * @version $Id$
  */
 public class SamplerFoldersPane extends CubaFoldersPane {
 

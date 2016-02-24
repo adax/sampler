@@ -9,7 +9,6 @@ import javax.persistence.*;
 @Table(name = "SAMPLER_CUSTOMER")
 @Entity(name = "sampler$Customer")
 public class Customer extends StandardEntity {
-
     private static final long serialVersionUID = -3420505556417816206L;
 
     @Column(name = "NAME", length = 50, nullable = false)
@@ -35,7 +34,6 @@ public class Customer extends StandardEntity {
         return grade == null ? null : CustomerGrade.fromId(grade);
     }
 
-
     public void setActive(Boolean active) {
         this.active = active;
     }
@@ -43,7 +41,6 @@ public class Customer extends StandardEntity {
     public Boolean getActive() {
         return active;
     }
-
 
     public void setName(String name) {
         this.name = name;
@@ -68,6 +65,4 @@ public class Customer extends StandardEntity {
     public Integer getAge() {
         return age;
     }
-
-
 }

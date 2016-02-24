@@ -12,7 +12,6 @@ import java.util.Map;
 
 /**
  * @author gorelov
- * @version $Id$
  */
 public class SamplerLinkHandler extends LinkHandler {
     @Inject

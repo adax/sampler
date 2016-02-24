@@ -1,5 +1,6 @@
 package com.haulmont.sampler.gui.components.fieldgroup.generate;
 
+import com.haulmont.cuba.core.global.Metadata;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.FieldGroup;
 import com.haulmont.cuba.gui.components.LookupField;
@@ -19,12 +20,14 @@ public class GenerateFieldGroupFrame extends AbstractFrame {
     private Datasource<Customer> customerDs;
     @Inject
     private ComponentsFactory componentsFactory;
+    @Inject
+    private Metadata metadata;
 
     @Override
     public void init(Map<String, Object> params) {
         // Datasource initialization. It is usually done automatically if the screen is
         // inherited from AbstractEditor and is used as an entity editor.
-        Customer customer = new Customer();
+        Customer customer = metadata.create(Customer.class);
         customer.setName("John");
         customer.setLastName("Doe");
         customerDs.setItem(customer);

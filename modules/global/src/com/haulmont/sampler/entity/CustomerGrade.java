@@ -4,7 +4,6 @@ import com.haulmont.chile.core.datatypes.impl.EnumClass;
 
 /**
  * @author gorelov
- * @version $Id$
  */
 public enum CustomerGrade implements EnumClass<Integer> {
 

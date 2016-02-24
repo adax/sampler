@@ -53,6 +53,4 @@ public class TransportCount extends StandardEntity {
     public Integer getBicycles() {
         return bicycles;
     }
-
-
 }

@@ -13,8 +13,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.dom4j.Element;
 import org.springframework.core.io.Resource;
+import org.springframework.stereotype.Component;
 
-import javax.annotation.ManagedBean;
 import javax.annotation.Nullable;
 import javax.inject.Inject;
 import java.io.IOException;
@@ -25,9 +25,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * @author gorelov
- * @version $Id$
  */
-@ManagedBean(SamplesMenuConfig.NAME)
+@Component(SamplesMenuConfig.NAME)
 public class SamplesMenuConfig {
 
     public static final String NAME = "sampler_SamplesConfig";
@@ -41,10 +40,10 @@ public class SamplesMenuConfig {
     @Inject
     private Messages messages;
 
-    private List<MenuItem> rootItems = new ArrayList<>();
+    private final List<MenuItem> rootItems = new ArrayList<>();
 
     private volatile boolean initialized;
-    private ReadWriteLock lock = new ReentrantReadWriteLock();
+    private final ReadWriteLock lock = new ReentrantReadWriteLock();
 
     public String getMenuItemCaption(String id) {
         try {
@@ -216,7 +215,7 @@ public class SamplesMenuConfig {
     }
 
     private class MenuItemPredicate implements Predicate {
-        private String id;
+        private final String id;
 
         public MenuItemPredicate(String id) {
             this.id = id;

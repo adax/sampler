@@ -23,7 +23,6 @@
                       caption="reorderingAllowed"/>
         </hbox>
         <table id="ordersTable"
-               height="200px"
                width="100%">
             <columns>
                 <column id="date"/>

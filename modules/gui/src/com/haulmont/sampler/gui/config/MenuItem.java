@@ -8,14 +8,13 @@ import java.util.Map;
 
 /**
  * @author gorelov
- * @version $Id$
  */
 public class MenuItem {
 
-    private MenuItem parent;
-    private List<MenuItem> children = new ArrayList<>();
+    private final MenuItem parent;
+    private final List<MenuItem> children = new ArrayList<>();
 
-    private String id;
+    private final String id;
     private String url;
     private String controller;
     private String descriptionsPack;

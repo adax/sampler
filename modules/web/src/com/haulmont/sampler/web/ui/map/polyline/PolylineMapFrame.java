@@ -3,7 +3,6 @@ package com.haulmont.sampler.web.ui.map.polyline;
 import com.haulmont.charts.gui.components.map.MapViewer;
 import com.haulmont.charts.gui.map.model.GeoPoint;
 import com.haulmont.charts.gui.map.model.Polyline;
-import com.haulmont.charts.gui.map.model.directions.*;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 
 import javax.inject.Inject;

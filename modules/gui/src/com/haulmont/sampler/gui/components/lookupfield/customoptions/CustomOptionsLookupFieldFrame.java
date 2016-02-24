@@ -1,6 +1,7 @@
 package com.haulmont.sampler.gui.components.lookupfield.customoptions;
 
 import com.haulmont.cuba.core.entity.Entity;
+import com.haulmont.cuba.core.global.Metadata;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.LookupField;
 import com.haulmont.cuba.gui.data.Datasource;
@@ -21,14 +22,16 @@ public class CustomOptionsLookupFieldFrame extends AbstractFrame {
     private Datasource<Customer> customerDs;
     @Inject
     private Datasource<Order> orderDs;
+    @Inject
+    private Metadata metadata;
 
     @Override
     public void init(Map<String, Object> params) {
         // Datasource initialization. It is usually done automatically if the screen is
         // inherited from AbstractEditor and is used as an entity editor.
-        Order order = new Order();
+        Order order = metadata.create(Order.class);
         orderDs.setItem(order);
-        Customer customer = new Customer();
+        Customer customer = metadata.create(Customer.class);
         customerDs.setItem(customer);
 
         List<BigDecimal> list = new ArrayList<>();

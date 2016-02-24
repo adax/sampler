@@ -9,7 +9,6 @@ import org.apache.commons.lang.StringUtils;
 
 /**
  * @author gorelov
- * @version $Id$
  */
 public class SamplerHsqlExceptionHandler extends AbstractExceptionHandler {
 

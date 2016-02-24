@@ -42,6 +42,4 @@ public class CountryGrowth extends StandardEntity {
     public Double getYear2015() {
         return year2015;
     }
-
-
 }

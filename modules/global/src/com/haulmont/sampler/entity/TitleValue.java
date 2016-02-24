@@ -31,6 +31,4 @@ public class TitleValue extends StandardEntity {
     public Integer getValue() {
         return value;
     }
-
-
 }

@@ -6,7 +6,7 @@ import com.haulmont.cuba.gui.components.Window;
 
 public class AlwaysVisibleButtonsPanelFrame extends AbstractFrame {
 
-    private Window.Lookup.Handler dummyLookupHandler = items -> {
+    private final Window.Lookup.Handler dummyLookupHandler = items -> {
     };
 
     public void showVisible() {

@@ -53,6 +53,4 @@ public class PointPair extends StandardEntity {
     public Double getBy() {
         return by;
     }
-
-
 }

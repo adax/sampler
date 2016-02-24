@@ -75,6 +75,4 @@ public class IncomeExpenses extends StandardEntity {
     public Integer getDashLengthColumn() {
         return dashLengthColumn;
     }
-
-
 }

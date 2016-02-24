@@ -10,7 +10,6 @@ import java.math.BigDecimal;
 @Table(name = "SAMPLER_PRODUCT")
 @Entity(name = "sampler$Product")
 public class Product extends StandardEntity {
-
     private static final long serialVersionUID = 4256660269544840258L;
 
     @Column(name = "NAME", nullable = false)
@@ -34,6 +33,4 @@ public class Product extends StandardEntity {
     public BigDecimal getPrice() {
         return price;
     }
-
-
 }

@@ -13,8 +13,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.dom4j.Document;
 import org.dom4j.Element;
+import org.springframework.stereotype.Component;
 
-import javax.annotation.ManagedBean;
 import javax.annotation.Nullable;
 import javax.inject.Inject;
 import java.nio.file.Path;
@@ -24,9 +24,8 @@ import java.util.Map;
 
 /**
  * @author gorelov
- * @version $Id$
  */
-@ManagedBean(SamplesHelper.NAME)
+@Component(SamplesHelper.NAME)
 public class SamplesHelper {
     public static final String NAME = "sampler_SamplesHelper";
     private static final Map<String, Object> EMPTY_MAP = new HashMap<>();

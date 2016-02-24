@@ -1,5 +1,6 @@
 package com.haulmont.sampler.gui.components.fieldgroup.customize;
 
+import com.haulmont.cuba.core.global.Metadata;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.PickerField;
 import com.haulmont.cuba.gui.data.Datasource;
@@ -15,10 +16,12 @@ public class CustomizeFieldGroupFrame extends AbstractFrame {
     private PickerField customerField;
     @Inject
     private Datasource<Order> orderDs;
+    @Inject
+    private Metadata metadata;
 
     @Override
     public void init(Map<String, Object> params) {
-        Order order = new Order();
+        Order order = metadata.create(Order.class);
         orderDs.setItem(order);
 
         customerField.removeAllActions();

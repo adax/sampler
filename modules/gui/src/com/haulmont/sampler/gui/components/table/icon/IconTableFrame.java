@@ -11,7 +11,7 @@ import java.util.Map;
 public class IconTableFrame extends AbstractFrame {
 
     @Inject
-    private Table customerTable;
+    private Table<Customer> customerTable;
 
     @Override
     public void init(Map<String, Object> params) {

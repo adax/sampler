@@ -5,6 +5,7 @@ import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.LookupField;
 import com.haulmont.cuba.gui.components.Table;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
+import com.haulmont.sampler.entity.Customer;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ import java.util.Map;
 public class GenerateTableFrame extends AbstractFrame {
 
     @Inject
-    private Table customerTable;
+    private Table<Customer> customerTable;
     @Inject
     private ComponentsFactory componentsFactory;
     @Inject

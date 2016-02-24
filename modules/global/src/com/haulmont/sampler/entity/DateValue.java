@@ -35,6 +35,4 @@ public class DateValue extends StandardEntity {
     public Integer getValue() {
         return value;
     }
-
-
 }

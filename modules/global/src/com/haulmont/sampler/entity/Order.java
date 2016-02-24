@@ -15,7 +15,6 @@ import java.util.Set;
 @Table(name = "SAMPLER_ORDER")
 @Entity(name = "sampler$Order")
 public class Order extends StandardEntity {
-
     private static final long serialVersionUID = 5425074246531061156L;
 
     @ManyToOne(fetch = FetchType.LAZY)

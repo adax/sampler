@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import com.haulmont.cuba.core.entity.annotation.OnDelete;
 import com.haulmont.cuba.core.global.DeletePolicy;
-import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.OneToMany;
 import com.haulmont.cuba.core.entity.StandardEntity;
@@ -34,7 +33,6 @@ public class TaskSpan extends StandardEntity {
         this.segments = segments;
     }
 
-
     public void setCategory(String category) {
         this.category = category;
     }
@@ -42,6 +40,4 @@ public class TaskSpan extends StandardEntity {
     public String getCategory() {
         return category;
     }
-
-
 }

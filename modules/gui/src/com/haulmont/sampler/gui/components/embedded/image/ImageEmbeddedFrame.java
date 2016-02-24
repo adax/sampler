@@ -9,6 +9,7 @@ import com.haulmont.cuba.core.app.FileStorageService;
 import com.haulmont.cuba.core.entity.FileDescriptor;
 import com.haulmont.cuba.core.global.ClientType;
 import com.haulmont.cuba.core.global.FileStorageException;
+import com.haulmont.cuba.core.global.Metadata;
 import com.haulmont.cuba.gui.AppConfig;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.Embedded;
@@ -27,6 +28,8 @@ public class ImageEmbeddedFrame extends AbstractFrame {
     private Embedded image;
     @Inject
     private FileStorageService fileStorageService;
+    @Inject
+    private Metadata metadata;
 
     @Override
     public void init(Map<String, Object> params) {
@@ -40,7 +43,7 @@ public class ImageEmbeddedFrame extends AbstractFrame {
     private void loadImageFromFileStorage() {
         // A file descriptor entity is usually stored in the database and referenced by an attribute of your data
         // model entity. Here we simply create it for the purpose of the example.
-        FileDescriptor imageFile = new FileDescriptor();
+        FileDescriptor imageFile = metadata.create(FileDescriptor.class);
         imageFile.setId(UUID.fromString("61a6a1ee-f13a-f44f-0201-c2f9b3288305"));
         imageFile.setName("platform-logo.png");
         imageFile.setCreateDate(new Date(1427857200503L));

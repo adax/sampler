@@ -10,7 +10,6 @@ import java.util.Date;
 @Table(name = "SAMPLER_TASK")
 @Entity(name = "sampler$Task")
 public class Task extends StandardEntity {
-
     private static final long serialVersionUID = 2652709115420331280L;
 
     @Column(name = "NAME", nullable = false)
@@ -36,7 +35,6 @@ public class Task extends StandardEntity {
         return parentTask;
     }
 
-
     public void setName(String name) {
         this.name = name;
     }
@@ -60,6 +58,4 @@ public class Task extends StandardEntity {
     public Customer getAssignee() {
         return assignee;
     }
-
-
 }

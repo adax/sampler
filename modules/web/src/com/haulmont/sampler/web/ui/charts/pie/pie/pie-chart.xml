@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
-        class="com.haulmont.sampler.web.ui.charts.pie.pie.PieChartFrame"
+        class="com.haulmont.cuba.gui.components.AbstractFrame"
         xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
     <dsContext>
         <collectionDatasource id="countryLitresDs"

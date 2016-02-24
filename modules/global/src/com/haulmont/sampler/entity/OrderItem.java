@@ -10,7 +10,6 @@ import java.math.BigDecimal;
 @Table(name = "SAMPLER_INVOICE_ITEM")
 @Entity(name = "sampler$OrderItem")
 public class OrderItem extends StandardEntity {
-
     private static final long serialVersionUID = 7404462282086544503L;
 
     @ManyToOne(fetch = FetchType.LAZY)

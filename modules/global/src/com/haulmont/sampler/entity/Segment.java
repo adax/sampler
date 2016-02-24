@@ -36,7 +36,6 @@ public class Segment extends StandardEntity {
         this.taskSpan = taskSpan;
     }
 
-
     public TaskSpan getTaskSpan() {
         return taskSpan;
     }

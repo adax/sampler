@@ -6,7 +6,6 @@ import com.haulmont.sampler.web.app.folders.SamplerFoldersPane;
 
 /**
  * @author gorelov
- * @version $Id$
  */
 public class SamplerWebFoldersPane extends WebFoldersPane {
 
