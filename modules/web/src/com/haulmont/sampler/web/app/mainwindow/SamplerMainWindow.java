@@ -23,7 +23,7 @@ public class SamplerMainWindow extends AppMainWindow {
     public void init(Map<String, Object> params) {
         super.init(params);
 
-        platformLogoImage.setSource("images/platform-logo.png");
+        platformLogoImage.setSource("platform-logo.png");
         initUserIndicator();
     }
 

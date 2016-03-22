@@ -1,12 +1,19 @@
 
 buildscript {
-    ext.cubaVersion = '6.0-SNAPSHOT'
+    ext.cubaVersion = '6.1.0.RC1'
     repositories {
         maven {
             url 'http://repository.haulmont.com:8587/nexus/content/groups/work'
             credentials {
                 username(rootProject.hasProperty('repoUser') ? rootProject['repoUser'] : System.getenv('HAULMONT_REPOSITORY_USER'))
                 password(rootProject.hasProperty('repoPass') ? rootProject['repoPass'] : System.getenv('HAULMONT_REPOSITORY_PASSWORD'))
+            }
+        }
+        maven {
+            url 'https://repo.cuba-platform.com/content/groups/premium'
+            credentials {
+                username(rootProject.hasProperty('premiumRepoUser') ? rootProject['premiumRepoUser'] : System.getenv('CUBA_PREMIUM_USER'))
+                password(rootProject.hasProperty('premiumRepoPass') ? rootProject['premiumRepoPass'] : System.getenv('CUBA_PREMIUM_PASSWORD'))
             }
         }
     }
@@ -216,7 +223,7 @@ configure(webModule) {
     task deploy(dependsOn: [assemble, cleanConf, copyLogoImage], type: CubaDeployment) {
         appName = 'app'
         appJars('cuba-global', 'charts-global', 'cuba-web', 'charts-web', 'cuba-client', 'cuba-gui', 'charts-gui', 
-                'app-global', 'app-gui', 'app-web')
+                'app-global', 'app-gui', 'app-web', 'cuba-rest-api')
     }
     task buildScssThemes(type: CubaWebScssThemeCreation)
     assemble.dependsOn buildScssThemes
