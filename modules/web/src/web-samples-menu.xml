@@ -736,6 +736,13 @@
                     <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
                 </otherFiles>
             </item>
+            <item id="stockchart-stock-events" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/stockcharts/stockevents/StockChartStockEventsFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/stockevents">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
+                </otherFiles>
+            </item>
         </menu>
 
     </menu>
