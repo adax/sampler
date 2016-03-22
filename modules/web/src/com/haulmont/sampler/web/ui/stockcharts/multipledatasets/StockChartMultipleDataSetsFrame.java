@@ -16,13 +16,10 @@ public class StockChartMultipleDataSetsFrame extends AbstractFrame {
 
     @Inject
     private CollectionDatasource<DateValueVolume, UUID> stockChartDs1;
-
     @Inject
     private CollectionDatasource<DateValueVolume, UUID> stockChartDs2;
-
     @Inject
     private CollectionDatasource<DateValueVolume, UUID> stockChartDs3;
-
     @Inject
     private CollectionDatasource<DateValueVolume, UUID> stockChartDs4;
 
