@@ -59,4 +59,8 @@
             template="com/haulmont/sampler/web/ui/map/circle/circle-map.xml"/>
     <screen id="directions-map"
             template="com/haulmont/sampler/web/ui/map/directions/directions-map.xml"/>
+
+    <!-- Stock Charts -->
+    <screen id="stockchart-multiple-datasets"
+            template="com/haulmont/sampler/web/ui/stockcharts/multipledatasets/stockchart-multiple-datasets.xml"/>
 </screen-config>

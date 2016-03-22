@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.haulmont.sampler.web.ui.stockcharts.multipledatasets.StockChartMultipleDataSetsFrame"
+        xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
+    <dsContext>
+        <collectionDatasource id="stockChartDs1" class="com.haulmont.sampler.entity.DateValueVolume"
+                              refreshMode="NEVER" view="_local"/>
+        <collectionDatasource id="stockChartDs2" class="com.haulmont.sampler.entity.DateValueVolume"
+                              refreshMode="NEVER" view="_local"/>
+        <collectionDatasource id="stockChartDs3" class="com.haulmont.sampler.entity.DateValueVolume"
+                              refreshMode="NEVER" view="_local"/>
+        <collectionDatasource id="stockChartDs4" class="com.haulmont.sampler.entity.DateValueVolume"
+                              refreshMode="NEVER" view="_local"/>
+    </dsContext>
+    <layout>
+        <chart:stockChart id="stockChart"
+                          height="100%"
+                          width="100%"
+                          mainDataSet="dataSet4"
+                          theme="LIGHT">
+            <chart:dataSets>
+                <chart:dataSet id="dataSet1" title="First data set" datasource="stockChartDs1"
+                               categoryField="date">
+                    <chart:fieldMappings>
+                        <chart:fieldMapping fromField="value" toField="value"/>
+                        <chart:fieldMapping fromField="volume" toField="volume"/>
+                    </chart:fieldMappings>
+                </chart:dataSet>
+                <chart:dataSet id="dataSet2" title="Second data set" datasource="stockChartDs2"
+                               categoryField="date">
+                    <chart:fieldMappings>
+                        <chart:fieldMapping fromField="value" toField="value"/>
+                        <chart:fieldMapping fromField="volume" toField="volume"/>
+                    </chart:fieldMappings>
+                </chart:dataSet>
+                <chart:dataSet id="dataSet3" title="Third data set" datasource="stockChartDs3"
+                               categoryField="date">
+                    <chart:fieldMappings>
+                        <chart:fieldMapping fromField="value" toField="value"/>
+                        <chart:fieldMapping fromField="volume" toField="volume"/>
+                    </chart:fieldMappings>
+                </chart:dataSet>
+                <chart:dataSet id="dataSet4" title="Fourth data set" datasource="stockChartDs4"
+                               categoryField="date">
+                    <chart:fieldMappings>
+                        <chart:fieldMapping fromField="value" toField="value"/>
+                        <chart:fieldMapping fromField="volume" toField="volume"/>
+                    </chart:fieldMappings>
+                </chart:dataSet>
+            </chart:dataSets>
+
+            <chart:panels>
+                <chart:panel showCategoryAxis="false" title="Value" percentHeight="70">
+                    <chart:stockGraphs>
+                        <chart:stockGraph id="sg1" valueField="value" comparable="true" compareField="value"
+                                          balloonText="[[title]]:&lt;b&gt;[[value]]&lt;/b&gt;"
+                                          compareGraphBalloonText="[[title]]:&lt;b&gt;[[value]]&lt;/b&gt;"/>
+                    </chart:stockGraphs>
+                    <chart:stockLegend periodValueTextComparing="[[percents.value.close]]%"
+                                       periodValueTextRegular="[[value.close]]"/>
+                </chart:panel>
+                <chart:panel id="panel1" title="Volume" percentHeight="30">
+                    <chart:stockGraphs>
+                        <chart:stockGraph valueField="volume" type="COLUMN" showBalloon="false" fillAlphas="1"/>
+                    </chart:stockGraphs>
+                    <chart:stockLegend periodValueTextRegular="[[value.close]]"/>
+                </chart:panel>
+            </chart:panels>
+
+            <chart:chartScrollbarSettings graph="sg1"/>
+
+            <chart:chartCursorSettings valueBalloonsEnabled="true" fullWidth="true" cursorAlpha="0.1"
+                                       valueLineBalloonEnabled="true" valueLineEnabled="true"
+                                       valueLineAlpha="0.5"/>
+            <chart:periodSelector position="LEFT">
+                <chart:periods>
+                    <chart:period period="MONTHS" selected="true" count="1" label="1 month"/>
+                    <chart:period period="YEARS" count="1" label="1 year"/>
+                    <chart:period period="YTD" label="YTD"/>
+                    <chart:period period="MAX" label="MAX"/>
+                </chart:periods>
+            </chart:periodSelector>
+
+            <chart:dataSetSelector position="LEFT"/>
+
+            <chart:export/>
+        </chart:stockChart>
+    </layout>
+</window>
