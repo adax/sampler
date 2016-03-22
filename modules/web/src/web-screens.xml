@@ -64,4 +64,6 @@
             template="com/haulmont/sampler/web/ui/stockcharts/multipledatasets/stockchart-multiple-datasets.xml"/>
     <screen id="stockchart-stock-events"
             template="com/haulmont/sampler/web/ui/stockcharts/stockevents/stockchart-stock-events.xml"/>
+    <screen id="stockchart-multiple-panels"
+            template="com/haulmont/sampler/web/ui/stockcharts/multiplepanels/stockchart-multiple-panels.xml"/>
 </screen-config>

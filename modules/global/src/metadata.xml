@@ -3,5 +3,6 @@
     <metadata-model namespace="sampler"
                     root-package="com.haulmont.sampler">
         <class>com.haulmont.sampler.entity.DateValueVolume</class>
+        <class>com.haulmont.sampler.entity.StockData</class>
     </metadata-model>
 </metadata>

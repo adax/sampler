@@ -743,6 +743,13 @@
                     <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
                 </otherFiles>
             </item>
+            <item id="stockchart-multiple-panels" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/stockcharts/multiplepanels/StockChartMultiplePanelsFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/multiplepanels">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/StockData.java"/>
+                </otherFiles>
+            </item>
         </menu>
 
     </menu>
