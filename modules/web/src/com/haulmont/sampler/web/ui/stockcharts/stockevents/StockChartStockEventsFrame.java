@@ -17,30 +17,22 @@ public class StockChartStockEventsFrame extends AbstractFrame {
     @Inject
     private CollectionDatasource<DateValueVolume, UUID> stockChartDs;
 
-    private Date today = new Date();
     private Random random = new Random();
 
     @Override
     public void init(Map<String, Object> params) {
         stockChartDs.refresh();
-        populateStockDatasource(stockChartDs, 40, 100, 1000, 600, 2);
-    }
 
-    private void populateStockDatasource(CollectionDatasource<DateValueVolume, UUID> datasource,
-                                         int valueX1, int valueX2, int volumeX1, int volumeX2, int volumeX3) {
-        Date date = DateUtils.addDays(today, -DAYS_COUNT);
+        Date startDate = DateUtils.addDays(new Date(), -DAYS_COUNT);
         for (int i = 0; i < DAYS_COUNT; i++) {
-            addDateValueVolume(datasource, valueX1, valueX2, volumeX1, volumeX2, volumeX3,
-                    DateUtils.addDays(date, i), i);
+            stockChartDs.includeItem(generateDateValueVolume(DateUtils.addDays(startDate, i), i));
         }
     }
 
-    private void addDateValueVolume(CollectionDatasource<DateValueVolume, UUID> datasource,
-                                    int valueX1, int valueX2, int volumeX1, int volumeX2, int volumeX3,
-                                    Date date, int i) {
-        Long value = Math.round(random.nextDouble() * (valueX1 + i)) + valueX2 + i;
-        Long volume = Math.round(random.nextDouble() * (volumeX1 + i)) + volumeX2 + i + volumeX3;
-        datasource.includeItem(dateValueVolume(date, value, volume));
+    private DateValueVolume generateDateValueVolume(Date date, int i) {
+        Long value = Math.round(random.nextDouble() * (40 + i)) + 100 + i;
+        Long volume = Math.round(random.nextDouble() * (1000 + i)) + 600 + i + 2;
+        return dateValueVolume(date, value, volume);
     }
 
     private DateValueVolume dateValueVolume(Date date, Long value, Long volume) {

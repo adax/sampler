@@ -12,21 +12,20 @@ import java.util.Random;
 import java.util.UUID;
 
 public class StockChartMultiplePanelsFrame extends AbstractFrame {
-    private static final int DAYS_COUNT_FULL = 2000;
+    private static final int DAYS_COUNT = 2000;
 
     @Inject
     private CollectionDatasource<StockData, UUID> stockChartDs;
 
-    private Date today = new Date();
     private Random random = new Random();
 
     @Override
     public void init(Map<String, Object> params) {
         stockChartDs.refresh();
 
-        Date date = DateUtils.addDays(today, -DAYS_COUNT_FULL);
-        for (int i = 0; i < DAYS_COUNT_FULL; i++) {
-            stockChartDs.includeItem(generateStockData(DateUtils.addDays(date, i), i));
+        Date startDate = DateUtils.addDays(new Date(), -DAYS_COUNT);
+        for (int i = 0; i < DAYS_COUNT; i++) {
+            stockChartDs.includeItem(generateStockData(DateUtils.addDays(startDate, i), i));
         }
     }
 

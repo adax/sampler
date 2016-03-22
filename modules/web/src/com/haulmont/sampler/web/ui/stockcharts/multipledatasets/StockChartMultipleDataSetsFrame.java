@@ -43,10 +43,10 @@ public class StockChartMultipleDataSetsFrame extends AbstractFrame {
 
     private void populateStockDatasource(CollectionDatasource<DateValueVolume, UUID> datasource,
                                          int valueX1, int valueX2, int volumeX1, int volumeX2, int volumeX3) {
-        Date date = DateUtils.addDays(today, -DAYS_COUNT);
+        Date startDate = DateUtils.addDays(today, -DAYS_COUNT);
         for (int i = 0; i < DAYS_COUNT; i++) {
             addDateValueVolume(datasource, valueX1, valueX2, volumeX1, volumeX2, volumeX3,
-                    DateUtils.addDays(date, i), i);
+                    DateUtils.addDays(startDate, i), i);
         }
     }
 
