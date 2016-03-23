@@ -750,6 +750,13 @@
                     <file name="com/haulmont/sampler/entity/StockData.java"/>
                 </otherFiles>
             </item>
+            <item id="stockchart-intraday-data" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/stockcharts/intradaydata/StockChartIntradayDataFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/intradaydata">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
+                </otherFiles>
+            </item>
         </menu>
 
     </menu>
