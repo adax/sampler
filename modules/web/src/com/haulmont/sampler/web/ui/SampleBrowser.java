@@ -180,7 +180,7 @@ public class SampleBrowser extends AbstractWindow {
     private Component documentLinks(String descriptionsPack, String docUrlSuffix) {
         Link docLink = componentsFactory.createComponent(Link.class);
         Locale locale = userSessionSource.getLocale();
-        String url = messages.getMessage(descriptionsPack, DOC_URL_MESSAGES_KEY, locale) + "#" + docUrlSuffix;
+        String url = String.format(messages.getMessage(descriptionsPack, DOC_URL_MESSAGES_KEY, locale), docUrlSuffix);
         docLink.setUrl(url);
         docLink.setCaption(messages.getMessage(getClass(), "sampleBrowser.documentation"));
         docLink.setTarget("_blank");
