@@ -86,6 +86,8 @@
             template="/com/haulmont/sampler/gui/components/table/grouptable/group-table.xml"/>
     <screen id="tree-table"
             template="/com/haulmont/sampler/gui/components/table/treetable/tree-table.xml"/>
+    <screen id="no-header-table"
+            template="com/haulmont/sampler/gui/components/table/noheader/no-header-table.xml"/>
     <screen id="simple-label"
             template="/com/haulmont/sampler/gui/components/label/simple/simple-label.xml"/>
     <screen id="datasource-label"
@@ -96,6 +98,8 @@
             template="com/haulmont/sampler/gui/components/link/simple-link.xml"/>
     <screen id="simple-lookupfield"
             template="/com/haulmont/sampler/gui/components/lookupfield/simple/simple-lookupfield.xml"/>
+    <screen id="enum-based-lookupfield"
+            template="com/haulmont/sampler/gui/components/lookupfield/enumbased/enum-based-lookupfield.xml"/>
     <screen id="related-entity-lookupfield"
             template="/com/haulmont/sampler/gui/components/lookupfield/relatedentity/related-entity-lookupfield.xml"/>
     <screen id="custom-options-lookupfield"
@@ -227,6 +231,4 @@
     <screen id="notifications-sample"
             template="com/haulmont/sampler/gui/dialogsandnotifications/notification/notifications-sample.xml"/>
     <!--  -->
-    <screen id="enum-based-lookupfield"
-            template="com/haulmont/sampler/gui/components/lookupfield/enumbased/enum-based-lookupfield.xml"/>
 </screen-config>

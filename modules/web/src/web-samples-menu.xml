@@ -392,6 +392,12 @@
                     <!--<file name="com/haulmont/sampler/entity/Customer.java"/>-->
                 <!--</otherFiles>-->
             <!--</item>-->
+            <item id="no-header-table" docUrlSuffix="gui_Table" splitEnabled="true"
+                  descriptionsPack="com/haulmont/sampler/gui/components/table/noheader">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
             <item id="group-table" docUrlSuffix="gui_GroupTable" splitEnabled="true"
                   descriptionsPack="com/haulmont/sampler/gui/components/table/grouptable">
                 <otherFiles>
