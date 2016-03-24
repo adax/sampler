@@ -152,6 +152,14 @@
                   controller="com/haulmont/sampler/gui/components/lookupfield/simple/SimpleLookupFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
+                    <file name="com/haulmont/sampler/entity/CustomerGrade.java"/>
+                </otherFiles>
+            </item>
+            <item id="enum-based-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="30px"
+                  descriptionsPack="com/haulmont/sampler/gui/components/lookupfield/enumbased"
+                  controller="com/haulmont/sampler/gui/components/lookupfield/enumbased/EnumBasedLookupFieldFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/CustomerGrade.java"/>
                 </otherFiles>
             </item>
             <item id="related-entity-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="30px"

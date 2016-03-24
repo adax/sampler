@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.haulmont.sampler.gui.components.lookupfield.enumbased.EnumBasedLookupFieldFrame">
+    <layout>
+        <lookupField id="lookupField"/>
+    </layout>
+</window>

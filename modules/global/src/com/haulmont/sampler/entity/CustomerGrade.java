@@ -2,9 +2,6 @@ package com.haulmont.sampler.entity;
 
 import com.haulmont.chile.core.datatypes.impl.EnumClass;
 
-/**
- * @author gorelov
- */
 public enum CustomerGrade implements EnumClass<Integer> {
 
     PREMIUM(10),

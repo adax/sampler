@@ -227,4 +227,6 @@
     <screen id="notifications-sample"
             template="com/haulmont/sampler/gui/dialogsandnotifications/notification/notifications-sample.xml"/>
     <!--  -->
+    <screen id="enum-based-lookupfield"
+            template="com/haulmont/sampler/gui/components/lookupfield/enumbased/enum-based-lookupfield.xml"/>
 </screen-config>
