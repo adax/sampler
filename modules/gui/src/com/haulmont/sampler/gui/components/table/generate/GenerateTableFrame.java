@@ -2,6 +2,7 @@ package com.haulmont.sampler.gui.components.table.generate;
 
 import com.haulmont.cuba.core.global.GlobalConfig;
 import com.haulmont.cuba.gui.components.AbstractFrame;
+import com.haulmont.cuba.gui.components.Component;
 import com.haulmont.cuba.gui.components.LookupField;
 import com.haulmont.cuba.gui.components.Table;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
@@ -31,6 +32,11 @@ public class GenerateTableFrame extends AbstractFrame {
             return lookupField;
         });
 
+        customerTable.setColumnCaption("fullName", "Full Name");
         customerTable.setColumnCaption("language", "Language");
+    }
+
+    public Component generateFullNameCell(Customer entity) {
+        return new Table.PlainTextCell(entity.getInstanceName());
     }
 }
