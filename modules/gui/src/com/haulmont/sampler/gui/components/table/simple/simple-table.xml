@@ -21,6 +21,8 @@
                       caption="columnControlVisible"/>
             <checkBox id="reorderingAllowed"
                       caption="reorderingAllowed"/>
+            <checkBox id="showSelection"
+                      caption="showSelection"/>
         </hbox>
         <table id="ordersTable"
                width="100%">
