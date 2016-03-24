@@ -27,6 +27,6 @@ public class TrimTextFieldFrame extends AbstractFrame {
     public void show() {
         String value = textField.getValue() == null ?
                 "null" : HtmlEscapers.htmlEscaper().escape(textField.getValue());
-        this.value.setValue("Value: '" + value.replace(" ", "&nbsp;") + "'");
+        this.value.setValue("Value: '" + value.replace(" ", " ") + "'");
     }
 }
