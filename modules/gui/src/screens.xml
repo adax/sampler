@@ -223,6 +223,8 @@
             template="com/haulmont/sampler/gui/containers/tabsheet/lazy/lazy-tabsheet.xml"/>
     <screen id="simple-frame"
             template="com/haulmont/sampler/gui/containers/frame/simple/simple-frame.xml"/>
+    <screen id="simple-accordion"
+            template="com/haulmont/sampler/gui/containers/accordion/simple/simple-accordion.xml"/>
     <!-- Dialogs and Notifications -->
     <screen id="message-dialog-sample"
             template="com/haulmont/sampler/gui/dialogsandnotifications/dialog/message/message-dialog-sample.xml"/>
@@ -231,4 +233,6 @@
     <screen id="notifications-sample"
             template="com/haulmont/sampler/gui/dialogsandnotifications/notification/notifications-sample.xml"/>
     <!--  -->
+    <screen id="lazy-accordion"
+            template="com/haulmont/sampler/gui/containers/accordion/lazy/lazy-accordion.xml"/>
 </screen-config>

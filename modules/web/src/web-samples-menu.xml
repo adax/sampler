@@ -591,6 +591,11 @@
                   descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/lazy"/>
         </menu>
 
+        <menu id="accordion">
+            <item id="simple-accordion" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/accordion/simple"/>
+        </menu>
+
     </menu>
 
     <menu id="dialogsAndNotifications">
