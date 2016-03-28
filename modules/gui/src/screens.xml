@@ -170,6 +170,14 @@
             template="com/haulmont/sampler/gui/components/optionsgroup/datasource/datasource-optionsgroup.xml"/>
     <screen id="multiselect-optionsgroup"
             template="com/haulmont/sampler/gui/components/optionsgroup/multiselect/multiselect-optionsgroup.xml"/>
+    <screen id="simple-optionslist"
+            template="com/haulmont/sampler/gui/components/optionslist/simple/simple-optionslist.xml"/>
+    <screen id="custom-options-optionslist"
+            template="com/haulmont/sampler/gui/components/optionslist/customoptions/custom-options-optionslist.xml"/>
+    <screen id="datasource-optionslist"
+            template="com/haulmont/sampler/gui/components/optionslist/datasource/datasource-optionslist.xml"/>
+    <screen id="multiselect-optionslist"
+            template="com/haulmont/sampler/gui/components/optionslist/multiselect/multiselect-optionslist.xml"/>
     <screen id="simple-twincolumn"
             template="com/haulmont/sampler/gui/components/twincolumn/simple/simple-twincolumn.xml"/>
     <screen id="style-twincolumn"

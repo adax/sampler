@@ -210,14 +210,41 @@
             <item id="datasource-optionsgroup" docUrlSuffix="gui_OptionsGroup" sampleHeight="185px"
                   descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/datasource">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                    <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
             </item>
             <item id="multiselect-optionsgroup" docUrlSuffix="gui_OptionsGroup" sampleHeight="185px"
                   descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/multiselect"
                   controller="com/haulmont/sampler/gui/components/optionsgroup/multiselect/MultiSelectOptionsGroupFrame.java">
                 <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Product.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
+        <menu id="optionsList">
+            <item id="simple-optionslist" docUrlSuffix="" sampleHeight="190px"
+                  descriptionsPack="com/haulmont/sampler/gui/components/optionslist/simple"
+                  controller="com/haulmont/sampler/gui/components/optionslist/simple/SimpleOptionsListFrame.java">
+                <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="custom-options-optionslist" docUrlSuffix="" sampleHeight="115px"
+                  descriptionsPack="com/haulmont/sampler/gui/components/optionslist/customoptions"
+                  controller="com/haulmont/sampler/gui/components/optionslist/customoptions/CustomOptionsListFrame.java">
+            </item>
+            <item id="datasource-optionslist" docUrlSuffix="" sampleHeight="185px"
+                  descriptionsPack="com/haulmont/sampler/gui/components/optionslist/datasource">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Product.java"/>
+                </otherFiles>
+            </item>
+            <item id="multiselect-optionslist" docUrlSuffix="" sampleHeight="185px"
+                  descriptionsPack="com/haulmont/sampler/gui/components/optionslist/multiselect"
+                  controller="com/haulmont/sampler/gui/components/optionslist/multiselect/MultiSelectOptionsListFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
             </item>
         </menu>
