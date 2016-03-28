@@ -530,6 +530,18 @@
 
     <menu id="containers">
 
+        <menu id="accordion">
+            <item id="simple-accordion" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/accordion/simple">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                    <file name="com/haulmont/sampler/entity/DateValue.java"/>
+                </otherFiles>
+            </item>
+            <item id="lazy-accordion" docUrlSuffix="" splitEnabled="true" sampleHeight="170px"
+                  descriptionsPack="com/haulmont/sampler/gui/containers/accordion/lazy"/>
+        </menu>
+
         <menu id="boxLayout">
             <item id="hbox-sample" docUrlSuffix="gui_BoxLayout" sampleHeight="30px"
                   descriptionsPack="com/haulmont/sampler/gui/containers/boxlayout/hbox"/>
@@ -589,11 +601,6 @@
             <item id="lazy-tabsheet" docUrlSuffix="gui_TabSheet" sampleHeight="170px"
                   controller="com/haulmont/sampler/gui/containers/tabsheet/lazy/LazyTabSheetFrame.java"
                   descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/lazy"/>
-        </menu>
-
-        <menu id="accordion">
-            <item id="simple-accordion" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/accordion/simple"/>
         </menu>
 
     </menu>
