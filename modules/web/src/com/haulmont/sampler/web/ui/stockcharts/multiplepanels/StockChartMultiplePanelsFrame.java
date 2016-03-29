@@ -1,5 +1,6 @@
 package com.haulmont.sampler.web.ui.stockcharts.multiplepanels;
 
+import com.haulmont.charts.gui.components.charts.StockChart;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.data.CollectionDatasource;
 import com.haulmont.sampler.entity.StockData;
@@ -16,11 +17,18 @@ public class StockChartMultiplePanelsFrame extends AbstractFrame {
 
     @Inject
     private CollectionDatasource<StockData, UUID> stockChartDs;
+    @Inject
+    private StockChart stockChart;
 
     private Random random = new Random();
 
     @Override
     public void init(Map<String, Object> params) {
+        generateData();
+        addEventListeners();
+    }
+
+    private void generateData() {
         stockChartDs.refresh();
 
         Date startDate = DateUtils.addDays(new Date(), -DAYS_COUNT);
@@ -53,5 +61,23 @@ public class StockChartMultiplePanelsFrame extends AbstractFrame {
         dateValueVolume.setHigh(high);
         dateValueVolume.setLow(low);
         return dateValueVolume;
+    }
+
+    private void addEventListeners() {
+        stockChart.addPeriodSelectorChangeListener(event ->
+                showPeriodSelectorChangeEvent(event, "PeriodSelectorChangeEvent"));
+    }
+
+    private void showPeriodSelectorChangeEvent(StockChart.PeriodSelectorChangeEvent event, String message) {
+        showNotification(message,
+                "<Strong>Start Date:</Strong> " + event.getStartDate() + "</br>"
+                        + "<Strong>End Date:</Strong> " + event.getEndDate() + "</br>"
+                        + "<Strong>Predefined Period:</Strong> " + event.getPredefinedPeriod().name() + "</br>"
+                        + "<Strong>Count:</Strong> " + event.getCount() + "</br>"
+                        + "<Strong>X:</Strong> " + event.getX() + "</br>"
+                        + "<Strong>Y:</Strong> " + event.getY() + "</br>"
+                        + "<Strong>Absolute X:</Strong> " + event.getAbsoluteX() + "</br>"
+                        + "<Strong>Absolute Y:</Strong> " + event.getAbsoluteY(),
+                NotificationType.HUMANIZED_HTML);
     }
 }

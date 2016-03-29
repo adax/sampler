@@ -1,5 +1,6 @@
 package com.haulmont.sampler.web.ui.stockcharts.stockevents;
 
+import com.haulmont.charts.gui.components.charts.StockChart;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.data.CollectionDatasource;
 import com.haulmont.sampler.entity.DateValueVolume;
@@ -16,11 +17,18 @@ public class StockChartStockEventsFrame extends AbstractFrame {
 
     @Inject
     private CollectionDatasource<DateValueVolume, UUID> stockChartDs;
+    @Inject
+    private StockChart stockChart;
 
     private Random random = new Random();
 
     @Override
     public void init(Map<String, Object> params) {
+        generateData();
+        addEventListeners();
+    }
+
+    private void generateData() {
         stockChartDs.refresh();
 
         Date startDate = DateUtils.addDays(new Date(), -DAYS_COUNT);
@@ -41,5 +49,16 @@ public class StockChartStockEventsFrame extends AbstractFrame {
         dateValueVolume.setValue(value);
         dateValueVolume.setVolume(volume);
         return dateValueVolume;
+    }
+
+    private void addEventListeners() {
+        stockChart.addStockEventClickListener(event -> showStockEventEvent(event, "StockEventClickEvent"));
+    }
+
+    private void showStockEventEvent(StockChart.AbstractStockEventEvent event, String message) {
+        showNotification(message, "<Strong>Graph ID:</Strong> " + event.getGraphId() + "</br>"
+                        + "<Strong>Date:</Strong> " + event.getDate() + "</br>"
+                        + "<Strong>StockEvent:</Strong> " + event.getStockEvent(),
+                NotificationType.TRAY_HTML);
     }
 }

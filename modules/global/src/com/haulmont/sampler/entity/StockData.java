@@ -86,4 +86,17 @@ public class StockData extends AbstractNotPersistentEntity {
     public void setLow(Long low) {
         this.low = low;
     }
+
+    @Override
+    public String toString() {
+        return "StockData{" +
+                "date=" + date +
+                ", value=" + value +
+                ", volume=" + volume +
+                ", open=" + open +
+                ", close=" + close +
+                ", high=" + high +
+                ", low=" + low +
+                '}';
+    }
 }

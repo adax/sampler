@@ -1,5 +1,6 @@
 package com.haulmont.sampler.web.ui.stockcharts.multipledatasets;
 
+import com.haulmont.charts.gui.components.charts.StockChart;
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.data.CollectionDatasource;
 import com.haulmont.sampler.entity.DateValueVolume;
@@ -22,12 +23,19 @@ public class StockChartMultipleDataSetsFrame extends AbstractFrame {
     private CollectionDatasource<DateValueVolume, UUID> stockChartDs3;
     @Inject
     private CollectionDatasource<DateValueVolume, UUID> stockChartDs4;
+    @Inject
+    private StockChart stockChart;
 
     private Date today = new Date();
     private Random random = new Random();
 
     @Override
     public void init(Map<String, Object> params) {
+        generateData();
+        addEventListeners();
+    }
+
+    private void generateData() {
         stockChartDs1.refresh();
         populateStockDatasource(stockChartDs1, 40, 100, 1000, 500, 2);
 
@@ -64,5 +72,31 @@ public class StockChartMultipleDataSetsFrame extends AbstractFrame {
         dateValueVolume.setValue(value);
         dateValueVolume.setVolume(volume);
         return dateValueVolume;
+    }
+
+    private void addEventListeners() {
+        stockChart.addDataSetSelectorCompareListener(event ->
+                showDataSetSelectorEvent(event, "DataSetSelectorCompareEvent"));
+        stockChart.addDataSetSelectorSelectListener(event ->
+                showDataSetSelectorEvent(event, "DataSetSelectorSelectEvent"));
+        stockChart.addDataSetSelectorUnCompareListener(event ->
+                showDataSetSelectorEvent(event, "DataSetSelectorUnCompareEvent"));
+        stockChart.addStockGraphClickListener(event ->
+                showStockGraphEvent(event, "StockGraphClickEvent"));
+    }
+
+    private void showDataSetSelectorEvent(StockChart.AbstractDataSetSelectorEvent event, String message) {
+        showNotification(message, "<Strong>DataSet:</Strong> " + event.getDataSetId(),
+                NotificationType.HUMANIZED_HTML);
+    }
+
+    private void showStockGraphEvent(StockChart.AbstractStockGraphEvent event, String message) {
+        showNotification(message, "<Strong>Panel ID:</Strong> " + event.getPanelId() + "</br>"
+                        + "<Strong>Graph ID:</Strong> " + event.getGraphId() + "</br>"
+                        + "<Strong>X:</Strong> " + event.getX() + "</br>"
+                        + "<Strong>Y:</Strong> " + event.getY() + "</br>"
+                        + "<Strong>Absolute X:</Strong> " + event.getAbsoluteX() + "</br>"
+                        + "<Strong>Absolute Y:</Strong> " + event.getAbsoluteY(),
+                NotificationType.HUMANIZED_HTML);
     }
 }

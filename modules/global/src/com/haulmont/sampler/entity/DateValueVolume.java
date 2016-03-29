@@ -41,4 +41,13 @@ public class DateValueVolume extends AbstractNotPersistentEntity {
     public Long getVolume() {
         return volume;
     }
+
+    @Override
+    public String toString() {
+        return "DateValueVolume{" +
+                "date=" + date +
+                ", value=" + value +
+                ", volume=" + volume +
+                '}';
+    }
 }
