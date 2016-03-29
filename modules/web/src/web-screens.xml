@@ -70,4 +70,11 @@
             template="com/haulmont/sampler/web/ui/stockcharts/intradaydata/stockchart-intraday-data.xml"/>
     <screen id="stockchart-drawing"
             template="com/haulmont/sampler/web/ui/stockcharts/drawing/stockchart-drawing.xml"/>
+    <!-- DataItems -->
+    <screen id="entity-data-item"
+            template="com/haulmont/sampler/web/ui/charts/dataitems/entitydataitem/entity-data-item.xml"/>
+    <screen id="map-data-item"
+            template="com/haulmont/sampler/web/ui/charts/dataitems/mapdataitem/map-data-item.xml"/>
+    <screen id="simple-data-item"
+            template="com/haulmont/sampler/web/ui/charts/dataitems/simpledataitem/simple-data-item.xml"/>
 </screen-config>

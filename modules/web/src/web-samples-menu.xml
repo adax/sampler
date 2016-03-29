@@ -779,6 +779,22 @@
                 </item>
             </menu>
 
+            <menu id="dataItems">
+                <item id="entity-data-item" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
+                      controller="com/haulmont/sampler/web/ui/charts/dataitems/entitydataitem/EntityDataItemFrame.java"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/entitydataitem">
+                    <otherFiles>
+                        <file name="com/haulmont/sampler/entity/ValueDescription.java"/>
+                    </otherFiles>
+                </item>
+                <item id="map-data-item" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
+                      controller="com/haulmont/sampler/web/ui/charts/dataitems/mapdataitem/MapDataItemFrame.java"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/mapdataitem"/>
+                <item id="simple-data-item" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
+                      controller="com/haulmont/sampler/web/ui/charts/dataitems/simpledataitem/SimpleDataItemFrame.java"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/simpledataitem"/>
+            </menu>
+
         </menu>
 
         <menu id="stockCharts">
