@@ -3,6 +3,9 @@
 @import "samples/components/twincolumn/twincolumn";
 @import "samples/folderspane/folderspane";
 @import "samples/samplebrowser/samplebrowser";
+//HTML Layout
+@import "htmlLayout/htmlLayout";
+@import "keyframes/keyframes";
 
 @mixin halo-ext {
   @include halo;
@@ -10,6 +13,7 @@
   @include sampler-folderspane;
   @include sample-table;
   @include sample-twincolumn;
+  @include halo-html-layout;
 
   .v-label.sampler-app-tittle-label {
     color: #fff;

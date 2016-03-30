@@ -591,6 +591,13 @@
             </item>
         </menu>
 
+        <item id="simple-frame" docUrlSuffix="gui_IFrame" sampleHeight="150px"
+              descriptionsPack="com/haulmont/sampler/gui/containers/frame/simple">
+            <otherFiles>
+                <file name="com/haulmont/sampler/gui/components/button/simple/simple-button.xml"/>
+            </otherFiles>
+        </item>
+
         <menu id="gridLayout">
             <item id="simple-grid" docUrlSuffix="gui_GridLayout" sampleHeight="70px"
                   descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/simple"/>
@@ -609,10 +616,12 @@
                   descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/collapsable"/>
         </menu>
 
-        <item id="simple-frame" docUrlSuffix="gui_IFrame" sampleHeight="150px"
-              descriptionsPack="com/haulmont/sampler/gui/containers/frame/simple">
+        <item id="html-box" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
+              controller="com/haulmont/sampler/web/ui/containers/htmlbox/simple/HtmlBoxFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/containers/htmlbox/simple">
             <otherFiles>
-                <file name="com/haulmont/sampler/gui/components/button/simple/simple-button.xml"/>
+                <file name="com/haulmont/sampler/web/ui/containers/htmlbox/simple/html-layout.html"/>
+                <file name="com/haulmont/sampler/web/ui/containers/htmlbox/simple/htmlLayout.scss"/>
             </otherFiles>
         </item>
 

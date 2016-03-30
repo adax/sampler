@@ -77,4 +77,7 @@
             template="com/haulmont/sampler/web/ui/charts/dataitems/mapdataitem/map-data-item.xml"/>
     <screen id="simple-data-item"
             template="com/haulmont/sampler/web/ui/charts/dataitems/simpledataitem/simple-data-item.xml"/>
+    <!-- Containers -->
+    <screen id="html-box"
+            template="com/haulmont/sampler/web/ui/containers/htmlbox/simple/html-box.xml"/>
 </screen-config>
