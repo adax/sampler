@@ -19,18 +19,17 @@ public class EntityDataItemFrame extends AbstractFrame {
     @Override
     public void init(Map<String, Object> params) {
         ListDataProvider dataProvider = new ListDataProvider();
-        dataProvider.addItem(new EntityDataItem(valueDescription(75, "Sky", "#446493")));
-        dataProvider.addItem(new EntityDataItem(valueDescription(7, "Shady side of pyramid", "#5E3D2C")));
-        dataProvider.addItem(new EntityDataItem(valueDescription(18, "Sunny side of pyramid", "#D0A557")));
+        dataProvider.addItem(new EntityDataItem(valueDescription(75, "Sky")));
+        dataProvider.addItem(new EntityDataItem(valueDescription(7, "Shady side of pyramid")));
+        dataProvider.addItem(new EntityDataItem(valueDescription(18, "Sunny side of pyramid")));
 
         chart.getConfiguration().setDataProvider(dataProvider);
     }
 
-    private ValueDescription valueDescription(Integer value, String description, String color) {
+    private ValueDescription valueDescription(Integer value, String description) {
         ValueDescription entity = metadata.create(ValueDescription.class);
         entity.setValue(value);
         entity.setDescription(description);
-        entity.setColor(color);
         return entity;
     }
 }

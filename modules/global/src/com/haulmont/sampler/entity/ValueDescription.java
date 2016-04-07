@@ -14,9 +14,6 @@ public class ValueDescription extends AbstractNotPersistentEntity {
     @MetaProperty(mandatory = true)
     protected String description;
 
-    @MetaProperty
-    protected String color;
-
     public void setValue(Integer value) {
         this.value = value;
     }
@@ -31,13 +28,5 @@ public class ValueDescription extends AbstractNotPersistentEntity {
 
     public String getDescription() {
         return description;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getColor() {
-        return color;
     }
 }

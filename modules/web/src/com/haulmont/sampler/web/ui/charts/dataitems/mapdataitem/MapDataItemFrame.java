@@ -17,11 +17,11 @@ public class MapDataItemFrame extends AbstractFrame {
     public void init(Map<String, Object> params) {
         ListDataProvider dataProvider = new ListDataProvider();
         dataProvider.addItem(new MapDataItem(
-                ParamsMap.of("value", 75, "description", "Sky", "color", "#446493")));
+                ParamsMap.of("value", 75, "description", "Sky")));
         dataProvider.addItem(new MapDataItem(
-                ParamsMap.of("value", 7, "description", "Shady side of pyramid", "color", "#5E3D2C")));
+                ParamsMap.of("value", 7, "description", "Shady side of pyramid")));
         dataProvider.addItem(new MapDataItem(
-                ParamsMap.of("value", 18, "description", "Sunny side of pyramid", "color", "#D0A557")));
+                ParamsMap.of("value", 18, "description", "Sunny side of pyramid")));
 
         chart.getConfiguration().setDataProvider(dataProvider);
     }
