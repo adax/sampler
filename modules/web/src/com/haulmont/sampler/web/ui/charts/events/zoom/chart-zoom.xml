@@ -1,9 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!--
-  ~ Copyright (c) 2008-2016 Haulmont. All rights reserved.
-  ~ Use is subject to license terms, see http://www.cuba-platform.com/license for details.
-  -->
-
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.haulmont.sampler.web.ui.charts.events.zoom.ChartZoomFrame"
         xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
