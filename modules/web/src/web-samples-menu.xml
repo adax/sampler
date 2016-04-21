@@ -242,7 +242,7 @@
             </item>
             <item id="multiselect-optionslist" docUrlSuffix="" sampleHeight="185px"
                   descriptionsPack="com/haulmont/sampler/gui/components/optionslist/multiselect"
-                  controller="com/haulmont/sampler/gui/components/optionslist/multiselect/MultiSelectOptionsListFrame.java">
+                  controller="com/haulmont/sampler/gui/components/optionslist/multiselect/MultiselectOptionsListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
@@ -788,60 +788,60 @@
                 </item>
             </menu>
 
-            <menu id="dataItems">
-                <item id="entity-data-item" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
-                      controller="com/haulmont/sampler/web/ui/charts/dataitems/entitydataitem/EntityDataItemFrame.java"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/entitydataitem">
-                    <otherFiles>
-                        <file name="com/haulmont/sampler/entity/ValueDescription.java"/>
-                    </otherFiles>
-                </item>
-                <item id="map-data-item" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
-                      controller="com/haulmont/sampler/web/ui/charts/dataitems/mapdataitem/MapDataItemFrame.java"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/mapdataitem"/>
-                <item id="simple-data-item" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
-                      controller="com/haulmont/sampler/web/ui/charts/dataitems/simpledataitem/SimpleDataItemFrame.java"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/simpledataitem"/>
-            </menu>
-
         </menu>
 
         <menu id="stockCharts">
-            <item id="stockchart-multiple-datasets" splitEnabled="true" sampleHeight="60"
+            <item id="stockchart-multiple-datasets" docUrlSuffix="stock_chart" splitEnabled="true" sampleHeight="60"
                   controller="com/haulmont/sampler/web/ui/stockcharts/multipledatasets/StockChartMultipleDataSetsFrame.java"
                   descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/multipledatasets">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
                 </otherFiles>
             </item>
-            <item id="stockchart-stock-events" splitEnabled="true" sampleHeight="60"
+            <item id="stockchart-stock-events" docUrlSuffix="stock_chart" splitEnabled="true" sampleHeight="60"
                   controller="com/haulmont/sampler/web/ui/stockcharts/stockevents/StockChartStockEventsFrame.java"
                   descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/stockevents">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
                 </otherFiles>
             </item>
-            <item id="stockchart-multiple-panels" splitEnabled="true" sampleHeight="60"
+            <item id="stockchart-multiple-panels" docUrlSuffix="stock_chart" splitEnabled="true" sampleHeight="60"
                   controller="com/haulmont/sampler/web/ui/stockcharts/multiplepanels/StockChartMultiplePanelsFrame.java"
                   descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/multiplepanels">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/StockData.java"/>
                 </otherFiles>
             </item>
-            <item id="stockchart-intraday-data" splitEnabled="true" sampleHeight="60"
+            <item id="stockchart-intraday-data" docUrlSuffix="stock_chart" splitEnabled="true" sampleHeight="60"
                   controller="com/haulmont/sampler/web/ui/stockcharts/intradaydata/StockChartIntradayDataFrame.java"
                   descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/intradaydata">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
                 </otherFiles>
             </item>
-            <item id="stockchart-drawing" splitEnabled="true" sampleHeight="60"
+            <item id="stockchart-drawing" docUrlSuffix="stock_chart" splitEnabled="true" sampleHeight="60"
                   controller="com/haulmont/sampler/web/ui/stockcharts/drawing/StockChartDrawingFrame.java"
                   descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/drawing">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
                 </otherFiles>
             </item>
+        </menu>
+
+        <menu id="dataItems">
+            <item id="entity-data-item" docUrlSuffix="chart_data_binding" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/dataitems/entitydataitem/EntityDataItemFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/entitydataitem">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/ValueDescription.java"/>
+                </otherFiles>
+            </item>
+            <item id="map-data-item" docUrlSuffix="chart_data_binding" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/dataitems/mapdataitem/MapDataItemFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/mapdataitem"/>
+            <item id="simple-data-item" docUrlSuffix="chart_data_binding" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/dataitems/simpledataitem/SimpleDataItemFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/simpledataitem"/>
         </menu>
 
     </menu>
