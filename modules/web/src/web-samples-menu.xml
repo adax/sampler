@@ -242,7 +242,7 @@
             </item>
             <item id="multiselect-optionslist" docUrlSuffix="" sampleHeight="185px"
                   descriptionsPack="com/haulmont/sampler/gui/components/optionslist/multiselect"
-                  controller="com/haulmont/sampler/gui/components/optionslist/multiselect/MultiselectOptionsListFrame.java">
+                  controller="com/haulmont/sampler/gui/components/optionslist/multiselect/MultiSelectOptionsListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
