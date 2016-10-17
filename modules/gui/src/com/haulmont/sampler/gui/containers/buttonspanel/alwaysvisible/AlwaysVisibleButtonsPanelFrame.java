@@ -10,12 +10,10 @@ public class AlwaysVisibleButtonsPanelFrame extends AbstractFrame {
     };
 
     public void showVisible() {
-        getDialogParams().setWidth(480).setHeight(320);
         openLookup("visible-buttonspanel", dummyLookupHandler, WindowManager.OpenType.DIALOG);
     }
 
     public void showInvisible() {
-        getDialogParams().setWidth(480).setHeight(320);
         openLookup("invisible-buttonspanel", dummyLookupHandler, WindowManager.OpenType.DIALOG);
     }
 }

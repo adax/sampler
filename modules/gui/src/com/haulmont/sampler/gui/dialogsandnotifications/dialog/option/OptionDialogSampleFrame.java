@@ -26,12 +26,10 @@ public class OptionDialogSampleFrame extends AbstractFrame {
     }
 
     public void allActions() {
-        getDialogParams().setWidth(500);
-
         showOptionDialog(
                 "Title",
                 "All available DialogActions",
-                MessageType.CONFIRMATION,
+                MessageType.CONFIRMATION.width(500),
                 new Action[] {
                         new DialogAction(DialogAction.Type.OK),
                         new DialogAction(DialogAction.Type.CANCEL),

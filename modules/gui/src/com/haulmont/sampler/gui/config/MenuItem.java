@@ -117,7 +117,7 @@ public class MenuItem {
     public Map<String, Object> getScreenParams() {
         return screenParams != null
                 ? Collections.unmodifiableMap(screenParams)
-                : Collections.<String, Object>emptyMap();
+                : Collections.emptyMap();
     }
 
     public void setScreenParams(Map<String, Object> screenParams) {

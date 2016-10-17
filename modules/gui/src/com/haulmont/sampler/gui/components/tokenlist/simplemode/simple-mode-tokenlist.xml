@@ -24,7 +24,7 @@
                    width="320px">
             <lookup multiselect="true"
                     optionsDatasource="allItemsDs"/>
-            <button icon="icons/plus-btn.png"/>
+            <addButton icon="icons/plus-btn.png"/>
         </tokenList>
     </layout>
 </window>

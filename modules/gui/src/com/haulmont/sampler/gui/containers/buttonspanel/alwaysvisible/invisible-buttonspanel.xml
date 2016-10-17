@@ -10,6 +10,7 @@
             </query>
         </collectionDatasource>
     </dsContext>
+    <dialogMode width="480" height="320"/>
     <layout>
         <table id="customerTable"
                height="200px"
