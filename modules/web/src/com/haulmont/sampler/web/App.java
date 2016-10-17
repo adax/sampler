@@ -9,4 +9,9 @@ public class App extends DefaultApp {
     static {
         WebComponentsFactory.registerComponent(SamplerWebFoldersPane.NAME, SamplerWebFoldersPane.class);
     }
+
+    @Override
+    protected String routeTopLevelWindowId() {
+        return "mainWindow";
+    }
 }

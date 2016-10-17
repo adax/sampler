@@ -13,6 +13,10 @@
                    ext:index="1"
                    stylename="sampler-app-tittle-label"
                    value="msg://menuBar.appTitle"/>
+            <hbox id="mainButtonsBox">
+                <main:logoutButton id="logoutButton"
+                                   visible="false"/>
+            </hbox>
         </hbox>
         <split id="foldersSplit">
             <main:workArea id="workArea">

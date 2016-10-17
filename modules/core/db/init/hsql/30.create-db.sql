@@ -208,7 +208,7 @@ values ('platform-logo.png', 'png', 15816, '2015-04-01 00:00:00', 1, current_tim
 
 insert into SEC_USER
 (ID, CREATE_TS, VERSION, LOGIN, LOGIN_LC, PASSWORD, NAME, GROUP_ID, ACTIVE)
-values ('e5e934e3-75d5-7f38-668c-a3a2473f4250', current_timestamp, 1, 'demo', 'demo', 'b65e290316bf6f1665ac3454376c9bad681b2a23', 'Demo user', '0fa2b1a5-1d68-4d69-9fbd-dff348347f93', true);
+values ('e5e934e3-75d5-7f38-668c-a3a2473f4250', current_timestamp, 0, 'demo', 'demo', 'b65e290316bf6f1665ac3454376c9bad681b2a23', 'Demo user', '0fa2b1a5-1d68-4d69-9fbd-dff348347f93', true);
 
 ------------------------------------------------------------------------------------------------------------
 
