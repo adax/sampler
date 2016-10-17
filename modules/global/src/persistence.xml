@@ -17,5 +17,7 @@
         <class>com.haulmont.sampler.entity.TitleValue</class>
         <class>com.haulmont.sampler.entity.Segment</class>
         <class>com.haulmont.sampler.entity.TaskSpan</class>
+        <class>com.haulmont.sampler.entity.DateTaskSpan</class>
+        <class>com.haulmont.sampler.entity.DateSegment</class>
     </persistence-unit>
 </persistence>

@@ -44,12 +44,14 @@
     <view class="com.haulmont.sampler.entity.TaskSpan"
           name="taskSpan-with-segments">
         <property name="category"/>
-        <property name="segments">
-            <property name="start"/>
-            <property name="duration"/>
-            <property name="color"/>
-            <property name="task"/>
-            <property name="index"/>
+        <property name="segments"
+                  view="_local">
         </property>
+    </view>
+    <view class="com.haulmont.sampler.entity.DateTaskSpan"
+          extends="_local"
+          name="taskSpan-with-segments">
+        <property name="segments"
+                  view="_local"/>
     </view>
 </views>

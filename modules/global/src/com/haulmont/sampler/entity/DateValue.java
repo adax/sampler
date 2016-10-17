@@ -7,7 +7,9 @@ import javax.persistence.Column;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import com.haulmont.cuba.core.entity.StandardEntity;
+import com.haulmont.chile.core.annotations.NamePattern;
 
+@NamePattern("%s - %s|date,value")
 @Table(name = "SAMPLER_DATE_VALUE")
 @Entity(name = "sampler$DateValue")
 public class DateValue extends StandardEntity {

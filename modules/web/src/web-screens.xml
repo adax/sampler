@@ -33,7 +33,9 @@
     <screen id="donut-chart"
             template="com/haulmont/sampler/web/ui/charts/pie/donut/donut-chart.xml"/>
     <screen id="gantt-chart"
-            template="com/haulmont/sampler/web/ui/charts/gantt/gantt-chart.xml"/>
+            template="/com/haulmont/sampler/web/ui/charts/gantt/gantt/gantt-chart.xml"/>
+    <screen id="gantt-chart-dates"
+            template="/com/haulmont/sampler/web/ui/charts/gantt/dates/gantt-chart-dates.xml"/>
     <screen id="chart-zoom"
             template="/com/haulmont/sampler/web/ui/charts/events/zoom/chart-zoom.xml"/>
     <screen id="chart-click"

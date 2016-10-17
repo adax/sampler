@@ -2,36 +2,36 @@ package com.haulmont.sampler.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import com.haulmont.cuba.core.entity.annotation.OnDelete;
-import com.haulmont.cuba.core.global.DeletePolicy;
 import javax.persistence.Column;
-import javax.persistence.OneToMany;
 import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.chile.core.annotations.Composition;
+import com.haulmont.cuba.core.entity.annotation.OnDelete;
+import com.haulmont.cuba.core.global.DeletePolicy;
 import java.util.List;
+import javax.persistence.OneToMany;
 import javax.persistence.OrderBy;
 import com.haulmont.chile.core.annotations.NamePattern;
 
 @NamePattern("%s|category")
-@Table(name = "SAMPLER_TASK_SPAN")
-@Entity(name = "sampler$TaskSpan")
-public class TaskSpan extends StandardEntity {
-    private static final long serialVersionUID = -7228039581376166100L;
+@Table(name = "SAMPLER_DATE_TASK_SPAN")
+@Entity(name = "sampler$DateTaskSpan")
+public class DateTaskSpan extends StandardEntity {
+    private static final long serialVersionUID = 796558825459149346L;
 
     @Column(name = "CATEGORY")
     protected String category;
 
-    @OrderBy("index")
+    @OrderBy("start")
     @Composition
     @OnDelete(DeletePolicy.CASCADE)
     @OneToMany(mappedBy = "taskSpan")
-    protected List<Segment> segments;
+    protected List<DateSegment> segments;
 
-    public List<Segment> getSegments() {
+    public List<DateSegment> getSegments() {
         return segments;
     }
 
-    public void setSegments(List<Segment> segments) {
+    public void setSegments(List<DateSegment> segments) {
         this.segments = segments;
     }
 

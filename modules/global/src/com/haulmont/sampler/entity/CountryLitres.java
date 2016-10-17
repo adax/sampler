@@ -4,7 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Column;
 import com.haulmont.cuba.core.entity.StandardEntity;
+import com.haulmont.chile.core.annotations.NamePattern;
 
+@NamePattern("%s: %s|country,litres")
 @Table(name = "SAMPLER_COUNTRY_LITRES")
 @Entity(name = "sampler$CountryLitres")
 public class CountryLitres extends StandardEntity {

@@ -725,13 +725,23 @@
                       descriptionsPack="com/haulmont/sampler/web/ui/charts/radar/polar"/>
             </menu>
 
-            <item id="gantt-chart" docUrlSuffix="gantt_chart" splitEnabled="true" sampleHeight="60"
-                  descriptionsPack="com/haulmont/sampler/web/ui/charts/gantt">
-                <otherFiles>
-                    <file name="com/haulmont/sampler/entity/Segment.java"/>
-                    <file name="com/haulmont/sampler/entity/TaskSpan.java"/>
-                </otherFiles>
-            </item>
+            <menu id="ganttChart">
+                <item id="gantt-chart" docUrlSuffix="gantt_chart" splitEnabled="true" sampleHeight="60"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/gantt/gantt">
+                    <otherFiles>
+                        <file name="com/haulmont/sampler/entity/Segment.java"/>
+                        <file name="com/haulmont/sampler/entity/TaskSpan.java"/>
+                    </otherFiles>
+                </item>
+                <item id="gantt-chart-dates" docUrlSuffix="gantt_chart" splitEnabled="true" sampleHeight="60"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/gantt/dates">
+                    <otherFiles>
+                        <file name="com/haulmont/sampler/entity/DateSegment.java"/>
+                        <file name="com/haulmont/sampler/entity/DateTaskSpan.java"/>
+                    </otherFiles>
+                </item>
+            </menu>
+
             <item id="gauge-chart" docUrlSuffix="gauge_chart" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/gauge"/>
 

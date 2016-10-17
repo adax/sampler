@@ -4,7 +4,9 @@ import com.haulmont.chile.core.annotations.MetaClass;
 import com.haulmont.chile.core.annotations.MetaProperty;
 import java.util.Date;
 import com.haulmont.cuba.core.entity.AbstractNotPersistentEntity;
+import com.haulmont.chile.core.annotations.NamePattern;
 
+@NamePattern("%s - %s - %s|date,value,volume")
 @MetaClass(name = "sampler$DateValueVolume")
 public class DateValueVolume extends AbstractNotPersistentEntity {
     private static final long serialVersionUID = 1644204809967660606L;

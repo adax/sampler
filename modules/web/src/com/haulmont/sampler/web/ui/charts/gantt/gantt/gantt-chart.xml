@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ TODO Copyright
+  -->
+
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.haulmont.cuba.gui.components.AbstractFrame"
         xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
@@ -21,27 +25,31 @@
                           columnWidth="0.5"
                           datasource="taskSpansDs"
                           durationField="duration"
-                          endField="end"
                           height="100%"
                           marginRight="70"
-                          period="hh"
+                          period="HOURS"
                           rotate="true"
                           segmentsField="segments"
-                          startDate="2015-01-01"
+                          startDate="2016-01-01"
                           startField="start"
                           theme="LIGHT"
                           width="100%">
-            <chart:graph balloonText="[[task]]: [[open]] [[value]]"
+            <chart:graph balloonText="&lt;b&gt;[[task]]&lt;/b&gt;: [[open]] [[value]]"
                          fillAlphas="1"/>
             <chart:valueAxis maximum="31"
                              minimum="7"
                              type="DATE"/>
-            <chart:chartScrollbar/>
-            <chart:chartCursor cursorAlpha="0.1"
+            <chart:valueScrollbar autoGridCount="true"
+                                  color="BLACK"/>
+            <chart:chartCursor cursorAlpha="0"
+                               cursorColor="#55bb76"
                                fullWidth="true"
+                               valueLineAlpha="0.5"
                                valueBalloonsEnabled="false"
                                valueLineBalloonEnabled="true"
-                               valueLineEnabled="true"/>
+                               valueLineEnabled="true"
+                               valueZoomable="true"
+                               zoomable="false"/>
             <chart:export/>
         </chart:ganttChart>
     </layout>

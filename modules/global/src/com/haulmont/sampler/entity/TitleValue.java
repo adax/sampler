@@ -4,7 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Column;
 import com.haulmont.cuba.core.entity.StandardEntity;
+import com.haulmont.chile.core.annotations.NamePattern;
 
+@NamePattern("%s - %s|title,value")
 @Table(name = "SAMPLER_TITLE_VALUE")
 @Entity(name = "sampler$TitleValue")
 public class TitleValue extends StandardEntity {
