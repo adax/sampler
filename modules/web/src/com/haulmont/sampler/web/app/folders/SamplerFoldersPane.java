@@ -18,6 +18,7 @@ import com.vaadin.data.Property;
 import com.vaadin.data.util.HierarchicalContainer;
 import com.vaadin.event.ItemClickEvent;
 import com.vaadin.event.ShortcutListener;
+import com.vaadin.server.FontAwesome;
 import com.vaadin.shared.MouseEventDetails;
 import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.*;
@@ -87,6 +88,7 @@ public class SamplerFoldersPane extends CubaFoldersPane {
 
         filter = null;
         Button searchButton = new Button(messages.getMessage(getClass(), "LeftPanel.search"));
+        searchButton.setIcon(FontAwesome.SEARCH);
         searchButton.addClickListener(event -> search(searchField.getValue()));
         searchLayout.addComponent(searchButton);
         searchLayout.setComponentAlignment(searchButton, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
