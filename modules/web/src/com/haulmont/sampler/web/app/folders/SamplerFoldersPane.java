@@ -110,6 +110,7 @@ public class SamplerFoldersPane extends CubaFoldersPane {
         // NOTE: For development convenience only
         if (BooleanUtils.toBoolean(AppContext.getProperty("sampler.developerMode"))) {
             Button refresh = createButton("Refresh", event -> resetAllMenuItems());
+            refresh.setDescription("Reload all menu items");
             header.addComponent(refresh);
             header.setComponentAlignment(refresh, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
         }
