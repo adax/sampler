@@ -29,7 +29,14 @@ public class SamplerMainWindow extends AppMainWindow {
         super.init(params);
 
         platformLogoImage.setSource("platform-logo.png");
+        platformLogoImage.setWidth("350px");
+        platformLogoImage.setHeight("60px");
+
         initUserIndicator();
+
+        if (BooleanUtils.toBoolean(AppContext.getProperty("sampler.developerMode"))) {
+            logoutButton.setVisible(true);
+        }
     }
 
     private void initUserIndicator() {
@@ -41,10 +48,6 @@ public class SamplerMainWindow extends AppMainWindow {
                 userIndicator.setVisible(false);
                 return;
             }
-        }
-
-        if (BooleanUtils.toBoolean(AppContext.getProperty("sampler.developerMode"))) {
-            logoutButton.setVisible(true);
         }
     }
 }
