@@ -542,6 +542,29 @@
             </item>
         </menu>
 
+        <menu id="tree">
+            <item id="simple-tree" docUrlSuffix="gui_Tree" sampleHeight="200px"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/tree/simple">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Task.java"/>
+                </otherFiles>
+            </item>
+            <item id="icon-tree" docUrlSuffix="gui_Tree" sampleHeight="200px"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/tree/icon"
+                  controller="com/haulmont/sampler/web/ui/components/tree/icon/IconTreeFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Task.java"/>
+                </otherFiles>
+            </item>
+            <item id="itemclick-tree" docUrlSuffix="gui_Tree" sampleHeight="200px"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/tree/itemclick"
+                  controller="com/haulmont/sampler/web/ui/components/tree/itemclick/ItemClickTreeFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Task.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
         <menu id="twinColumn">
             <item id="simple-twincolumn" docUrlSuffix="gui_TwinColumn" sampleHeight="250px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/twincolumn/simple"
