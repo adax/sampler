@@ -141,6 +141,9 @@
             <item id="html-label" docUrlSuffix="gui_Label" sampleHeight="120px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/label/html"
                   controller="com/haulmont/sampler/web/ui/components/label/html/HtmlLabelFrame.java"/>
+            <item id="formatter-label" docUrlSuffix="gui_Label" sampleHeight="120px"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/label/formatter"
+                  controller="com/haulmont/sampler/web/ui/components/label/formatter/FormatterLabelFrame.java"/>
         </menu>
 
         <item id="simple-link" docUrlSuffix="gui_Link" sampleHeight="75px"

@@ -99,6 +99,8 @@
             template="/com/haulmont/sampler/web/ui/components/label/datasource/datasource-label.xml"/>
     <screen id="html-label"
             template="/com/haulmont/sampler/web/ui/components/label/html/html-label.xml"/>
+    <screen id="formatter-label"
+            template="com/haulmont/sampler/web/ui/components/label/formatter/formatter-label.xml"/>
     <screen id="simple-link"
             template="com/haulmont/sampler/web/ui/components/link/simple-link.xml"/>
     <screen id="simple-lookupfield"
