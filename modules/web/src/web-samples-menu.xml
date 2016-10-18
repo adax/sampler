@@ -664,25 +664,25 @@
 
             <menu id="serialChart">
                 <item id="line-chart" docUrlSuffix="serial_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/line">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/serial/line">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/DateValue.java"/>
                     </otherFiles>
                 </item>
                 <item id="stackedarea-chart" docUrlSuffix="serial_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/stackedarea">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/serial/stackedarea">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/TransportCount.java"/>
                     </otherFiles>
                 </item>
                 <item id="columnline-chart" docUrlSuffix="serial_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/columnline">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/serial/columnline">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/IncomeExpenses.java"/>
                     </otherFiles>
                 </item>
                 <item id="column3d-chart" docUrlSuffix="serial_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/serial/column3d">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/serial/column3d">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/CountryGrowth.java"/>
                     </otherFiles>
@@ -690,7 +690,7 @@
             </menu>
 
             <item id="xy-chart" docUrlSuffix="xy_chart" splitEnabled="true" sampleHeight="60"
-                  descriptionsPack="com/haulmont/sampler/web/ui/charts/xy">
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/xy">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/PointPair.java"/>
                 </otherFiles>
@@ -698,44 +698,44 @@
 
             <menu id="pieChart">
                 <item id="pie-chart" docUrlSuffix="pie_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/pie/pie">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/pie/pie">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/CountryLitres.java"/>
                     </otherFiles>
                 </item>
                 <item id="pie3d-chart" docUrlSuffix="pie_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/pie/pie3d">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/pie/pie3d">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/CountryLitres.java"/>
                     </otherFiles>
                 </item>
                 <item id="donut-chart" docUrlSuffix="pie_chart" splitEnabled="true" sampleHeight="60"
-                      controller="com/haulmont/sampler/web/ui/charts/pie/donut/DonutChartFrame.java"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/pie/donut"/>
+                      controller="com/haulmont/sampler/web/ui/charts/charts/pie/donut/DonutChartFrame.java"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/pie/donut"/>
             </menu>
 
             <menu id="radarChart">
                 <item id="radar-chart" docUrlSuffix="radar_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/radar/radar">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/radar/radar">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/CountryLitres.java"/>
                     </otherFiles>
                 </item>
                 <item id="polar-chart" docUrlSuffix="radar_chart" splitEnabled="true" sampleHeight="60"
-                      controller="com/haulmont/sampler/web/ui/charts/radar/polar/PolarChartFrame.java"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/radar/polar"/>
+                      controller="com/haulmont/sampler/web/ui/charts/charts/radar/polar/PolarChartFrame.java"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/radar/polar"/>
             </menu>
 
             <menu id="ganttChart">
                 <item id="gantt-chart" docUrlSuffix="gantt_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/gantt/gantt">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/gantt/gantt">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/Segment.java"/>
                         <file name="com/haulmont/sampler/entity/TaskSpan.java"/>
                     </otherFiles>
                 </item>
                 <item id="gantt-chart-dates" docUrlSuffix="gantt_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/gantt/dates">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/gantt/dates">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/DateSegment.java"/>
                         <file name="com/haulmont/sampler/entity/DateTaskSpan.java"/>
@@ -744,17 +744,17 @@
             </menu>
 
             <item id="gauge-chart" docUrlSuffix="gauge_chart" splitEnabled="true" sampleHeight="60"
-                  descriptionsPack="com/haulmont/sampler/web/ui/charts/gauge"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/gauge"/>
 
             <menu id="funnelChart">
                 <item id="funnel-chart" docUrlSuffix="funnel_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/funnel/funnel">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/funnel/funnel">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/TitleValue.java"/>
                     </otherFiles>
                 </item>
                 <item id="funnel3d-chart" docUrlSuffix="funnel_chart" splitEnabled="true" sampleHeight="60"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/funnel/funnel3d">
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/funnel/funnel3d">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/TitleValue.java"/>
                     </otherFiles>
@@ -763,36 +763,36 @@
 
             <menu id="chartEvents">
                 <item id="chart-click" docUrlSuffix="chart_listeners" splitEnabled="true" sampleHeight="60"
-                      controller="com/haulmont/sampler/web/ui/charts/events/click/ChartClickFrame.java"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/events/click">
+                      controller="com/haulmont/sampler/web/ui/charts/charts/events/click/ChartClickFrame.java"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/events/click">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/PointPair.java"/>
                     </otherFiles>
                 </item>
                 <item id="chart-graph-click" docUrlSuffix="chart_listeners" splitEnabled="true" sampleHeight="60"
-                      controller="com/haulmont/sampler/web/ui/charts/events/graphclick/ChartGraphClickFrame.java"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/events/graphclick">
+                      controller="com/haulmont/sampler/web/ui/charts/charts/events/graphclick/ChartGraphClickFrame.java"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/events/graphclick">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/IncomeExpenses.java"/>
                     </otherFiles>
                 </item>
                 <item id="chart-legend" docUrlSuffix="chart_listeners" splitEnabled="true" sampleHeight="60"
-                      controller="com/haulmont/sampler/web/ui/charts/events/legend/ChartLegendFrame.java"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/events/legend">
+                      controller="com/haulmont/sampler/web/ui/charts/charts/events/legend/ChartLegendFrame.java"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/events/legend">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/CountryLitres.java"/>
                     </otherFiles>
                 </item>
                 <item id="chart-slice" docUrlSuffix="chart_listeners" splitEnabled="true" sampleHeight="60"
-                      controller="com/haulmont/sampler/web/ui/charts/events/slice/ChartSliceFrame.java"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/events/slice">
+                      controller="com/haulmont/sampler/web/ui/charts/charts/events/slice/ChartSliceFrame.java"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/events/slice">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/CountryLitres.java"/>
                     </otherFiles>
                 </item>
                 <item id="chart-zoom" docUrlSuffix="chart_listeners" splitEnabled="true" sampleHeight="60"
-                      controller="com/haulmont/sampler/web/ui/charts/events/zoom/ChartZoomFrame.java"
-                      descriptionsPack="com/haulmont/sampler/web/ui/charts/events/zoom">
+                      controller="com/haulmont/sampler/web/ui/charts/charts/events/zoom/ChartZoomFrame.java"
+                      descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/events/zoom">
                     <otherFiles>
                         <file name="com/haulmont/sampler/entity/DateValue.java"/>
                     </otherFiles>
@@ -803,36 +803,36 @@
 
         <menu id="stockCharts">
             <item id="stockchart-multiple-datasets" docUrlSuffix="stock_chart" splitEnabled="true" sampleHeight="60"
-                  controller="com/haulmont/sampler/web/ui/stockcharts/multipledatasets/StockChartMultipleDataSetsFrame.java"
-                  descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/multipledatasets">
+                  controller="com/haulmont/sampler/web/ui/charts/stockcharts/multipledatasets/StockChartMultipleDataSetsFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/stockcharts/multipledatasets">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
                 </otherFiles>
             </item>
             <item id="stockchart-stock-events" docUrlSuffix="stock_chart" splitEnabled="true" sampleHeight="60"
-                  controller="com/haulmont/sampler/web/ui/stockcharts/stockevents/StockChartStockEventsFrame.java"
-                  descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/stockevents">
+                  controller="com/haulmont/sampler/web/ui/charts/stockcharts/stockevents/StockChartStockEventsFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/stockcharts/stockevents">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
                 </otherFiles>
             </item>
             <item id="stockchart-multiple-panels" docUrlSuffix="stock_chart" splitEnabled="true" sampleHeight="60"
-                  controller="com/haulmont/sampler/web/ui/stockcharts/multiplepanels/StockChartMultiplePanelsFrame.java"
-                  descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/multiplepanels">
+                  controller="com/haulmont/sampler/web/ui/charts/stockcharts/multiplepanels/StockChartMultiplePanelsFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/stockcharts/multiplepanels">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/StockData.java"/>
                 </otherFiles>
             </item>
             <item id="stockchart-intraday-data" docUrlSuffix="stock_chart" splitEnabled="true" sampleHeight="60"
-                  controller="com/haulmont/sampler/web/ui/stockcharts/intradaydata/StockChartIntradayDataFrame.java"
-                  descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/intradaydata">
+                  controller="com/haulmont/sampler/web/ui/charts/stockcharts/intradaydata/StockChartIntradayDataFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/stockcharts/intradaydata">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
                 </otherFiles>
             </item>
             <item id="stockchart-drawing" docUrlSuffix="stock_chart" splitEnabled="true" sampleHeight="60"
-                  controller="com/haulmont/sampler/web/ui/stockcharts/drawing/StockChartDrawingFrame.java"
-                  descriptionsPack="com/haulmont/sampler/web/ui/stockcharts/drawing">
+                  controller="com/haulmont/sampler/web/ui/charts/stockcharts/drawing/StockChartDrawingFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/stockcharts/drawing">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
                 </otherFiles>
@@ -841,44 +841,44 @@
 
         <menu id="dataItems">
             <item id="entity-data-item" docUrlSuffix="chart_data_binding" splitEnabled="true" sampleHeight="60"
-                  controller="com/haulmont/sampler/web/ui/charts/dataitems/entitydataitem/EntityDataItemFrame.java"
-                  descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/entitydataitem">
+                  controller="com/haulmont/sampler/web/ui/charts/charts/dataitems/entitydataitem/EntityDataItemFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/dataitems/entitydataitem">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/ValueDescription.java"/>
                 </otherFiles>
             </item>
             <item id="map-data-item" docUrlSuffix="chart_data_binding" splitEnabled="true" sampleHeight="60"
-                  controller="com/haulmont/sampler/web/ui/charts/dataitems/mapdataitem/MapDataItemFrame.java"
-                  descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/mapdataitem"/>
+                  controller="com/haulmont/sampler/web/ui/charts/charts/dataitems/mapdataitem/MapDataItemFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/dataitems/mapdataitem"/>
             <item id="simple-data-item" docUrlSuffix="chart_data_binding" splitEnabled="true" sampleHeight="60"
-                  controller="com/haulmont/sampler/web/ui/charts/dataitems/simpledataitem/SimpleDataItemFrame.java"
-                  descriptionsPack="com/haulmont/sampler/web/ui/charts/dataitems/simpledataitem"/>
+                  controller="com/haulmont/sampler/web/ui/charts/charts/dataitems/simpledataitem/SimpleDataItemFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/dataitems/simpledataitem"/>
         </menu>
 
     </menu>
 
     <menu id="maps">
         <item id="marker-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
-              controller="com/haulmont/sampler/web/ui/map/marker/MarkerMapFrame.java"
-              descriptionsPack="com/haulmont/sampler/web/ui/map/marker"/>
+              controller="com/haulmont/sampler/web/ui/charts/map/marker/MarkerMapFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/map/marker"/>
         <item id="polygon-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
-              controller="com/haulmont/sampler/web/ui/map/polygon/PolygonMapFrame.java"
-              descriptionsPack="com/haulmont/sampler/web/ui/map/polygon"/>
+              controller="com/haulmont/sampler/web/ui/charts/map/polygon/PolygonMapFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/map/polygon"/>
         <item id="polyline-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
-              controller="com/haulmont/sampler/web/ui/map/polyline/PolylineMapFrame.java"
-              descriptionsPack="com/haulmont/sampler/web/ui/map/polyline"/>
+              controller="com/haulmont/sampler/web/ui/charts/map/polyline/PolylineMapFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/map/polyline"/>
         <item id="directions-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
-              controller="com/haulmont/sampler/web/ui/map/directions/DirectionsMapFrame.java"
-              descriptionsPack="com/haulmont/sampler/web/ui/map/directions"/>
+              controller="com/haulmont/sampler/web/ui/charts/map/directions/DirectionsMapFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/map/directions"/>
         <item id="circle-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
-              controller="com/haulmont/sampler/web/ui/map/circle/CircleMapFrame.java"
-              descriptionsPack="com/haulmont/sampler/web/ui/map/circle"/>
+              controller="com/haulmont/sampler/web/ui/charts/map/circle/CircleMapFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/map/circle"/>
         <item id="heat-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
-              controller="com/haulmont/sampler/web/ui/map/heat/HeatMapFrame.java"
-              descriptionsPack="com/haulmont/sampler/web/ui/map/heat"/>
+              controller="com/haulmont/sampler/web/ui/charts/map/heat/HeatMapFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/map/heat"/>
         <item id="actions-map" docUrlSuffix="map" splitEnabled="true" sampleHeight="60"
-              controller="com/haulmont/sampler/web/ui/map/actions/ActionsMapFrame.java"
-              descriptionsPack="com/haulmont/sampler/web/ui/map/actions"/>
+              controller="com/haulmont/sampler/web/ui/charts/map/actions/ActionsMapFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/charts/map/actions"/>
     </menu>
 
 </sample-menu-config>
