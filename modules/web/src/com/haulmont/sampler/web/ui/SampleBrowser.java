@@ -45,8 +45,9 @@ public class SampleBrowser extends AbstractWindow {
     private GlobalConfig globalConfig;
 
     @Inject
-    protected UserSessionSource userSessionSource;
+    private UserSessionSource userSessionSource;
 
+    @SuppressWarnings("unchecked")
     @Override
     public void init(Map<String, Object> params) {
         super.init(params);
@@ -147,18 +148,17 @@ public class SampleBrowser extends AbstractWindow {
 
         scrollBoxLayout.add(descriptionText(frameId, descriptionsPack));
 
-        if (StringUtils.isNotEmpty(docUrlSuffix)) {
-            HBoxLayout hbox = componentsFactory.createComponent(HBoxLayout.class);
-            hbox.setWidth("100%");
+        HBoxLayout hbox = componentsFactory.createComponent(HBoxLayout.class);
+        hbox.setWidth("100%");
 
+        if (StringUtils.isNotEmpty(docUrlSuffix)) {
             Component docLinks = documentLinks(descriptionsPack, docUrlSuffix);
             hbox.add(docLinks);
-            hbox.expand(docLinks);
-
-            hbox.add(permalink(frameId));
-
-            scrollBoxLayout.add(hbox);
         }
+
+        hbox.add(permalink(frameId));
+
+        scrollBoxLayout.add(hbox);
 
         return scrollBoxLayout;
     }
