@@ -7,6 +7,9 @@ import com.haulmont.sampler.entity.DateValueVolume;
 import org.apache.commons.lang.time.DateUtils;
 
 import javax.inject.Inject;
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.ZoneId;
 import java.util.Date;
 import java.util.Map;
 import java.util.Random;
@@ -31,7 +34,8 @@ public class StockChartStockEventsFrame extends AbstractFrame {
     private void generateData() {
         stockChartDs.refresh();
 
-        Date startDate = DateUtils.addDays(new Date(), -DAYS_COUNT);
+        LocalDate localDate = LocalDate.of(2015, Month.DECEMBER, 31);
+        Date startDate = Date.from(localDate.minusDays(DAYS_COUNT).atStartOfDay(ZoneId.systemDefault()).toInstant());
         for (int i = 0; i < DAYS_COUNT; i++) {
             stockChartDs.includeItem(generateDateValueVolume(DateUtils.addDays(startDate, i), i));
         }

@@ -28,6 +28,18 @@ public class IncomeExpenses extends StandardEntity {
     @Column(name = "DASH_LENGTH_COLUMN")
     protected Integer dashLengthColumn;
 
+    @Column(name = "ADDITIONAL")
+    protected String additional;
+
+    public void setAdditional(String additional) {
+        this.additional = additional;
+    }
+
+    public String getAdditional() {
+        return additional;
+    }
+
+
     public void setYear(Integer year) {
         this.year = year;
     }

@@ -14,10 +14,12 @@
     <layout>
         <chart:pieChart id="pie3dChart"
                         angle="30"
-                        balloonText="[[title]] - [[percents]]%"
+                        balloonText="[[title]]&lt;br&gt;&lt;span style='font-size:14px'&gt;
+                        &lt;strong&gt;[[value]]&lt;/strong&gt; ([[percents]]%)&lt;/span&gt;"
                         datasource="countryLitresDs"
                         depth3D="15"
                         height="100%"
+                        outlineAlpha="0.4"
                         titleField="country"
                         valueField="litres"
                         width="100%">

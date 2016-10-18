@@ -30,7 +30,7 @@
                           startDateField="start"
                           theme="LIGHT"
                           width="100%">
-            <chart:graph balloonText="&lt;b&gt;[[task]]&lt;/b&gt;: [[open]] - [[value]]"
+            <chart:graph balloonText="&lt;strong&gt;[[task]]&lt;/strong&gt;: [[open]] - [[value]]"
                          fillAlphas="1"
                          lineAlpha="1"
                          lineColor="WHITE"/>

@@ -128,12 +128,11 @@ create table SAMPLER_TRANSPORT_COUNT (
     primary key (ID)
 )^
 -- end SAMPLER_TRANSPORT_COUNT
--- begin SAMPLER_INCOME_EXPENSES
-create table SAMPLER_INCOME_EXPENSES (
+-- begin SAMPLER_INCOME_EXPENSEScreate table SAMPLER_INCOME_EXPENSES (
     ID varchar(36) not null,
+    VERSION integer not null,
     CREATE_TS timestamp,
     CREATED_BY varchar(50),
-    VERSION integer,
     UPDATE_TS timestamp,
     UPDATED_BY varchar(50),
     DELETE_TS timestamp,
@@ -145,10 +144,10 @@ create table SAMPLER_INCOME_EXPENSES (
     ALPHA double precision,
     DASH_LENGTH_LINE integer,
     DASH_LENGTH_COLUMN integer,
+    ADDITIONAL varchar(255),
     --
     primary key (ID)
-)^
--- end SAMPLER_INCOME_EXPENSES
+)^-- end SAMPLER_INCOME_EXPENSES
 -- begin SAMPLER_COUNTRY_GROWTH
 create table SAMPLER_COUNTRY_GROWTH (
     ID varchar(36) not null,

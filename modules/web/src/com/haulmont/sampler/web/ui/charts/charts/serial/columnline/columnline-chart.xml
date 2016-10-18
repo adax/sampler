@@ -12,7 +12,9 @@
         </collectionDatasource>
     </dsContext>
     <layout>
-        <chart:serialChart autoMargins="false"
+        <chart:serialChart additionalFields="additional"
+                           addClassNames="true"
+                           autoMargins="false"
                            categoryField="year"
                            datasource="incomeExpensesDs"
                            height="100%"
@@ -21,19 +23,28 @@
                            marginRight="8"
                            marginTop="10"
                            startDuration="1"
+                           theme="LIGHT"
                            width="100%">
             <chart:valueAxes>
                 <chart:axis axisAlpha="0"
                             position="LEFT"/>
             </chart:valueAxes>
+            <chart:balloon adjustBorderColor="false"
+                           color="WHITE"
+                           horizontalPadding="10"
+                           verticalPadding="8"/>
             <chart:graphs>
                 <chart:graph alphaField="alpha"
+                             balloonText="&lt;span style='font-size:12px;'&gt;[[title]] in [[category]]:&lt;br&gt;
+                             &lt;span style='font-size:20px;'&gt;[[value]]&lt;/span&gt; [[additional]]&lt;/span&gt;"
                              dashLengthField="dashLengthColumn"
                              fillAlphas="1"
                              title="Income"
                              type="COLUMN"
                              valueField="income"/>
-                <chart:graph bullet="ROUND"
+                <chart:graph balloonText="&lt;span style='font-size:12px;'&gt;[[title]] in [[category]]:&lt;br&gt;
+                             &lt;span style='font-size:20px;'&gt;[[value]]&lt;/span&gt; [[additional]]&lt;/span&gt;"
+                             bullet="ROUND"
                              bulletBorderAlpha="1"
                              bulletBorderThickness="3"
                              bulletColor="WHITE"
@@ -43,6 +54,7 @@
                              lineAlpha="1"
                              lineThickness="3"
                              title="Expenses"
+                             useLineColorForBulletBorder="true"
                              valueField="expenses"/>
             </chart:graphs>
             <chart:categoryAxis axisAlpha="0"

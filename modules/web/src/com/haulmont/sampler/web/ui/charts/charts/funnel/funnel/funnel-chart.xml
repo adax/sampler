@@ -13,7 +13,7 @@
     </dsContext>
     <layout>
         <chart:funnelChart id="funnel"
-                           balloonText="[[title]]: [[value]]"
+                           balloonText="[[title]]: &lt;strong&gt;[[value]]&lt;/strong&gt;"
                            datasource="titleValueDs"
                            height="100%"
                            labelPosition="RIGHT"

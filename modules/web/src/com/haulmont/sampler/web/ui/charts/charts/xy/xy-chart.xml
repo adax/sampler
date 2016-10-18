@@ -13,22 +13,26 @@
     </dsContext>
     <layout>
         <chart:xyChart id="xyChart"
+                       autoMarginOffset="20"
                        datasource="pointPairDs"
                        height="100%"
                        marginBottom="60"
                        marginLeft="64"
                        startDuration="1"
+                       theme="LIGHT"
                        width="100%">
             <chart:chartCursor/>
             <chart:chartScrollbar/>
             <chart:graphs>
-                <chart:graph bullet="TRIANGLE_UP"
+                <chart:graph balloonText="x:[[x]] y:[[y]]"
+                             bullet="TRIANGLE_UP"
                              fillAlphas="0"
                              lineAlpha="0"
                              lineColor="#FF6600"
                              xField="ax"
                              yField="ay"/>
-                <chart:graph bullet="TRIANGLE_DOWN"
+                <chart:graph balloonText="x:[[x]] y:[[y]]"
+                             bullet="TRIANGLE_DOWN"
                              fillAlphas="0"
                              lineAlpha="0"
                              lineColor="#FCD202"
@@ -57,6 +61,7 @@
                             position="LEFT"
                             title="Y Axis"/>
             </chart:valueAxes>
+            <chart:export position="BOTTOM_RIGHT"/>
         </chart:xyChart>
     </layout>
 </window>

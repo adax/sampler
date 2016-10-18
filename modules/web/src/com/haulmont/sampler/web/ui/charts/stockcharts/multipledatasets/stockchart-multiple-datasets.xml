@@ -78,10 +78,10 @@
                              title="Value">
                     <chart:stockGraphs>
                         <chart:stockGraph id="stockGraph"
-                                          balloonText="[[title]]:&lt;b&gt;[[value]]&lt;/b&gt;"
+                                          balloonText="[[title]]:&lt;strong&gt;[[value]]&lt;/strong&gt;"
                                           comparable="true"
                                           compareField="value"
-                                          compareGraphBalloonText="[[title]]:&lt;b&gt;[[value]]&lt;/b&gt;"
+                                          compareGraphBalloonText="[[title]]:&lt;strong&gt;[[value]]&lt;/strong&gt;"
                                           valueField="value"/>
                     </chart:stockGraphs>
                     <chart:stockLegend periodValueTextComparing="[[percents.value.close]]%"

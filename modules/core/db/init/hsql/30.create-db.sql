@@ -1189,28 +1189,28 @@ values (2012, 1159, 277, 71, 1, current_timestamp, null, null, null, '1f805b20-b
 ------------------------------------------------------------------------------------------------------------
 
 insert into SAMPLER_INCOME_EXPENSES
-(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
-values (2009, 23.5, 18.1, null, null, null, 1, current_timestamp, null, null, null, '066dd94f-ae77-46ce-bdee-07fadd44a757', current_timestamp, 'admin');
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, ADDITIONAL, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2009, 23.5, 21.1, null, null, null, null, 1, current_timestamp, null, null, null, '066dd94f-ae77-46ce-bdee-07fadd44a757', current_timestamp, 'admin');
 
 insert into SAMPLER_INCOME_EXPENSES
-(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
-values (2010, 26.2, 22.8, null, null, null, 1, current_timestamp, null, null, null, '25cdeab4-e31b-4702-911d-2c35b8f03413', current_timestamp, 'admin');
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, ADDITIONAL, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2010, 26.2, 30.5, null, null, null, null, 1, current_timestamp, null, null, null, '25cdeab4-e31b-4702-911d-2c35b8f03413', current_timestamp, 'admin');
 
 insert into SAMPLER_INCOME_EXPENSES
-(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
-values (2011, 30.1, 23.9, null, null, null, 1, current_timestamp, null, null, null, '6b13081c-394f-4b83-9e59-028bb4f78020', current_timestamp, 'admin');
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, ADDITIONAL, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2011, 30.1, 34.9, null, null, null, null, 1, current_timestamp, null, null, null, '6b13081c-394f-4b83-9e59-028bb4f78020', current_timestamp, 'admin');
 
 insert into SAMPLER_INCOME_EXPENSES
-(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
-values (2012, 29.5, 25.1, null, null, null, 1, current_timestamp, null, null, null, '4839a394-4e90-46de-9a93-0385fd556856', current_timestamp, 'admin');
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, ADDITIONAL, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2012, 29.5, 31.1, null, null, null, null, 1, current_timestamp, null, null, null, '4839a394-4e90-46de-9a93-0385fd556856', current_timestamp, 'admin');
 
 insert into SAMPLER_INCOME_EXPENSES
-(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
-values (2013, 30.6, 27.2, null, 5, null, 1, current_timestamp, null, null, null, 'dca0e2db-3aeb-4df0-91a4-bd692371fd39', current_timestamp, 'admin');
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, ADDITIONAL, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2013, 30.6, 28.2, null, 5, null, null, 1, current_timestamp, null, null, null, 'dca0e2db-3aeb-4df0-91a4-bd692371fd39', current_timestamp, 'admin');
 
 insert into SAMPLER_INCOME_EXPENSES
-(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
-values (2014, 34.1, 29.9, 0.2, null, 5, 1, current_timestamp, null, null, null, '5b306626-115a-492f-a3d4-8b2808feaa21', current_timestamp, 'admin');
+(YEAR_, INCOME, EXPENSES, ALPHA, DASH_LENGTH_LINE, DASH_LENGTH_COLUMN, ADDITIONAL, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
+values (2014, 34.1, 32.9, 0.2, null, 5, '(projection)', 1, current_timestamp, null, null, null, '5b306626-115a-492f-a3d4-8b2808feaa21', current_timestamp, 'admin');
 
 ------------------------------------------------------------------------------------------------------------
 
