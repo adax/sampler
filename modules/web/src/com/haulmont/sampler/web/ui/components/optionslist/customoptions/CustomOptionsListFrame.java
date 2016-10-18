@@ -2,6 +2,7 @@ package com.haulmont.sampler.web.ui.components.optionslist.customoptions;
 
 import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.OptionsList;
+import com.haulmont.sampler.entity.CustomerGrade;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -14,6 +15,8 @@ public class CustomOptionsListFrame extends AbstractFrame {
     private OptionsList optionsListWithList;
     @Inject
     private OptionsList optionsListWithMap;
+    @Inject
+    private OptionsList optionsListWithEnum;
 
     @Override
     public void init(Map<String, Object> params) {
@@ -30,5 +33,7 @@ public class CustomOptionsListFrame extends AbstractFrame {
         map.put("five", 5);
         map.put("seven", 7);
         optionsListWithMap.setOptionsMap(map);
+
+        optionsListWithEnum.setOptionsEnum(CustomerGrade.class);
     }
 }

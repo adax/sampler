@@ -11,6 +11,10 @@
                          caption="Options Map"
                          height="180px"
                          width="160px"/>
+            <optionsList id="optionsListWithEnum"
+                         caption="Options Enum"
+                         height="180px"
+                         width="160px"/>
         </hbox>
     </layout>
 </window>

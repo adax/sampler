@@ -14,6 +14,12 @@
                 <button caption="Show value"
                         invoke="showOptionsMapValue"/>
             </vbox>
+            <vbox spacing="true">
+                <twinColumn id="twinColumnWithOptionsEnum"
+                            caption="Options Enum"/>
+                <button caption="Show value"
+                        invoke="showOptionsEnumValue"/>
+            </vbox>
         </hbox>
     </layout>
 </window>

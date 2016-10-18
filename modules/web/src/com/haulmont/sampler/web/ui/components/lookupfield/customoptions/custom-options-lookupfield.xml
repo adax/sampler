@@ -21,6 +21,11 @@
                          datasource="customerDs"
                          property="age"
                          nullName="(not selected)"/>
+            <lookupField id="gradleLookup"
+                         caption="Options Enum"
+                         datasource="customerDs"
+                         property="grade"
+                         inputPrompt="Select grade"/>
         </hbox>
     </layout>
 </window>

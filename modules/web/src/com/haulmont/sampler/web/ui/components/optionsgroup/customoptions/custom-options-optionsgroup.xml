@@ -6,6 +6,8 @@
                           caption="Options List"/>
             <optionsGroup id="optionsGroupWithMap"
                           caption="Options Map"/>
+            <optionsGroup id="optionsGroupWithEnum"
+                          caption="Options Enum"/>
         </hbox>
     </layout>
 </window>

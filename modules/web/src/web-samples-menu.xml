@@ -155,13 +155,13 @@
                     <file name="com/haulmont/sampler/entity/CustomerGrade.java"/>
                 </otherFiles>
             </item>
-            <item id="enum-based-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="30px"
+            <!--<item id="enum-based-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="30px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/lookupfield/enumbased"
                   controller="com/haulmont/sampler/web/ui/components/lookupfield/enumbased/EnumBasedLookupFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/CustomerGrade.java"/>
                 </otherFiles>
-            </item>
+            </item>-->
             <item id="related-entity-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="30px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/lookupfield/relatedentity"
                   controller="com/haulmont/sampler/web/ui/components/lookupfield/relatedentity/RelatedEntityLookupFieldFrame.java">
@@ -176,6 +176,7 @@
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
+                    <file name="com/haulmont/sampler/entity/CustomerGrade.java"/>
                 </otherFiles>
             </item>
             <item id="filter-mode-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="50px"
@@ -206,6 +207,9 @@
             <item id="custom-options-optionsgroup" docUrlSuffix="gui_OptionsGroup" sampleHeight="115px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/optionsgroup/customoptions"
                   controller="com/haulmont/sampler/web/ui/components/optionsgroup/customoptions/CustomOptionsGroupFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/CustomerGrade.java"/>
+                </otherFiles>
             </item>
             <item id="datasource-optionsgroup" docUrlSuffix="gui_OptionsGroup" sampleHeight="185px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/optionsgroup/datasource">
@@ -233,6 +237,9 @@
             <item id="custom-options-optionslist" docUrlSuffix="" sampleHeight="115px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/optionslist/customoptions"
                   controller="com/haulmont/sampler/web/ui/components/optionslist/customoptions/CustomOptionsListFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/CustomerGrade.java"/>
+                </otherFiles>
             </item>
             <item id="datasource-optionslist" docUrlSuffix="" sampleHeight="185px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/optionslist/datasource">
@@ -551,6 +558,9 @@
             <item id="custom-options-twincolumn" docUrlSuffix="gui_TwinColumn" sampleHeight="270px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/twincolumn/customoptions"
                   controller="com/haulmont/sampler/web/ui/components/twincolumn/customoptions/CustomOptionsTwinColumnFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/CustomerGrade.java"/>
+                </otherFiles>
             </item>
         </menu>
     </menu>

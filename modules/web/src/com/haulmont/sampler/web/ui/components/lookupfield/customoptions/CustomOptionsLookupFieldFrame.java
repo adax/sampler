@@ -6,6 +6,7 @@ import com.haulmont.cuba.gui.components.AbstractFrame;
 import com.haulmont.cuba.gui.components.LookupField;
 import com.haulmont.cuba.gui.data.Datasource;
 import com.haulmont.sampler.entity.Customer;
+import com.haulmont.sampler.entity.CustomerGrade;
 import com.haulmont.sampler.entity.Order;
 
 import javax.inject.Inject;
@@ -18,6 +19,8 @@ public class CustomOptionsLookupFieldFrame extends AbstractFrame {
     private LookupField ageLookup;
     @Inject
     private LookupField amountLookup;
+    @Inject
+    private LookupField gradleLookup;
     @Inject
     private Datasource<Customer> customerDs;
     @Inject
@@ -47,6 +50,8 @@ public class CustomOptionsLookupFieldFrame extends AbstractFrame {
         map.put("forty", 40);
         map.put("fifty", 50);
         ageLookup.setOptionsMap(map);
+
+        gradleLookup.setOptionsEnum(CustomerGrade.class);
 
         orderDs.addItemPropertyChangeListener(new ItemPropertyChangeListener<>());
         customerDs.addItemPropertyChangeListener(new ItemPropertyChangeListener<>());
