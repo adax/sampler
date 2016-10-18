@@ -6,7 +6,7 @@ import com.haulmont.cuba.core.global.Messages;
 import com.haulmont.cuba.core.global.UserSessionSource;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
-import com.haulmont.sampler.gui.SamplesHelper;
+import com.haulmont.sampler.web.util.SamplesHelper;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.BooleanUtils;
 import org.apache.commons.lang.StringUtils;
@@ -192,7 +192,7 @@ public class SampleBrowser extends AbstractWindow {
         permalink.setAlignment(Alignment.TOP_RIGHT);
         permalink.setDescription("Permalink");
         permalink.setUrl("open?screen=" + frameId);
-        permalink.setIcon("font-icon:EXTERNAL_LINK");
+        permalink.setIcon("font-awesome-icon:EXTERNAL_LINK");
 
         return permalink;
     }

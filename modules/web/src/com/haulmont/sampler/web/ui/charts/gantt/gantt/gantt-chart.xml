@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!--
-  ~ TODO Copyright
-  -->
-
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.haulmont.cuba.gui.components.AbstractFrame"
         xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">

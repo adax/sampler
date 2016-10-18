@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<sample-menu-config xmlns="com/haulmont/sampler/gui/samples-menu.xsd">
+<sample-menu-config xmlns="com/haulmont/sampler/web/samples-menu.xsd">
 
     <menu id="components">
         <menu id="button">
             <item id="simple-button" docUrlSuffix="gui_Button" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/simple"
-                  controller="com/haulmont/sampler/gui/components/button/simple/SimpleButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/button/simple"
+                  controller="com/haulmont/sampler/web/ui/components/button/simple/SimpleButtonFrame.java"/>
             <item id="localized-button" docUrlSuffix="gui_Button" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/localized"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/button/localized"/>
             <item id="action-button" docUrlSuffix="gui_Button" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/action"
-                  controller="com/haulmont/sampler/gui/components/button/action/ActionButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/button/action"
+                  controller="com/haulmont/sampler/web/ui/components/button/action/ActionButtonFrame.java"/>
             <item id="programmatic-action-button" docUrlSuffix="gui_Button" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/programmaticaction"
-                  controller="com/haulmont/sampler/gui/components/button/programmaticaction/ProgrammaticActionButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/button/programmaticaction"
+                  controller="com/haulmont/sampler/web/ui/components/button/programmaticaction/ProgrammaticActionButtonFrame.java"/>
             <item id="link-button" docUrlSuffix="gui_LinkButton" sampleHeight="80px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/button/linkbutton"
-                  controller="com/haulmont/sampler/gui/components/button/linkbutton/LinkButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/button/linkbutton"
+                  controller="com/haulmont/sampler/web/ui/components/button/linkbutton/LinkButtonFrame.java"/>
             <item id="simple-popupbutton" docUrlSuffix="gui_PopupButton" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/popupbutton"
-                  controller="com/haulmont/sampler/gui/components/popupbutton/SimplePopupButtonFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/popupbutton"
+                  controller="com/haulmont/sampler/web/ui/components/popupbutton/SimplePopupButtonFrame.java"/>
         </menu>
 
         <item id="bulk-editor" docUrlSuffix="gui_BulkEditor" splitEnabled="true"
-              descriptionsPack="com/haulmont/sampler/gui/components/bulkeditor">
+              descriptionsPack="com/haulmont/sampler/web/ui/components/bulkeditor">
             <otherFiles>
                 <file name="com/haulmont/sampler/entity/Customer.java"/>
             </otherFiles>
@@ -32,11 +32,11 @@
 
         <menu id="checkBox">
             <item id="simple-checkbox" docUrlSuffix="gui_CheckBox" sampleHeight="15px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/checkbox/simple"
-                  controller="com/haulmont/sampler/gui/components/checkbox/simple/SimpleCheckboxFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/checkbox/simple"
+                  controller="com/haulmont/sampler/web/ui/components/checkbox/simple/SimpleCheckboxFrame.java"/>
             <item id="datasource-checkbox" docUrlSuffix="gui_CheckBox" sampleHeight="45px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/checkbox/datasource"
-                  controller="com/haulmont/sampler/gui/components/checkbox/datasource/DatasourceCheckboxFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/checkbox/datasource"
+                  controller="com/haulmont/sampler/web/ui/components/checkbox/datasource/DatasourceCheckboxFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
@@ -45,56 +45,56 @@
 
         <menu id="dateField">
             <item id="simple-datefield" docUrlSuffix="gui_DateField" sampleHeight="90px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/simple"
-                  controller="com/haulmont/sampler/gui/components/datefield/simple/SimpleDateFieldFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/datefield/simple"
+                  controller="com/haulmont/sampler/web/ui/components/datefield/simple/SimpleDateFieldFrame.java"/>
             <item id="datasource-datefield" docUrlSuffix="gui_DateField" sampleHeight="60px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/datasource"
-                  controller="com/haulmont/sampler/gui/components/datefield/datasource/DatasourceDateFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/datefield/datasource"
+                  controller="com/haulmont/sampler/web/ui/components/datefield/datasource/DatasourceDateFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                 </otherFiles>
             </item>
             <item id="format-datefield" docUrlSuffix="gui_DateField" sampleHeight="50px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/format"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/datefield/format"/>
             <item id="resolution-datefield" docUrlSuffix="gui_DateField" sampleHeight="110px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/datefield/resolution"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/datefield/resolution"/>
         </menu>
 
         <menu id="embedded">
             <item id="image-embedded" docUrlSuffix="gui_Embedded" sampleHeight="250px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/embedded/image"
-                  controller="com/haulmont/sampler/gui/components/embedded/image/ImageEmbeddedFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/embedded/image"
+                  controller="com/haulmont/sampler/web/ui/components/embedded/image/ImageEmbeddedFrame.java"/>
             <item id="web-embedded" docUrlSuffix="gui_Embedded" splitEnabled="true" sampleHeight="70"
-                  descriptionsPack="com/haulmont/sampler/gui/components/embedded/web"
-                  controller="com/haulmont/sampler/gui/components/embedded/web/WebEmbeddedFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/embedded/web"
+                  controller="com/haulmont/sampler/web/ui/components/embedded/web/WebEmbeddedFrame.java"/>
         </menu>
 
         <menu id="fieldGroup">
             <item id="simple-fieldgroup" docUrlSuffix="gui_FieldGroup" sampleHeight="150px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/fieldgroup/simple"
-                  controller="com/haulmont/sampler/gui/components/fieldgroup/simple/SimpleFieldGroupFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/fieldgroup/simple"
+                  controller="com/haulmont/sampler/web/ui/components/fieldgroup/simple/SimpleFieldGroupFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="column-fieldgroup" docUrlSuffix="gui_FieldGroup" sampleHeight="110px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/fieldgroup/column"
-                  controller="com/haulmont/sampler/gui/components/fieldgroup/column/ColumnFieldGroupFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/fieldgroup/column"
+                  controller="com/haulmont/sampler/web/ui/components/fieldgroup/column/ColumnFieldGroupFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="generate-fieldgroup" docUrlSuffix="gui_FieldGroup" sampleHeight="110px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/fieldgroup/generate"
-                  controller="com/haulmont/sampler/gui/components/fieldgroup/generate/GenerateFieldGroupFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/fieldgroup/generate"
+                  controller="com/haulmont/sampler/web/ui/components/fieldgroup/generate/GenerateFieldGroupFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="customize-fieldgroup" docUrlSuffix="gui_FieldGroup" sampleHeight="110px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/fieldgroup/customize"
-                  controller="com/haulmont/sampler/gui/components/fieldgroup/customize/CustomizeFieldGroupFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/fieldgroup/customize"
+                  controller="com/haulmont/sampler/web/ui/components/fieldgroup/customize/CustomizeFieldGroupFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
@@ -103,25 +103,25 @@
 
         <menu id="filter">
             <item id="multiple-filter" docUrlSuffix="gui_Filter" splitEnabled="true" sampleHeight="50"
-                  descriptionsPack="com/haulmont/sampler/gui/components/filter/multiple">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/filter/multiple">
                 <screenParams>
                     <param name="filter" value="Multiple Conditions"/>
                 </screenParams>
             </item>
             <item id="group-filter" docUrlSuffix="gui_Filter" splitEnabled="true" sampleHeight="50"
-                  descriptionsPack="com/haulmont/sampler/gui/components/filter/group">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/filter/group">
                 <screenParams>
                     <param name="filter" value="Group Conditions"/>
                 </screenParams>
             </item>
             <item id="related-filter" docUrlSuffix="gui_Filter" splitEnabled="true" sampleHeight="50"
-                  descriptionsPack="com/haulmont/sampler/gui/components/filter/related">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/filter/related">
                 <screenParams>
                     <param name="filter" value="Related Entity"/>
                 </screenParams>
             </item>
             <item id="custom-filter" docUrlSuffix="gui_Filter" splitEnabled="true" sampleHeight="50"
-                  descriptionsPack="com/haulmont/sampler/gui/components/filter/custom">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/filter/custom">
                 <screenParams>
                     <param name="filter" value="Custom Condition"/>
                 </screenParams>
@@ -130,65 +130,65 @@
 
         <menu id="label">
             <item id="simple-label" docUrlSuffix="gui_Label" sampleHeight="80px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/label/simple"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/label/simple"/>
             <item id="datasource-label" docUrlSuffix="gui_Label" sampleHeight="360px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/label/datasource"
-                  controller="com/haulmont/sampler/gui/components/label/datasource/DatasourceLabelFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/label/datasource"
+                  controller="com/haulmont/sampler/web/ui/components/label/datasource/DatasourceLabelFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="html-label" docUrlSuffix="gui_Label" sampleHeight="120px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/label/html"
-                  controller="com/haulmont/sampler/gui/components/label/html/HtmlLabelFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/label/html"
+                  controller="com/haulmont/sampler/web/ui/components/label/html/HtmlLabelFrame.java"/>
         </menu>
 
         <item id="simple-link" docUrlSuffix="gui_Link" sampleHeight="75px"
-              descriptionsPack="com/haulmont/sampler/gui/components/link"/>
+              descriptionsPack="com/haulmont/sampler/web/ui/components/link"/>
 
         <menu id="lookupField">
             <item id="simple-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/lookupfield/simple"
-                  controller="com/haulmont/sampler/gui/components/lookupfield/simple/SimpleLookupFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/lookupfield/simple"
+                  controller="com/haulmont/sampler/web/ui/components/lookupfield/simple/SimpleLookupFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                     <file name="com/haulmont/sampler/entity/CustomerGrade.java"/>
                 </otherFiles>
             </item>
             <item id="enum-based-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/lookupfield/enumbased"
-                  controller="com/haulmont/sampler/gui/components/lookupfield/enumbased/EnumBasedLookupFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/lookupfield/enumbased"
+                  controller="com/haulmont/sampler/web/ui/components/lookupfield/enumbased/EnumBasedLookupFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/CustomerGrade.java"/>
                 </otherFiles>
             </item>
             <item id="related-entity-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/lookupfield/relatedentity"
-                  controller="com/haulmont/sampler/gui/components/lookupfield/relatedentity/RelatedEntityLookupFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/lookupfield/relatedentity"
+                  controller="com/haulmont/sampler/web/ui/components/lookupfield/relatedentity/RelatedEntityLookupFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="custom-options-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="50px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/lookupfield/customoptions"
-                  controller="com/haulmont/sampler/gui/components/lookupfield/customoptions/CustomOptionsLookupFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/lookupfield/customoptions"
+                  controller="com/haulmont/sampler/web/ui/components/lookupfield/customoptions/CustomOptionsLookupFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="filter-mode-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="50px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/lookupfield/filtermode"
-                  controller="com/haulmont/sampler/gui/components/lookupfield/filtermode/FilterModeLookupFieldFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/lookupfield/filtermode"
+                  controller="com/haulmont/sampler/web/ui/components/lookupfield/filtermode/FilterModeLookupFieldFrame.java"/>
             <item id="user-input-lookupfield" docUrlSuffix="gui_LookupField" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/lookupfield/userinput"
-                  controller="com/haulmont/sampler/gui/components/lookupfield/userinput/UserInputLookupFieldFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/lookupfield/userinput"
+                  controller="com/haulmont/sampler/web/ui/components/lookupfield/userinput/UserInputLookupFieldFrame.java"/>
         </menu>
 
         <item id="simple-lookuppickerfield" docUrlSuffix="gui_LookupPickerField" sampleHeight="30px"
-              descriptionsPack="com/haulmont/sampler/gui/components/lookuppickerfield"
-              controller="com/haulmont/sampler/gui/components/lookuppickerfield/SimpleLookupPickerFieldFrame.java">
+              descriptionsPack="com/haulmont/sampler/web/ui/components/lookuppickerfield"
+              controller="com/haulmont/sampler/web/ui/components/lookuppickerfield/SimpleLookupPickerFieldFrame.java">
             <otherFiles>
                 <file name="com/haulmont/sampler/entity/Order.java"/>
                 <file name="com/haulmont/sampler/entity/Customer.java"/>
@@ -197,25 +197,25 @@
 
         <menu id="optionsGroup">
             <item id="simple-optionsgroup" docUrlSuffix="gui_OptionsGroup" sampleHeight="150px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/simple"
-                  controller="com/haulmont/sampler/gui/components/optionsgroup/simple/SimpleOptionsGroupFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/optionsgroup/simple"
+                  controller="com/haulmont/sampler/web/ui/components/optionsgroup/simple/SimpleOptionsGroupFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="custom-options-optionsgroup" docUrlSuffix="gui_OptionsGroup" sampleHeight="115px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/customoptions"
-                  controller="com/haulmont/sampler/gui/components/optionsgroup/customoptions/CustomOptionsGroupFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/optionsgroup/customoptions"
+                  controller="com/haulmont/sampler/web/ui/components/optionsgroup/customoptions/CustomOptionsGroupFrame.java">
             </item>
             <item id="datasource-optionsgroup" docUrlSuffix="gui_OptionsGroup" sampleHeight="185px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/datasource">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/optionsgroup/datasource">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
             </item>
             <item id="multiselect-optionsgroup" docUrlSuffix="gui_OptionsGroup" sampleHeight="185px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/optionsgroup/multiselect"
-                  controller="com/haulmont/sampler/gui/components/optionsgroup/multiselect/MultiSelectOptionsGroupFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/optionsgroup/multiselect"
+                  controller="com/haulmont/sampler/web/ui/components/optionsgroup/multiselect/MultiSelectOptionsGroupFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
@@ -224,25 +224,25 @@
 
         <menu id="optionsList">
             <item id="simple-optionslist" docUrlSuffix="" sampleHeight="190px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/optionslist/simple"
-                  controller="com/haulmont/sampler/gui/components/optionslist/simple/SimpleOptionsListFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/optionslist/simple"
+                  controller="com/haulmont/sampler/web/ui/components/optionslist/simple/SimpleOptionsListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="custom-options-optionslist" docUrlSuffix="" sampleHeight="115px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/optionslist/customoptions"
-                  controller="com/haulmont/sampler/gui/components/optionslist/customoptions/CustomOptionsListFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/optionslist/customoptions"
+                  controller="com/haulmont/sampler/web/ui/components/optionslist/customoptions/CustomOptionsListFrame.java">
             </item>
             <item id="datasource-optionslist" docUrlSuffix="" sampleHeight="185px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/optionslist/datasource">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/optionslist/datasource">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
             </item>
             <item id="multiselect-optionslist" docUrlSuffix="" sampleHeight="185px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/optionslist/multiselect"
-                  controller="com/haulmont/sampler/gui/components/optionslist/multiselect/MultiSelectOptionsListFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/optionslist/multiselect"
+                  controller="com/haulmont/sampler/web/ui/components/optionslist/multiselect/MultiSelectOptionsListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Product.java"/>
                 </otherFiles>
@@ -251,24 +251,24 @@
 
         <menu id="pickerField">
             <item id="simple-pickerfield" docUrlSuffix="gui_PickerField" sampleHeight="50px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/pickerfield/simple"
-                  controller="com/haulmont/sampler/gui/components/pickerfield/simple/SimplePickerFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/pickerfield/simple"
+                  controller="com/haulmont/sampler/web/ui/components/pickerfield/simple/SimplePickerFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="actions-pickerfield" docUrlSuffix="gui_PickerField" sampleHeight="50px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/pickerfield/actions"
-                  controller="com/haulmont/sampler/gui/components/pickerfield/actions/ActionsPickerFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/pickerfield/actions"
+                  controller="com/haulmont/sampler/web/ui/components/pickerfield/actions/ActionsPickerFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="metaclass-pickerfield" docUrlSuffix="gui_PickerField" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/pickerfield/metaclass"
-                  controller="com/haulmont/sampler/gui/components/pickerfield/metaclass/MetaClassPickerFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/pickerfield/metaclass"
+                  controller="com/haulmont/sampler/web/ui/components/pickerfield/metaclass/MetaClassPickerFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
@@ -277,15 +277,15 @@
 
         <menu id="progressBar">
             <item id="normal-progressbar" docUrlSuffix="gui_ProgressBar" sampleHeight="10px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/progressbar/normal"
-                  controller="com/haulmont/sampler/gui/components/progressbar/normal/NormalProgressBarFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/progressbar/normal"
+                  controller="com/haulmont/sampler/web/ui/components/progressbar/normal/NormalProgressBarFrame.java"/>
             <item id="indeterminate-progressbar" docUrlSuffix="gui_ProgressBar" sampleHeight="25px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/progressbar/indeterminate"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/progressbar/indeterminate"/>
         </menu>
 
         <menu id="relatedEntities">
             <item id="simple-relatedentities" docUrlSuffix="gui_RelatedEntities" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/relatedentities/simple">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/relatedentities/simple">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
@@ -293,7 +293,7 @@
                 </otherFiles>
             </item>
             <item id="relatedentities-with-exclude" docUrlSuffix="gui_RelatedEntities" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/relatedentities/exclude">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/relatedentities/exclude">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
@@ -304,24 +304,24 @@
 
         <menu id="searchPickerField">
             <item id="simple-searchpickerfield" docUrlSuffix="gui_SearchPickerField" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/searchpickerfield/simple"
-                  controller="com/haulmont/sampler/gui/components/searchpickerfield/simple/SimpleSearchPickerFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/searchpickerfield/simple"
+                  controller="com/haulmont/sampler/web/ui/components/searchpickerfield/simple/SimpleSearchPickerFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="minlength-searchpickerfield" docUrlSuffix="gui_SearchPickerField" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/searchpickerfield/minlength"
-                  controller="com/haulmont/sampler/gui/components/searchpickerfield/minlength/MinLengthSearchPickerFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/searchpickerfield/minlength"
+                  controller="com/haulmont/sampler/web/ui/components/searchpickerfield/minlength/MinLengthSearchPickerFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="notifications-searchpickerfield" docUrlSuffix="gui_SearchPickerField" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/searchpickerfield/notifications"
-                  controller="com/haulmont/sampler/gui/components/searchpickerfield/notifications/NotificationsSearchPickerFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/searchpickerfield/notifications"
+                  controller="com/haulmont/sampler/web/ui/components/searchpickerfield/notifications/NotificationsSearchPickerFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
@@ -331,108 +331,108 @@
 
         <menu id="textArea">
             <item id="simple-textarea" docUrlSuffix="gui_TextArea" sampleHeight="125px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textarea/simple"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/textarea/simple"/>
             <item id="resizable-textarea" docUrlSuffix="gui_TextArea" sampleHeight="105px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textarea/resizable"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/textarea/resizable"/>
             <item id="simple-richtextarea" docUrlSuffix="gui_RichTextArea" sampleHeight="256px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/richtextarea"
-                  controller="com/haulmont/sampler/gui/components/richtextarea/SimpleRichTextAreaFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/richtextarea"
+                  controller="com/haulmont/sampler/web/ui/components/richtextarea/SimpleRichTextAreaFrame.java"/>
         </menu>
 
         <menu id="table">
             <item id="simple-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/simple"
-                  controller="com/haulmont/sampler/gui/components/table/simple/SimpleTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/simple"
+                  controller="com/haulmont/sampler/web/ui/components/table/simple/SimpleTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="maxlength-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/maxlength">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/maxlength">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="action-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/action"
-                  controller="com/haulmont/sampler/gui/components/table/action/ActionTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/action"
+                  controller="com/haulmont/sampler/web/ui/components/table/action/ActionTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="editable-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/editable">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/editable">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="formatter-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/formatter"
-                  controller="com/haulmont/sampler/gui/components/table/formatter/FormatterTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/formatter"
+                  controller="com/haulmont/sampler/web/ui/components/table/formatter/FormatterTableFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/components/table/formatter/LowercaseFormatter.java"/>
+                    <file name="com/haulmont/sampler/web/ui/components/table/formatter/LowercaseFormatter.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="icon-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/icon"
-                  controller="com/haulmont/sampler/gui/components/table/icon/IconTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/icon"
+                  controller="com/haulmont/sampler/web/ui/components/table/icon/IconTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="style-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/style"
-                  controller="com/haulmont/sampler/gui/components/table/style/StyleTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/style"
+                  controller="com/haulmont/sampler/web/ui/components/table/style/StyleTableFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/components/table/style/style.scss"/>
+                    <file name="com/haulmont/sampler/web/ui/components/table/style/style.scss"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="itemclick-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/itemclick"
-                  controller="com/haulmont/sampler/gui/components/table/itemclick/ItemClickTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/itemclick"
+                  controller="com/haulmont/sampler/web/ui/components/table/itemclick/ItemClickTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="generate-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/generate"
-                  controller="com/haulmont/sampler/gui/components/table/generate/GenerateTableFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/generate"
+                  controller="com/haulmont/sampler/web/ui/components/table/generate/GenerateTableFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="aggregatable-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/aggregatable">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/aggregatable">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <!--<item id="presentations-table" docUrlSuffix="gui_Table"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/presentations">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/presentations">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>-->
             <item id="no-header-table" docUrlSuffix="gui_Table" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/noheader">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/noheader">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="group-table" docUrlSuffix="gui_GroupTable" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/grouptable">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/grouptable">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="tree-table" docUrlSuffix="gui_TreeTable" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/components/table/treetable">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/table/treetable">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Task.java"/>
                 </otherFiles>
@@ -441,52 +441,52 @@
 
         <menu id="textField">
             <item id="simple-textfield" docUrlSuffix="gui_TextField" sampleHeight="110px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/simple"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/textfield/simple"/>
             <item id="datasource-textfield" docUrlSuffix="gui_TextField" sampleHeight="80px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/datasource"
-                  controller="com/haulmont/sampler/gui/components/textfield/datasource/DatasourceTextFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/textfield/datasource"
+                  controller="com/haulmont/sampler/web/ui/components/textfield/datasource/DatasourceTextFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="datatype-textfield" docUrlSuffix="gui_TextField" sampleHeight="50px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/datatype"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/textfield/datatype"/>
             <item id="validator-textfield" docUrlSuffix="gui_TextField" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/validator"
-                  controller="com/haulmont/sampler/gui/components/textfield/validator/ValidatorTextFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/textfield/validator"
+                  controller="com/haulmont/sampler/web/ui/components/textfield/validator/ValidatorTextFieldFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/components/textfield/validator/PositiveIntegerValidator.java"/>
+                    <file name="com/haulmont/sampler/web/ui/components/textfield/validator/PositiveIntegerValidator.java"/>
                 </otherFiles>
             </item>
             <item id="trim-textfield" docUrlSuffix="gui_TextField" sampleHeight="55px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/trim"
-                  controller="com/haulmont/sampler/gui/components/textfield/trim/TrimTextFieldFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/textfield/trim"
+                  controller="com/haulmont/sampler/web/ui/components/textfield/trim/TrimTextFieldFrame.java"/>
             <item id="simple-passwordfield" docUrlSuffix="gui_PasswordField" sampleHeight="50px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/passwordfield"
-                  controller="com/haulmont/sampler/gui/components/passwordfield/SimplePasswordFieldFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/passwordfield"
+                  controller="com/haulmont/sampler/web/ui/components/passwordfield/SimplePasswordFieldFrame.java"/>
             <item id="masked-field" docUrlSuffix="gui_MaskedField" sampleHeight="110px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/textfield/maskedfield"
-                  controller="com/haulmont/sampler/gui/components/textfield/maskedfield/MaskedFieldFrame.java"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/textfield/maskedfield"
+                  controller="com/haulmont/sampler/web/ui/components/textfield/maskedfield/MaskedFieldFrame.java"/>
         </menu>
 
         <menu id="timeField">
             <item id="simple-timefield" docUrlSuffix="gui_TimeField" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/timefield/simple"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/timefield/simple"/>
             <item id="datasource-timefield" docUrlSuffix="gui_TimeField" sampleHeight="60px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/timefield/datasource"
-                  controller="com/haulmont/sampler/gui/components/timefield/datasource/DatasourceTimeFieldFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/timefield/datasource"
+                  controller="com/haulmont/sampler/web/ui/components/timefield/datasource/DatasourceTimeFieldFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                 </otherFiles>
             </item>
             <item id="format-timefield" docUrlSuffix="gui_TimeField" sampleHeight="50px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/timefield/format"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/timefield/format"/>
         </menu>
 
         <menu id="tokenList">
             <item id="normal-tokenlist" docUrlSuffix="gui_TokenList" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/normal"
-                  controller="com/haulmont/sampler/gui/components/tokenlist/normal/NormalTokenListFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/tokenlist/normal"
+                  controller="com/haulmont/sampler/web/ui/components/tokenlist/normal/NormalTokenListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/OrderItem.java"/>
@@ -494,8 +494,8 @@
                 </otherFiles>
             </item>
             <item id="simple-mode-tokenlist" docUrlSuffix="gui_TokenList" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/simplemode"
-                  controller="com/haulmont/sampler/gui/components/tokenlist/simplemode/SimpleModeTokenListFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/tokenlist/simplemode"
+                  controller="com/haulmont/sampler/web/ui/components/tokenlist/simplemode/SimpleModeTokenListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/gui/entities/orderitem/OrderItemBrowse.java"/>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
@@ -504,8 +504,8 @@
                 </otherFiles>
             </item>
             <item id="clear-tokenlist" docUrlSuffix="gui_TokenList" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/clear"
-                  controller="com/haulmont/sampler/gui/components/tokenlist/clear/ClearTokenListFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/tokenlist/clear"
+                  controller="com/haulmont/sampler/web/ui/components/tokenlist/clear/ClearTokenListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/OrderItem.java"/>
@@ -513,8 +513,8 @@
                 </otherFiles>
             </item>
             <item id="position-tokenlist" docUrlSuffix="gui_TokenList" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/position"
-                  controller="com/haulmont/sampler/gui/components/tokenlist/position/PositionTokenListFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/tokenlist/position"
+                  controller="com/haulmont/sampler/web/ui/components/tokenlist/position/PositionTokenListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/OrderItem.java"/>
@@ -522,8 +522,8 @@
                 </otherFiles>
             </item>
             <item id="lookup-tokenlist" docUrlSuffix="gui_TokenList" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/tokenlist/lookup"
-                  controller="com/haulmont/sampler/gui/components/tokenlist/lookup/LookupTokenListFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/tokenlist/lookup"
+                  controller="com/haulmont/sampler/web/ui/components/tokenlist/lookup/LookupTokenListFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                     <file name="com/haulmont/sampler/entity/OrderItem.java"/>
@@ -534,23 +534,23 @@
 
         <menu id="twinColumn">
             <item id="simple-twincolumn" docUrlSuffix="gui_TwinColumn" sampleHeight="250px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/twincolumn/simple"
-                  controller="com/haulmont/sampler/gui/components/twincolumn/simple/SimpleTwinColumnFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/twincolumn/simple"
+                  controller="com/haulmont/sampler/web/ui/components/twincolumn/simple/SimpleTwinColumnFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="style-twincolumn" docUrlSuffix="gui_TwinColumn" sampleHeight="210px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/twincolumn/style"
-                  controller="com/haulmont/sampler/gui/components/twincolumn/style/StyleTwinColumnFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/twincolumn/style"
+                  controller="com/haulmont/sampler/web/ui/components/twincolumn/style/StyleTwinColumnFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/components/twincolumn/style/style.scss"/>
+                    <file name="com/haulmont/sampler/web/ui/components/twincolumn/style/style.scss"/>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
             <item id="custom-options-twincolumn" docUrlSuffix="gui_TwinColumn" sampleHeight="270px"
-                  descriptionsPack="com/haulmont/sampler/gui/components/twincolumn/customoptions"
-                  controller="com/haulmont/sampler/gui/components/twincolumn/customoptions/CustomOptionsTwinColumnFrame.java">
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/twincolumn/customoptions"
+                  controller="com/haulmont/sampler/web/ui/components/twincolumn/customoptions/CustomOptionsTwinColumnFrame.java">
             </item>
         </menu>
     </menu>
@@ -559,61 +559,62 @@
 
         <menu id="accordion">
             <item id="simple-accordion" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/accordion/simple">
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/accordion/simple">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                     <file name="com/haulmont/sampler/entity/DateValue.java"/>
                 </otherFiles>
             </item>
             <item id="lazy-accordion" docUrlSuffix="" splitEnabled="true" sampleHeight="170px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/accordion/lazy"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/accordion/lazy"
+                  controller="com/haulmont/sampler/web/ui/containers/accordion/lazy/LazyAccordionFrame.java"/>
         </menu>
 
         <menu id="boxLayout">
             <item id="hbox-sample" docUrlSuffix="gui_BoxLayout" sampleHeight="30px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/boxlayout/hbox"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/boxlayout/hbox"/>
             <item id="vbox-sample" docUrlSuffix="gui_BoxLayout" sampleHeight="140px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/boxlayout/vbox"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/boxlayout/vbox"/>
             <item id="flowbox-sample" docUrlSuffix="gui_BoxLayout" sampleHeight="80px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/boxlayout/flowbox"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/boxlayout/flowbox"/>
         </menu>
 
         <menu id="buttonsPanel">
             <item id="table-buttonspanel" docUrlSuffix="gui_ButtonsPanel" splitEnabled="true"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/buttonspanel/table"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/buttonspanel/table"/>
             <item id="always-visible-buttonspanel" docUrlSuffix="gui_ButtonsPanel" sampleHeight="30px"
-                  controller="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/AlwaysVisibleButtonsPanelFrame.java"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible">
+                  controller="com/haulmont/sampler/web/ui/containers/buttonspanel/alwaysvisible/AlwaysVisibleButtonsPanelFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/buttonspanel/alwaysvisible">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/visible-buttonspanel.xml"/>
-                    <file name="com/haulmont/sampler/gui/containers/buttonspanel/alwaysvisible/invisible-buttonspanel.xml"/>
+                    <file name="com/haulmont/sampler/web/ui/containers/buttonspanel/alwaysvisible/visible-buttonspanel.xml"/>
+                    <file name="com/haulmont/sampler/web/ui/containers/buttonspanel/alwaysvisible/invisible-buttonspanel.xml"/>
                 </otherFiles>
             </item>
         </menu>
 
         <item id="simple-frame" docUrlSuffix="gui_IFrame" sampleHeight="150px"
-              descriptionsPack="com/haulmont/sampler/gui/containers/frame/simple">
+              descriptionsPack="com/haulmont/sampler/web/ui/containers/frame/simple">
             <otherFiles>
-                <file name="com/haulmont/sampler/gui/components/button/simple/simple-button.xml"/>
+                <file name="com/haulmont/sampler/web/ui/components/button/simple/simple-button.xml"/>
             </otherFiles>
         </item>
 
         <menu id="gridLayout">
             <item id="simple-grid" docUrlSuffix="gui_GridLayout" sampleHeight="70px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/simple"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/gridlayout/simple"/>
             <item id="columns-flex-grid" docUrlSuffix="gui_GridLayout" sampleHeight="70px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/columnsflex"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/gridlayout/columnsflex"/>
             <item id="rows-flex-grid" docUrlSuffix="gui_GridLayout" sampleHeight="200px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/rowsflex"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/gridlayout/rowsflex"/>
             <item id="span-grid" docUrlSuffix="gui_GridLayout" sampleHeight="70px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/gridlayout/span"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/gridlayout/span"/>
         </menu>
 
         <menu id="groupBoxLayout">
             <item id="simple-groupbox" docUrlSuffix="gui_GroupBoxLayout" sampleHeight="250px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/simple"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/groupboxlayout/simple"/>
             <item id="collapsable-groupbox" docUrlSuffix="gui_GroupBoxLayout" sampleHeight="180px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/groupboxlayout/collapsable"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/groupboxlayout/collapsable"/>
         </menu>
 
         <item id="html-box" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
@@ -626,17 +627,17 @@
         </item>
 
         <item id="simple-scrollbox" docUrlSuffix="gui_ScrollBoxLayout" sampleHeight="150px"
-              descriptionsPack="com/haulmont/sampler/gui/containers/scrollboxlayout/simple"/>
+              descriptionsPack="com/haulmont/sampler/web/ui/containers/scrollboxlayout/simple"/>
 
         <item id="simple-split" docUrlSuffix="gui_SplitPanel" sampleHeight="300px"
-              descriptionsPack="com/haulmont/sampler/gui/containers/splitpanel/simple"/>
+              descriptionsPack="com/haulmont/sampler/web/ui/containers/splitpanel/simple"/>
 
         <menu id="tabSheet">
             <item id="simple-tabsheet" docUrlSuffix="gui_TabSheet" sampleHeight="150px"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/simple"/>
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/tabsheet/simple"/>
             <item id="lazy-tabsheet" docUrlSuffix="gui_TabSheet" sampleHeight="170px"
-                  controller="com/haulmont/sampler/gui/containers/tabsheet/lazy/LazyTabSheetFrame.java"
-                  descriptionsPack="com/haulmont/sampler/gui/containers/tabsheet/lazy"/>
+                  controller="com/haulmont/sampler/web/ui/containers/tabsheet/lazy/LazyTabSheetFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/containers/tabsheet/lazy"/>
         </menu>
 
     </menu>
@@ -645,16 +646,16 @@
 
         <menu id="dialogs">
             <item id="message-dialog-sample" docUrlSuffix="dialogs" sampleHeight="30px"
-                  controller="com/haulmont/sampler/gui/dialogsandnotifications/dialog/message/MessageDialogSampleFrame.java"
-                  descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/dialog/message"/>
+                  controller="com/haulmont/sampler/web/ui/dialogsandnotifications/dialog/message/MessageDialogSampleFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/dialogsandnotifications/dialog/message"/>
             <item id="option-dialog-sample" docUrlSuffix="dialogs" sampleHeight="30px"
-                  controller="com/haulmont/sampler/gui/dialogsandnotifications/dialog/option/OptionDialogSampleFrame.java"
-                  descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/dialog/option"/>
+                  controller="com/haulmont/sampler/web/ui/dialogsandnotifications/dialog/option/OptionDialogSampleFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/dialogsandnotifications/dialog/option"/>
         </menu>
 
         <item id="notifications-sample" docUrlSuffix="notifications" sampleHeight="30px"
-              controller="com/haulmont/sampler/gui/dialogsandnotifications/notification/NotificationsSampleFrame.java"
-              descriptionsPack="com/haulmont/sampler/gui/dialogsandnotifications/notification"/>
+              controller="com/haulmont/sampler/web/ui/dialogsandnotifications/notification/NotificationsSampleFrame.java"
+              descriptionsPack="com/haulmont/sampler/web/ui/dialogsandnotifications/notification"/>
 
     </menu>
 

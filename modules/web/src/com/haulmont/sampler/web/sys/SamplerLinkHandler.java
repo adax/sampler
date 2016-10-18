@@ -3,9 +3,9 @@ package com.haulmont.sampler.web.sys;
 import com.haulmont.cuba.gui.WindowManager;
 import com.haulmont.cuba.web.App;
 import com.haulmont.cuba.web.sys.LinkHandler;
-import com.haulmont.sampler.gui.SamplesHelper;
-import com.haulmont.sampler.gui.config.MenuItem;
-import com.haulmont.sampler.gui.config.SamplesMenuConfig;
+import com.haulmont.sampler.web.util.SamplesHelper;
+import com.haulmont.sampler.web.config.MenuItem;
+import com.haulmont.sampler.web.config.SamplesMenuConfig;
 
 import javax.inject.Inject;
 import java.util.Map;

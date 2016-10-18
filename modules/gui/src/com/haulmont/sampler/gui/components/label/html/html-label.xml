@@ -1,8 +1,0 @@
-<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
-        class="com.haulmont.sampler.gui.components.label.html.HtmlLabelFrame">
-    <dsContext/>
-    <layout spacing="true">
-        <label id="htmlLabel"
-               htmlEnabled="true"/>
-    </layout>
-</window>
