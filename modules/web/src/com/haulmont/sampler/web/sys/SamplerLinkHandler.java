@@ -1,8 +1,12 @@
 package com.haulmont.sampler.web.sys;
 
 import com.haulmont.cuba.gui.WindowManager;
+import com.haulmont.cuba.gui.components.Window;
+import com.haulmont.cuba.gui.components.mainwindow.FoldersPane;
 import com.haulmont.cuba.web.App;
 import com.haulmont.cuba.web.sys.LinkHandler;
+import com.haulmont.sampler.web.app.mainwindow.SamplerMainWindow;
+import com.haulmont.sampler.web.gui.components.mainwindow.SamplerWebFoldersPane;
 import com.haulmont.sampler.web.util.SamplesHelper;
 import com.haulmont.sampler.web.config.MenuItem;
 import com.haulmont.sampler.web.config.SamplesMenuConfig;
@@ -34,7 +38,15 @@ public class SamplerLinkHandler extends LinkHandler {
         MenuItem item = samplesMenuConfig.findItemById(screenName);
         if (item != null && !item.isMenu()) {
             Map<String, Object> params = samplesHelper.getParams(item);
-            App.getInstance().getWindowManager().openWindow(samplesHelper.getSampleBrowser(), WindowManager.OpenType.NEW_TAB, params);
+            App.getInstance().getWindowManager()
+                    .openWindow(samplesHelper.getSampleBrowser(), WindowManager.OpenType.NEW_TAB, params);
+            Window.TopLevelWindow window = App.getInstance().getTopLevelWindow();
+            if (window instanceof SamplerMainWindow) {
+                FoldersPane foldersPane = ((SamplerMainWindow) window).getFoldersPane();
+                if (foldersPane instanceof SamplerWebFoldersPane) {
+                    ((SamplerWebFoldersPane) foldersPane).expandMenuItem(item.getId());
+                }
+            }
         } else {
             super.handle();
         }

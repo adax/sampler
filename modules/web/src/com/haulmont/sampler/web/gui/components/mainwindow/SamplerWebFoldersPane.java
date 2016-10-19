@@ -13,4 +13,8 @@ public class SamplerWebFoldersPane extends WebFoldersPane {
     protected CubaFoldersPane createComponent() {
         return new SamplerFoldersPane();
     }
+
+    public void expandMenuItem(String itemId) {
+        ((SamplerFoldersPane) component).expandMenuItem(itemId, true);
+    }
 }

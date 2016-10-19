@@ -8,10 +8,10 @@ import com.haulmont.cuba.gui.config.WindowInfo;
 import com.haulmont.cuba.web.app.folders.CubaFoldersPane;
 import com.haulmont.cuba.web.toolkit.ui.CubaTextField;
 import com.haulmont.cuba.web.toolkit.ui.CubaTree;
-import com.haulmont.sampler.web.util.SamplesHelper;
+import com.haulmont.sampler.web.App;
 import com.haulmont.sampler.web.config.MenuItem;
 import com.haulmont.sampler.web.config.SamplesMenuConfig;
-import com.haulmont.sampler.web.App;
+import com.haulmont.sampler.web.util.SamplesHelper;
 import com.vaadin.data.Container;
 import com.vaadin.data.Item;
 import com.vaadin.data.Property;
@@ -28,6 +28,7 @@ import org.apache.commons.lang.StringUtils;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Stack;
 
 /**
  * @author gorelov
@@ -39,7 +40,7 @@ public class SamplerFoldersPane extends CubaFoldersPane {
     private VerticalLayout menuLayout;
     private Tree tree;
     private WindowInfo sampleWindow;
-    private Container.Filter filter;
+    private TreeSearchFilter filter;
 
     private Messages messages = AppBeans.get(Messages.NAME);
     private SamplesHelper samplesHelper = AppBeans.get(SamplesHelper.NAME);
@@ -144,6 +145,7 @@ public class SamplerFoldersPane extends CubaFoldersPane {
         tree.addItemClickListener(new MenuItemClickListener());
         tree.setItemCaptionPropertyId(PROPERTY_CAPTION);
         tree.setContainerDataSource(createTreeContent());
+        tree.setItemStyleGenerator(new TreeSearchStyle());
 
         menuLayout.addComponent(tree);
         menuLayout.setExpandRatio(tree, 1);
@@ -156,6 +158,7 @@ public class SamplerFoldersPane extends CubaFoldersPane {
         return container;
     }
 
+    @SuppressWarnings("unchecked")
     private void fillContainer(HierarchicalContainer container, List<MenuItem> items, MenuItem parent) {
         for (MenuItem item : items) {
             Item containerItem = container.addItem(item);
@@ -177,11 +180,13 @@ public class SamplerFoldersPane extends CubaFoldersPane {
             MenuItem item = (MenuItem) event.getItemId();
             if (item.isMenu()) {
                 Component tree = event.getComponent();
-                if (tree instanceof Tree)
+                if (tree instanceof Tree) {
                     switchExpandState((Tree) tree, item);
+                }
             } else {
-                if (event.getButton() == MouseEventDetails.MouseButton.LEFT)
+                if (event.getButton() == MouseEventDetails.MouseButton.LEFT) {
                     openWindow(item);
+                }
             }
         }
 
@@ -210,12 +215,13 @@ public class SamplerFoldersPane extends CubaFoldersPane {
     private void search(final String searchRequest) {
         Container.Filterable container = (Container.Filterable) tree.getContainerDataSource();
         if (StringUtils.isBlank(searchRequest)) {
-            tree.setItemStyleGenerator(null);
+//            tree.setItemStyleGenerator(null);
             container.removeContainerFilter(filter);
+            filter = null;
         } else {
-            tree.setItemStyleGenerator(new TreeSearchStyle(searchRequest));
-            if (filter != null)
+            if (filter != null) {
                 container.removeContainerFilter(filter);
+            }
             filter = new TreeSearchFilter(PROPERTY_CAPTION, searchRequest);
             container.addContainerFilter(filter);
             expandAll();
@@ -229,22 +235,36 @@ public class SamplerFoldersPane extends CubaFoldersPane {
         expandAll();
     }
 
-    private class TreeSearchStyle implements Tree.ItemStyleGenerator {
-
-        private String searchString;
-
-        public TreeSearchStyle(String searchString) {
-            this.searchString = searchString.toLowerCase();
+    public void expandMenuItem(String itemId, boolean setSelected) {
+        MenuItem item = samplesMenuConfig.findItemById(itemId);
+        if (item != null) {
+            MenuItem parent = item.getParent();
+            Stack<MenuItem> itemsToExpand = new Stack<>();
+            while (parent != null) {
+                itemsToExpand.add(parent);
+                parent = parent.getParent();
+            }
+            for (MenuItem itemToExpand : itemsToExpand) {
+                tree.expandItem(itemToExpand);
+            }
+            if (setSelected) {
+                tree.select(item);
+            }
         }
+    }
+
+    private class TreeSearchStyle implements Tree.ItemStyleGenerator {
 
         @Override
         public String getStyle(Tree source, Object itemId) {
             MenuItem item = (MenuItem) itemId;
-            if (samplesMenuConfig
-                    .getMenuItemCaption(item.getId())
-                    .toLowerCase()
-                    .contains(searchString)) {
-                return "bold";
+            if (filter != null) {
+                if (samplesMenuConfig
+                        .getMenuItemCaption(item.getId())
+                        .toLowerCase()
+                        .contains(filter.getSearchRequest())) {
+                    return "bold";
+                }
             }
             return null;
         }
@@ -255,9 +275,13 @@ public class SamplerFoldersPane extends CubaFoldersPane {
         private String propertyId;
         private String searchRequest;
 
-        public TreeSearchFilter(String propertyId, String searchRequest) {
+        TreeSearchFilter(String propertyId, String searchRequest) {
             this.propertyId = propertyId;
             this.searchRequest = searchRequest.toLowerCase();
+        }
+
+        public String getSearchRequest() {
+            return searchRequest;
         }
 
         @Override

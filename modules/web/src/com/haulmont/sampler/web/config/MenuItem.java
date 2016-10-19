@@ -109,11 +109,6 @@ public class MenuItem {
         children.add(item);
     }
 
-    @Override
-    public String toString() {
-        return id;
-    }
-
     public Map<String, Object> getScreenParams() {
         return screenParams != null
                 ? Collections.unmodifiableMap(screenParams)
@@ -122,5 +117,10 @@ public class MenuItem {
 
     public void setScreenParams(Map<String, Object> screenParams) {
         this.screenParams = screenParams;
+    }
+
+    @Override
+    public String toString() {
+        return id;
     }
 }
