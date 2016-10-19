@@ -14,6 +14,7 @@ import org.apache.commons.logging.LogFactory;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.springframework.stereotype.Component;
+import org.vaadin.aceeditor.AceMode;
 
 import javax.annotation.Nullable;
 import javax.inject.Inject;
@@ -80,6 +81,16 @@ public class SamplesHelper {
     public String getFileName(String src) {
         Path p = Paths.get(src);
         return p.getFileName().toString();
+    }
+
+    @Nullable
+    public String getFileExtension(String src) {
+        String fileName = getFileName(src);
+        int index = fileName.lastIndexOf(".");
+        if (index >= 0) {
+            return fileName.substring(index + 1);
+        }
+        return null;
     }
 
     @Nullable

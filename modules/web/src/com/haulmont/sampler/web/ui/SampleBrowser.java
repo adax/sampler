@@ -6,17 +6,18 @@ import com.haulmont.cuba.core.global.Messages;
 import com.haulmont.cuba.core.global.UserSessionSource;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
+import com.haulmont.cuba.web.gui.components.WebComponentsHelper;
+import com.haulmont.cuba.web.toolkit.ui.CubaSourceCodeEditor;
 import com.haulmont.sampler.web.util.SamplesHelper;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.BooleanUtils;
 import org.apache.commons.lang.StringUtils;
+import org.vaadin.aceeditor.AceMode;
 
 import javax.inject.Inject;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-
-import static com.haulmont.cuba.gui.components.SourceCodeEditor.Mode;
 
 public class SampleBrowser extends AbstractWindow {
 
@@ -109,17 +110,16 @@ public class SampleBrowser extends AbstractWindow {
         }
 
         String screenSrc = (String) params.get("screenSrc");
-        addSourceTab(screenSrc, Mode.XML);
+        addSourceTab(screenSrc);
 
         String controller = (String) params.get("controller");
-        if (StringUtils.isNotEmpty(controller))
-            addSourceTab(controller, getMode(samplesHelper.getFileName(controller)));
+        if (StringUtils.isNotEmpty(controller)) {
+            addSourceTab(controller);
+        }
 
         List<String> otherFiles = (List<String>) params.get("otherFiles");
         if (CollectionUtils.isNotEmpty(otherFiles)) {
-            for (String src : otherFiles) {
-                addSourceTab(src, getMode(samplesHelper.getFileName(src)));
-            }
+            otherFiles.forEach(this::addSourceTab);
         }
 
         String messagesPack = (String) params.get("messagesPack");
@@ -207,9 +207,10 @@ public class SampleBrowser extends AbstractWindow {
         return sb.toString();
     }
 
-    private SourceCodeEditor createSourceCodeEditor(Mode mode) {
+    private SourceCodeEditor createSourceCodeEditor(AceMode mode) {
         SourceCodeEditor editor = componentsFactory.createComponent(SourceCodeEditor.class);
-        editor.setMode(mode);
+        CubaSourceCodeEditor codeEditor = (CubaSourceCodeEditor) WebComponentsHelper.unwrap(editor);
+        codeEditor.setMode(mode);
         editor.setEditable(false);
         editor.setWidth("100%");
         editor.setHeight("100%");
@@ -220,7 +221,7 @@ public class SampleBrowser extends AbstractWindow {
     private void createMessagesContainers(String messagesPack) {
         Locale defaultLocale = messageTools.getDefaultLocale();
         for (Locale locale : globalConfig.getAvailableLocales().values()) {
-            SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(Mode.Properties);
+            SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(AceMode.properties);
             String tabTitle;
             if (defaultLocale.equals(locale)) {
                 tabTitle = "messages.properties";
@@ -244,21 +245,17 @@ public class SampleBrowser extends AbstractWindow {
         tab.setCaption(name);
     }
 
-    private void addSourceTab(String src, Mode mode) {
+    private void addSourceTab(String src) {
         if (StringUtils.isNotEmpty(src)) {
-            SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(mode);
+            SourceCodeEditor sourceCodeEditor = createSourceCodeEditor(getAceMode(src));
             sourceCodeEditor.setValue(samplesHelper.getFileContent(src));
             addTab(samplesHelper.getFileName(src), sourceCodeEditor);
         }
     }
 
-    private Mode getMode(String fileName) {
-        int index = fileName.lastIndexOf(".");
-        if (index >= 0) {
-            String extension = fileName.substring(index + 1);
-            return Mode.parse(extension);
-        }
-        return Mode.Text;
+    private AceMode getAceMode(String src) {
+        String fileExtension = samplesHelper.getFileExtension(src);
+        return fileExtension != null ? AceMode.forFileEnding(fileExtension) : AceMode.text;
     }
 
     private Locale getUserLocale() {
