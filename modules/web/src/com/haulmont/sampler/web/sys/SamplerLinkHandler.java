@@ -10,6 +10,8 @@ import com.haulmont.sampler.web.gui.components.mainwindow.SamplerWebFoldersPane;
 import com.haulmont.sampler.web.util.SamplesHelper;
 import com.haulmont.sampler.web.config.MenuItem;
 import com.haulmont.sampler.web.config.SamplesMenuConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import java.util.Map;
@@ -22,6 +24,8 @@ public class SamplerLinkHandler extends LinkHandler {
     private SamplesHelper samplesHelper;
     @Inject
     private SamplesMenuConfig samplesMenuConfig;
+
+    private static final Logger log = LoggerFactory.getLogger(SamplerLinkHandler.class);
 
     public SamplerLinkHandler(App app, String action, Map<String, String> requestParams) {
         super(app, action, requestParams);
