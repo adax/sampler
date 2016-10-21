@@ -339,5 +339,12 @@
             template="com/haulmont/sampler/web/ui/charts/charts/dataitems/mapdataitem/map-data-item.xml"/>
     <screen id="simple-data-item"
             template="com/haulmont/sampler/web/ui/charts/charts/dataitems/simpledataitem/simple-data-item.xml"/>
+    <!-- Incremental Update -->
+    <screen id="update-column-chart"
+            template="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/column/update-column-chart.xml"/>
+    <screen id="update-line-chart"
+            template="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/line/update-line-chart.xml"/>
+    <screen id="update-xy-chart"
+            template="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/xy/update-xy-chart.xml"/>
     <!--  -->
 </screen-config>

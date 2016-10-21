@@ -313,3 +313,21 @@ create table SAMPLER_CALENDAR_EVENT (
     primary key (ID)
 )^
 -- end SAMPLER_CALENDAR_EVENT
+-- begin SAMPLER_POINT_VALUE
+create table SAMPLER_POINT_VALUE (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    X double precision,
+    Y double precision,
+    VALUE_ integer,
+    --
+    primary key (ID)
+)^
+-- end SAMPLER_POINT_VALUE

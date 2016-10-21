@@ -916,6 +916,30 @@
                   descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/dataitems/simpledataitem"/>
         </menu>
 
+        <menu id="incrementalUpdate">
+            <item id="update-column-chart" docUrlSuffix="chart_data_binding" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/column/UpdateColumnChartFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/column">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/IncomeExpenses.java"/>
+                </otherFiles>
+            </item>
+            <item id="update-line-chart" docUrlSuffix="chart_data_binding" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/line/UpdateLineChartFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/line">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/DateValue.java"/>
+                </otherFiles>
+            </item>
+            <item id="update-xy-chart" docUrlSuffix="chart_data_binding" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/xy/UpdateXyChartFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/xy">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/PointValue.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
     </menu>
 
     <menu id="maps">

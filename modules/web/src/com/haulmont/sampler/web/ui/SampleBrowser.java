@@ -16,6 +16,8 @@ import org.apache.commons.lang.StringUtils;
 import org.vaadin.aceeditor.AceMode;
 
 import javax.inject.Inject;
+import java.sql.Time;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -30,6 +32,9 @@ public class SampleBrowser extends AbstractWindow {
 
     @Inject
     private TabSheet tabSheet;
+
+    @Inject
+    private Timer timer;
 
     @Inject
     private ComponentsFactory componentsFactory;
@@ -55,7 +60,8 @@ public class SampleBrowser extends AbstractWindow {
         super.init(params);
 
         String id = (String) params.get("windowId");
-        Map<String, Object> screenParams = (Map<String, Object>) params.get("screenParams");
+        Map<String, Object> screenParams = new HashMap<>((Map<String, Object>) params.get("screenParams"));
+        screenParams.put("timer", timer);
         Frame frame = openFrame(null, id, screenParams);
         frame.setId("sampleFrame");
 

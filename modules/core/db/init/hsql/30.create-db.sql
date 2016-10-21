@@ -200,6 +200,36 @@ values ('17bc9b95-b562-0dd2-f904-db6df80b9c71', 1.000, '3fbc4ce8-7f8c-dcd0-5788-
 
 ------------------------------------------------------------------------------------------------------------
 
+insert into SAMPLER_POINT_VALUE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, X, Y, VALUE_)
+values ('2d47b668-8fae-8a1f-f65f-145e4b11d812', 1, '2016-10-21 19:10:06', 'admin', '2016-10-21 19:10:06', null, null, null, 1.0, 13.0, 8);
+
+insert into SAMPLER_POINT_VALUE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, X, Y, VALUE_)
+values ('4431be86-e95d-a046-a609-fa981b35ac76', 1, '2016-10-21 19:09:50', 'admin', '2016-10-21 19:09:50', null, null, null, 5.0, -6.0, 65);
+
+insert into SAMPLER_POINT_VALUE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, X, Y, VALUE_)
+values ('68e7e4ff-b821-cb86-14d7-a54bb5ff2d47', 1, '2016-10-21 18:28:12', 'admin', '2016-10-21 18:28:12', null, null, null, 14.0, 10.0, 59);
+
+insert into SAMPLER_POINT_VALUE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, X, Y, VALUE_)
+values ('78259a35-b6c9-ada0-cb0f-689785bbd1fb', 1, '2016-10-21 19:09:25', 'admin', '2016-10-21 19:09:25', null, null, null, 3.0, 5.0, 50);
+
+insert into SAMPLER_POINT_VALUE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, X, Y, VALUE_)
+values ('b2f832c8-c2a9-5ef5-58dd-dd723fd26189', 1, '2016-10-21 19:09:32', 'admin', '2016-10-21 19:09:32', null, null, null, 8.0, -10.0, 19);
+
+insert into SAMPLER_POINT_VALUE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, X, Y, VALUE_)
+values ('c732e449-d790-1143-5532-01b451b08634', 1, '2016-10-21 19:10:00', 'admin', '2016-10-21 19:10:00', null, null, null, -4.0, 15.0, 92);
+
+insert into SAMPLER_POINT_VALUE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, X, Y, VALUE_)
+values ('e66eb943-7b88-06ba-06c1-51087f874204', 1, '2016-10-21 19:10:12', 'admin', '2016-10-21 19:10:12', null, null, null, 6.0, 1.0, 35);
+
+------------------------------------------------------------------------------------------------------------
+
 insert into SYS_FILE
 (NAME, EXT, FILE_SIZE, CREATE_DATE, VERSION, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ID, CREATE_TS, CREATED_BY)
 values ('platform-logo.png', 'png', 15816, '2015-04-01 00:00:00', 1, current_timestamp, null, null, null, '61a6a1ee-f13a-f44f-0201-c2f9b3288305', current_timestamp, 'admin');
