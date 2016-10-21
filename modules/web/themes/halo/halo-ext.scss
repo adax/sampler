@@ -1,25 +1,23 @@
 @import "../halo/halo";
+@import "app/folderspane";
+@import "components/button/button-ext";
+@import "components/label/label-ext";
+@import "components/popupview/popupview-ext";
+@import "components/sourcecodeeditor/sourcecodeeditor-ext";
 @import "samples/components/table/table";
 @import "samples/components/twincolumn/twincolumn";
-@import "samples/folderspane/folderspane";
-@import "samples/samplebrowser/samplebrowser";
 //HTML Layout
 @import "htmlLayout/htmlLayout";
 @import "keyframes/keyframes";
 
 @mixin halo-ext {
   @include halo;
-  @include sample-browser;
+  @include sampler-button;
+  @include sampler-label;
   @include sampler-folderspane;
+  @include sampler-popupview;
+  @include sampler-sourcecodeeditor;
   @include sample-table;
   @include sample-twincolumn;
   @include halo-html-layout;
-
-  .v-label.sampler-app-tittle-label {
-    color: #fff;
-    font-weight: bold;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-
 }
