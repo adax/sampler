@@ -1,257 +1,53 @@
-.picture-holder {
-
-}
-
 .box-container {
-  background-image: url('../images/htmlLayoutBackground.png');
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  position: relative;
-  width: 80%;
-  margin: 0 auto;
+  text-align: center;
 }
 
-.box-container:before {
-  content: "";
-  display: block;
-  padding-top: 50%;
-}
-
-.element {
-  width: 23.5%;
-  height: 12.5%;
-  background-color: #AFAFAF;
-  border: 3px solid #A4A4A9;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  border-radius: 100px;
-  overflow: hidden;
-  /*Chrome bugfix*/
-  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
-}
-
-.rotating-fan-container {
-  width: 4%;
-  height: 8%;
-  position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  top: 50%;
-}
-
-.container-1 {
-  left: 6%;
-}
-
-.container-2 {
-  left: 12%;
-}
-
-.container-3 {
-  left: 18%;
-}
-
-.container-4 {
-  left: 24%;
-}
-
-.fan {
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-.fan-slow {
-  background-image: url('../images/fan-blue.png');
-  animation: spin 800ms linear infinite;
-  -moz-animation: spin 800ms infinite linear;
-  -o-animation: spin 800ms infinite linear;
-  -ms-animation: spin 800ms infinite linear;
-}
-
-.fan-normal {
-  background-image: url('../images/fan-green.png');
-  animation: spin 450ms infinite linear;
-  -moz-animation: spin 450ms infinite linear;
-  -o-animation: spin 450ms infinite linear;
-  -ms-animation: spin 450ms infinite linear;
-}
-
-.fan-fast {
-  background-image: url('../images/fan-red.png');
-  animation: spin 250ms linear infinite;
-  -moz-animation: spin 250ms infinite linear;
-  -o-animation: spin 250ms infinite linear;
-  -ms-animation: spin 250ms infinite linear;
-}
-
-.water {
-  background-color: #5296EB;
-  width: 100%;
-  box-shadow: 0 0 70px #383838;
-  bottom: 0px;
-  position: absolute;
+.box-container .logo {
+  width: 500px;
+  margin: 50px auto;
 }
 
 .button-container {
-  position: absolute;
-  top: 28%;
-  left: 93%;
+  width: 500px;
+  margin: 0 auto;
 }
 
-.button-container .v-button {
-  background: none;
-  border: none;
-  padding: none;
-  color: white;
-  box-shadow:none;
+.button-container .sample-button {
+  width: 166px;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.speed-up {
-  position: absolute;
-  top: 42%;
-  left: 22%;
-  height: 3%;
-  width: 7.5%;
+.box-container .button-container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.speed-down {
-  position: absolute;
-  top: 42%;
-  left: 5%;
-  height: 3%;
-  width: 7.5%;
+.html-sample {
+  white-space: nowrap;
+  position: relative;
 }
 
-.speed-normal {
-  position: absolute;
-  top: 42%;
-  left: 13%;
-  height: 3%;
-  width: 8.5%;
+.button-container .sample-button:first-child .v-widget {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-left: 3px;
 }
 
-.speed-up .v-button {
-  background-color: white;
-  border-radius: 20px;
-  width: 100%;
-  font-weight: bold;
-  height: 100%;
-  color: black;
-  left: 0px;
-  box-shadow: none;
+.button-container .sample-button .v-widget {
+  vertical-align: middle;
+  margin-left: -4px;
+  height: 50px;
+  font-size: 20px;
 }
 
-.speed-down .v-button {
-  background-color: white;
-  border-radius: 20px;
-  width: 100%;
-  font-weight: bold;
-  height: 100%;
-  color: black;
-  left: 0px;
-  box-shadow: none;
+.button-container .sample-button ~ .sample-button:not(:last-child) .v-widget {
+  border-radius: 0;
 }
 
-.speed-normal .v-button {
-  background-color: white;
-  border-radius: 20px;
-  width: 100%;
-  font-weight: bold;
-  height: 100%;
-  color: black;
-  left: 0px;
-  box-shadow: none;
-}
-
-.move-up {
-  position: absolute;
-  top: 28%;
-  left: 92.8%;
-  height: 3%;
-  width: 2.5%;
-}
-
-.move-up .v-button {
-  background-color: white;
-  border-radius: 20px;
-  width: 100%;
-  font-weight: bold;
-  height: 100%;
-  color: black;
-  left: 0px;
-  box-shadow: none;
-  padding-left: 10px;
-}
-
-.move-down {
-  position: absolute;
-  top: 31%;
-  left: 92.8%;
-  height: 3%;
-  width: 2.5%;
-}
-
-.move-down .v-button {
-  background-color: white;
-  border-radius: 20px;
-  width: 100%;
-  font-weight: bold;
-  height: 100%;
-  color: black;
-  left: 0px;
-  box-shadow: none;
-  padding-left: 12px;
-}
-
-.position-0 {height: 0%;}
-.position-1 {height: 10%;}
-.position-2 {height: 20%;}
-.position-3 {height: 30%;}
-.position-4 {height: 40%;}
-.position-5 {height: 50%;}
-.position-6 {height: 60%;}
-.position-7 {height: 70%;}
-.position-8 {height: 80%;}
-.position-9 {height: 90%;}
-.position-10 {height: 100%;}
-
-.position2 {
-  height: 25%;
-}
-
-.position3 {
-  height: 50%;
-}
-
-.position4 {
-  height: 75%;
-}
-
-.position5 {
-  height: 100%;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg);}
-  100% { -webkit-transform: rotate(360deg);}
-}
-@-moz-keyframes spin {
-  0% { -moz-transform: rotate(0deg);}
-  100% { -moz-transform: rotate(360deg);}
-}
-@-o-keyframes spin {
-  0% { -o-transform: rotate(0deg);}
-  100% { -o-transform: rotate(360deg);}
-}
-@-ms-keyframes spin {
-  0% { -ms-transform: rotate(0deg);}
-  100% { -ms-transform: rotate(360deg);}
-}
-@keyframes spin {
-  0% { transform: rotate(0deg);}
-  100% { transform: rotate(360deg);}
+.button-container .sample-button:last-child .v-widget {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -6px;
 }
