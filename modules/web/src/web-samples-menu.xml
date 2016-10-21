@@ -683,7 +683,7 @@
               descriptionsPack="com/haulmont/sampler/web/ui/containers/htmlbox/simple">
             <otherFiles>
                 <file name="com/haulmont/sampler/web/ui/containers/htmlbox/simple/html-layout.html"/>
-                <file name="com/haulmont/sampler/web/ui/containers/htmlbox/simple/htmlLayout.scss"/>
+                <file name="com/haulmont/sampler/web/ui/containers/htmlbox/simple/html-layout.scss"/>
             </otherFiles>
         </item>
 
