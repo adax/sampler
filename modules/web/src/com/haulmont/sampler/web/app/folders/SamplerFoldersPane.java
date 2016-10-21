@@ -185,6 +185,7 @@ public class SamplerFoldersPane extends CubaFoldersPane {
                 }
             } else {
                 if (event.getButton() == MouseEventDetails.MouseButton.LEFT) {
+                    tree.select(item);
                     openWindow(item);
                 }
             }
@@ -215,7 +216,6 @@ public class SamplerFoldersPane extends CubaFoldersPane {
     private void search(final String searchRequest) {
         Container.Filterable container = (Container.Filterable) tree.getContainerDataSource();
         if (StringUtils.isBlank(searchRequest)) {
-//            tree.setItemStyleGenerator(null);
             container.removeContainerFilter(filter);
             filter = null;
         } else {

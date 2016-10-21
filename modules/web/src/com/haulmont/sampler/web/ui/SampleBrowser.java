@@ -6,6 +6,7 @@ import com.haulmont.cuba.core.global.Messages;
 import com.haulmont.cuba.core.global.UserSessionSource;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
+import com.haulmont.cuba.web.controllers.ControllerUtils;
 import com.haulmont.cuba.web.gui.components.WebComponentsHelper;
 import com.haulmont.cuba.web.toolkit.ui.CubaSourceCodeEditor;
 import com.haulmont.sampler.web.util.SamplesHelper;
@@ -188,11 +189,25 @@ public class SampleBrowser extends AbstractWindow {
     }
 
     private Component permalink(String frameId) {
-        Link permalink = componentsFactory.createComponent(Link.class);
+        PopupView permalink = componentsFactory.createComponent(PopupView.class);
         permalink.setAlignment(Alignment.TOP_RIGHT);
-        permalink.setDescription("Permalink");
-        permalink.setUrl("open?screen=" + frameId);
-        permalink.setIcon("font-awesome-icon:EXTERNAL_LINK");
+        permalink.setHideOnMouseOut(false);
+        permalink.setDescription(getMessage("sampleBrowser.permalink.description"));
+        permalink.setStyleName("external-link");
+
+        TextField content = componentsFactory.createComponent(TextField.class);
+        String value = ControllerUtils.getLocationWithoutParams() + "open?screen=" + frameId;
+        content.setValue(value);
+        content.setWidth((value.length() * 8) + "px");
+        permalink.setPopupContent(content);
+
+        // TODO: gg, #PL-8047
+        com.vaadin.ui.PopupView popupView = (com.vaadin.ui.PopupView) WebComponentsHelper.unwrap(permalink);
+        popupView.addPopupVisibilityListener(event -> {
+            if (event.isPopupVisible()) {
+                content.requestFocus();
+            }
+        });
 
         return permalink;
     }
@@ -209,6 +224,7 @@ public class SampleBrowser extends AbstractWindow {
 
     private SourceCodeEditor createSourceCodeEditor(AceMode mode) {
         SourceCodeEditor editor = componentsFactory.createComponent(SourceCodeEditor.class);
+        editor.setStyleName("sample-browser");
         CubaSourceCodeEditor codeEditor = (CubaSourceCodeEditor) WebComponentsHelper.unwrap(editor);
         codeEditor.setMode(mode);
         editor.setEditable(false);

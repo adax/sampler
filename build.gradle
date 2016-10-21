@@ -241,9 +241,6 @@ configure(webModule) {
     }
 }
 
-
-
-
 task undeploy(type: Delete, dependsOn: ':app-web:cleanConf') {
     delete("$cuba.tomcat.dir/shared")
     delete("$cuba.tomcat.dir/webapps/app-core")
