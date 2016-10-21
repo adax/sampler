@@ -1,0 +1,25 @@
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="Day calendar"
+        class="com.haulmont.cuba.gui.components.AbstractFrame">
+    <dsContext>
+        <collectionDatasource id="calendarEventsDs"
+                              class="com.haulmont.sampler.entity.CalendarEvent">
+            <query>
+                <![CDATA[select e from sampler$CalendarEvent e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <calendar captionProperty="caption"
+                  datasource="calendarEventsDs"
+                  descriptionProperty="description"
+                  endDate="2016-10-19 23:59"
+                  endDateProperty="endDate"
+                  startDate="2016-10-19 00:00"
+                  startDateProperty="startDate"
+                  stylenameProperty="stylename"
+                  width="100%"/>
+    </layout>
+</window>

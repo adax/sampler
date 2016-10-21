@@ -1,0 +1,27 @@
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="Calendar"
+        class="com.haulmont.sampler.web.ui.components.calendar.month.MonthCalendar">
+    <dsContext>
+        <collectionDatasource id="calendarEventsDs"
+                              class="com.haulmont.sampler.entity.CalendarEvent">
+            <query>
+                <![CDATA[select e from sampler$CalendarEvent e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <calendar id="calendar"
+                  captionProperty="caption"
+                  datasource="calendarEventsDs"
+                  descriptionProperty="description"
+                  endDate="2016-10-31"
+                  endDateProperty="endDate"
+                  height="100%"
+                  startDate="2016-10-01"
+                  startDateProperty="startDate"
+                  stylenameProperty="stylename"
+                  width="100%"/>
+    </layout>
+</window>

@@ -5,6 +5,7 @@
 @import "components/popupview/popupview-ext";
 @import "components/sourcecodeeditor/sourcecodeeditor-ext";
 @import "samples/components/table/table";
+@import "samples/components/calendar/calendar";
 @import "samples/components/twincolumn/twincolumn";
 //HTML Layout
 @import "htmlLayout/htmlLayout";
@@ -17,6 +18,7 @@
   @include sampler-popupview;
   @include sampler-sourcecodeeditor;
   @include sample-table;
+  @include sample-calendar;
   @include sample-twincolumn;
   @include halo-html-layout;
 }

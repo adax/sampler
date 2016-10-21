@@ -29,6 +29,14 @@
             template="/com/haulmont/sampler/web/ui/components/button/simple/simple-button.xml"/>
     <screen id="link-button"
             template="/com/haulmont/sampler/web/ui/components/button/linkbutton/link-button.xml"/>
+    <screen id="month-calendar"
+            template="/com/haulmont/sampler/web/ui/components/calendar/month/month-calendar.xml"/>
+    <screen id="event-window"
+            template="/com/haulmont/sampler/web/ui/components/calendar/month/event-window.xml"/>
+    <screen id="day-calendar"
+            template="/com/haulmont/sampler/web/ui/components/calendar/day/day-calendar.xml"/>
+    <screen id="week-calendar"
+            template="/com/haulmont/sampler/web/ui/components/calendar/week/week-calendar.xml"/>
     <screen id="action-button"
             template="/com/haulmont/sampler/web/ui/components/button/action/action-button.xml"/>
     <screen id="programmatic-action-button"

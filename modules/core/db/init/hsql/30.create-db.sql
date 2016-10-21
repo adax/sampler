@@ -1806,3 +1806,43 @@ insert into SAMPLER_DATE_SEGMENT
 values ('42a3792e-42a9-bc3b-a756-8de7d375ca15', 1, '2016-10-17 16:47:03', 'admin', '2016-10-17 16:47:03', null, null, null, '2016-03-08', '2016-03-30', null, 'Testing and QA', '4fc62742-91e2-dead-a1ec-9d7754b6e814');
 
 ------------------------------------------------------------------------------------------------------------
+
+insert into SAMPLER_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('0ab34f04-41cc-2278-55dc-32c702a5acac', 1, '2016-10-19 16:47:03', 'admin', '2016-10-19 16:47:03', null, null, null, 'Planning', null, '2016-10-04 13:00:00', '2016-10-04 12:00:00', 'event-red');
+
+insert into SAMPLER_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('195f87ce-bc9c-98ae-c822-3052a0b6dd18', 6, '2016-10-18 10:47:43', 'admin', '2016-10-19 18:05:10', 'admin', null, null, 'Appointment', 'A longer description', '2016-10-18 12:00:00', '2016-10-20 20:00:00', 'event-green');
+
+insert into SAMPLER_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('24ce7594-7086-e142-d333-7ee567f6b2aa', 4, '2016-10-18 11:15:21', 'admin', '2016-10-19 16:05:11', 'admin', null, null, 'Training', null, '2016-10-07 00:00:00', '2016-10-13 00:00:00', 'event-yellow');
+
+insert into SAMPLER_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('31d1297b-2309-5cea-9cc6-1bd5f256786b', 1, '2016-10-19 17:07:07', 'admin', '2016-10-19 17:07:07', null, null, null, 'Company activities', null, '2016-10-14 18:00:00', '2016-10-14 09:00:00', null);
+
+insert into SAMPLER_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('369ceb55-69a1-47e4-30bb-949d98c95f1e', 1, '2016-10-19 16:46:12', 'admin', '2016-10-19 16:46:12', null, null, null, 'Research', null, '2016-10-21 17:00:00', '2016-10-21 15:00:00', null);
+
+insert into SAMPLER_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('407e73a9-9aa9-421d-dbdb-1e1c47a2786b', 3, '2016-10-18 12:34:19', 'admin', '2016-10-19 16:01:06', 'admin', null, null, 'Free time', 'Time for some different stuff', '2016-10-19 06:00:00', '2016-10-19 12:00:00', 'event-blue');
+
+insert into SAMPLER_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('52de207d-e8f5-ae71-b29f-f1dbcca41099', 2, '2016-10-18 12:35:09', 'admin', '2016-10-19 16:01:14', 'admin', null, null, 'Breakfast', 'Breakfast with John Doe', '2016-10-19 09:00:00', '2016-10-19 10:00:00', 'event-yellow');
+
+insert into SAMPLER_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('8d30ec01-ed5a-1fad-5e90-8af379c92f72', 3, '2016-10-18 10:51:39', 'admin', '2016-10-19 13:33:00', 'admin', null, null, 'Meeting with John Doe', 'Unknown meeting', '2016-10-03 00:00:00', '2016-10-08 00:00:00', 'event-red');
+
+insert into SAMPLER_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('c1648a0d-23f7-2e75-3db7-6e9466735959', 1, '2016-10-19 17:05:32', 'admin', '2016-10-19 17:05:32', null, null, null, 'Interview', 'Job interview', '2016-10-21 17:00:00', '2016-10-21 15:00:00', 'event-green');
+
+insert into SAMPLER_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('f1a0c8a1-d122-b3c6-f88f-fad62fe85fa9', 1, '2016-10-19 16:49:05', 'admin', '2016-10-19 16:49:05', null, null, null, 'Meeting', 'Meeting with lawyer', '2016-10-17 13:00:00', '2016-10-17 12:00:00', 'event-blue');

@@ -128,7 +128,8 @@ create table SAMPLER_TRANSPORT_COUNT (
     primary key (ID)
 )^
 -- end SAMPLER_TRANSPORT_COUNT
--- begin SAMPLER_INCOME_EXPENSEScreate table SAMPLER_INCOME_EXPENSES (
+-- begin SAMPLER_INCOME_EXPENSES
+create table SAMPLER_INCOME_EXPENSES (
     ID varchar(36) not null,
     VERSION integer not null,
     CREATE_TS timestamp,
@@ -292,3 +293,23 @@ create table SAMPLER_DATE_SEGMENT (
     primary key (ID)
 )^
 -- end SAMPLER_DATE_SEGMENT
+-- begin SAMPLER_CALENDAR_EVENT
+create table SAMPLER_CALENDAR_EVENT (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    CAPTION varchar(255),
+    DESCRIPTION varchar(255),
+    START_DATE timestamp,
+    END_DATE timestamp,
+    STYLENAME varchar(255),
+    --
+    primary key (ID)
+)^
+-- end SAMPLER_CALENDAR_EVENT

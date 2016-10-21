@@ -19,5 +19,6 @@
         <class>com.haulmont.sampler.entity.TaskSpan</class>
         <class>com.haulmont.sampler.entity.DateTaskSpan</class>
         <class>com.haulmont.sampler.entity.DateSegment</class>
+        <class>com.haulmont.sampler.entity.CalendarEvent</class>
     </persistence-unit>
 </persistence>

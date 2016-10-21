@@ -30,6 +30,31 @@
             </otherFiles>
         </item>
 
+        <menu id="calendar">
+            <item id="month-calendar" sampleHeight="60" splitEnabled="true"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/calendar/month"
+                  controller="com/haulmont/sampler/web/ui/components/calendar/month/MonthCalendar.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/event-window.xml"/>
+                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/EventWindow.java"/>
+                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/calendar.scss"/>
+                </otherFiles>
+            </item>
+            <item id="day-calendar" sampleHeight="60" splitEnabled="true"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/calendar/day">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/calendar.scss"/>
+                </otherFiles>
+            </item>
+            <item id="week-calendar" sampleHeight="60" splitEnabled="true"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/calendar/week"
+                  controller="com/haulmont/sampler/web/ui/components/calendar/week/WeekCalendar.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/calendar.scss"/>
+                </otherFiles>
+            </item>
+        </menu>
+
         <menu id="checkBox">
             <item id="simple-checkbox" docUrlSuffix="gui_CheckBox" sampleHeight="15px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/checkbox/simple"
