@@ -71,6 +71,14 @@
             template="/com/haulmont/sampler/web/ui/components/datefield/format/format-datefield.xml"/>
     <screen id="resolution-datefield"
             template="/com/haulmont/sampler/web/ui/components/datefield/resolution/resolution-datefield.xml"/>
+    <screen id="simple-datepicker"
+            template="/com/haulmont/sampler/web/ui/components/datepicker/simple/simple-datepicker.xml"/>
+    <screen id="datasource-datepicker"
+            template="/com/haulmont/sampler/web/ui/components/datepicker/datasource/datasource-datepicker.xml"/>
+    <screen id="range-datepicker"
+            template="/com/haulmont/sampler/web/ui/components/datepicker/range/range-datepicker.xml"/>
+    <screen id="resolution-datepicker"
+            template="/com/haulmont/sampler/web/ui/components/datepicker/resolution/resolution-datepicker.xml"/>
     <screen id="simple-fieldgroup"
             template="/com/haulmont/sampler/web/ui/components/fieldgroup/simple/simple-fieldgroup.xml"/>
     <screen id="simple-table"

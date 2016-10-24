@@ -85,6 +85,23 @@
                   descriptionsPack="com/haulmont/sampler/web/ui/components/datefield/resolution"/>
         </menu>
 
+        <menu id="datePicker">
+            <item id="simple-datepicker" docUrlSuffix="gui_DatePicker" sampleHeight="90px"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/datepicker/simple"
+                  controller="com/haulmont/sampler/web/ui/components/datepicker/simple/SimpleDatePickerFrame.java"/>
+            <item id="datasource-datepicker" docUrlSuffix="gui_DatePicker" sampleHeight="60px"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/datepicker/datasource"
+                  controller="com/haulmont/sampler/web/ui/components/datepicker/datasource/DatasourceDatePickerFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Order.java"/>
+                </otherFiles>
+            </item>
+            <item id="range-datepicker" docUrlSuffix="gui_DatePicker" sampleHeight="50px"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/datepicker/range"/>
+            <item id="resolution-datepicker" docUrlSuffix="gui_DatePicker" sampleHeight="110px"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/datepicker/resolution"/>
+        </menu>
+
         <menu id="embedded">
             <item id="image-embedded" docUrlSuffix="gui_Embedded" sampleHeight="250px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/embedded/image"
