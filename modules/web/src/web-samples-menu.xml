@@ -938,6 +938,13 @@
                     <file name="com/haulmont/sampler/entity/PointValue.java"/>
                 </otherFiles>
             </item>
+            <item id="update-stock-chart" docUrlSuffix="chart_data_binding" splitEnabled="true" sampleHeight="60"
+                  controller="com/haulmont/sampler/web/ui/charts/stockcharts/incrementalupdate/UpdateStockChartFrame.java"
+                  descriptionsPack="com/haulmont/sampler/web/ui/charts/stockcharts/incrementalupdate">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/DateValueVolume.java"/>
+                </otherFiles>
+            </item>
         </menu>
 
     </menu>

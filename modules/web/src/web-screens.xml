@@ -346,5 +346,7 @@
             template="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/line/update-line-chart.xml"/>
     <screen id="update-xy-chart"
             template="com/haulmont/sampler/web/ui/charts/charts/incrementalupdate/xy/update-xy-chart.xml"/>
+    <screen id="update-stock-chart"
+            template="com/haulmont/sampler/web/ui/charts/stockcharts/incrementalupdate/update-stock-chart.xml"/>
     <!--  -->
 </screen-config>
