@@ -54,8 +54,6 @@ public class SampleBrowser extends AbstractWindow {
     @SuppressWarnings("unchecked")
     @Override
     public void init(Map<String, Object> params) {
-        super.init(params);
-
         String id = (String) params.get("windowId");
         Map<String, Object> screenParams = (Map<String, Object>) params.get("screenParams");
         Frame frame = openFrame(null, id, screenParams);
