@@ -34,9 +34,6 @@ public class SampleBrowser extends AbstractWindow {
     private TabSheet tabSheet;
 
     @Inject
-    private Timer timer;
-
-    @Inject
     private ComponentsFactory componentsFactory;
 
     @Inject
@@ -60,8 +57,7 @@ public class SampleBrowser extends AbstractWindow {
         super.init(params);
 
         String id = (String) params.get("windowId");
-        Map<String, Object> screenParams = new HashMap<>((Map<String, Object>) params.get("screenParams"));
-        screenParams.put("timer", timer);
+        Map<String, Object> screenParams = (Map<String, Object>) params.get("screenParams");
         Frame frame = openFrame(null, id, screenParams);
         frame.setId("sampleFrame");
 

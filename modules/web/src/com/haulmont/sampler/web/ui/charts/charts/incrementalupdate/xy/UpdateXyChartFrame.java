@@ -2,7 +2,7 @@ package com.haulmont.sampler.web.ui.charts.charts.incrementalupdate.xy;
 
 import com.haulmont.cuba.core.global.Metadata;
 import com.haulmont.cuba.gui.components.AbstractFrame;
-import com.haulmont.cuba.gui.components.TextField;
+import com.haulmont.cuba.gui.components.Label;
 import com.haulmont.cuba.gui.components.Timer;
 import com.haulmont.cuba.gui.data.CollectionDatasource;
 import com.haulmont.sampler.entity.PointValue;
@@ -17,29 +17,19 @@ public class UpdateXyChartFrame extends AbstractFrame {
     @Inject
     private CollectionDatasource<PointValue, UUID> pointsDs;
     @Inject
-    private TextField delayField;
-    @Inject
     private Metadata metadata;
-
+    @Inject
     private Timer timer;
+    @Inject
+    private Label statusLabel;
 
     @Override
     public void init(Map<String, Object> params) {
-        timer = (Timer) params.get("timer");
         timer.addActionListener(timer -> {
             addDate();
             removeDate();
         });
         timer.start();
-
-        delayField.setValue(timer.getDelay());
-        delayField.addValueChangeListener(e -> {
-            if (e.getValue() != null) {
-                timer.setDelay((Integer) e.getValue());
-            } else {
-                delayField.setValue(e.getPrevValue());
-            }
-        });
     }
 
     private void addDate() {
@@ -62,9 +52,11 @@ public class UpdateXyChartFrame extends AbstractFrame {
 
     public void startTimer() {
         timer.start();
+        statusLabel.setValue("Update enabled");
     }
 
     public void stopTimer() {
         timer.stop();
+        statusLabel.setValue("Update disabled");
     }
 }
