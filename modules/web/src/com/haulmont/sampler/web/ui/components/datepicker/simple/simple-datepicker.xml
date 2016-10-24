@@ -4,8 +4,8 @@
     <dsContext/>
     <layout spacing="true">
         <datePicker id="datePicker"
-                    caption="msg://datefield.caption"/>
-        <button caption="msg://datefield.value"
+                    caption="msg://datepicker.caption"/>
+        <button caption="msg://datepicker.value"
                 invoke="showValue"/>
     </layout>
 </window>
