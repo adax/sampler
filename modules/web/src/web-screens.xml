@@ -217,6 +217,14 @@
             template="com/haulmont/sampler/web/ui/components/tokenlist/position/position-tokenlist.xml"/>
     <screen id="lookup-tokenlist"
             template="com/haulmont/sampler/web/ui/components/tokenlist/lookup/lookup-tokenlist.xml"/>
+    <screen id="simple-colorpicker"
+            template="com/haulmont/sampler/web/ui/components/colorpicker/simple/simple-colorpicker.xml"/>
+    <screen id="datasource-colorpicker"
+            template="com/haulmont/sampler/web/ui/components/colorpicker/datasource/datasource-colorpicker.xml"/>
+    <screen id="tabs-colorpicker"
+            template="com/haulmont/sampler/web/ui/components/colorpicker/tabs/tabs-colorpicker.xml"/>
+    <screen id="captions-colorpicker"
+            template="com/haulmont/sampler/web/ui/components/colorpicker/captions/captions-colorpicker.xml"/>
     <!-- Containers -->
     <screen id="hbox-sample"
             template="com/haulmont/sampler/web/ui/containers/boxlayout/hbox/hbox-sample.xml"/>

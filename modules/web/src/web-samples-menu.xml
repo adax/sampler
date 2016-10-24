@@ -31,7 +31,7 @@
         </item>
 
         <menu id="calendar">
-            <item id="month-calendar" sampleHeight="60" splitEnabled="true"
+            <item id="month-calendar" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/calendar/month"
                   controller="com/haulmont/sampler/web/ui/components/calendar/month/MonthCalendar.java">
                 <otherFiles>
@@ -40,13 +40,13 @@
                     <file name="com/haulmont/sampler/web/ui/components/calendar/month/calendar.scss"/>
                 </otherFiles>
             </item>
-            <item id="day-calendar" sampleHeight="60" splitEnabled="true"
+            <item id="day-calendar" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/calendar/day">
                 <otherFiles>
                     <file name="com/haulmont/sampler/web/ui/components/calendar/month/calendar.scss"/>
                 </otherFiles>
             </item>
-            <item id="week-calendar" sampleHeight="60" splitEnabled="true"
+            <item id="week-calendar" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/calendar/week"
                   controller="com/haulmont/sampler/web/ui/components/calendar/week/WeekCalendar.java">
                 <otherFiles>
@@ -68,6 +68,24 @@
             </item>
         </menu>
 
+        <menu id="colorPicker">
+            <item id="simple-colorpicker" docUrlSuffix="gui_ColorPicker"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/colorpicker/simple"
+                  controller="com/haulmont/sampler/web/ui/components/colorpicker/simple/SimpleColorPickerFrame.java"/>
+            <item id="datasource-colorpicker" docUrlSuffix="gui_ColorPicker"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/colorpicker/datasource"
+                  controller="com/haulmont/sampler/web/ui/components/colorpicker/datasource/DatasourceColorPickerFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Color.java"/>
+                </otherFiles>
+            </item>
+            <item id="tabs-colorpicker" docUrlSuffix="gui_ColorPicker"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/colorpicker/tabs"/>
+            <item id="captions-colorpicker" docUrlSuffix="gui_ColorPicker"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/colorpicker/captions"/>
+
+        </menu>
+
         <menu id="dateField">
             <item id="simple-datefield" docUrlSuffix="gui_DateField" sampleHeight="90px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/datefield/simple"
@@ -86,19 +104,19 @@
         </menu>
 
         <menu id="datePicker">
-            <item id="simple-datepicker" docUrlSuffix="gui_DatePicker" sampleHeight="90px"
+            <item id="simple-datepicker" docUrlSuffix="gui_DatePicker"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/datepicker/simple"
                   controller="com/haulmont/sampler/web/ui/components/datepicker/simple/SimpleDatePickerFrame.java"/>
-            <item id="datasource-datepicker" docUrlSuffix="gui_DatePicker" sampleHeight="60px"
+            <item id="datasource-datepicker" docUrlSuffix="gui_DatePicker"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/datepicker/datasource"
                   controller="com/haulmont/sampler/web/ui/components/datepicker/datasource/DatasourceDatePickerFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Order.java"/>
                 </otherFiles>
             </item>
-            <item id="range-datepicker" docUrlSuffix="gui_DatePicker" sampleHeight="50px"
+            <item id="range-datepicker" docUrlSuffix="gui_DatePicker"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/datepicker/range"/>
-            <item id="resolution-datepicker" docUrlSuffix="gui_DatePicker" sampleHeight="110px"
+            <item id="resolution-datepicker" docUrlSuffix="gui_DatePicker"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/datepicker/resolution"/>
         </menu>
 

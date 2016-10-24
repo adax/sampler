@@ -21,5 +21,6 @@
         <class>com.haulmont.sampler.entity.DateSegment</class>
         <class>com.haulmont.sampler.entity.CalendarEvent</class>
         <class>com.haulmont.sampler.entity.PointValue</class>
+        <class>com.haulmont.sampler.entity.Color</class>
     </persistence-unit>
 </persistence>
