@@ -7,7 +7,7 @@ import com.haulmont.cuba.gui.components.SourceCodeEditor;
 import javax.inject.Inject;
 import java.util.Map;
 
-public class SimpleCodeEditor extends AbstractFrame {
+public class SimpleCodeEditorFrame extends AbstractFrame {
     @Inject
     private SourceCodeEditor codeEditor;
     @Inject
