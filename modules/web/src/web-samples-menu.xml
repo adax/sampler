@@ -345,6 +345,22 @@
             </item>
         </menu>
 
+        <menu id="popupView">
+            <item id="closing-popupview" docUrlSuffix="gui_PopupView"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/popupview/closing"/>
+            <item id="opening-popupview" docUrlSuffix="gui_PopupView"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/popupview/opening"
+                  controller="com/haulmont/sampler/web/ui/components/popupview/opening/OpeningPopupViewFrame.java">
+                <otherFiles>
+                    <file name="com/haulmont/sampler/entity/Customer.java"/>
+                </otherFiles>
+            </item>
+            <item id="listener-popupview" docUrlSuffix="gui_PopupView"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/popupview/listener"
+                  controller="com/haulmont/sampler/web/ui/components/popupview/listener/ListenerPopupViewFrame.java">
+            </item>
+        </menu>
+
         <menu id="progressBar">
             <item id="normal-progressbar" docUrlSuffix="gui_ProgressBar" sampleHeight="10px"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/progressbar/normal"

@@ -225,6 +225,12 @@
             template="com/haulmont/sampler/web/ui/components/colorpicker/tabs/tabs-colorpicker.xml"/>
     <screen id="captions-colorpicker"
             template="com/haulmont/sampler/web/ui/components/colorpicker/captions/captions-colorpicker.xml"/>
+    <screen id="closing-popupview"
+            template="com/haulmont/sampler/web/ui/components/popupview/closing/closing-popupview.xml"/>
+    <screen id="opening-popupview"
+            template="com/haulmont/sampler/web/ui/components/popupview/opening/opening-popupview.xml"/>
+    <screen id="listener-popupview"
+            template="com/haulmont/sampler/web/ui/components/popupview/listener/listener-popupview.xml"/>
     <!-- Containers -->
     <screen id="hbox-sample"
             template="com/haulmont/sampler/web/ui/containers/boxlayout/hbox/hbox-sample.xml"/>
