@@ -7,8 +7,8 @@
 @import "samples/components/table/table";
 @import "samples/components/calendar/calendar";
 @import "samples/components/twincolumn/twincolumn";
-//HTML Layout
 @import "samples/components/htmlLayout/html-layout";
+@import "samples/components/cssLayout/css-layout";
 
 @mixin halo-ext {
   @include halo;
@@ -21,4 +21,5 @@
   @include sample-calendar;
   @include sample-twincolumn;
   @include sample-html-layout;
+  @include sample-css-layout;
 }

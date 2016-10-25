@@ -280,6 +280,8 @@
             template="/com/haulmont/sampler/web/ui/components/tree/icon/icon-tree.xml"/>
     <screen id="itemclick-tree"
             template="/com/haulmont/sampler/web/ui/components/tree/itemclick/itemclick-tree.xml"/>
+    <screen id="responsive-csslayout"
+            template="com/haulmont/sampler/web/ui/containers/csslayout/responsive/responsive-csslayout.xml"/>
     <!-- Dialogs and Notifications -->
     <screen id="message-dialog-sample"
             template="/com/haulmont/sampler/web/ui/dialogsandnotifications/dialog/message/message-dialog-sample.xml"/>

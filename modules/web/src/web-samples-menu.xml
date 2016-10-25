@@ -704,7 +704,14 @@
             </item>
         </menu>
 
-        <item id="simple-frame" docUrlSuffix="gui_IFrame" sampleHeight="150px"
+        <item id="responsive-csslayout" docUrlSuffix="gui_CssLayout"
+              descriptionsPack="com/haulmont/sampler/web/ui/containers/csslayout/responsive">
+            <otherFiles>
+                <file name="com/haulmont/sampler/web/ui/containers/csslayout/responsive/style.scss"/>
+            </otherFiles>
+        </item>
+
+        <item id="simple-frame" docUrlSuffix="gui_Frame" sampleHeight="150px"
               descriptionsPack="com/haulmont/sampler/web/ui/containers/frame/simple">
             <otherFiles>
                 <file name="com/haulmont/sampler/web/ui/components/button/simple/simple-button.xml"/>
