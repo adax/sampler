@@ -16,8 +16,6 @@ import org.apache.commons.lang.StringUtils;
 import org.vaadin.aceeditor.AceMode;
 
 import javax.inject.Inject;
-import java.sql.Time;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -201,9 +199,7 @@ public class SampleBrowser extends AbstractWindow {
         content.setWidth((value.length() * 8) + "px");
         permalink.setPopupContent(content);
 
-        // TODO: gg, #PL-8047
-        com.vaadin.ui.PopupView popupView = (com.vaadin.ui.PopupView) WebComponentsHelper.unwrap(permalink);
-        popupView.addPopupVisibilityListener(event -> {
+        permalink.addPopupVisibilityListener(event -> {
             if (event.isPopupVisible()) {
                 content.requestFocus();
             }
