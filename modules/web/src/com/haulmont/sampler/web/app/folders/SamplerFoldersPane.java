@@ -17,6 +17,7 @@ import com.vaadin.data.Item;
 import com.vaadin.data.Property;
 import com.vaadin.data.util.HierarchicalContainer;
 import com.vaadin.event.ItemClickEvent;
+import com.vaadin.event.ShortcutAction.KeyCode;
 import com.vaadin.event.ShortcutListener;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.shared.MouseEventDetails;
@@ -29,6 +30,8 @@ import org.apache.commons.lang.StringUtils;
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
+
+import static com.vaadin.ui.Alignment.MIDDLE_RIGHT;
 
 /**
  * @author gorelov
@@ -77,7 +80,7 @@ public class SamplerFoldersPane extends CubaFoldersPane {
 
         final CubaTextField searchField = new CubaTextField();
         searchField.setWidth("100%");
-        searchField.addShortcutListener(new ShortcutListener("", com.vaadin.event.ShortcutAction.KeyCode.ENTER, null) {
+        searchField.addShortcutListener(new ShortcutListener("", KeyCode.ENTER, null) {
             @Override
             public void handleAction(Object sender, Object target) {
                 search(searchField.getValue());
@@ -92,10 +95,9 @@ public class SamplerFoldersPane extends CubaFoldersPane {
         searchButton.setIcon(FontAwesome.SEARCH);
         searchButton.addClickListener(event -> search(searchField.getValue()));
         searchLayout.addComponent(searchButton);
-        searchLayout.setComponentAlignment(searchButton, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
+        searchLayout.setComponentAlignment(searchButton, MIDDLE_RIGHT);
 
         menuLayout.addComponent(searchLayout);
-
     }
 
     private void createMenuHeader() {
@@ -113,16 +115,16 @@ public class SamplerFoldersPane extends CubaFoldersPane {
             Button refresh = createButton("Refresh", event -> resetAllMenuItems());
             refresh.setDescription("Reload all menu items");
             header.addComponent(refresh);
-            header.setComponentAlignment(refresh, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
+            header.setComponentAlignment(refresh, MIDDLE_RIGHT);
         }
 
         Button collapseAll = createButton("LeftPanel.collapseAll", event -> collapseAll());
         header.addComponent(collapseAll);
-        header.setComponentAlignment(collapseAll, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
+        header.setComponentAlignment(collapseAll, MIDDLE_RIGHT);
 
         Button expandAll = createButton("LeftPanel.expandAll", event -> expandAll());
         header.addComponent(expandAll);
-        header.setComponentAlignment(expandAll, com.vaadin.ui.Alignment.MIDDLE_RIGHT);
+        header.setComponentAlignment(expandAll, MIDDLE_RIGHT);
 
         menuLayout.addComponent(header);
     }
@@ -280,7 +282,7 @@ public class SamplerFoldersPane extends CubaFoldersPane {
             this.searchRequest = searchRequest.toLowerCase();
         }
 
-        public String getSearchRequest() {
+        String getSearchRequest() {
             return searchRequest;
         }
 
