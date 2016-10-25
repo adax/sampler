@@ -33,24 +33,24 @@
         <menu id="calendar">
             <item id="month-calendar" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/calendar/month"
-                  controller="com/haulmont/sampler/web/ui/components/calendar/month/MonthCalendar.java">
+                  controller="com/haulmont/sampler/web/ui/components/calendar/month/MonthCalendarFrame.java">
                 <otherFiles>
                     <file name="com/haulmont/sampler/web/ui/components/calendar/month/event-window.xml"/>
                     <file name="com/haulmont/sampler/web/ui/components/calendar/month/EventWindow.java"/>
-                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/calendar.scss"/>
+                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/style.scss"/>
                 </otherFiles>
             </item>
             <item id="day-calendar" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/calendar/day">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/calendar.scss"/>
+                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/style.scss"/>
                 </otherFiles>
             </item>
             <item id="week-calendar" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/calendar/week"
-                  controller="com/haulmont/sampler/web/ui/components/calendar/week/WeekCalendar.java">
+                  controller="com/haulmont/sampler/web/ui/components/calendar/week/WeekCalendarFrame.java">
                 <otherFiles>
-                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/calendar.scss"/>
+                    <file name="com/haulmont/sampler/web/ui/components/calendar/month/style.scss"/>
                 </otherFiles>
             </item>
         </menu>
@@ -413,6 +413,20 @@
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                 </otherFiles>
             </item>
+        </menu>
+
+        <menu id="codeEditor">
+            <item id="simple-codeeditor" docUrlSuffix="gui_SourceCodeEditor" splitEnabled="true" sampleHeight="60"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/codeeditor/simple"
+                  controller="com/haulmont/sampler/web/ui/components/codeeditor/simple/SimpleCodeEditorFrame.java"/>
+            <item id="mode-codeeditor" docUrlSuffix="gui_SourceCodeEditor" splitEnabled="true" sampleHeight="60"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/codeeditor/mode"
+                  controller="com/haulmont/sampler/web/ui/components/codeeditor/mode/ModeCodeEditorFrame.java"/>
+            <item id="tab-codeeditor" docUrlSuffix="gui_SourceCodeEditor" splitEnabled="true" sampleHeight="60"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/codeeditor/tab"/>
+            <item id="suggester-codeeditor" docUrlSuffix="gui_SourceCodeEditor" splitEnabled="true" sampleHeight="60"
+                  descriptionsPack="com/haulmont/sampler/web/ui/components/codeeditor/suggester"
+                  controller="com/haulmont/sampler/web/ui/components/codeeditor/suggester/SuggesterCodeEditorFrame.java"/>
         </menu>
 
         <menu id="textArea">

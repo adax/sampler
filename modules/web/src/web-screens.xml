@@ -231,6 +231,14 @@
             template="com/haulmont/sampler/web/ui/components/popupview/opening/opening-popupview.xml"/>
     <screen id="listener-popupview"
             template="com/haulmont/sampler/web/ui/components/popupview/listener/listener-popupview.xml"/>
+    <screen id="simple-codeeditor"
+            template="com/haulmont/sampler/web/ui/components/codeeditor/simple/simple-codeeditor.xml"/>
+    <screen id="mode-codeeditor"
+            template="com/haulmont/sampler/web/ui/components/codeeditor/mode/mode-codeeditor.xml"/>
+    <screen id="tab-codeeditor"
+            template="com/haulmont/sampler/web/ui/components/codeeditor/tab/tab-codeeditor.xml"/>
+    <screen id="suggester-codeeditor"
+            template="com/haulmont/sampler/web/ui/components/codeeditor/suggester/suggester-codeeditor.xml"/>
     <!-- Containers -->
     <screen id="hbox-sample"
             template="com/haulmont/sampler/web/ui/containers/boxlayout/hbox/hbox-sample.xml"/>
