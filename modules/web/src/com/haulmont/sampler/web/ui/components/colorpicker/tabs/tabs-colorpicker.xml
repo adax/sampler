@@ -2,6 +2,7 @@
         class="com.haulmont.cuba.gui.components.AbstractFrame">
     <layout spacing="true">
         <colorPicker hsvVisible="true"
+                     historyVisible="true"
                      swatchesVisible="true"/>
     </layout>
 </window>
