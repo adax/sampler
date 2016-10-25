@@ -684,14 +684,14 @@
     <menu id="containers">
 
         <menu id="accordion">
-            <item id="simple-accordion" docUrlSuffix="" splitEnabled="true" sampleHeight="60"
+            <item id="simple-accordion" docUrlSuffix="gui_Accordion" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/containers/accordion/simple">
                 <otherFiles>
                     <file name="com/haulmont/sampler/entity/Customer.java"/>
                     <file name="com/haulmont/sampler/entity/DateValue.java"/>
                 </otherFiles>
             </item>
-            <item id="lazy-accordion" docUrlSuffix="" splitEnabled="true" sampleHeight="170px"
+            <item id="lazy-accordion" docUrlSuffix="gui_Accordion" splitEnabled="true" sampleHeight="170px"
                   descriptionsPack="com/haulmont/sampler/web/ui/containers/accordion/lazy"
                   controller="com/haulmont/sampler/web/ui/containers/accordion/lazy/LazyAccordionFrame.java"/>
         </menu>
@@ -750,7 +750,7 @@
                   descriptionsPack="com/haulmont/sampler/web/ui/containers/groupboxlayout/collapsable"/>
         </menu>
 
-        <item id="html-box" docUrlSuffix="gui_HtmlBoxLayout" splitEnabled="true" sampleHeight="60"
+        <item id="html-box" docUrlSuffix="gui_HtmlBoxLayout" splitEnabled="true" sampleHeight="250px"
               controller="com/haulmont/sampler/web/ui/containers/htmlbox/simple/HtmlBoxFrame.java"
               descriptionsPack="com/haulmont/sampler/web/ui/containers/htmlbox/simple">
             <otherFiles>
