@@ -11,7 +11,7 @@ import javax.inject.Inject;
 import java.util.Map;
 import java.util.UUID;
 
-public class MonthCalendar extends AbstractFrame {
+public class MonthCalendarFrame extends AbstractFrame {
     @Inject
     private CollectionDatasource<CalendarEvent, UUID> calendarEventsDs;
 

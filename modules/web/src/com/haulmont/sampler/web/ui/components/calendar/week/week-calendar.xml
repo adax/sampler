@@ -1,6 +1,6 @@
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://weekCalendar"
-        class="com.haulmont.sampler.web.ui.components.calendar.week.WeekCalendar"
+        class="com.haulmont.sampler.web.ui.components.calendar.week.WeekCalendarFrame"
         messagesPack="com.haulmont.sampler.web.ui.components.calendar.week">
     <dialogMode height="600"
                 width="800"/>

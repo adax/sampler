@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
 
-public class WeekCalendar extends AbstractWindow {
+public class WeekCalendarFrame extends AbstractWindow {
     @Inject
     private Calendar calendar;
     @Inject
