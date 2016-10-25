@@ -197,6 +197,7 @@ public class SampleBrowser extends AbstractWindow {
         String value = ControllerUtils.getLocationWithoutParams() + "open?screen=" + frameId;
         content.setValue(value);
         content.setWidth((value.length() * 8) + "px");
+        content.setEditable(false);
         permalink.setPopupContent(content);
 
         permalink.addPopupVisibilityListener(event -> {
