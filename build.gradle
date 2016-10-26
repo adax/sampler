@@ -24,13 +24,12 @@ buildscript {
     }
 }
 
-def globalModule = project(':app-global')
-def webThemesModule= project(':app-web-themes')
-def coreModule = project(':app-core')
-def guiModule = project(':app-gui')
-def webModule = project(':app-web')
+def globalModule = project(':sampler-global')
+def coreModule = project(':sampler-core')
+def guiModule = project(':sampler-gui')
+def webModule = project(':sampler-web')
+def webThemesModule= project(':sampler-web-themes')
 
-def hsql = 'org.hsqldb:hsqldb:2.2.9'
 def servletApi = 'org.apache.tomcat:tomcat-servlet-api:8.0.26'
 
 
@@ -51,6 +50,8 @@ cuba {
     }
 }
 
+def hsql = 'org.hsqldb:hsqldb:2.2.9'
+
 configure([globalModule, coreModule, guiModule, webModule]) {
     apply(plugin: 'java')
     apply(plugin: 'maven')
@@ -58,7 +59,7 @@ configure([globalModule, coreModule, guiModule, webModule]) {
     apply(plugin: 'cuba')
 
     dependencies {
-        testCompile('junit:junit:4.5')
+        testCompile('junit:junit:4.12')
     }
 
     task sourceJar(type: Jar) {
@@ -72,39 +73,12 @@ configure([globalModule, coreModule, guiModule, webModule]) {
 }
 
 configure(globalModule) {
-    dependencies {
-
-    }
-
-    task enhance(type: CubaEnhancing) 
-
-    
+    task enhance(type: CubaEnhancing)
 
     jar {
         from sourceSets.main.allJava
     }
 }
-configure(webThemesModule) {
-    apply(plugin: 'java')
-    apply(plugin: 'maven')
-    apply(plugin: 'cuba')
-
-    appModuleType = 'web-themes'
-
-    buildDir = file('../build/scss-themes')
-
-    sourceSets {
-        main {
-            java {
-                srcDir '.'
-            }
-            resources {
-                srcDir '.'
-            }
-        }
-    }
-}
-
 
 configure(coreModule) {
 
@@ -122,7 +96,7 @@ configure(coreModule) {
     }
 
     task cleanConf(description: 'Cleans up conf directory') << {
-        def dir = new File(cuba.tomcat.dir, '/conf/app-core')
+        def dir = new File(cuba.tomcat.dir, '/conf/sampler-core')
         if (dir.isDirectory()) {
             ant.delete(includeemptydirs: true) {
                 fileset(dir: dir, includes: '**/*', excludes: 'local.app.properties')
@@ -131,8 +105,8 @@ configure(coreModule) {
     }
 
     task deploy(dependsOn: [assemble, cleanConf], type: CubaDeployment) {
-        appName = 'app-core'
-        appJars('app-global', 'app-core')
+        appName = 'sampler-core'
+        appJars('sampler-global', 'sampler-core')
     }
 
     task startDb(type: CubaHsqlStart) {
@@ -163,13 +137,12 @@ configure(coreModule) {
 configure(guiModule) {
     dependencies {
         compile(globalModule)
-
     }
 
     task deployConf(type: Copy) {
         from file('src')
         include "com/haulmont/sampler/**"
-        into "$cuba.tomcat.dir/conf/app"
+        into "$cuba.tomcat.dir/conf/sampler"
     }
 
     jar {
@@ -180,20 +153,16 @@ configure(guiModule) {
 configure(webModule) {
     configurations {
         webcontent
-        themes
-        
     }
 
     dependencies {
         provided(servletApi)
-        compile(globalModule)
         compile(guiModule)
-        themes("com.haulmont.cuba:cuba-web-themes:$cubaVersion")
-        provided("com.haulmont.cuba:cuba-web-themes:$cubaVersion")
 
     }
-
+    
     task webArchive(type: Zip) {
+        from file("$buildDir/web")
         from file('web')
         classifier = 'web'
     }
@@ -205,17 +174,16 @@ configure(webModule) {
     task deployConf(type: Copy) {
         from file('src')
         include "com/haulmont/sampler/**"
-        into "$cuba.tomcat.dir/conf/app"
+        into "$cuba.tomcat.dir/conf/sampler"
     }
-    
+
     task clearMessagesCache(type: CubaClearMessagesCache) {
-        appName = 'app'
+        appName = 'sampler'
     }
     deployConf.dependsOn clearMessagesCache
 
-    
     task cleanConf(description: 'Cleans up conf directory') << {
-        def dir = new File(cuba.tomcat.dir, '/conf/app')
+        def dir = new File(cuba.tomcat.dir, '/conf/sampler')
         if (dir.isDirectory()) {
             ant.delete(includeemptydirs: true) {
                 fileset(dir: dir, includes: '**/*', excludes: 'local.app.properties')
@@ -225,15 +193,16 @@ configure(webModule) {
 
     task copyLogoImage(type: Copy) {
         from 'themes/halo/images/platform-logo.png'
-        into "$cuba.tomcat.dir/work/app-core/filestorage/2015/04/01"
+        into "$cuba.tomcat.dir/work/sampler-core/filestorage/2015/04/01"
         rename 'platform-logo.png', '61a6a1ee-f13a-f44f-0201-c2f9b3288305.png'
     }
 
     task deploy(dependsOn: [assemble, cleanConf, copyLogoImage], type: CubaDeployment) {
-        appName = 'app'
-        appJars('app-global', 'app-gui', 'app-web')
+        appName = 'sampler'
+        appJars('sampler-global', 'sampler-gui', 'sampler-web')
     }
     task buildScssThemes(type: CubaWebScssThemeCreation)
+    task deployThemes(type: CubaDeployThemeTask, dependsOn: buildScssThemes)
     assemble.dependsOn buildScssThemes
 
     jar {
@@ -241,13 +210,34 @@ configure(webModule) {
     }
 }
 
-task undeploy(type: Delete, dependsOn: ':app-web:cleanConf') {
-    delete("$cuba.tomcat.dir/shared")
-    delete("$cuba.tomcat.dir/webapps/app-core")
-    delete("$cuba.tomcat.dir/webapps/app")
+configure(webThemesModule) {
+    apply(plugin: 'java')
+    apply(plugin: 'maven')
+    apply(plugin: 'cuba')
+
+    appModuleType = 'web-themes'
+
+    buildDir = file('../build/scss-themes')
+
+    sourceSets {
+        main {
+            java {
+                srcDir '.'
+            }
+            resources {
+                srcDir '.'
+            }
+        }
+    }
 }
 
-task restart(dependsOn: ['stop', ':app-core:deploy', ':app-web:deploy'], description: 'Redeploys applications and restarts local Tomcat') << {
+task undeploy(type: Delete, dependsOn: ':sampler-web:cleanConf') {
+    delete("$cuba.tomcat.dir/shared")
+    delete("$cuba.tomcat.dir/webapps/sampler-core")
+    delete("$cuba.tomcat.dir/webapps/sampler")
+}
+
+task restart(dependsOn: ['stop', ':sampler-core:deploy', ':sampler-web:deploy'], description: 'Redeploys applications and restarts local Tomcat') << {
     ant.waitfor(maxwait: 6, maxwaitunit: 'second', checkevery: 2, checkeveryunit: 'second') {
         not {
             socket(server: 'localhost', port: '8787')

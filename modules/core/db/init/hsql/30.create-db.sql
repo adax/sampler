@@ -1876,3 +1876,10 @@ values ('c1648a0d-23f7-2e75-3db7-6e9466735959', 1, '2016-10-19 17:05:32', 'admin
 insert into SAMPLER_CALENDAR_EVENT
 (ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
 values ('f1a0c8a1-d122-b3c6-f88f-fad62fe85fa9', 1, '2016-10-19 16:49:05', 'admin', '2016-10-19 16:49:05', null, null, null, 'Meeting', 'Meeting with lawyer', '2016-10-17 13:00:00', '2016-10-17 12:00:00', 'event-blue');
+
+------------------------------------------------------------------------------------------------------------
+
+insert into SYS_CONFIG (ID, CREATE_TS, CREATED_BY, VERSION, NAME, VALUE)
+values ('539fcf02-400a-3402-fa27-8fea3dd6819b', current_timestamp, 'admin', 0, 'charts.map.apiKey', 'AIzaSyBTewbdP-Y_NZBTvbCLxxTljr35vAuNVok');
+
+------------------------------------------------------------------------------------------------------------
