@@ -222,6 +222,7 @@ public class SampleBrowser extends AbstractWindow {
     private SourceCodeEditor createSourceCodeEditor(AceMode mode) {
         SourceCodeEditor editor = componentsFactory.createComponent(SourceCodeEditor.class);
         editor.setStyleName("sample-browser");
+        editor.setShowPrintMargin(false);
         CubaSourceCodeEditor codeEditor = (CubaSourceCodeEditor) WebComponentsHelper.unwrap(editor);
         codeEditor.setMode(mode);
         editor.setEditable(false);
