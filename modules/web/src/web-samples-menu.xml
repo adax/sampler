@@ -418,7 +418,7 @@
         <menu id="codeEditor">
             <item id="simple-codeeditor" docUrlSuffix="gui_SourceCodeEditor" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/codeeditor/simple"
-                  controller="com/haulmont/sampler/web/ui/components/codeeditor/simple/SimpleCodeEditorFrame.java"/>
+                  controller="com/haulmont/sampler/web/ui/components/codeeditor/simple/SimpleSourceCodeEditorFrame.java"/>
             <item id="mode-codeeditor" docUrlSuffix="gui_SourceCodeEditor" splitEnabled="true" sampleHeight="60"
                   descriptionsPack="com/haulmont/sampler/web/ui/components/codeeditor/mode"
                   controller="com/haulmont/sampler/web/ui/components/codeeditor/mode/ModeCodeEditorFrame.java"/>
